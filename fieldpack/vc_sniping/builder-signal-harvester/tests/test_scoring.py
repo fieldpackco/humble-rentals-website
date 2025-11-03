@@ -1,5 +1,6 @@
 from builder_harvester.scoring import classify_angel_signal, calculate_operator_score
 from builder_harvester.models import RawProfile
+from unittest.mock import patch, Mock
 
 
 def test_classify_angel_signal_auto_yes():
@@ -61,3 +62,35 @@ def test_calculate_operator_score_high():
 
     score = calculate_operator_score(profile)
     assert score >= 0.7
+
+
+def test_batch_classify_with_llm():
+    """Test LLM batch classification."""
+    profiles = [
+        RawProfile(
+            source="github",
+            source_id="user1",
+            name="Test User",
+            bio="CTO @ BatteryCo. Open to advising.",
+            profile_url="https://example.com",
+            metadata={"repos": [{"name": "battery-sys", "stars": 200}]},
+        )
+    ]
+
+    mock_response = Mock()
+    mock_response.content = [
+        Mock(text='[{"source_id": "user1", "operator_score": 0.7, "angel_score": 0.5, "evidence": ["CTO role", "Advising hint"]}]')
+    ]
+
+    # Mock the Anthropic client and its methods
+    with patch("builder_harvester.scoring.Anthropic") as mock_client_class:
+        mock_client_instance = Mock()
+        mock_client_instance.messages.create.return_value = mock_response
+        mock_client_class.return_value = mock_client_instance
+
+        from builder_harvester.scoring import batch_classify_with_llm
+        results = batch_classify_with_llm(profiles)
+
+        assert len(results) == 1
+        assert results[0]["operator_score"] == 0.7
+        assert results[0]["angel_score"] == 0.5

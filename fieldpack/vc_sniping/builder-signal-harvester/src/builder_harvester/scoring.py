@@ -1,6 +1,9 @@
 """Scoring and classification logic."""
 
 import re
+import os
+import json
+from anthropic import Anthropic
 from builder_harvester.models import RawProfile
 
 
@@ -103,3 +106,56 @@ def calculate_operator_score(profile: RawProfile) -> float:
         score = star_score + repo_score
 
     return min(score, 1.0)
+
+
+def batch_classify_with_llm(profiles: list[RawProfile], batch_size: int = 20) -> list[dict]:
+    """
+    Classify borderline profiles using LLM in batches.
+
+    Args:
+        profiles: List of RawProfile objects to classify
+        batch_size: Number of profiles per batch
+
+    Returns:
+        List of dicts with source_id, operator_score, angel_score, evidence
+    """
+    client = Anthropic(api_key=os.getenv("ANTHROPIC_API_KEY"))
+
+    # Load prompt template
+    prompt_path = "prompts/classifier_prompt.md"
+    with open(prompt_path, "r") as f:
+        system_prompt = f.read()
+
+    results = []
+
+    # Process in batches
+    for i in range(0, len(profiles), batch_size):
+        batch = profiles[i:i + batch_size]
+
+        # Format profiles for prompt
+        profile_data = []
+        for p in batch:
+            profile_data.append({
+                "source_id": p.source_id,
+                "name": p.name,
+                "bio": p.bio or "",
+                "repos": p.metadata.get("repos", [])[:3],  # Top 3 repos
+                "social_links": p.social_links.dict() if p.social_links else {},
+            })
+
+        # Call LLM
+        user_message = f"Classify these {len(batch)} profiles:\n\n{json.dumps(profile_data, indent=2)}"
+
+        response = client.messages.create(
+            model="claude-3-5-haiku-20241022",
+            max_tokens=4096,
+            system=system_prompt,
+            messages=[{"role": "user", "content": user_message}]
+        )
+
+        # Parse JSON response
+        response_text = response.content[0].text
+        batch_results = json.loads(response_text)
+        results.extend(batch_results)
+
+    return results
