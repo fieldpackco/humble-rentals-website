@@ -1,0 +1,1108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAB SEVEN - Labrador Field Systems</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'SF Pro Display', system-ui, sans-serif;
+            color: #0d0d0d;
+            background: #000000;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        :root {
+            /* Premium Color System - Natural Depth (Organic Sage to Navy) */
+            --primary-light: #afbbb6;
+            --primary-medium: #8b9d9b;
+            --primary-dark: #698083;
+            --primary-deep: #2c475c;
+            --accent-sage: #9aaba7;
+            --accent-slate: #49636f;
+
+            --neutral-black: #0A0A0A;
+            --neutral-charcoal: #1A1A1A;
+            --neutral-dark-slate: #2D2D2D;
+            --neutral-slate: #3D3D3D;
+            --neutral-mid: #8A8A8A;
+            --neutral-light: #E0E0E0;
+            --neutral-pale: #F5F5F5;
+            --neutral-white: #FFFFFF;
+
+            /* Sophisticated Gradients */
+            --gradient-mesh-1: linear-gradient(150deg, #afbbb6 0%, #8b9d9b 30%, #698083 60%, #2c475c 100%);
+            --gradient-mesh-2: linear-gradient(225deg, #8b9d9b 0%, #698083 50%, #2c475c 100%);
+            --gradient-accent: linear-gradient(90deg, #8b9d9b 0%, #698083 100%);
+            --gradient-depth: linear-gradient(180deg, #0A0A0A 0%, #1A1A1A 100%);
+
+            /* Spacing System - Mathematical Precision */
+            --space-xs: 8px;
+            --space-sm: 16px;
+            --space-md: 24px;
+            --space-lg: 32px;
+            --space-xl: 48px;
+            --space-2xl: 64px;
+            --space-3xl: 96px;
+            --space-4xl: 128px;
+            --space-5xl: 160px;
+            --space-6xl: 200px;
+
+            /* Typography Scale - Ultra-Modern Large */
+            --font-hero: 144px;
+            --font-headline-xl: 96px;
+            --font-headline-lg: 72px;
+            --font-headline-md: 56px;
+            --font-headline-sm: 48px;
+            --font-body-xl: 28px;
+            --font-body-lg: 24px;
+            --font-body-md: 21px;
+            --font-body: 18px;
+            --font-small: 16px;
+            --font-xs: 14px;
+
+            /* Animation Variables */
+            --ease-premium: cubic-bezier(0.4, 0, 0.2, 1);
+            --ease-smooth: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            --duration-fast: 0.3s;
+            --duration-medium: 0.6s;
+            --duration-slow: 1.0s;
+        }
+
+        /* Animated Gradient Mesh Background */
+        @keyframes gradient-shift {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        @keyframes gradient-rotate {
+            0% {
+                transform: rotate(0deg) scale(1);
+            }
+            50% {
+                transform: rotate(180deg) scale(1.1);
+            }
+            100% {
+                transform: rotate(360deg) scale(1);
+            }
+        }
+
+        @keyframes float-slow {
+            0%, 100% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        @keyframes fade-in-up {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Navigation - Minimal & Elegant */
+        nav {
+            background: rgba(10, 10, 10, 0.8);
+            backdrop-filter: saturate(180%) blur(20px);
+            -webkit-backdrop-filter: saturate(180%) blur(20px);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 9999;
+            transition: all var(--duration-fast) var(--ease-premium);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        nav.scrolled {
+            background: rgba(10, 10, 10, 0.95);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .nav-wrapper {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 var(--space-xl);
+            height: 64px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 18px;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            color: var(--neutral-white);
+            text-transform: uppercase;
+        }
+
+        .nav-items {
+            display: flex;
+            gap: var(--space-xl);
+            list-style: none;
+            align-items: center;
+        }
+
+        .nav-items a {
+            color: var(--neutral-mid);
+            text-decoration: none;
+            font-size: var(--font-small);
+            font-weight: 500;
+            transition: color var(--duration-fast) var(--ease-premium);
+            letter-spacing: 0.02em;
+        }
+
+        .nav-items a:hover {
+            color: var(--neutral-white);
+        }
+
+        /* Hero Section - Dynamic Energy */
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: var(--space-6xl) var(--space-xl) var(--space-5xl);
+            overflow: hidden;
+        }
+
+        .hero-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+        }
+
+        .gradient-mesh {
+            position: absolute;
+            width: 150%;
+            height: 150%;
+            top: -25%;
+            left: -25%;
+            background: radial-gradient(circle at 38% 46%, rgba(175, 187, 182, 0.3) 0%, transparent 50%),
+                        radial-gradient(circle at 62% 54%, rgba(139, 157, 155, 0.25) 0%, transparent 50%),
+                        radial-gradient(circle at 50% 74%, rgba(105, 128, 131, 0.22) 0%, transparent 50%);
+            animation: gradient-rotate 38s ease-in-out infinite;
+            filter: blur(80px);
+        }
+
+        .gradient-mesh-2 {
+            position: absolute;
+            width: 120%;
+            height: 120%;
+            top: -10%;
+            left: -10%;
+            background: radial-gradient(ellipse at 54% 36%, rgba(73, 99, 111, 0.2) 0%, transparent 60%),
+                        radial-gradient(ellipse at 46% 64%, rgba(44, 71, 92, 0.18) 0%, transparent 60%);
+            animation: gradient-rotate 52s ease-in-out infinite reverse;
+            filter: blur(60px);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            max-width: 1200px;
+        }
+
+        .hero h1 {
+            font-size: var(--font-hero);
+            font-weight: 700;
+            line-height: 1;
+            letter-spacing: -0.03em;
+            margin-bottom: var(--space-md);
+            color: var(--neutral-white);
+            opacity: 0;
+            animation: fade-in-up var(--duration-slow) var(--ease-premium) forwards;
+            animation-delay: 0.2s;
+        }
+
+        .hero .tagline {
+            font-size: var(--font-headline-lg);
+            font-weight: 600;
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+            margin-bottom: var(--space-2xl);
+            background: var(--gradient-mesh-1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            background-size: 200% 200%;
+            animation: gradient-shift 8s ease infinite, fade-in-up var(--duration-slow) var(--ease-premium) forwards;
+            animation-delay: 0s, 0.4s;
+        }
+
+        .hero .description {
+            font-size: var(--font-body-lg);
+            color: var(--neutral-light);
+            line-height: 1.6;
+            max-width: 700px;
+            margin: 0 auto var(--space-xl);
+            font-weight: 400;
+            opacity: 0;
+            animation: fade-in-up var(--duration-slow) var(--ease-premium) forwards;
+            animation-delay: 0.6s;
+        }
+
+        .hero .price-info {
+            font-size: var(--font-body);
+            color: var(--neutral-mid);
+            margin-bottom: var(--space-3xl);
+            opacity: 0;
+            animation: fade-in-up var(--duration-slow) var(--ease-premium) forwards;
+            animation-delay: 0.8s;
+        }
+
+        .cta-group {
+            display: flex;
+            gap: var(--space-md);
+            justify-content: center;
+            margin-bottom: var(--space-3xl);
+            opacity: 0;
+            animation: fade-in-up var(--duration-slow) var(--ease-premium) forwards;
+            animation-delay: 1s;
+        }
+
+        .btn {
+            padding: 18px 40px;
+            border-radius: 12px;
+            font-size: var(--font-body);
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            transition: all var(--duration-medium) var(--ease-premium);
+            cursor: pointer;
+            border: none;
+            font-weight: 600;
+            letter-spacing: 0.01em;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-primary {
+            background: var(--gradient-mesh-1);
+            color: var(--neutral-white);
+            box-shadow: 0 8px 32px rgba(105, 128, 131, 0.4);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 48px rgba(105, 128, 131, 0.6);
+        }
+
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.05);
+            color: var(--neutral-white);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: rgba(255, 255, 255, 0.4);
+            transform: translateY(-2px);
+        }
+
+        .hero-visual {
+            position: relative;
+            margin-top: var(--space-3xl);
+            opacity: 0;
+            animation: fade-in-up var(--duration-slow) var(--ease-premium) forwards, float-slow 6s ease-in-out infinite;
+            animation-delay: 1.2s, 2s;
+        }
+
+        .product-showcase {
+            width: 100%;
+            max-width: 900px;
+            height: 500px;
+            margin: 0 auto;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.02) 100%);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            backdrop-filter: blur(20px);
+        }
+
+        .product-showcase:before {
+            content: '';
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(139, 157, 155, 0.35) 0%, transparent 70%);
+            animation: pulse-glow 4s ease-in-out infinite;
+        }
+
+        @keyframes pulse-glow {
+            0%, 100% {
+                transform: scale(1);
+                opacity: 0.5;
+            }
+            50% {
+                transform: scale(1.2);
+                opacity: 0.8;
+            }
+        }
+
+        .product-label {
+            position: relative;
+            z-index: 1;
+            font-size: var(--font-headline-lg);
+            font-weight: 800;
+            background: var(--gradient-mesh-1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: 0.05em;
+        }
+
+        /* Section Base Styles - Modular Chapters */
+        section {
+            position: relative;
+            padding: var(--space-6xl) var(--space-xl);
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: var(--space-5xl);
+        }
+
+        .section-header h2 {
+            font-size: var(--font-headline-xl);
+            font-weight: 700;
+            line-height: 1.1;
+            letter-spacing: -0.02em;
+            color: var(--neutral-white);
+            margin-bottom: var(--space-md);
+        }
+
+        .section-header .subtitle {
+            font-size: var(--font-body-xl);
+            color: var(--neutral-mid);
+            font-weight: 400;
+            line-height: 1.5;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Specifications Section - Grid-Based Precision */
+        .specs {
+            background: var(--neutral-black);
+        }
+
+        .specs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--space-lg);
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .spec-card {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.01) 100%);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 20px;
+            padding: var(--space-2xl);
+            transition: all var(--duration-medium) var(--ease-premium);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .spec-card:hover {
+            transform: translateY(-8px);
+            border-color: rgba(139, 157, 155, 0.4);
+            background: linear-gradient(135deg, rgba(139, 157, 155, 0.08) 0%, rgba(255, 255, 255, 0.02) 100%);
+            box-shadow: 0 20px 60px rgba(105, 128, 131, 0.25);
+        }
+
+        .spec-card:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: var(--gradient-accent);
+            transform: scaleX(0);
+            transition: transform var(--duration-medium) var(--ease-premium);
+        }
+
+        .spec-card:hover:before {
+            transform: scaleX(1);
+        }
+
+        .spec-icon {
+            font-size: 56px;
+            margin-bottom: var(--space-md);
+            opacity: 0.9;
+        }
+
+        .spec-card h3 {
+            font-size: var(--font-body-lg);
+            font-weight: 600;
+            color: var(--neutral-white);
+            margin-bottom: var(--space-sm);
+            letter-spacing: 0.02em;
+        }
+
+        .spec-value {
+            font-size: var(--font-headline-md);
+            font-weight: 800;
+            background: var(--gradient-mesh-1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: var(--space-sm);
+            letter-spacing: -0.02em;
+        }
+
+        .spec-description {
+            font-size: var(--font-body);
+            color: var(--neutral-mid);
+            line-height: 1.6;
+            font-weight: 400;
+        }
+
+        /* Features Section - Benefit-Focused Modular Chapters */
+        .features {
+            background: var(--neutral-charcoal);
+        }
+
+        .feature-chapter {
+            max-width: 1400px;
+            margin: 0 auto var(--space-6xl);
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--space-3xl);
+            align-items: center;
+        }
+
+        .feature-chapter:last-child {
+            margin-bottom: 0;
+        }
+
+        .feature-chapter.reverse {
+            direction: rtl;
+        }
+
+        .feature-chapter.reverse > * {
+            direction: ltr;
+        }
+
+        .feature-content h3 {
+            font-size: var(--font-headline-md);
+            font-weight: 700;
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+            color: var(--neutral-white);
+            margin-bottom: var(--space-md);
+        }
+
+        .feature-content h3 .highlight {
+            background: var(--gradient-mesh-1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .feature-content p {
+            font-size: var(--font-body-md);
+            color: var(--neutral-light);
+            line-height: 1.7;
+            margin-bottom: var(--space-lg);
+            font-weight: 400;
+        }
+
+        .feature-list {
+            list-style: none;
+            margin-top: var(--space-lg);
+        }
+
+        .feature-list li {
+            display: flex;
+            align-items: center;
+            margin-bottom: var(--space-sm);
+            font-size: var(--font-body);
+            color: var(--neutral-light);
+            font-weight: 500;
+        }
+
+        .feature-list li:before {
+            content: "→";
+            color: var(--primary-medium);
+            font-weight: bold;
+            margin-right: var(--space-sm);
+            font-size: var(--font-body-lg);
+        }
+
+        .feature-visual {
+            width: 100%;
+            height: 500px;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.02) 100%);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            transition: all var(--duration-medium) var(--ease-premium);
+        }
+
+        .feature-visual:hover {
+            border-color: rgba(139, 157, 155, 0.4);
+            transform: scale(1.02);
+        }
+
+        .feature-stat {
+            text-align: center;
+        }
+
+        .feature-stat-number {
+            font-size: 120px;
+            font-weight: 800;
+            background: var(--gradient-mesh-1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1;
+            letter-spacing: -0.03em;
+        }
+
+        .feature-stat-label {
+            font-size: var(--font-body-xl);
+            color: var(--neutral-light);
+            margin-top: var(--space-md);
+            font-weight: 600;
+        }
+
+        /* Pricing Section - Simplified & Elegant */
+        .pricing {
+            background: var(--neutral-black);
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: var(--space-xl);
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .pricing-card {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.01) 100%);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 24px;
+            padding: var(--space-3xl);
+            transition: all var(--duration-medium) var(--ease-premium);
+            position: relative;
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-8px);
+            border-color: rgba(139, 157, 155, 0.4);
+            box-shadow: 0 20px 60px rgba(105, 128, 131, 0.25);
+        }
+
+        .pricing-card.featured {
+            border: 2px solid rgba(139, 157, 155, 0.6);
+            background: linear-gradient(135deg, rgba(139, 157, 155, 0.1) 0%, rgba(255, 255, 255, 0.02) 100%);
+        }
+
+        .pricing-card.featured:before {
+            content: "MOST POPULAR";
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--gradient-mesh-1);
+            color: var(--neutral-white);
+            padding: 6px 16px;
+            border-radius: 8px;
+            font-size: var(--font-xs);
+            font-weight: 700;
+            letter-spacing: 0.1em;
+        }
+
+        .pricing-card h3 {
+            font-size: var(--font-headline-sm);
+            font-weight: 700;
+            color: var(--neutral-white);
+            margin-bottom: var(--space-md);
+        }
+
+        .price {
+            font-size: var(--font-headline-lg);
+            font-weight: 800;
+            background: var(--gradient-mesh-1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: var(--space-sm);
+        }
+
+        .price-period {
+            font-size: var(--font-body);
+            color: var(--neutral-mid);
+            margin-bottom: var(--space-xl);
+        }
+
+        .pricing-features {
+            list-style: none;
+            margin-bottom: var(--space-xl);
+        }
+
+        .pricing-features li {
+            padding: var(--space-sm) 0;
+            font-size: var(--font-body);
+            color: var(--neutral-light);
+            display: flex;
+            align-items: center;
+        }
+
+        .pricing-features li:before {
+            content: "✓";
+            color: var(--primary-medium);
+            font-weight: bold;
+            margin-right: var(--space-sm);
+            font-size: var(--font-body-lg);
+        }
+
+        /* Footer - Minimal & Elegant */
+        footer {
+            background: var(--neutral-charcoal);
+            padding: var(--space-3xl) var(--space-xl) var(--space-xl);
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: var(--space-3xl);
+            margin-bottom: var(--space-3xl);
+        }
+
+        .footer-column h4 {
+            font-size: var(--font-xs);
+            font-weight: 700;
+            color: var(--neutral-white);
+            margin-bottom: var(--space-md);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        .footer-column ul {
+            list-style: none;
+        }
+
+        .footer-column li {
+            margin-bottom: var(--space-sm);
+        }
+
+        .footer-column a {
+            color: var(--neutral-mid);
+            text-decoration: none;
+            font-size: var(--font-small);
+            transition: color var(--duration-fast) var(--ease-premium);
+        }
+
+        .footer-column a:hover {
+            color: var(--neutral-white);
+        }
+
+        .footer-bottom {
+            padding-top: var(--space-xl);
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: var(--font-xs);
+            color: var(--neutral-mid);
+        }
+
+        .footer-links {
+            display: flex;
+            gap: var(--space-md);
+        }
+
+        .footer-links a {
+            color: var(--neutral-mid);
+            text-decoration: none;
+            transition: color var(--duration-fast) var(--ease-premium);
+        }
+
+        .footer-links a:hover {
+            color: var(--neutral-white);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            :root {
+                --font-hero: 96px;
+                --font-headline-xl: 72px;
+                --font-headline-lg: 56px;
+            }
+
+            .feature-chapter {
+                grid-template-columns: 1fr;
+                gap: var(--space-2xl);
+            }
+
+            .feature-chapter.reverse {
+                direction: ltr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            :root {
+                --font-hero: 64px;
+                --font-headline-xl: 48px;
+                --font-headline-lg: 40px;
+                --font-headline-md: 36px;
+                --space-6xl: 80px;
+                --space-5xl: 64px;
+            }
+
+            .nav-items {
+                display: none;
+            }
+
+            .hero {
+                padding: var(--space-4xl) var(--space-md) var(--space-3xl);
+            }
+
+            .cta-group {
+                flex-direction: column;
+            }
+
+            .specs-grid,
+            .pricing-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .product-showcase {
+                height: 350px;
+            }
+
+            .feature-visual {
+                height: 350px;
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+                gap: var(--space-md);
+                text-align: center;
+            }
+        }
+
+        /* Scroll Reveal Animations */
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all var(--duration-slow) var(--ease-premium);
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-wrapper">
+            <div class="logo">LABRADOR</div>
+            <ul class="nav-items">
+                <li><a href="#specs">Specs</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background">
+            <div class="gradient-mesh"></div>
+            <div class="gradient-mesh-2"></div>
+        </div>
+        <div class="hero-content">
+            <h1>LAB SEVEN</h1>
+            <p class="tagline">Power. Unleashed.</p>
+            <p class="description">The first battery system built by industry professionals, for production crews who demand uncompromising performance.</p>
+            <p class="price-info">From $999 or $83/mo. for 12 months</p>
+            <div class="cta-group">
+                <a href="#pricing" class="btn btn-primary">Reserve Now</a>
+                <a href="#specs" class="btn btn-secondary">Learn More</a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="product-showcase">
+                <div class="product-label">LAB SEVEN</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specifications Section -->
+    <section class="specs" id="specs">
+        <div class="section-header reveal">
+            <h2>Built for performance</h2>
+            <p class="subtitle">Professional-grade power in a portable package</p>
+        </div>
+        <div class="specs-grid">
+            <div class="spec-card reveal">
+                <div class="spec-icon">⚡</div>
+                <h3>Power Output</h3>
+                <div class="spec-value">10kW</div>
+                <p class="spec-description">60A continuous AC with 7.5kWh capacity</p>
+            </div>
+            <div class="spec-card reveal">
+                <div class="spec-icon">🔋</div>
+                <h3>Fast Charging</h3>
+                <div class="spec-value">1hr</div>
+                <p class="spec-description">60A Bates charging - charge as fast as you discharge</p>
+            </div>
+            <div class="spec-card reveal">
+                <div class="spec-icon">💪</div>
+                <h3>Portability</h3>
+                <div class="spec-value">&lt;200lbs</div>
+                <p class="spec-description">Two-person lift with market-leading density</p>
+            </div>
+            <div class="spec-card reveal">
+                <div class="spec-icon">🛡️</div>
+                <h3>Safety First</h3>
+                <div class="spec-value">LFP</div>
+                <p class="spec-description">Safest lithium chemistry available</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="section-header reveal">
+            <h2>Reimagined from the ground up</h2>
+            <p class="subtitle">Every detail designed to transform your production workflow</p>
+        </div>
+
+        <div class="feature-chapter reveal">
+            <div class="feature-content">
+                <h3><span class="highlight">10X faster</span> deployment</h3>
+                <p>Eliminate hours of cable runs and setup. Deploy power exactly where you need it, instantly.</p>
+                <ul class="feature-list">
+                    <li>Power anywhere on set</li>
+                    <li>No complex cable runs</li>
+                    <li>Work without generator access</li>
+                </ul>
+            </div>
+            <div class="feature-visual">
+                <div class="feature-stat">
+                    <div class="feature-stat-number">10X</div>
+                    <div class="feature-stat-label">Faster Setup</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="feature-chapter reverse reveal">
+            <div class="feature-content">
+                <h3>Charge as fast as you <span class="highlight">discharge</span></h3>
+                <p>Revolutionary symmetrical charging means you're never waiting for power. Full capacity in just one hour.</p>
+                <ul class="feature-list">
+                    <li>60A Bates charging (~1 hour)</li>
+                    <li>15A Edison charging (~5 hours)</li>
+                    <li>Free overnight LA charging</li>
+                </ul>
+            </div>
+            <div class="feature-visual">
+                <div class="feature-stat">
+                    <div class="feature-stat-number">1hr</div>
+                    <div class="feature-stat-label">Full Charge</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="feature-chapter reveal">
+            <div class="feature-content">
+                <h3>Any outlet into <span class="highlight">super power</span></h3>
+                <p>Transform standard house power into production-ready 60A output. Work anywhere with just a wall outlet.</p>
+                <ul class="feature-list">
+                    <li>60A from 15A input</li>
+                    <li>Passthrough charging</li>
+                    <li>No generator required</li>
+                </ul>
+            </div>
+            <div class="feature-visual">
+                <div class="feature-stat">
+                    <div class="feature-stat-number">60A</div>
+                    <div class="feature-stat-label">From Any Outlet</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+        <div class="section-header reveal">
+            <h2>Simple, transparent pricing</h2>
+            <p class="subtitle">Beta program for Los Angeles productions</p>
+        </div>
+        <div class="pricing-grid">
+            <div class="pricing-card reveal">
+                <h3>Daily</h3>
+                <div class="price">$1,000</div>
+                <p class="price-period">Perfect for short shoots</p>
+                <ul class="pricing-features">
+                    <li>Four LAB SEVEN units</li>
+                    <li>White-glove delivery</li>
+                    <li>Basic cable package</li>
+                    <li>Email support</li>
+                </ul>
+                <a href="#contact" class="btn btn-primary" style="width: 100%;">Get Started</a>
+            </div>
+            <div class="pricing-card featured reveal">
+                <h3>Weekly</h3>
+                <div class="price">$5,000</div>
+                <p class="price-period">Best value for productions</p>
+                <ul class="pricing-features">
+                    <li>Four LAB SEVEN units</li>
+                    <li>White-glove delivery & setup</li>
+                    <li>Overnight charging service</li>
+                    <li>On-set technical support</li>
+                    <li>Complete cable package</li>
+                    <li>Priority support</li>
+                </ul>
+                <a href="#contact" class="btn btn-primary" style="width: 100%;">Reserve Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="#">LAB SEVEN</a></li>
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">Compare</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Professional</h4>
+                    <ul>
+                        <li><a href="#">Film & TV</a></li>
+                        <li><a href="#">Commercial</a></li>
+                        <li><a href="#">Events</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Beta Program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Labrador Field Systems. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                    <a href="#">Legal</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // Scroll reveal animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+        // Navigation scroll effect
+        let lastScroll = 0;
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            const currentScroll = window.pageYOffset;
+
+            if (currentScroll > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+
+            lastScroll = currentScroll;
+        });
+    </script>
+</body>
+</html>

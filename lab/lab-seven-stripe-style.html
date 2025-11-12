@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAB SEVEN - Labrador Field Systems</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'SF Pro Display', system-ui, sans-serif;
+            color: #0A2540;
+            background: #FFFFFF;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        :root {
+            /* Stripe-Inspired Color System */
+            --gradient-purple: #7C3AED;
+            --gradient-blue: #3B82F6;
+            --gradient-cyan: #06B6D4;
+            --gradient-bright: #0EA5E9;
+
+            --text-primary: #0A2540;
+            --text-secondary: #425466;
+            --text-light: #697386;
+
+            --background-white: #FFFFFF;
+            --background-light: #F6F9FC;
+            --border-light: #E3E8EF;
+
+            /* Spacing */
+            --space-xs: 8px;
+            --space-sm: 16px;
+            --space-md: 24px;
+            --space-lg: 32px;
+            --space-xl: 48px;
+            --space-2xl: 64px;
+            --space-3xl: 80px;
+            --space-4xl: 120px;
+
+            /* Typography */
+            --font-hero: 72px;
+            --font-headline: 48px;
+            --font-subheadline: 32px;
+            --font-body-lg: 20px;
+            --font-body: 17px;
+            --font-small: 15px;
+        }
+
+        /* Navigation */
+        nav {
+            background: var(--background-white);
+            border-bottom: 1px solid var(--border-light);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 var(--space-xl);
+            height: 72px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--text-primary);
+            letter-spacing: -0.02em;
+        }
+
+        .nav-items {
+            display: flex;
+            gap: var(--space-lg);
+            list-style: none;
+            align-items: center;
+        }
+
+        .nav-items a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: var(--font-small);
+            font-weight: 500;
+            transition: color 0.2s ease;
+        }
+
+        .nav-items a:hover {
+            color: var(--text-primary);
+        }
+
+        .nav-cta {
+            background: var(--text-primary);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .nav-cta:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(10, 37, 64, 0.2);
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            margin-top: 72px;
+            min-height: calc(100vh - 72px);
+            overflow: hidden;
+            background: var(--background-white);
+        }
+
+        .hero-gradient {
+            position: absolute;
+            width: 200%;
+            height: 200%;
+            bottom: -50%;
+            left: -50%;
+            background: linear-gradient(135deg,
+                #7C3AED 0%,
+                #6366F1 25%,
+                #3B82F6 50%,
+                #06B6D4 75%,
+                #0EA5E9 100%);
+            transform: rotate(-12deg);
+            animation: gradient-shift 20s ease infinite;
+        }
+
+        @keyframes gradient-shift {
+            0%, 100% {
+                transform: rotate(-12deg) translateX(0);
+            }
+            50% {
+                transform: rotate(-12deg) translateX(2%);
+            }
+        }
+
+        .hero-content-wrapper {
+            position: relative;
+            z-index: 2;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: var(--space-4xl) var(--space-xl);
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--space-3xl);
+            align-items: center;
+            min-height: calc(100vh - 72px);
+        }
+
+        .hero-text {
+            max-width: 560px;
+        }
+
+        .hero h1 {
+            font-size: var(--font-hero);
+            font-weight: 700;
+            line-height: 1.1;
+            letter-spacing: -0.03em;
+            color: var(--text-primary);
+            margin-bottom: var(--space-md);
+        }
+
+        .hero-description {
+            font-size: var(--font-body-lg);
+            line-height: 1.6;
+            color: var(--text-secondary);
+            margin-bottom: var(--space-xl);
+            max-width: 480px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: var(--space-sm);
+            margin-bottom: var(--space-lg);
+        }
+
+        .btn {
+            padding: 14px 28px;
+            border-radius: 6px;
+            font-size: var(--font-body);
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.2s ease;
+            cursor: pointer;
+            border: none;
+        }
+
+        .btn-primary {
+            background: var(--text-primary);
+            color: white;
+            box-shadow: 0 4px 12px rgba(10, 37, 64, 0.15);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(10, 37, 64, 0.25);
+        }
+
+        .btn-secondary {
+            background: white;
+            color: var(--text-primary);
+            border: 1px solid var(--border-light);
+        }
+
+        .btn-secondary:hover {
+            border-color: var(--text-primary);
+        }
+
+        .hero-links {
+            display: flex;
+            gap: var(--space-lg);
+        }
+
+        .hero-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: var(--font-small);
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            transition: color 0.2s ease;
+        }
+
+        .hero-links a:hover {
+            color: var(--text-primary);
+        }
+
+        .hero-links a:after {
+            content: '→';
+            transition: transform 0.2s ease;
+        }
+
+        .hero-links a:hover:after {
+            transform: translateX(4px);
+        }
+
+        .hero-visual {
+            position: relative;
+            height: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .product-ui-mockup {
+            background: white;
+            border-radius: 16px;
+            box-shadow:
+                0 0 0 1px rgba(0, 0, 0, 0.05),
+                0 20px 60px rgba(0, 0, 0, 0.12),
+                0 40px 80px rgba(0, 0, 0, 0.08);
+            padding: var(--space-xl);
+            width: 480px;
+            position: relative;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        .mockup-header {
+            display: flex;
+            align-items: center;
+            gap: var(--space-sm);
+            margin-bottom: var(--space-lg);
+            padding-bottom: var(--space-md);
+            border-bottom: 1px solid var(--border-light);
+        }
+
+        .mockup-icon {
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, #7C3AED 0%, #3B82F6 100%);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+        }
+
+        .mockup-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .mockup-stats {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--space-md);
+            margin-bottom: var(--space-lg);
+        }
+
+        .stat-card {
+            background: var(--background-light);
+            border-radius: 8px;
+            padding: var(--space-md);
+        }
+
+        .stat-label {
+            font-size: 13px;
+            color: var(--text-light);
+            margin-bottom: 4px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            font-weight: 600;
+        }
+
+        .stat-value {
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+
+        .stat-unit {
+            font-size: 16px;
+            color: var(--text-secondary);
+            margin-left: 4px;
+        }
+
+        .mockup-status {
+            display: flex;
+            align-items: center;
+            gap: var(--space-sm);
+            padding: var(--space-md);
+            background: linear-gradient(135deg, rgba(124, 58, 237, 0.05) 0%, rgba(59, 130, 246, 0.05) 100%);
+            border-radius: 8px;
+            border: 1px solid rgba(124, 58, 237, 0.1);
+        }
+
+        .status-indicator {
+            width: 8px;
+            height: 8px;
+            background: #10B981;
+            border-radius: 50%;
+            animation: pulse-dot 2s ease infinite;
+        }
+
+        @keyframes pulse-dot {
+            0%, 100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.5;
+            }
+        }
+
+        .status-text {
+            font-size: var(--font-small);
+            color: var(--text-secondary);
+            font-weight: 500;
+        }
+
+        /* Features Section - Stripe Style */
+        .features {
+            padding: 0 var(--space-xl) var(--space-4xl);
+            background: var(--background-white);
+            margin-top: -80px;
+            position: relative;
+            z-index: 10;
+        }
+
+        .features-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: var(--space-lg);
+            background: white;
+            padding: var(--space-2xl) 0;
+        }
+
+        .feature-card {
+            text-align: left;
+            padding: 0 var(--space-md);
+            border-left: 1px solid var(--border-light);
+        }
+
+        .feature-card:first-child {
+            border-left: none;
+        }
+
+        .feature-icon {
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, #00D4FF 0%, #0047FF 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            margin-bottom: var(--space-md);
+            position: relative;
+        }
+
+        .feature-icon:before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: inherit;
+            border-radius: 50%;
+            filter: blur(12px);
+            opacity: 0.4;
+            z-index: -1;
+        }
+
+        /* Different gradient for each icon */
+        .feature-card:nth-child(1) .feature-icon {
+            background: linear-gradient(135deg, #00D4FF 0%, #0047FF 100%);
+        }
+
+        .feature-card:nth-child(2) .feature-icon {
+            background: linear-gradient(135deg, #00FFB2 0%, #00C896 100%);
+        }
+
+        .feature-card:nth-child(3) .feature-icon {
+            background: linear-gradient(135deg, #FF6B9D 0%, #C239B3 100%);
+        }
+
+        .feature-card:nth-child(4) .feature-icon {
+            background: linear-gradient(135deg, #A855F7 0%, #6366F1 100%);
+        }
+
+        .feature-card h3 {
+            font-size: 20px;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: var(--space-sm);
+            line-height: 1.3;
+        }
+
+        .feature-card p {
+            font-size: 15px;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        /* Specs Section */
+        .specs {
+            padding: var(--space-4xl) var(--space-xl);
+            background: var(--background-light);
+        }
+
+        .specs-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--space-3xl);
+            align-items: center;
+        }
+
+        .specs-text h2 {
+            font-size: var(--font-headline);
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: var(--space-md);
+            letter-spacing: -0.02em;
+        }
+
+        .specs-text p {
+            font-size: var(--font-body-lg);
+            color: var(--text-secondary);
+            line-height: 1.6;
+            margin-bottom: var(--space-xl);
+        }
+
+        .specs-list {
+            list-style: none;
+        }
+
+        .specs-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: var(--space-sm);
+            margin-bottom: var(--space-md);
+            font-size: var(--font-body);
+            color: var(--text-secondary);
+        }
+
+        .specs-list li:before {
+            content: "✓";
+            color: #10B981;
+            font-weight: 700;
+            font-size: 20px;
+        }
+
+        .specs-visual {
+            background: white;
+            border-radius: 16px;
+            padding: var(--space-2xl);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--space-md);
+        }
+
+        .spec-item {
+            text-align: center;
+            padding: var(--space-lg);
+            background: var(--background-light);
+            border-radius: 12px;
+        }
+
+        .spec-item .value {
+            font-size: 36px;
+            font-weight: 800;
+            color: var(--text-primary);
+            margin-bottom: 4px;
+        }
+
+        .spec-item .label {
+            font-size: var(--font-small);
+            color: var(--text-light);
+            font-weight: 600;
+        }
+
+        /* Pricing Section */
+        .pricing {
+            padding: var(--space-4xl) var(--space-xl);
+            background: var(--background-white);
+        }
+
+        .pricing-header {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto var(--space-3xl);
+        }
+
+        .pricing-header h2 {
+            font-size: var(--font-headline);
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: var(--space-md);
+            letter-spacing: -0.02em;
+        }
+
+        .pricing-header p {
+            font-size: var(--font-body-lg);
+            color: var(--text-secondary);
+        }
+
+        .pricing-cards {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: var(--space-lg);
+        }
+
+        .pricing-card {
+            background: white;
+            border: 2px solid var(--border-light);
+            border-radius: 12px;
+            padding: var(--space-xl);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .pricing-card:hover {
+            border-color: var(--gradient-blue);
+            box-shadow: 0 12px 40px rgba(59, 130, 246, 0.15);
+            transform: translateY(-4px);
+        }
+
+        .pricing-card.featured {
+            border-color: var(--gradient-purple);
+            box-shadow: 0 12px 40px rgba(124, 58, 237, 0.15);
+        }
+
+        .pricing-card.featured:before {
+            content: "MOST POPULAR";
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--text-primary);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+        }
+
+        .pricing-card h3 {
+            font-size: 24px;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: var(--space-sm);
+        }
+
+        .pricing-card .price {
+            font-size: 48px;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: var(--space-sm);
+        }
+
+        .pricing-card .period {
+            font-size: var(--font-body);
+            color: var(--text-light);
+            margin-bottom: var(--space-lg);
+        }
+
+        .pricing-features {
+            list-style: none;
+            margin-bottom: var(--space-xl);
+        }
+
+        .pricing-features li {
+            display: flex;
+            align-items: center;
+            gap: var(--space-sm);
+            margin-bottom: var(--space-sm);
+            font-size: var(--font-body);
+            color: var(--text-secondary);
+        }
+
+        .pricing-features li:before {
+            content: "✓";
+            color: #10B981;
+            font-weight: 700;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--background-light);
+            padding: var(--space-3xl) var(--space-xl) var(--space-xl);
+            border-top: 1px solid var(--border-light);
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: var(--space-2xl);
+            margin-bottom: var(--space-2xl);
+        }
+
+        .footer-column h4 {
+            font-size: var(--font-small);
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: var(--space-md);
+        }
+
+        .footer-column ul {
+            list-style: none;
+        }
+
+        .footer-column li {
+            margin-bottom: var(--space-sm);
+        }
+
+        .footer-column a {
+            color: var(--text-light);
+            text-decoration: none;
+            font-size: var(--font-small);
+            transition: color 0.2s ease;
+        }
+
+        .footer-column a:hover {
+            color: var(--text-primary);
+        }
+
+        .footer-bottom {
+            padding-top: var(--space-lg);
+            border-top: 1px solid var(--border-light);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: var(--font-small);
+            color: var(--text-light);
+        }
+
+        .footer-links {
+            display: flex;
+            gap: var(--space-md);
+        }
+
+        .footer-links a {
+            color: var(--text-light);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--text-primary);
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .features-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: var(--space-xl);
+            }
+
+            .feature-card {
+                border-left: none;
+                padding: var(--space-lg);
+            }
+        }
+
+        @media (max-width: 768px) {
+            :root {
+                --font-hero: 48px;
+                --font-headline: 36px;
+                --space-4xl: 60px;
+            }
+
+            .nav-items {
+                display: none;
+            }
+
+            .hero-content-wrapper {
+                grid-template-columns: 1fr;
+                padding: var(--space-2xl) var(--space-md);
+            }
+
+            .hero-visual {
+                height: 400px;
+            }
+
+            .product-ui-mockup {
+                width: 100%;
+                max-width: 400px;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+                gap: var(--space-lg);
+            }
+
+            .feature-card {
+                border-left: none;
+                padding: var(--space-md);
+            }
+
+            .specs-content {
+                grid-template-columns: 1fr;
+            }
+
+            .pricing-cards {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+                gap: var(--space-md);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-wrapper">
+            <div class="logo">LABRADOR</div>
+            <ul class="nav-items">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#specs">Specs</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact" class="nav-cta">Contact sales</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-gradient"></div>
+        <div class="hero-content-wrapper">
+            <div class="hero-text">
+                <h1>Power that moves production forward</h1>
+                <p class="hero-description">Deploy production-ready power anywhere on set with the first battery system built by industry professionals for crews who demand uncompromising performance.</p>
+                <div class="hero-buttons">
+                    <a href="#pricing" class="btn btn-primary">Start accepting payments</a>
+                    <a href="#specs" class="btn btn-secondary">Contact sales</a>
+                </div>
+                <div class="hero-links">
+                    <a href="#specs">View specifications</a>
+                    <a href="#features">Explore features</a>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="product-ui-mockup">
+                    <div class="mockup-header">
+                        <div class="mockup-icon">⚡</div>
+                        <div class="mockup-title">LAB SEVEN</div>
+                    </div>
+                    <div class="mockup-stats">
+                        <div class="stat-card">
+                            <div class="stat-label">Power Output</div>
+                            <div class="stat-value">10<span class="stat-unit">kW</span></div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-label">Capacity</div>
+                            <div class="stat-value">7.5<span class="stat-unit">kWh</span></div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-label">Charge Time</div>
+                            <div class="stat-value">1<span class="stat-unit">hr</span></div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-label">Weight</div>
+                            <div class="stat-value">&lt;200<span class="stat-unit">lbs</span></div>
+                        </div>
+                    </div>
+                    <div class="mockup-status">
+                        <div class="status-indicator"></div>
+                        <div class="status-text">Active • 98% charged • 6.2kW output</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">⚡</div>
+                <h3>10X faster deployment</h3>
+                <p>Eliminate hours of cable runs and setup. Deploy power exactly where you need it, instantly transforming your production workflow.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🔋</div>
+                <h3>Symmetrical charging</h3>
+                <p>Charge as fast as you discharge. Revolutionary 60A charging gets you to full capacity in just one hour between scenes.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🛡️</div>
+                <h3>Safest chemistry available</h3>
+                <p>LFP battery technology provides maximum stability and safety with circuit breakers on every outlet for complete peace of mind.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">💪</div>
+                <h3>Two-person portable</h3>
+                <p>Market-leading energy density at under 200 lbs. Professional 10kW power that moves anywhere your production needs it.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specs Section -->
+    <section class="specs" id="specs">
+        <div class="specs-content">
+            <div class="specs-text">
+                <h2>Professional-grade specifications</h2>
+                <p>Built to meet the exacting demands of production environments. No compromises on performance, safety, or reliability.</p>
+                <ul class="specs-list">
+                    <li>60A continuous AC output with 7.5kWh storage</li>
+                    <li>Fast charging: 1 hour (60A) or 5 hours (15A)</li>
+                    <li>Lithium Iron Phosphate (LFP) chemistry</li>
+                    <li>Circuit breakers on every outlet</li>
+                    <li>All-weather rugged construction</li>
+                    <li>Smart connectivity (coming soon)</li>
+                </ul>
+            </div>
+            <div class="specs-visual">
+                <div class="spec-item">
+                    <div class="value">10kW</div>
+                    <div class="label">Power Output</div>
+                </div>
+                <div class="spec-item">
+                    <div class="value">7.5kWh</div>
+                    <div class="label">Capacity</div>
+                </div>
+                <div class="spec-item">
+                    <div class="value">1hr</div>
+                    <div class="label">Fast Charge</div>
+                </div>
+                <div class="spec-item">
+                    <div class="value">&lt;200lbs</div>
+                    <div class="label">Weight</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+        <div class="pricing-header">
+            <h2>Simple, transparent pricing</h2>
+            <p>Beta program for Los Angeles productions</p>
+        </div>
+        <div class="pricing-cards">
+            <div class="pricing-card">
+                <h3>Daily Rental</h3>
+                <div class="price">$1,000</div>
+                <div class="period">per day</div>
+                <ul class="pricing-features">
+                    <li>Four LAB SEVEN units</li>
+                    <li>White-glove delivery</li>
+                    <li>Basic cable package</li>
+                    <li>Email support</li>
+                </ul>
+                <a href="#contact" class="btn btn-primary" style="width: 100%;">Get started</a>
+            </div>
+            <div class="pricing-card featured">
+                <h3>Weekly Package</h3>
+                <div class="price">$5,000</div>
+                <div class="period">per week</div>
+                <ul class="pricing-features">
+                    <li>Four LAB SEVEN units</li>
+                    <li>White-glove delivery & setup</li>
+                    <li>Overnight charging service</li>
+                    <li>On-set technical support</li>
+                    <li>Complete cable package</li>
+                    <li>Priority support</li>
+                </ul>
+                <a href="#contact" class="btn btn-primary" style="width: 100%;">Reserve now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="#">LAB SEVEN</a></li>
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">Compare</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Solutions</h4>
+                    <ul>
+                        <li><a href="#">Film & TV</a></li>
+                        <li><a href="#">Commercial</a></li>
+                        <li><a href="#">Events</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Beta Program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Labrador Field Systems. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                    <a href="#">Legal</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
