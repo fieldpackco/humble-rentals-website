@@ -39,3 +39,39 @@
   from = "/macbook"
   to = "/macbook-air-replica.html"
   status = 200
+
+# User-type landing pages
+[[redirects]]
+  from = "/experience-agencies"
+  to = "/experience-agencies.html"
+  status = 200
+
+[[redirects]]
+  from = "/street-festivals"
+  to = "/street-festivals.html"
+  status = 200
+
+[[redirects]]
+  from = "/public-venues"
+  to = "/public-venues.html"
+  status = 200
+
+[[redirects]]
+  from = "/location-managers"
+  to = "/location-managers.html"
+  status = 200
+
+[[redirects]]
+  from = "/production-managers"
+  to = "/production-managers.html"
+  status = 200
+
+[[redirects]]
+  from = "/gaffers"
+  to = "/gaffers.html"
+  status = 200
+
+[[redirects]]
+  from = "/city-services"
+  to = "/city-services.html"
+  status = 200
