@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAB SEVEN for City Services | Labrador Field Systems</title>
+    <meta name="description" content="Silent battery power for brand activations and experiential events. Get approved for impossible locations without generator drama.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            color: #0d1117;
+            background: #fafbfc;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        :root {
+            --primary-orange: #FF6B35;
+            --primary-deep: #E55A2B;
+            --accent-gold: #F4B942;
+            --accent-amber: #FFA726;
+            --neutral-charcoal: #2C3E50;
+            --neutral-slate: #34495E;
+            --neutral-gray: #7F8C8D;
+            --neutral-light: #F8F9FA;
+            --text-primary: #0d1117;
+            --text-secondary: #656d76;
+            --border-light: #d0d7de;
+            --shadow-soft: rgba(0, 0, 0, 0.08);
+            --shadow-medium: rgba(0, 0, 0, 0.12);
+            --gradient-primary: linear-gradient(135deg, #FF6B35 0%, #F4B942 100%);
+            --gradient-secondary: linear-gradient(135deg, #2C3E50 0%, #34495E 100%);
+        }
+
+        /* Navigation */
+        nav {
+            background: rgba(248, 249, 250, 0.9);
+            backdrop-filter: saturate(180%) blur(20px);
+            -webkit-backdrop-filter: saturate(180%) blur(20px);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 9999;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            border-bottom: 1px solid var(--border-light);
+        }
+
+        nav.scrolled {
+            background: rgba(248, 249, 250, 0.95);
+            box-shadow: 0 2px 20px var(--shadow-soft);
+        }
+
+        .nav-wrapper {
+            max-width: 1024px;
+            margin: 0 auto;
+            padding: 0 22px;
+            height: 44px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .nav-items {
+            display: flex;
+            gap: 40px;
+            list-style: none;
+            align-items: center;
+        }
+
+        .nav-items a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            letter-spacing: -0.01em;
+            position: relative;
+        }
+
+        .nav-items a:hover {
+            color: var(--primary-orange);
+        }
+
+        .nav-items a:hover:after {
+            width: 100%;
+        }
+
+        .nav-items a:after {
+            content: '';
+            position: absolute;
+            bottom: -6px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--gradient-primary);
+            transition: width 0.3s ease;
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: 700;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* Hero Section */
+        .hero {
+            margin-top: 44px;
+            padding: 120px 20px 100px;
+            text-align: center;
+            background: radial-gradient(ellipse at center top, rgba(255, 107, 53, 0.08) 0%, transparent 50%),
+                        linear-gradient(180deg, var(--neutral-light) 0%, #ffffff 60%);
+        }
+
+        .hero h1 {
+            font-size: 96px;
+            font-weight: 800;
+            line-height: 1.05;
+            letter-spacing: -0.02em;
+            margin-bottom: 24px;
+            background: linear-gradient(135deg, var(--neutral-charcoal) 0%, var(--neutral-slate) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero .tagline {
+            font-size: 32px;
+            font-weight: 600;
+            line-height: 1.2;
+            letter-spacing: -0.01em;
+            margin-bottom: 48px;
+            color: var(--text-secondary);
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 60px;
+        }
+
+        .btn {
+            padding: 16px 32px;
+            border-radius: 12px;
+            font-size: 16px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            cursor: pointer;
+            border: none;
+            font-weight: 600;
+            letter-spacing: -0.01em;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-primary {
+            background: var(--gradient-primary);
+            color: white;
+            box-shadow: 0 4px 20px rgba(255, 107, 53, 0.3);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(255, 107, 53, 0.4);
+        }
+
+        .btn-secondary {
+            color: var(--primary-orange);
+            background: rgba(255, 107, 53, 0.1);
+            border: 2px solid var(--primary-orange);
+        }
+
+        .btn-secondary:hover {
+            background: var(--primary-orange);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        /* Benefits Section */
+        .benefits {
+            padding: 140px 20px;
+            background: var(--neutral-light);
+        }
+
+        .benefits h2 {
+            font-size: 56px;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 80px;
+            letter-spacing: -0.005em;
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .benefit-card {
+            background: white;
+            padding: 40px;
+            border-radius: 18px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+        }
+
+        .benefit-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 24px;
+            background: var(--gradient-primary);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+        }
+
+        .benefit-card h3 {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: var(--text-primary);
+        }
+
+        .benefit-card p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: var(--text-secondary);
+        }
+
+        /* Problem Section */
+        .problem {
+            padding: 140px 20px;
+            background: linear-gradient(180deg, #ffffff 0%, var(--neutral-light) 100%);
+        }
+
+        .problem h2 {
+            font-size: 56px;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 24px;
+        }
+
+        .problem .intro {
+            font-size: 24px;
+            color: var(--text-secondary);
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 80px;
+            line-height: 1.5;
+        }
+
+        .problem-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .problem-item {
+            padding: 32px;
+            background: white;
+            border-left: 4px solid var(--primary-orange);
+            border-radius: 12px;
+        }
+
+        .problem-item h3 {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            color: var(--primary-orange);
+        }
+
+        .problem-item p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: var(--text-secondary);
+        }
+
+        /* Solution Section */
+        .solution {
+            padding: 140px 20px;
+            background: radial-gradient(ellipse at center, rgba(244, 185, 66, 0.05) 0%, var(--neutral-light) 70%);
+        }
+
+        .solution h2 {
+            font-size: 56px;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 80px;
+        }
+
+        .solution-grid {
+            display: grid;
+            gap: 60px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .solution-item {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 40px;
+            align-items: start;
+        }
+
+        .solution-item h3 {
+            font-size: 28px;
+            font-weight: 700;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .solution-item p {
+            font-size: 18px;
+            line-height: 1.7;
+            color: var(--text-secondary);
+        }
+
+        .quick-specs {
+            background: white;
+            padding: 40px;
+            border-radius: 18px;
+            margin-top: 60px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+        }
+
+        .quick-specs h3 {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 24px;
+            text-align: center;
+        }
+
+        .specs-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .spec-item {
+            text-align: center;
+        }
+
+        .spec-value {
+            font-size: 32px;
+            font-weight: 800;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .spec-label {
+            font-size: 14px;
+            color: var(--text-secondary);
+            font-weight: 500;
+        }
+
+        /* Journey Section */
+        .journey {
+            padding: 140px 20px;
+            background: linear-gradient(180deg, var(--neutral-light) 0%, #ffffff 100%);
+        }
+
+        .journey h2 {
+            font-size: 56px;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 80px;
+        }
+
+        .journey-comparison {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .journey-column {
+            background: white;
+            padding: 50px;
+            border-radius: 18px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+        }
+
+        .journey-column.without {
+            border-top: 4px solid #e74c3c;
+        }
+
+        .journey-column.with {
+            border-top: 4px solid #27ae60;
+            background: linear-gradient(180deg, rgba(39, 174, 96, 0.02) 0%, white 30%);
+        }
+
+        .journey-column h3 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 24px;
+        }
+
+        .journey-column.without h3 { color: #e74c3c; }
+        .journey-column.with h3 { color: #27ae60; }
+
+        .journey-column p {
+            font-size: 18px;
+            line-height: 1.8;
+            color: var(--text-secondary);
+        }
+
+        /* Case Study Section */
+        .case-study {
+            padding: 140px 20px;
+            background: var(--gradient-secondary);
+            color: white;
+        }
+
+        .case-study-content {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .case-study h2 {
+            font-size: 56px;
+            font-weight: 700;
+            margin-bottom: 40px;
+            background: linear-gradient(135deg, #ffffff 0%, var(--accent-gold) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .case-study-box {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 50px;
+            border-radius: 18px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .case-study-box p {
+            font-size: 20px;
+            line-height: 1.8;
+            margin-bottom: 24px;
+        }
+
+        .case-study-quote {
+            font-size: 22px;
+            font-weight: 600;
+            font-style: italic;
+            background: linear-gradient(135deg, #ffffff 0%, var(--accent-gold) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-top: 32px;
+        }
+
+        /* FAQ Section */
+        .faq {
+            padding: 140px 20px;
+            background: var(--neutral-light);
+        }
+
+        .faq h2 {
+            font-size: 56px;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 80px;
+        }
+
+        .faq-list {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: white;
+            padding: 32px;
+            margin-bottom: 20px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .faq-item h3 {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            color: var(--primary-orange);
+        }
+
+        .faq-item p {
+            font-size: 16px;
+            line-height: 1.7;
+            color: var(--text-secondary);
+        }
+
+        /* CTA Section */
+        .final-cta {
+            padding: 140px 20px;
+            background: linear-gradient(135deg, var(--primary-orange) 0%, var(--accent-gold) 100%);
+            text-align: center;
+            color: white;
+        }
+
+        .final-cta h2 {
+            font-size: 56px;
+            font-weight: 700;
+            margin-bottom: 24px;
+        }
+
+        .final-cta p {
+            font-size: 24px;
+            margin-bottom: 48px;
+            opacity: 0.95;
+        }
+
+        .final-cta .cta-buttons .btn {
+            background: white;
+            color: var(--primary-orange);
+        }
+
+        .final-cta .cta-buttons .btn:hover {
+            background: var(--neutral-light);
+            transform: scale(1.05);
+        }
+
+        .final-cta .btn-secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+
+        .final-cta .btn-secondary:hover {
+            background: white;
+            color: var(--primary-orange);
+        }
+
+        .contact-info {
+            margin-top: 48px;
+            font-size: 18px;
+            opacity: 0.9;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--neutral-charcoal);
+            color: white;
+            padding: 60px 20px 30px;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 14px;
+            opacity: 0.7;
+            margin-bottom: 20px;
+        }
+
+        footer a {
+            color: var(--accent-gold);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-in {
+            opacity: 0;
+            animation: fadeIn 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 48px; }
+            .hero .tagline { font-size: 24px; }
+            .benefits h2, .problem h2, .solution h2, .journey h2, .case-study h2, .faq h2, .final-cta h2 {
+                font-size: 36px;
+            }
+            .nav-items { display: none; }
+            .journey-comparison { grid-template-columns: 1fr; }
+            .solution-item { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-wrapper">
+            <div class="logo">LABRADOR</div>
+            <ul class="nav-items">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#benefits">Benefits</a></li>
+                <li><a href="#solution">Solution</a></li>
+                <li><a href="#case-study">Case Study</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1 class="animate-in">Power public events anywhere</h1>
+        <p class="tagline animate-in">No refueling. No noise. More power than a 7000 watt generator. 60A silent power for brand activations, pop-ups, and installations. No permits, no noise complaints, no limits.</p>
+        <div class="cta-buttons animate-in">
+            <a href="#contact" class="btn btn-primary">Contact Labrador</a>
+            <a href="#contact" class="btn btn-secondary">Book a Demo</a>
+        </div>
+    </section>
+
+    <!-- Top 3 Benefits -->
+    <section class="benefits" id="benefits">
+        <h2>Built for experiential marketing</h2>
+        <div class="benefits-grid">
+            <div class="benefit-card animate-in">
+                <div class="benefit-icon">✓</div>
+                <h3>Get approved for impossible locations</h3>
+                <p>Hotels, rooftops, retail spaces, historic buildings. Silent operation means yes from venues that always say no to generators.</p>
+            </div>
+            <div class="benefit-card animate-in">
+                <div class="benefit-icon">🎯</div>
+                <h3>Protect the brand experience</h3>
+                <p>Your activation isn't competing with generator noise. Guests hear the music, the message, the moment—not a diesel engine.</p>
+            </div>
+            <div class="benefit-card animate-in">
+                <div class="benefit-icon">⚡</div>
+                <h3>Deploy faster, wrap faster</h3>
+                <p>Under 5 minutes to power on. No fuel logistics, no fire watch, no generator babysitting. Your crew focuses on the experience, not the power.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="problem" id="problem">
+        <h2>What city services deal with today</h2>
+        <p class="intro">Generator drama kills brand moments and limits creative possibilities</p>
+        <div class="problem-grid">
+            <div class="problem-item">
+                <h3>Venues say no</h3>
+                <p>Noise, exhaust, insurance, fire code. Premium locations reject generators, limiting your creative options.</p>
+            </div>
+            <div class="problem-item">
+                <h3>Budget drain</h3>
+                <p>Generator rentals ($500+/day) plus fuel, permits, and fire watch eat into activation budgets.</p>
+            </div>
+            <div class="problem-item">
+                <h3>Noise ruins moments</h3>
+                <p>Generator noise competes with your activation, ruins video content, and damages the brand experience.</p>
+            </div>
+            <div class="problem-item">
+                <h3>Setup complexity</h3>
+                <p>Generator logistics reduce time for actual experience design and execution.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section class="solution" id="solution">
+        <h2>How LAB SEVEN solves it</h2>
+        <div class="solution-grid">
+            <div class="solution-item">
+                <h3>Silent approval</h3>
+                <p>Zero emissions, zero noise. Indoor-approved power opens previously impossible venues. Say yes to rooftop activations, hotel ballrooms, historic buildings, and retail spaces that prohibit generators.</p>
+            </div>
+            <div class="solution-item">
+                <h3>True cost savings</h3>
+                <p>Cost-competitive with generators once you factor in permits, fuel, fire watch, and crew time. Transparent rental pricing includes delivery, pickup, and backup generator.</p>
+            </div>
+            <div class="solution-item">
+                <h3>White-glove service</h3>
+                <p>Anytime Rentals handles delivery, placement, and pickup. You don't touch it. Your crew focuses on creating experiences, not managing power logistics.</p>
+            </div>
+            <div class="solution-item">
+                <h3>Real power</h3>
+                <p>60A Bates out plus three 20A Edison circuits. Power full AV rigs, theatrical lighting, interactive elements, and charging stations simultaneously.</p>
+            </div>
+        </div>
+
+        <div class="quick-specs">
+            <h3>Power for full activations</h3>
+            <div class="specs-list">
+                <div class="spec-item">
+                    <span class="spec-value">10kW</span>
+                    <span class="spec-label">Continuous output</span>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-value">8+ hrs</span>
+                    <span class="spec-label">Typical runtime</span>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-value">1 hour</span>
+                    <span class="spec-label">Fast charging</span>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-value">Indoor</span>
+                    <span class="spec-label">Venue approved</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Journey Section -->
+    <section class="journey" id="journey">
+        <h2>A day on activation</h2>
+        <div class="journey-comparison">
+            <div class="journey-column without">
+                <h3>Without LAB SEVEN</h3>
+                <p>Day starts with 2-hour generator setup and fire marshal inspection. Mid-event noise complaint forces volume adjustments. Brand moment compromised. Wrap delayed by fuel spillage cleanup. Venue owner receives complaints from neighboring businesses.</p>
+            </div>
+            <div class="journey-column with">
+                <h3>With LAB SEVEN</h3>
+                <p>Battery delivered and placed before crew call. Silent all day. Perfect audio for branded content capture. After event ends, cart powers down team while strike happens around it. Pickup scheduled for next morning. Zero complaints, venue asks about your next activation.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Study -->
+    <section class="case-study" id="case-study">
+        <div class="case-study-content">
+            <h2>Real activation, real results</h2>
+            <div class="case-study-box">
+                <p>Luxury automotive brand launch in downtown hotel ballroom. Venue prohibited generators due to exhaust and noise policies.</p>
+                <p>LAB SEVEN powered full LED wall, theatrical lighting package, and DJ booth for 6-hour evening event.</p>
+                <p><strong>Results:</strong> Zero venue complaints. Zero delays. Total cost lower than generator rental plus special permits. Event coordinator approved venue for future activations.</p>
+                <p class="case-study-quote">"First time we've powered a hotel ballroom event without generator restrictions killing the creative."</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq">
+        <h2>Frequently asked questions</h2>
+        <div class="faq-list">
+            <div class="faq-item">
+                <h3>Can it power LED walls and video playback?</h3>
+                <p>Yes. 10kW continuous output handles full LED walls, video playback systems, theatrical lighting, and audio simultaneously.</p>
+            </div>
+            <div class="faq-item">
+                <h3>How long between charges?</h3>
+                <p>8-12 hours typical runtime for activations. Varies based on load. Fast charging (1 hour with 60A) enables battery rotation for multi-day events.</p>
+            </div>
+            <div class="faq-item">
+                <h3>What if we need more power than one unit?</h3>
+                <p>Stack multiple LAB SEVEN units or add generator backup placed away from guest areas. We help you calculate power needs based on your activation specs.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Do we need special insurance?</h3>
+                <p>No. LFP chemistry is insurance-friendly and meets venue safety requirements. Easier insurance approval than generators.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Can we use it indoors?</h3>
+                <p>Yes. Zero emissions make it safe for occupied indoor spaces including hotel ballrooms, retail environments, and galleries.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta" id="contact">
+        <h2>Ready to power your next activation?</h2>
+        <p>Contact Labrador Field Systems or book a demo to see LAB SEVEN in action</p>
+        <div class="cta-buttons">
+            <a href="mailto:contact@labradorfieldystems.com" class="btn btn-primary">Contact Labrador</a>
+            <a href="#" class="btn btn-secondary">Book a Site Visit</a>
+        </div>
+        <div class="contact-info">
+            <p>Available through Anytime Production Equipment Rentals</p>
+            <p>818.394.9675 | rentals@anytimerentals.com</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Labrador Field Systems. All rights reserved.</p>
+        <p><a href="index.html">Return to main site</a></p>
+    </footer>
+
+    <script>
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // Sticky nav
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 10) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+
+        // Animate on scroll
+        const observerOptions = {
+            threshold: 0.15,
+            rootMargin: '0px 0px -80px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.animation = 'fadeIn 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.animate-in').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
