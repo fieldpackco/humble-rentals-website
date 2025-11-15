@@ -1,6 +1,7 @@
 [build]
   base = "lab"
   publish = "."
+  command = ""
 
 [[headers]]
   for = "/*"
