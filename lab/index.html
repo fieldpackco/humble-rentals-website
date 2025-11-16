@@ -360,31 +360,8 @@
             });
         });
 
-        // Enhanced Intersection Observer for animations
-        const observerOptions = {
-            threshold: 0.15,
-            rootMargin: '0px 0px -80px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach((entry, index) => {
-                if (entry.isIntersecting) {
-                    setTimeout(() => {
-                        entry.target.style.opacity = '1';
-                        if (entry.target.classList.contains('animate-slide')) {
-                            entry.target.style.animation = 'slideIn 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards';
-                        } else {
-                            entry.target.style.animation = 'fadeIn 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards';
-                        }
-                    }, index * 100);
-                }
-            });
-        }, observerOptions);
-
-        // Observe all animated elements
-        document.querySelectorAll('.animate-in, .animate-slide').forEach(el => {
-            observer.observe(el);
-        });
+        // Animated elements now use continuous CSS gradient animation
+        // No observer needed - gradient animates automatically
 
         // Parallax effects
         window.addEventListener('scroll', () => {
@@ -412,16 +389,7 @@
             }
         });
 
-        // Loading animation with staggered delay
-        window.addEventListener('load', () => {
-            const heroElements = document.querySelectorAll('.hero .animate-in');
-            heroElements.forEach((el, index) => {
-                setTimeout(() => {
-                    el.style.opacity = '1';
-                    el.style.animation = 'fadeIn 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards';
-                }, index * 150);
-            });
-        });
+        // Elements with .animate-in class automatically have gradient animation from CSS
 
         // Add smooth scroll behavior
         document.documentElement.style.scrollBehavior = 'smooth';
@@ -440,24 +408,6 @@
             });
         });
 
-        // Add typing effect to hero tagline
-        const tagline = document.querySelector('.hero .tagline');
-        if (tagline) {
-            const text = tagline.textContent;
-            tagline.textContent = '';
-            tagline.style.opacity = '1';
-            
-            let i = 0;
-            const typeWriter = () => {
-                if (i < text.length) {
-                    tagline.textContent += text.charAt(i);
-                    i++;
-                    setTimeout(typeWriter, 50);
-                }
-            };
-            
-            setTimeout(typeWriter, 800);
-        }
     </script>
 </body>
 </html>

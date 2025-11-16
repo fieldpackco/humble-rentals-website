@@ -224,24 +224,7 @@
             }
         });
 
-        // Animate on scroll
-        const observerOptions = {
-            threshold: 0.15,
-            rootMargin: '0px 0px -80px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.animation = 'fadeIn 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards';
-                }
-            });
-        }, observerOptions);
-
-        document.querySelectorAll('.animate-in').forEach(el => {
-            observer.observe(el);
-        });
+        // Elements with .animate-in class automatically have gradient animation from CSS
     </script>
 </body>
 </html>
