@@ -254,18 +254,6 @@ h1, h2, h3, h4, h5, h6 {
    ANIMATIONS
    ============================================ */
 
-@keyframes gradientShift {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-}
-
 @keyframes slideIn {
     from {
         opacity: 0;
@@ -289,16 +277,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .animate-in {
-    background: linear-gradient(
-        90deg,
-        rgba(248, 249, 250, 0) 0%,
-        rgba(255, 107, 53, 0.03) 25%,
-        rgba(244, 185, 66, 0.04) 50%,
-        rgba(255, 107, 53, 0.03) 75%,
-        rgba(248, 249, 250, 0) 100%
-    );
-    background-size: 200% 100%;
-    animation: gradientShift 8s ease-in-out infinite;
+    /* No animation - class kept for potential future use */
 }
 
 .animate-slide {
