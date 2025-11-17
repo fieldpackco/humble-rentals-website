@@ -1,17 +1,69 @@
-# LAB SEVEN - Premium Battery Marketing Website
+# LAB SEVEN Website
 
 [![Repository](https://img.shields.io/badge/Repository-GitHub-blue)](https://github.com/runchal/lab)
 [![License](https://img.shields.io/badge/License-MIT-green)](#)
 [![Website](https://img.shields.io/badge/Website-Live-orange)](#)
 
-> Premium marketing website for LAB SEVEN battery systems by Labrador Field Systems, featuring Apple-quality design with integrated content management system.
+> Professional marketing website for LAB SEVEN battery systems by Labrador Field Systems - content-driven static site with build system and validation.
+
+## Quick Start
+
+### For Content Editors
+
+See **[Content Editing Guide](docs/CONTENT_EDITING.md)** - update website content without touching code.
+
+**Quick workflow:**
+1. Edit JSON files in `content/pages/` or `content/global/`
+2. Validate: `npm run validate`
+3. Preview: `npm run dev`
+4. Commit and push to deploy
+
+### For Developers
+
+**Setup:**
+```bash
+npm install
+```
+
+**Development:**
+```bash
+npm run dev        # Start dev server with live reload (http://localhost:3000)
+```
+
+**Build:**
+```bash
+npm run build      # Build site to dist/
+```
+
+**Validate:**
+```bash
+npm run validate   # Check all content against JSON schemas
+```
+
+**Clean:**
+```bash
+npm run clean      # Remove dist/ directory
+```
+
+## Architecture
+
+Content-driven static site with professional build system:
+
+- **Content:** JSON files in `content/` (pages and global shared content)
+- **Templates:** Handlebars templates in `templates/` (components and page layouts)
+- **Styles:** Modular CSS in `css/` with PostCSS processing
+- **Schemas:** JSON Schema validation ensures content quality
+- **Build:** Node.js compiles templates + content → optimized static HTML
+- **Dev Server:** Live reload development environment with auto-rebuild
+- **Deploy:** Netlify builds and hosts with automatic deployments
+
+See [Architecture Plan](docs/plans/2025-11-15-robust-site-architecture.md) for complete technical details.
 
 ## 🎯 Project Overview
 
-This repository contains a sophisticated marketing website for the LAB SEVEN professional battery system, designed for film and video production crews. The project features two versions:
+This repository contains a sophisticated marketing website for the LAB SEVEN professional battery system, designed for film and video production crews.
 
-1. **Static Website** - High-performance, production-ready marketing site
-2. **Editable Website** - Same design with integrated content management system
+**Current Status:** 7 audience-specific landing pages using content-driven architecture with JSON content management and Handlebars templating
 
 ### Key Features
 
@@ -38,14 +90,33 @@ This repository contains a sophisticated marketing website for the LAB SEVEN pro
 
 ```
 lab/
-├── README.md                           # This file
-├── lab-seven-battery.html             # Static marketing website (1,603 lines)
-├── lab-seven-battery-editable.html    # Editable version with CMS (926+ lines)
-├── macbook-air-replica.html           # Apple reference implementation
-├── content-editor-guide.md            # Content editing instructions
-├── TODO.md                            # Project task tracking
-├── history.md                         # Complete session documentation
-└── CLAUDE.md                          # Technical architecture guide
+├── README.md                          # This file
+├── package.json                       # Dependencies and build scripts
+├── content/                          # All website content (EDIT THESE)
+│   ├── pages/                        #   Individual page content
+│   │   ├── experience-agencies.json  #   Landing page for experience agencies
+│   │   ├── street-festivals.json     #   Landing page for street festivals
+│   │   └── ...                       #   (7 total audience-specific pages)
+│   ├── global/                       #   Shared across all pages
+│   │   ├── navigation.json           #   Site navigation
+│   │   └── footer.json               #   Site footer
+│   └── schemas/                      #   JSON Schema validation (DO NOT EDIT)
+├── templates/                        # Handlebars templates (DO NOT EDIT)
+│   ├── pages/                        #   Page layouts
+│   ├── components/                   #   Reusable components
+│   └── layouts/                      #   Base layouts
+├── css/                              # Modular stylesheets (DO NOT EDIT)
+├── src/                              # Build system (DO NOT EDIT)
+│   ├── build.js                      #   Main build script
+│   ├── dev-server.js                 #   Development server
+│   └── validate.js                   #   Content validation
+├── dist/                             # Built site (auto-generated)
+├── docs/                             # Documentation
+│   ├── CONTENT_EDITING.md            #   Content editing guide
+│   └── plans/                        #   Architecture plans
+├── TODO.md                           # Project task tracking
+├── history.md                        # Complete session documentation
+└── CLAUDE.md                         # Technical architecture guide
 ```
 
 ## 💻 Website Features
@@ -180,10 +251,23 @@ See [`content-editor-guide.md`](content-editor-guide.md) for detailed instructio
 
 ## 📚 Documentation
 
-- **[Content Editor Guide](content-editor-guide.md)** - How to edit website content
+### For Content Editors
+- **[Content Editing Guide](docs/CONTENT_EDITING.md)** - Complete guide to editing JSON content safely
+  - Section-by-section content structure
+  - Validation and preview workflow
+  - Common tasks and troubleshooting
+  - JSON editing tips and best practices
+
+### For Developers
+- **[Architecture Plan](docs/plans/2025-11-15-robust-site-architecture.md)** - Complete build system design
+- **[Technical Guide](CLAUDE.md)** - Development reference and code organization
 - **[TODO List](TODO.md)** - Project tasks and priorities
 - **[Session History](history.md)** - Complete development documentation
-- **[Technical Guide](CLAUDE.md)** - Architecture and development reference
+
+### Quick Reference
+- npm scripts documented in "Quick Start for Developers" above
+- JSON schemas in `content/schemas/` define validation rules
+- Content structure examples in `content/pages/experience-agencies.json`
 
 ## 🤝 Contributing
 
