@@ -1,0 +1,64 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": ["meta", "hero"],
+  "properties": {
+    "meta": {
+      "type": "object",
+      "required": ["title", "description"],
+      "properties": {
+        "title": {
+          "type": "string",
+          "minLength": 10,
+          "maxLength": 70
+        },
+        "description": {
+          "type": "string",
+          "minLength": 50,
+          "maxLength": 160
+        }
+      }
+    },
+    "hero": {
+      "$ref": "hero.schema.json"
+    },
+    "benefits": {
+      "$ref": "benefits.schema.json"
+    },
+    "problem": {
+      "type": "object",
+      "properties": {
+        "title": { "type": "string" },
+        "intro": { "type": "string" },
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["title", "description"],
+            "properties": {
+              "title": { "type": "string" },
+              "description": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+    "solution": {
+      "type": "object",
+      "properties": {
+        "title": { "type": "string" },
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["title", "description"],
+            "properties": {
+              "title": { "type": "string" },
+              "description": { "type": "string" }
+            }
+          }
+        }
+      }
+    }
+  }
+}

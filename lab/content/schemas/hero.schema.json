@@ -1,0 +1,39 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": ["title", "tagline", "cta"],
+  "properties": {
+    "title": {
+      "type": "string",
+      "minLength": 10,
+      "maxLength": 100
+    },
+    "tagline": {
+      "type": "string",
+      "minLength": 20,
+      "maxLength": 300
+    },
+    "cta": {
+      "type": "object",
+      "required": ["primary", "secondary"],
+      "properties": {
+        "primary": {
+          "type": "object",
+          "required": ["text", "href"],
+          "properties": {
+            "text": { "type": "string" },
+            "href": { "type": "string" }
+          }
+        },
+        "secondary": {
+          "type": "object",
+          "required": ["text", "href"],
+          "properties": {
+            "text": { "type": "string" },
+            "href": { "type": "string" }
+          }
+        }
+      }
+    }
+  }
+}
