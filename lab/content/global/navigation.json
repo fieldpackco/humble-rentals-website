@@ -1,0 +1,10 @@
+{
+  "logo": "LABRADOR",
+  "links": [
+    { "text": "Home", "href": "index.html" },
+    { "text": "Benefits", "href": "#benefits" },
+    { "text": "Solution", "href": "#solution" },
+    { "text": "Case Study", "href": "#case-study" },
+    { "text": "FAQ", "href": "#faq" }
+  ]
+}

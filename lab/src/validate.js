@@ -11,12 +11,15 @@ const ajv = new Ajv({ allErrors: true, verbose: true });
 const schemas = {};
 const schemaFiles = fs.readdirSync(SCHEMAS_DIR);
 
+// First pass: load all schemas with both filename and ID
 schemaFiles.forEach(file => {
   const schemaPath = path.join(SCHEMAS_DIR, file);
   const schema = JSON.parse(fs.readFileSync(schemaPath, 'utf8'));
   const schemaId = file.replace('.schema.json', '');
   schemas[schemaId] = schema;
+  // Add schema with both the short ID and the full filename as reference
   ajv.addSchema(schema, schemaId);
+  ajv.addSchema(schema, file);
 });
 
 console.log(`Loaded ${Object.keys(schemas).length} schemas`);
