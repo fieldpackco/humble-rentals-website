@@ -1,0 +1,15 @@
+<section class="final-cta" id="contact">
+    <h2>{{title}}</h2>
+    <p class="cta-description">{{description}}</p>
+    <div class="cta-buttons">
+        <a href="{{cta.primary.href}}" class="btn btn-primary">{{cta.primary.text}}</a>
+        <a href="{{cta.secondary.href}}" class="btn btn-secondary">{{cta.secondary.text}}</a>
+    </div>
+    {{#if contactInfo}}
+    <div class="contact-info">
+        <p>{{contactInfo.company}}</p>
+        <p>{{contactInfo.phone}}</p>
+        <p><a href="mailto:{{contactInfo.email}}">{{contactInfo.email}}</a></p>
+    </div>
+    {{/if}}
+</section>

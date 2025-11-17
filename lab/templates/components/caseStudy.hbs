@@ -1,0 +1,11 @@
+<section class="case-study" id="case-study">
+    <h2>{{title}}</h2>
+    <div class="case-study-content">
+        {{#each content}}
+        <p>{{this}}</p>
+        {{/each}}
+    </div>
+    {{#if quote}}
+    <blockquote class="case-study-quote">{{quote}}</blockquote>
+    {{/if}}
+</section>
