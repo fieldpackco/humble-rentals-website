@@ -78,28 +78,28 @@
         "title": "Real power",
         "description": "60A Bates out plus three 20A Edison circuits. Power full AV rigs, theatrical lighting, interactive elements, and charging stations simultaneously."
       }
-    ],
-    "specs": {
-      "title": "Power for full activations",
-      "items": [
-        {
-          "value": "10kW",
-          "label": "Continuous output"
-        },
-        {
-          "value": "8+ hrs",
-          "label": "Typical runtime"
-        },
-        {
-          "value": "1 hour",
-          "label": "Fast charging"
-        },
-        {
-          "value": "Indoor",
-          "label": "Venue approved"
-        }
-      ]
-    }
+    ]
+  },
+  "specs": {
+    "title": "Power for full activations",
+    "items": [
+      {
+        "value": "10kW",
+        "label": "Continuous output"
+      },
+      {
+        "value": "8+ hrs",
+        "label": "Typical runtime"
+      },
+      {
+        "value": "1 hour",
+        "label": "Fast charging"
+      },
+      {
+        "value": "Indoor",
+        "label": "Venue approved"
+      }
+    ]
   },
   "journey": {
     "title": "A day on activation",

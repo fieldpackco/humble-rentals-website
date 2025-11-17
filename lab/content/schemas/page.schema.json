@@ -57,21 +57,21 @@
               "description": { "type": "string" }
             }
           }
-        },
-        "specs": {
-          "type": "object",
-          "properties": {
-            "title": { "type": "string" },
-            "items": {
-              "type": "array",
-              "items": {
-                "type": "object",
-                "required": ["value", "label"],
-                "properties": {
-                  "value": { "type": "string" },
-                  "label": { "type": "string" }
-                }
-              }
+        }
+      }
+    },
+    "specs": {
+      "type": "object",
+      "properties": {
+        "title": { "type": "string" },
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["value", "label"],
+            "properties": {
+              "value": { "type": "string" },
+              "label": { "type": "string" }
             }
           }
         }
