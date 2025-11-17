@@ -1,0 +1,149 @@
+{
+  "meta": {
+    "title": "LAB SEVEN for Street Festivals | Labrador Field Systems",
+    "description": "Silent, scalable battery power for street festivals. No noise complaints, no fuel trucks, no permit battles."
+  },
+  "hero": {
+    "title": "Power your festival without the generator headache",
+    "tagline": "Silent, scalable battery power for stages, vendors, and attractions. No noise complaints, no fuel trucks, no permit battles.",
+    "cta": {
+      "primary": {
+        "text": "Contact Labrador",
+        "href": "#contact"
+      },
+      "secondary": {
+        "text": "Book a Demo",
+        "href": "#contact"
+      }
+    }
+  },
+  "benefits": {
+    "title": "Built for community events",
+    "items": [
+      {
+        "icon": "🎪",
+        "title": "Scale power across the festival",
+        "description": "One unit per stage, vendor row, or attraction zone. No massive generator infrastructure, no cable runs across public streets."
+      },
+      {
+        "icon": "🤝",
+        "title": "Zero noise impact on neighbors",
+        "description": "Restaurants, shops, and residents don't hear your power source. Better community relations, easier annual permit renewals."
+      },
+      {
+        "icon": "✅",
+        "title": "Simplified logistics and safety",
+        "description": "No fuel deliveries during the event, no hot generators in public spaces, no fire watch requirements. Safer for crowds and volunteers."
+      }
+    ]
+  },
+  "problem": {
+    "title": "What festival organizers deal with today",
+    "intro": "Generator noise and logistics damage community relationships",
+    "items": [
+      {
+        "title": "Noise complaints",
+        "description": "Generators create complaints from surrounding businesses and residents, threatening future permits."
+      },
+      {
+        "title": "Fuel logistics nightmare",
+        "description": "Delivery and storage during events creates safety and access issues for vendors and attendees."
+      },
+      {
+        "title": "Health code conflicts",
+        "description": "Generator exhaust conflicts with food vendor requirements and crowd comfort."
+      },
+      {
+        "title": "Multiplying costs",
+        "description": "Multi-block festivals require generator every block. Costs multiply quickly."
+      }
+    ]
+  },
+  "solution": {
+    "title": "How LAB SEVEN solves it",
+    "items": [
+      {
+        "title": "Preserve goodwill",
+        "description": "Silent operation preserves neighborhood goodwill and simplifies future permitting. First year without complaints means easier approvals next year."
+      },
+      {
+        "title": "Distributed power",
+        "description": "Multiple units distributed across festival footprint—no central generator plant. Each zone gets dedicated power without noise or exhaust."
+      },
+      {
+        "title": "No refueling chaos",
+        "description": "Zero refueling means no fuel trucks navigating festival crowds. Safer for attendees, volunteers, and vendors."
+      },
+      {
+        "title": "10kW per zone",
+        "description": "Each unit handles stage PA plus lighting, or 8-12 vendor booths. Scale up or down based on your festival footprint."
+      }
+    ]
+  },
+  "journey": {
+    "title": "A festival weekend",
+    "comparison": {
+      "without": {
+        "title": "Without LAB SEVEN",
+        "description": "Friday night: Generator trucks arrive, block street access for setup. Saturday morning: First fuel delivery interrupts vendor setup. Midday: Noise complaints from restaurants about lunch patio experience. Evening: Second refueling requires closing vendor row. Sunday: Generator removal delays street reopening for Monday commute."
+      },
+      "with": {
+        "title": "With LAB SEVEN",
+        "description": "Friday afternoon: LAB SEVEN units placed at each power zone before street closure. Fully charged, ready to go. All weekend: Silent operation, zero complaints. Vendors and stages powered seamlessly. Sunday evening: Festival wraps, units power down. Monday morning: Anytime picks up batteries, street reopens on schedule."
+      }
+    }
+  },
+  "caseStudy": {
+    "title": "Real festival, real results",
+    "content": [
+      "Annual neighborhood street fair, 3-block footprint.",
+      "Previous years: 2 large generators, average 8 noise complaints per year, $1,200 in generator rentals plus fuel.",
+      "With LAB SEVEN: 4 units distributed across festival. Zero noise complaints. Local restaurants reported better patio sales."
+    ],
+    "quote": "First year in a decade without angry neighbors at the city council meeting."
+  },
+  "faq": {
+    "title": "Frequently asked questions",
+    "items": [
+      {
+        "question": "How many units for a typical street festival?",
+        "answer": "One unit per stage or power zone. We help you calculate based on your festival footprint, vendor count, and stage requirements."
+      },
+      {
+        "question": "Can we charge them overnight between festival days?",
+        "answer": "Yes. Standard outlet overnight charging, or swap for charged units. Anytime Rentals can handle charging service."
+      },
+      {
+        "question": "What if it rains?",
+        "answer": "Fully weather-rated for outdoor use. Rain, heat, cold—LAB SEVEN keeps running."
+      },
+      {
+        "question": "Can we use them for food trucks and concessions?",
+        "answer": "Yes. Clean power safe for all food vendor equipment. Zero exhaust meets health code requirements."
+      },
+      {
+        "question": "What about backup power if something fails?",
+        "answer": "Anytime includes generator backup for critical loads, placed away from attendee areas."
+      }
+    ]
+  },
+  "finalCta": {
+    "title": "Ready to power your next festival?",
+    "description": "Contact Labrador Field Systems or book a demo",
+    "cta": {
+      "primary": {
+        "text": "Contact Labrador",
+        "href": "mailto:contact@labradorfieldystems.com"
+      },
+      "secondary": {
+        "text": "Book a Site Visit",
+        "href": "#"
+      }
+    },
+    "contactInfo": {
+      "company": "Available through Anytime Production Equipment Rentals",
+      "phone": "818.394.9675",
+      "email": "rentals@anytimerentals.com"
+    }
+  }
+}
