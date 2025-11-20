@@ -63,7 +63,34 @@ See [Architecture Plan](docs/plans/2025-11-15-robust-site-architecture.md) for c
 
 This repository contains a sophisticated marketing website for the LAB SEVEN professional battery system, designed for film and video production crews.
 
-**Current Status:** 7 audience-specific landing pages using content-driven architecture with JSON content management and Handlebars templating
+**Current Status:** Complete multi-page website with 15 total pages using content-driven architecture with JSON content management and Handlebars templating
+
+### Site Structure
+
+The website features a dropdown navigation system with three main sections:
+
+**Solutions** (7 persona-focused landing pages)
+- Experience Agencies
+- Production Managers
+- Gaffers & Lighting
+- Location Managers
+- City Services & Permits
+- Public Venues & Events
+- Street Festivals
+
+**Product** (3 informational pages)
+- Specifications
+- Features
+- Gallery
+
+**Rental** (2 pages)
+- Pricing
+- How It Works
+
+**Additional Pages**
+- Home (index.html) - Hub page with overview and preview sections
+- Roadmap - Future products
+- Contact - Contact information
 
 ### Key Features
 
@@ -77,12 +104,15 @@ This repository contains a sophisticated marketing website for the LAB SEVEN pro
 ## 🚀 Features
 
 ### Production-Ready System
-- **7 Audience-Specific Landing Pages** - Experience agencies, gaffers, location managers, production managers, city services, public venues, street festivals
+- **15 Page Website** - Complete site with dropdown navigation (Solutions, Product, Rental menus)
+- **7 Persona Landing Pages** - Experience agencies, gaffers, location managers, production managers, city services, public venues, street festivals
+- **Dedicated Section Pages** - Specifications, features, gallery, pricing, how-it-works, roadmap, contact
+- **Hub Homepage** - Overview page with preview sections linking to deeper content
 - **JSON Content Management** - Edit content without touching code
 - **Automated Validation** - JSON Schema ensures content quality
 - **Live Reload Development** - Changes appear instantly during development
 - **Professional Build Pipeline** - Node.js + Handlebars + PostCSS
-- **Netlify Deployment** - Automatic builds and hosting
+- **Netlify Deployment** - Automatic builds and hosting with clean URLs
 
 ## 📁 Project Structure
 
@@ -90,25 +120,48 @@ This repository contains a sophisticated marketing website for the LAB SEVEN pro
 lab/
 ├── README.md                          # This file
 ├── package.json                       # Dependencies and build scripts
+├── netlify.toml                       # Netlify deployment config with redirects
 ├── content/                          # All website content (EDIT THESE)
-│   ├── pages/                        #   Individual page content
-│   │   ├── experience-agencies.json  #   Landing page for experience agencies
-│   │   ├── street-festivals.json     #   Landing page for street festivals
-│   │   └── ...                       #   (7 total audience-specific pages)
+│   ├── pages/                        #   Individual page content (15 pages)
+│   │   ├── home.json                 #   Homepage (builds to index.html)
+│   │   ├── experience-agencies.json  #   Solutions: Experience agencies
+│   │   ├── production-managers.json  #   Solutions: Production managers
+│   │   ├── gaffers.json              #   Solutions: Gaffers & lighting
+│   │   ├── location-managers.json    #   Solutions: Location managers
+│   │   ├── city-services.json        #   Solutions: City services & permits
+│   │   ├── public-venues.json        #   Solutions: Public venues & events
+│   │   ├── street-festivals.json     #   Solutions: Street festivals
+│   │   ├── specifications.json       #   Product: Technical specs
+│   │   ├── features.json             #   Product: Key features
+│   │   ├── gallery.json              #   Product: Image gallery
+│   │   ├── pricing.json              #   Rental: Pricing information
+│   │   ├── how-it-works.json         #   Rental: Process & workflow
+│   │   ├── roadmap.json              #   Future products
+│   │   └── contact.json              #   Contact information
 │   ├── global/                       #   Shared across all pages
-│   │   ├── navigation.json           #   Site navigation
+│   │   ├── navigation.json           #   Dropdown navigation menus
 │   │   └── footer.json               #   Site footer
 │   └── schemas/                      #   JSON Schema validation (DO NOT EDIT)
+│       ├── page.schema.json          #   Schema for most pages
+│       └── home.schema.json          #   Special schema for homepage
 ├── templates/                        # Handlebars templates (DO NOT EDIT)
 │   ├── pages/                        #   Page layouts
+│   │   ├── home-page.hbs             #   Homepage template
+│   │   └── landing-page.hbs          #   Standard page template
 │   ├── components/                   #   Reusable components
+│   │   ├── nav-with-dropdowns.hbs    #   Dropdown navigation
+│   │   └── ...                       #   Other components
 │   └── layouts/                      #   Base layouts
+│       └── base.hbs                  #   Base HTML layout
 ├── css/                              # Modular stylesheets (DO NOT EDIT)
+│   ├── base.css                      #   CSS variables & base styles
+│   ├── components.css                #   Component styles + dropdowns
+│   └── ...                           #   Other stylesheets
 ├── src/                              # Build system (DO NOT EDIT)
 │   ├── build.js                      #   Main build script
 │   ├── dev-server.js                 #   Development server
 │   └── validate.js                   #   Content validation
-├── dist/                             # Built site (auto-generated)
+├── *.html                            # Generated HTML (auto-built, not tracked)
 ├── docs/                             # Documentation
 │   ├── CONTENT_EDITING.md            #   Content editing guide
 │   └── plans/                        #   Architecture plans
@@ -228,19 +281,28 @@ dist/            # Generated output (never edit directly)
 ## 📈 Migration Results
 
 ### Completed (November 2025)
-- ✅ 7 landing pages migrated to build system
-- ✅ JSON content structure with validation
+- ✅ 15 pages with complete site navigation structure
+- ✅ Dropdown navigation menus (Solutions, Product, Rental)
+- ✅ Homepage hub with preview sections
+- ✅ 7 persona landing pages migrated to build system
+- ✅ 8 dedicated section pages (specs, features, gallery, etc.)
+- ✅ JSON content structure with dual schema system
 - ✅ Reusable component library
 - ✅ Development server with live reload
-- ✅ Automated deployment pipeline
+- ✅ Automated deployment pipeline with clean URLs
 
 ### Benefits Achieved
 - **83% faster** content updates (10-15 min → 2-3 min)
 - **100% validation** coverage for content
 - **Zero duplicate** code across pages
 - **Consistent design** enforced by templates
+- **Professional navigation** with dropdown menus
+- **Clear information architecture** with logical page hierarchy
 
-See **[MIGRATION.md](docs/MIGRATION.md)** for complete migration details.
+### Special Features
+- **Home.json → index.html**: The homepage is built from `content/pages/home.json` but outputs as `index.html`
+- **Dual Schema System**: Homepage uses `home.schema.json` for hub-style content; other pages use `page.schema.json`
+- **Clean URLs**: Netlify redirects enable extensionless URLs (e.g., `/specifications` serves `specifications.html`)
 
 ## 📚 Documentation
 

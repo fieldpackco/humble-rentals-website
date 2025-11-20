@@ -10,20 +10,28 @@ This guide will walk you through safely editing content, validating your changes
 
 ```
 content/
-├── pages/              # Individual page content
-│   ├── index.json
-│   ├── experience-agencies.json
-│   ├── street-festivals.json
-│   ├── public-venues.json
-│   ├── location-managers.json
-│   ├── production-managers.json
-│   ├── gaffers.json
-│   └── city-services.json
+├── pages/              # Individual page content (15 total pages)
+│   ├── home.json                # Homepage (builds to index.html)
+│   ├── experience-agencies.json # Solutions menu
+│   ├── production-managers.json # Solutions menu
+│   ├── gaffers.json             # Solutions menu
+│   ├── location-managers.json   # Solutions menu
+│   ├── city-services.json       # Solutions menu
+│   ├── public-venues.json       # Solutions menu
+│   ├── street-festivals.json    # Solutions menu
+│   ├── specifications.json      # Product menu
+│   ├── features.json            # Product menu
+│   ├── gallery.json             # Product menu
+│   ├── pricing.json             # Rental menu
+│   ├── how-it-works.json        # Rental menu
+│   ├── roadmap.json             # Top-level page
+│   └── contact.json             # Top-level page
 ├── global/            # Shared across all pages
-│   ├── navigation.json
+│   ├── navigation.json          # Dropdown navigation structure
 │   └── footer.json
 └── schemas/           # Content validation rules (DO NOT EDIT)
-    ├── page.schema.json
+    ├── page.schema.json         # Standard page schema
+    ├── home.schema.json         # Homepage-specific schema
     ├── hero.schema.json
     └── benefits.schema.json
 ```
@@ -40,14 +48,31 @@ content/
 ### 1. Find Your Page
 
 Open the appropriate JSON file in `content/pages/`:
-- Homepage: `index.json`
+
+**Homepage:**
+- Homepage: `home.json` (builds to `index.html`)
+
+**Solutions Menu (Persona Pages):**
 - Experience Agencies: `experience-agencies.json`
-- Street Festivals: `street-festivals.json`
-- Public Venues: `public-venues.json`
-- Location Managers: `location-managers.json`
 - Production Managers: `production-managers.json`
-- Gaffers: `gaffers.json`
-- City Services: `city-services.json`
+- Gaffers & Lighting: `gaffers.json`
+- Location Managers: `location-managers.json`
+- City Services & Permits: `city-services.json`
+- Public Venues & Events: `public-venues.json`
+- Street Festivals: `street-festivals.json`
+
+**Product Menu:**
+- Specifications: `specifications.json`
+- Features: `features.json`
+- Gallery: `gallery.json`
+
+**Rental Menu:**
+- Pricing: `pricing.json`
+- How It Works: `how-it-works.json`
+
+**Other Pages:**
+- Roadmap: `roadmap.json`
+- Contact: `contact.json`
 
 ### 2. Understanding Section Types
 
@@ -357,30 +382,78 @@ Netlify will automatically build and deploy your changes in ~2 minutes.
 
 Global content appears on every page (navigation and footer).
 
-### Navigation
+### Navigation with Dropdown Menus
 
 Edit `content/global/navigation.json`:
 
 ```json
 {
   "logo": "LABRADOR",
-  "links": [
-    { "text": "Home", "href": "index.html" },
-    { "text": "Experience Agencies", "href": "experience-agencies.html" },
-    { "text": "Benefits", "href": "#benefits" }
+  "menuItems": [
+    {
+      "label": "Solutions",
+      "dropdown": true,
+      "items": [
+        { "text": "Experience Agencies", "href": "/experience-agencies" },
+        { "text": "Production Managers", "href": "/production-managers" }
+      ]
+    },
+    {
+      "label": "Roadmap",
+      "href": "/roadmap"
+    }
   ]
 }
 ```
 
-**To add a new nav link:**
+**Navigation Structure:**
+
+There are two types of menu items:
+
+1. **Dropdown Menu** (like Solutions, Product, Rental):
 ```json
-{ "text": "New Page", "href": "new-page.html" }
+{
+  "label": "Solutions",
+  "dropdown": true,
+  "items": [
+    { "text": "Item Name", "href": "/page-url" }
+  ]
+}
+```
+
+2. **Simple Link** (like Roadmap, Contact):
+```json
+{
+  "label": "Roadmap",
+  "href": "/roadmap"
+}
+```
+
+**To add a new dropdown menu:**
+```json
+{
+  "label": "New Menu",
+  "dropdown": true,
+  "items": [
+    { "text": "First Option", "href": "/first-option" },
+    { "text": "Second Option", "href": "/second-option" }
+  ]
+}
+```
+
+**To add an item to an existing dropdown:**
+Find the dropdown menu (e.g., "Solutions") and add a new item to its `items` array:
+```json
+{
+  "text": "New Page",
+  "href": "/new-page"
+}
 ```
 
 **Link types:**
-- Same-page section: `"#section-id"` (e.g., `"#contact"`)
-- Different page: `"page-name.html"` (e.g., `"experience-agencies.html"`)
-- External site: Full URL (e.g., `"https://labradorfieldystems.com"`)
+- Use clean URLs: `/specifications` (not `/specifications.html`)
+- Same-page section: `#section-id` (e.g., `#contact`)
+- External site: Full URL (e.g., `https://labradorfieldystems.com`)
 
 ### Footer
 
@@ -563,22 +636,40 @@ Keep long text readable by breaking it into multiple lines in your editor, but r
    ```
 3. Validate and preview
 
-### Task: Change Navigation Links
+### Task: Add a Page to a Dropdown Menu
 
 1. Open `content/global/navigation.json`
-2. Edit the links array:
+2. Find the dropdown menu you want to edit (e.g., "Solutions")
+3. Add a new item to the `items` array:
    ```json
    {
-     "logo": "LABRADOR",
-     "links": [
-       { "text": "Home", "href": "index.html" },
-       { "text": "New Link", "href": "new-page.html" },
-       { "text": "Contact", "href": "#contact" }
+     "label": "Solutions",
+     "dropdown": true,
+     "items": [
+       { "text": "Experience Agencies", "href": "/experience-agencies" },
+       { "text": "New Solution Page", "href": "/new-solution" }
+     ]
+   }
+   ```
+4. Validate and preview
+5. **Note:** Navigation changes affect ALL pages
+
+### Task: Create a New Dropdown Menu
+
+1. Open `content/global/navigation.json`
+2. Add a new menu item to the `menuItems` array:
+   ```json
+   {
+     "label": "Resources",
+     "dropdown": true,
+     "items": [
+       { "text": "Case Studies", "href": "/case-studies" },
+       { "text": "Downloads", "href": "/downloads" }
      ]
    }
    ```
 3. Validate and preview
-4. **Note:** Navigation changes affect ALL pages
+4. **Note:** You'll also need to create the corresponding page JSON files
 
 ## Content Best Practices
 
@@ -740,31 +831,155 @@ If you run into issues:
 
 ## Advanced Topics
 
+### Understanding the Dual Schema System
+
+The website uses two different JSON schemas for validation:
+
+1. **page.schema.json** - Used by most pages (persona pages, specs, features, etc.)
+   - Enforces standard landing page structure
+   - Includes: meta, hero, benefits, problem, solution, specs, journey, caseStudy, faq, finalCta
+
+2. **home.schema.json** - Used only by `home.json`
+   - Enforces hub-style homepage structure
+   - Includes: meta, hero, overview, specsPreview, featuresPreview, solutionsPreview
+   - Different because homepage is a preview/hub page, not a deep-dive landing page
+
+**Why two schemas?**
+The homepage (`home.json` → `index.html`) serves a different purpose than other pages. It's a hub with preview sections that link to deeper content. Persona pages and section pages are full landing pages with complete information. The different schemas enforce the correct structure for each purpose.
+
 ### Creating a New Page
 
-To create a completely new landing page:
+To create a completely new page:
 
-1. **Create content file:**
-   ```bash
-   cp content/pages/experience-agencies.json content/pages/new-page.json
-   ```
+**Step 1: Create content file**
+```bash
+# Copy an existing page as a template
+cp content/pages/experience-agencies.json content/pages/new-page.json
+```
 
-2. **Edit the content:** Update all sections for your new audience
+**Step 2: Edit the content**
+Open `content/pages/new-page.json` and update all sections:
+- Update `meta.title` and `meta.description` for SEO
+- Change `hero` content to match your new page's purpose
+- Update all sections (benefits, problem, solution, etc.)
+- Ensure all text is unique to the new page
 
-3. **Create page template:**
-   ```bash
-   cp templates/pages/experience-agencies.hbs templates/pages/new-page.hbs
-   ```
+**Step 3: Validate your content**
+```bash
+npm run validate
+```
+This ensures your JSON structure is correct.
 
-4. **Add to navigation:** Update `content/global/navigation.json`
+**Step 4: Add to navigation**
 
-5. **Validate and build:**
-   ```bash
-   npm run validate
-   npm run build
-   ```
+If your page should appear in a dropdown menu, edit `content/global/navigation.json`:
 
-6. **Test locally:** `npm run dev`
+```json
+{
+  "label": "Solutions",
+  "dropdown": true,
+  "items": [
+    { "text": "Experience Agencies", "href": "/experience-agencies" },
+    { "text": "Your New Page", "href": "/new-page" }
+  ]
+}
+```
+
+If it's a standalone top-level page:
+```json
+{
+  "label": "New Page",
+  "href": "/new-page"
+}
+```
+
+**Step 5: Add Netlify redirect (optional)**
+
+If you want clean URLs (recommended), add a redirect to `netlify.toml`:
+
+```toml
+[[redirects]]
+  from = "/new-page"
+  to = "/new-page.html"
+  status = 200
+```
+
+**Step 6: Build and test**
+```bash
+npm run build    # Build the site
+npm run dev      # Preview locally
+```
+
+**Step 7: Deploy**
+```bash
+git add content/pages/new-page.json content/global/navigation.json netlify.toml
+git commit -m "feat: add new-page"
+git push origin main
+```
+
+### Adding New Pages to Dropdown Menus
+
+**To add to existing dropdown (e.g., Solutions menu):**
+
+1. Create your page content JSON file (see "Creating a New Page" above)
+2. Open `content/global/navigation.json`
+3. Find the appropriate dropdown menu
+4. Add your page to the `items` array:
+
+```json
+{
+  "label": "Solutions",
+  "dropdown": true,
+  "items": [
+    { "text": "Experience Agencies", "href": "/experience-agencies" },
+    { "text": "Production Managers", "href": "/production-managers" },
+    { "text": "Your New Solution", "href": "/your-new-solution" }
+  ]
+}
+```
+
+5. Validate, build, and test
+6. Commit and push
+
+**To create a new dropdown menu:**
+
+1. Open `content/global/navigation.json`
+2. Add a new menu item with `"dropdown": true`:
+
+```json
+{
+  "label": "Resources",
+  "dropdown": true,
+  "items": [
+    { "text": "Case Studies", "href": "/case-studies" },
+    { "text": "Downloads", "href": "/downloads" },
+    { "text": "FAQ", "href": "/faq" }
+  ]
+}
+```
+
+3. Create the corresponding page JSON files
+4. Validate, build, and test
+
+### Special Page: Homepage (home.json → index.html)
+
+The homepage is handled specially by the build system:
+
+- **Content file:** `content/pages/home.json`
+- **Schema:** `content/schemas/home.schema.json` (different from other pages)
+- **Output file:** `index.html` (not `home.html`)
+
+**Why is it different?**
+- Uses `home.schema.json` instead of `page.schema.json`
+- Has preview sections (specsPreview, featuresPreview, solutionsPreview) instead of full content
+- Acts as a hub linking to deeper pages
+- Build system automatically outputs it as `index.html`
+
+**When editing homepage:**
+- Edit `content/pages/home.json`
+- Use preview sections to tease content from other pages
+- Link to full pages using `/page-name` format
+- Remember it has different schema requirements than other pages
 
 ### Reusing Content Across Pages
 
