@@ -1,0 +1,185 @@
+{
+  "meta": {
+    "title": "LAB SEVEN Specifications | Labrador Field Systems",
+    "description": "Complete technical specifications for LAB SEVEN battery system. 60A output, 7.5kWh capacity, 1-hour fast charging."
+  },
+  "hero": {
+    "title": "Technical Specifications",
+    "tagline": "Professional-grade power in a portable package",
+    "cta": {
+      "primary": {
+        "text": "Contact Labrador",
+        "href": "#contact"
+      },
+      "secondary": {
+        "text": "View Solutions",
+        "href": "/index.html#solutions"
+      }
+    }
+  },
+  "powerOutput": {
+    "title": "Power Output",
+    "specs": [
+      {
+        "label": "60A Bates Connector",
+        "value": "1x 60A output (Stage Pin)",
+        "description": "True 60A output on professional Bates connector. No adapters, no workarounds."
+      },
+      {
+        "label": "20A Edison Outlets",
+        "value": "3x 20A outputs (NEMA 5-20R)",
+        "description": "Each on its own circuit, no shared neutral. Run three 1800W devices simultaneously."
+      },
+      {
+        "label": "Continuous Power",
+        "value": "10kW continuous",
+        "description": "Sustained 10kW output for hours. No derating, no thermal limits on set."
+      },
+      {
+        "label": "Peak Power",
+        "value": "12kW peak (30 seconds)",
+        "description": "Handles startup surges from HMIs, motors, and compressors without tripping."
+      }
+    ]
+  },
+  "batterySystem": {
+    "title": "Battery System",
+    "specs": [
+      {
+        "label": "Capacity",
+        "value": "7.5kWh",
+        "description": "LiFePO4 (LFP) chemistry. Safer, longer-lasting, more stable than NMC."
+      },
+      {
+        "label": "Cell Configuration",
+        "value": "16S48P (51.2V nominal)",
+        "description": "Professional battery architecture. 3000+ cycle lifespan at 80% DOD."
+      },
+      {
+        "label": "Battery Management",
+        "value": "JBD BMS with balancing",
+        "description": "Real-time monitoring, cell balancing, over-current protection, thermal management."
+      },
+      {
+        "label": "Runtime",
+        "value": "45 minutes to 8+ hours",
+        "description": "Depends on load. 8hrs at 1kW average, 45min at full 10kW continuous draw."
+      }
+    ]
+  },
+  "charging": {
+    "title": "Charging",
+    "specs": [
+      {
+        "label": "Fast Charging (60A Input)",
+        "value": "1 hour (0-100%)",
+        "description": "Use 60A Bates input to charge in 1 hour. Perfect for rotating batteries on multi-day shoots."
+      },
+      {
+        "label": "Standard Charging (110V)",
+        "value": "4-5 hours (0-100%)",
+        "description": "Plug into any 15/20A outlet. Charge overnight between shoot days."
+      },
+      {
+        "label": "Input Power",
+        "value": "Up to 7.2kW max",
+        "description": "Accepts 110V (15/20A) or 240V (30A) input. Automatically adjusts charging rate."
+      }
+    ]
+  },
+  "physical": {
+    "title": "Physical Specifications",
+    "specs": [
+      {
+        "label": "Dimensions",
+        "value": "24\" W × 18\" D × 36\" H",
+        "description": "Fits through standard doorways. Similar footprint to a road case."
+      },
+      {
+        "label": "Weight",
+        "value": "~180 lbs (82 kg)",
+        "description": "Heavy but manageable. Roll it, don't lift it. Load levelers on all four corners."
+      },
+      {
+        "label": "Construction",
+        "value": "Welded steel frame, powder-coated",
+        "description": "Built for the road. Impact-resistant corners, weather-sealed electronics bay."
+      },
+      {
+        "label": "Wheels",
+        "value": "4x industrial casters (2 locking)",
+        "description": "8-inch pneumatic tires. Smooth rolling on concrete, asphalt, or uneven ground."
+      }
+    ]
+  },
+  "safety": {
+    "title": "Safety & Certifications",
+    "specs": [
+      {
+        "label": "Chemistry",
+        "value": "LiFePO4 (LFP)",
+        "description": "Most stable lithium chemistry. No thermal runaway risk. Safer than NMC/NCA batteries."
+      },
+      {
+        "label": "Circuit Protection",
+        "value": "Per-circuit breakers",
+        "description": "Individual breakers on all outputs. BMS protects battery, breakers protect your gear."
+      },
+      {
+        "label": "Certifications",
+        "value": "UL testing in progress",
+        "description": "Meeting UL 2743 (portable power stations) and UL 2271 (battery packs) requirements."
+      },
+      {
+        "label": "Insurance",
+        "value": "Production-friendly",
+        "description": "LFP chemistry accepted by most production insurance. Check with your provider."
+      }
+    ]
+  },
+  "monitoring": {
+    "title": "Monitoring & Controls",
+    "specs": [
+      {
+        "label": "Display",
+        "value": "4.3\" color touchscreen",
+        "description": "Real-time voltage, current, power, SOC%, temperature, runtime estimate."
+      },
+      {
+        "label": "Remote Monitoring",
+        "value": "Bluetooth + WiFi",
+        "description": "Monitor from your phone. Track multiple units. Get alerts for low battery or faults."
+      },
+      {
+        "label": "Data Logging",
+        "value": "30-day history",
+        "description": "Review past usage. Export logs for reports. Prove runtime to clients."
+      }
+    ]
+  },
+  "environmental": {
+    "title": "Environmental",
+    "specs": [
+      {
+        "label": "Operating Temperature",
+        "value": "-10°C to 50°C (14°F to 122°F)",
+        "description": "Works in cold and heat. BMS adjusts charging rate based on temperature."
+      },
+      {
+        "label": "Storage Temperature",
+        "value": "-20°C to 60°C (-4°F to 140°F)",
+        "description": "Leave it in the truck. Store it in the warehouse. It's fine."
+      },
+      {
+        "label": "Humidity",
+        "value": "5-95% RH (non-condensing)",
+        "description": "Electronics bay is weather-sealed. Can handle rain and humidity."
+      },
+      {
+        "label": "Altitude",
+        "value": "Up to 10,000 ft",
+        "description": "No derating at altitude. Works the same in Denver as in Los Angeles."
+      }
+    ]
+  }
+}

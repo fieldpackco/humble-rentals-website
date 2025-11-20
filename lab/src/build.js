@@ -44,6 +44,10 @@ const homePagePath = path.join(TEMPLATES_DIR, 'pages', 'home-page.hbs');
 const homePageTemplate = fs.readFileSync(homePagePath, 'utf8');
 const homePage = Handlebars.compile(homePageTemplate);
 
+const specsPagePath = path.join(TEMPLATES_DIR, 'pages', 'specs-page.hbs');
+const specsPageTemplate = fs.readFileSync(specsPagePath, 'utf8');
+const specsPage = Handlebars.compile(specsPageTemplate);
+
 // Load global content
 const navigationPath = path.join(CONTENT_DIR, 'global', 'navigation.json');
 const footerPath = path.join(CONTENT_DIR, 'global', 'footer.json');
@@ -66,8 +70,15 @@ pageFiles.forEach(file => {
     footer
   };
 
-  // Use different template for home page
-  const pageTemplate = (pageName === 'home') ? homePage : landingPage;
+  // Use different template based on page type
+  let pageTemplate;
+  if (pageName === 'home') {
+    pageTemplate = homePage;
+  } else if (pageName === 'specifications') {
+    pageTemplate = specsPage;
+  } else {
+    pageTemplate = landingPage;
+  }
   const bodyHTML = pageTemplate(templateData);
 
   // Render into base layout
