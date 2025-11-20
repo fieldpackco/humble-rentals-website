@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "title": "LAB SEVEN Gallery | Professional Battery Power in Action",
+    "description": "See LAB SEVEN battery systems powering professional productions. Real sets, real crews, real results from film, commercial, and event productions."
+  },
+  "hero": {
+    "title": "LAB SEVEN in action",
+    "tagline": "See the LAB SEVEN battery system powering professional productions across film, commercial, and event work. Real sets, real crews, real results.",
+    "cta": {
+      "primary": {
+        "text": "Contact Anytime Rentals",
+        "href": "mailto:rentals@anytimerentals.com"
+      },
+      "secondary": {
+        "text": "View Specifications",
+        "href": "/specifications"
+      }
+    }
+  },
+  "benefits": {
+    "title": "Coming soon",
+    "items": [
+      {
+        "icon": "📸",
+        "title": "Production photos",
+        "description": "LAB SEVEN powering real productions across film, commercial, and event work. See the system in action on set."
+      },
+      {
+        "icon": "🎬",
+        "title": "Behind the scenes",
+        "description": "How production teams integrate LAB SEVEN into their workflows. Setup, operation, and wrap processes documented."
+      },
+      {
+        "icon": "📊",
+        "title": "Use case examples",
+        "description": "Different production types and power configurations. Learn how crews use LAB SEVEN for specific applications."
+      }
+    ]
+  },
+  "solution": {
+    "title": "Gallery coming soon",
+    "items": [
+      {
+        "title": "Production documentation",
+        "description": "We're currently collecting photos and case studies from productions using LAB SEVEN. Check back soon for behind-the-scenes images and production stories."
+      },
+      {
+        "title": "Technical reference",
+        "description": "Detailed photos of connectors, interfaces, and setup configurations will help you plan your rental and understand system capabilities."
+      },
+      {
+        "title": "Real-world results",
+        "description": "See how different production types leverage LAB SEVEN's capabilities. From small commercial shoots to multi-day festival installations."
+      }
+    ]
+  },
+  "specs": {
+    "title": "What you'll see",
+    "items": [
+      {
+        "value": "Sets",
+        "label": "Real productions"
+      },
+      {
+        "value": "Setups",
+        "label": "Configuration examples"
+      },
+      {
+        "value": "Results",
+        "label": "Production outcomes"
+      },
+      {
+        "value": "Soon",
+        "label": "Gallery launch"
+      }
+    ]
+  },
+  "finalCta": {
+    "title": "Ready to see LAB SEVEN on your set?",
+    "description": "Schedule a demo or book a rental to experience professional battery power firsthand.",
+    "cta": {
+      "primary": {
+        "text": "Contact Anytime Rentals",
+        "href": "mailto:rentals@anytimerentals.com"
+      },
+      "secondary": {
+        "text": "View Features",
+        "href": "/features"
+      }
+    },
+    "contactInfo": {
+      "company": "Available through Anytime Production Equipment Rentals",
+      "phone": "818.394.9675",
+      "email": "rentals@anytimerentals.com"
+    }
+  }
+}

@@ -1,0 +1,148 @@
+{
+  "meta": {
+    "title": "Product Roadmap | Labrador Field Systems Future Products",
+    "description": "Future products and innovations from Labrador Field Systems. Professional power solutions in development for film, commercial, and event production."
+  },
+  "hero": {
+    "title": "Building the future of production power",
+    "tagline": "LAB SEVEN is just the beginning. We're developing next-generation power solutions for professional production. Silent, portable, powerful.",
+    "cta": {
+      "primary": {
+        "text": "Contact Labrador",
+        "href": "mailto:contact@labradorfieldystems.com"
+      },
+      "secondary": {
+        "text": "Rent LAB SEVEN Today",
+        "href": "/pricing"
+      }
+    }
+  },
+  "benefits": {
+    "title": "What's coming next",
+    "items": [
+      {
+        "icon": "🔋",
+        "title": "Next-generation battery systems",
+        "description": "Higher capacity, faster charging, smarter power management. Building on LAB SEVEN's proven architecture with enhanced capabilities."
+      },
+      {
+        "icon": "⚡",
+        "title": "Modular power solutions",
+        "description": "Stackable systems for scaling power needs. From small commercial shoots to large festival installations with seamless integration."
+      },
+      {
+        "icon": "📱",
+        "title": "Advanced monitoring and control",
+        "description": "Enhanced mobile apps, cloud-based fleet management, predictive maintenance, and remote diagnostics for rental house operations."
+      }
+    ]
+  },
+  "solution": {
+    "title": "Product development in progress",
+    "items": [
+      {
+        "title": "LAB SEVEN is proven technology",
+        "description": "Our current 60A battery system is available for rent today through Anytime Production Equipment Rentals. Proven performance across hundreds of production days."
+      },
+      {
+        "title": "Future products in development",
+        "description": "We're working on next-generation systems with higher capacity, faster charging, and enhanced features based on real production feedback. Details coming soon."
+      },
+      {
+        "title": "Industry collaboration",
+        "description": "We work directly with production teams to understand evolving power needs. Your feedback shapes our product roadmap and feature priorities."
+      },
+      {
+        "title": "Stay informed",
+        "description": "Contact Labrador Field Systems to join our mailing list for product announcements, beta testing opportunities, and early access to new capabilities."
+      }
+    ]
+  },
+  "specs": {
+    "title": "Development focus",
+    "items": [
+      {
+        "value": "Higher",
+        "label": "Capacity options"
+      },
+      {
+        "value": "Faster",
+        "label": "Charging tech"
+      },
+      {
+        "value": "Smarter",
+        "label": "Power management"
+      },
+      {
+        "value": "Soon",
+        "label": "Product launch"
+      }
+    ]
+  },
+  "journey": {
+    "title": "Our development approach",
+    "comparison": {
+      "without": {
+        "title": "Traditional power product development",
+        "description": "Companies develop products in isolation, release them to market, and hope they meet user needs. Features based on assumptions rather than real-world production experience."
+      },
+      "with": {
+        "title": "Labrador's approach",
+        "description": "Build proven solutions like LAB SEVEN. Deploy them on real productions. Gather feedback from actual users. Iterate and enhance based on production reality. Develop next generation with confidence."
+      }
+    }
+  },
+  "caseStudy": {
+    "title": "How LAB SEVEN shaped our roadmap",
+    "content": [
+      "LAB SEVEN started from direct production experience with generator limitations and existing battery shortcomings.",
+      "Hundreds of rental days across diverse productions revealed real needs: true 60A output, fast charging, professional monitoring, and rental-house durability.",
+      "Production feedback drives our next-generation development: higher capacity for extended runtimes, faster charging for quicker turnarounds, and modular scaling for larger installations."
+    ],
+    "quote": "We build products based on production reality, not feature checklists. Every enhancement comes from actual set experience."
+  },
+  "faq": {
+    "title": "Roadmap questions",
+    "items": [
+      {
+        "question": "When will new products be available?",
+        "answer": "We're focused on LAB SEVEN production and deployment first. Next-generation products are in development but no release dates announced yet. Join our mailing list for updates."
+      },
+      {
+        "question": "Can I provide feedback or feature requests?",
+        "answer": "Absolutely. We actively seek production feedback to guide product development. Contact us with your specific power challenges and use cases."
+      },
+      {
+        "question": "Will you offer beta testing or early access?",
+        "answer": "Yes. Production professionals who provide valuable feedback may receive early access to new products and features. Contact Labrador to express interest."
+      },
+      {
+        "question": "What about international availability?",
+        "answer": "LAB SEVEN is currently available through Anytime Rentals in Los Angeles. We're exploring partnerships for broader distribution. Contact us if you're interested in bringing LAB SEVEN to your region."
+      },
+      {
+        "question": "Do you plan products for other industries?",
+        "answer": "Our focus is professional production power. While our technology could serve other industries, we're committed to building the best tools for film, commercial, and event production first."
+      }
+    ]
+  },
+  "finalCta": {
+    "title": "Shape the future with us",
+    "description": "Join our development community. Provide feedback, request features, and get early access to new products.",
+    "cta": {
+      "primary": {
+        "text": "Contact Labrador",
+        "href": "mailto:contact@labradorfieldystems.com"
+      },
+      "secondary": {
+        "text": "Rent LAB SEVEN",
+        "href": "/pricing"
+      }
+    },
+    "contactInfo": {
+      "company": "Labrador Field Systems",
+      "phone": "Contact for partnership inquiries",
+      "email": "contact@labradorfieldystems.com"
+    }
+  }
+}
