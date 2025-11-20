@@ -34,7 +34,17 @@ if (fs.existsSync(PAGES_DIR)) {
     const pagePath = path.join(PAGES_DIR, file);
     const pageData = JSON.parse(fs.readFileSync(pagePath, 'utf8'));
 
-    const validate = ajv.getSchema('page');
+    // Determine which schema to use based on page name
+    const pageName = file.replace('.json', '');
+    const schemaName = (pageName === 'home') ? 'home' : 'page';
+
+    const validate = ajv.getSchema(schemaName);
+    if (!validate) {
+      console.error(`\n❌ Schema '${schemaName}' not found for ${file}`);
+      hasErrors = true;
+      return;
+    }
+
     const valid = validate(pageData);
 
     if (!valid) {

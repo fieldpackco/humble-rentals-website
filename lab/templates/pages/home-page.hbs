@@ -1,0 +1,86 @@
+<!-- Hero Section -->
+<section class="hero">
+    <h1 class="animate-in">{{hero.title}}</h1>
+    <p class="tagline animate-in">{{hero.tagline}}</p>
+    <p class="price animate-in">{{hero.priceText}}</p>
+    <p class="availability animate-in">{{hero.availability}}</p>
+    <div class="cta-buttons animate-in">
+        <a href="{{hero.cta.primary.href}}" class="btn btn-primary">{{hero.cta.primary.text}}</a>
+        <a href="{{hero.cta.secondary.href}}" class="btn btn-secondary">{{hero.cta.secondary.text}}</a>
+    </div>
+    {{#if hero.links}}
+    <div class="links animate-in">
+        {{#each hero.links}}
+        <a href="{{href}}">{{text}}</a>
+        {{/each}}
+    </div>
+    {{/if}}
+    <div class="hero-image animate-in">
+        <div class="product-image">
+            <div class="product-label">LAB SEVEN</div>
+        </div>
+    </div>
+</section>
+
+<!-- Overview Section -->
+{{#if overview}}
+<section class="typography-section">
+    <h2>{{overview.title}}</h2>
+    <p class="subtitle">{{overview.subtitle}}</p>
+</section>
+{{/if}}
+
+<!-- Specs Preview -->
+{{#if specsPreview}}
+<section class="specs" id="specs">
+    <h2>{{specsPreview.title}}</h2>
+    {{#if specsPreview.linkText}}
+    <a href="{{specsPreview.linkHref}}" class="section-link">{{specsPreview.linkText}} →</a>
+    {{/if}}
+    <div class="specs-grid">
+        {{#each specsPreview.items}}
+        <div class="spec-card animate-in">
+            <div class="spec-icon">{{icon}}</div>
+            <h3>{{title}}</h3>
+            <div class="spec-value">{{value}}{{#if unit}}<span class="spec-unit">{{unit}}</span>{{/if}}</div>
+            <p>{{description}}</p>
+        </div>
+        {{/each}}
+    </div>
+</section>
+{{/if}}
+
+<!-- Features Preview -->
+{{#if featuresPreview}}
+<section class="features-preview">
+    <h2>{{featuresPreview.title}}</h2>
+    {{#if featuresPreview.linkText}}
+    <a href="{{featuresPreview.linkHref}}" class="section-link">{{featuresPreview.linkText}} →</a>
+    {{/if}}
+    <div class="features-preview-grid">
+        {{#each featuresPreview.items}}
+        <div class="feature-preview-card">
+            <h3>{{title}}</h3>
+            <p>{{description}}</p>
+        </div>
+        {{/each}}
+    </div>
+</section>
+{{/if}}
+
+<!-- Solutions Preview -->
+{{#if solutionsPreview}}
+<section class="solutions-preview">
+    <h2>{{solutionsPreview.title}}</h2>
+    <p class="subtitle">{{solutionsPreview.subtitle}}</p>
+    <div class="solutions-grid">
+        {{#each solutionsPreview.items}}
+        <a href="{{href}}" class="solution-card">
+            <h3>{{title}}</h3>
+            <p>{{description}}</p>
+            <span class="card-arrow">→</span>
+        </a>
+        {{/each}}
+    </div>
+</section>
+{{/if}}

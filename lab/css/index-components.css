@@ -578,6 +578,171 @@
     font-size: 16px;
 }
 
+/* Section Links */
+.section-link {
+    display: inline-block;
+    color: var(--primary-orange);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 auto 60px;
+    text-align: center;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.section-link:after {
+    transition: transform 0.3s ease;
+    display: inline-block;
+}
+
+.section-link:hover {
+    transform: translateX(4px);
+    color: var(--primary-deep);
+}
+
+/* Features Preview Section */
+.features-preview {
+    padding: 140px 20px;
+    text-align: center;
+}
+
+.features-preview h2 {
+    font-size: 56px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    letter-spacing: -0.01em;
+}
+
+.features-preview .section-link {
+    display: block;
+}
+
+.features-preview-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.feature-preview-card {
+    background: var(--white);
+    padding: 48px;
+    border-radius: 18px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+}
+
+.feature-preview-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+}
+
+.feature-preview-card h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: var(--primary-orange);
+}
+
+.feature-preview-card p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--text-secondary);
+}
+
+/* Solutions Preview Section */
+.solutions-preview {
+    padding: 140px 20px;
+    background: linear-gradient(180deg, var(--neutral-light) 0%, #ffffff 100%);
+    text-align: center;
+}
+
+.solutions-preview h2 {
+    font-size: 56px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    letter-spacing: -0.01em;
+}
+
+.solutions-preview .subtitle {
+    font-size: 24px;
+    line-height: 1.4;
+    color: var(--text-secondary);
+    max-width: 800px;
+    margin: 0 auto 80px;
+}
+
+.solutions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.solution-card {
+    background: var(--white);
+    padding: 40px;
+    border-radius: 18px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    text-align: left;
+}
+
+.solution-card:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--gradient-primary);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.solution-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+}
+
+.solution-card:hover:before {
+    transform: scaleX(1);
+}
+
+.solution-card h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: var(--text-primary);
+}
+
+.solution-card p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--text-secondary);
+    margin-bottom: 20px;
+}
+
+.solution-card .card-arrow {
+    color: var(--primary-orange);
+    font-size: 24px;
+    font-weight: 700;
+    transition: transform 0.3s ease;
+    display: inline-block;
+}
+
+.solution-card:hover .card-arrow {
+    transform: translateX(6px);
+}
+
 /* Footer */
 footer {
     background: linear-gradient(180deg, var(--neutral-light) 0%, #ffffff 100%);
@@ -626,53 +791,61 @@ footer a:hover {
     .hero h1 {
         font-size: 48px;
     }
-    
+
     .hero .tagline {
         font-size: 24px;
     }
-    
+
     .product-label {
         font-size: 72px;
     }
-    
+
     .typography-section h2,
     .specs h2,
     .gallery h2,
     .pricing h2,
     .future h2,
-    .contact h2 {
+    .contact h2,
+    .features-preview h2,
+    .solutions-preview h2 {
         font-size: 36px;
     }
-    
+
     .typography-section .subtitle,
-    .contact p {
+    .contact p,
+    .solutions-preview .subtitle {
         font-size: 18px;
     }
-    
+
     .feature-block {
         grid-template-columns: 1fr;
         gap: 40px;
     }
-    
+
     .feature-block.reverse {
         direction: ltr;
     }
-    
+
     .feature-content h2 {
         font-size: 32px;
     }
-    
+
     .savings-comparison {
         grid-template-columns: 1fr;
     }
-    
+
     .timeline-item {
         grid-template-columns: 1fr;
         gap: 20px;
     }
-    
+
     .timeline-item:not(:last-child):after {
         display: none;
+    }
+
+    .features-preview-grid,
+    .solutions-grid {
+        grid-template-columns: 1fr;
     }
 }
 

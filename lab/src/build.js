@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const Handlebars = require('handlebars');
 
-const BUILD_DIR = path.join(__dirname, '../dist');
+const BUILD_DIR = path.join(__dirname, '..'); // Output to lab/ directory (site root)
 const TEMPLATES_DIR = path.join(__dirname, '../templates');
 const CONTENT_DIR = path.join(__dirname, '../content');
 const CSS_DIR = path.join(__dirname, '../css');
@@ -35,10 +35,14 @@ const baseLayoutPath = path.join(TEMPLATES_DIR, 'layouts', 'base.hbs');
 const baseLayoutTemplate = fs.readFileSync(baseLayoutPath, 'utf8');
 const baseLayout = Handlebars.compile(baseLayoutTemplate);
 
-// Load page template
+// Load page templates
 const landingPagePath = path.join(TEMPLATES_DIR, 'pages', 'landing-page.hbs');
 const landingPageTemplate = fs.readFileSync(landingPagePath, 'utf8');
 const landingPage = Handlebars.compile(landingPageTemplate);
+
+const homePagePath = path.join(TEMPLATES_DIR, 'pages', 'home-page.hbs');
+const homePageTemplate = fs.readFileSync(homePagePath, 'utf8');
+const homePage = Handlebars.compile(homePageTemplate);
 
 // Load global content
 const navigationPath = path.join(CONTENT_DIR, 'global', 'navigation.json');
@@ -62,8 +66,9 @@ pageFiles.forEach(file => {
     footer
   };
 
-  // Render page body
-  const bodyHTML = landingPage(templateData);
+  // Use different template for home page
+  const pageTemplate = (pageName === 'home') ? homePage : landingPage;
+  const bodyHTML = pageTemplate(templateData);
 
   // Render into base layout
   const finalHTML = baseLayout({
@@ -71,26 +76,14 @@ pageFiles.forEach(file => {
     body: bodyHTML
   });
 
-  // Write to dist
-  const outputPath = path.join(BUILD_DIR, `${pageName}.html`);
+  // Output home page as index.html
+  const outputName = (pageName === 'home') ? 'index.html' : `${pageName}.html`;
+  const outputPath = path.join(BUILD_DIR, outputName);
   fs.writeFileSync(outputPath, finalHTML, 'utf8');
 
-  console.log(`✅ Built ${pageName}.html`);
+  console.log(`✅ Built ${outputName}`);
 });
 
-// Copy CSS to dist
-const distCssDir = path.join(BUILD_DIR, 'css');
-if (!fs.existsSync(distCssDir)) {
-  fs.mkdirSync(distCssDir, { recursive: true });
-}
-
-const cssFiles = fs.readdirSync(CSS_DIR);
-cssFiles.forEach(file => {
-  const srcPath = path.join(CSS_DIR, file);
-  const destPath = path.join(distCssDir, file);
-  fs.copyFileSync(srcPath, destPath);
-});
-
-console.log(`✅ Copied ${cssFiles.length} CSS files`);
+// CSS files already exist in lab/css/ - no need to copy
 
 console.log('\n✨ Build complete!');
