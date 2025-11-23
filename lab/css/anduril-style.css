@@ -159,8 +159,8 @@ body {
 
 .anduril-hero {
   background-color: var(--anduril-gray-light);
-  padding: var(--anduril-spacing-section) 0;
-  min-height: 80vh;
+  padding: 120px 0 80px;
+  min-height: 65vh;
   display: flex;
   align-items: center;
 }
