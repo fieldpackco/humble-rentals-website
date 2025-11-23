@@ -1,15 +1,15 @@
 {
   "meta": {
     "title": "How LAB SEVEN Rental Works | Professional Battery Power Rentals",
-    "description": "Simple rental process for LAB SEVEN battery systems. Book, deliver, power, wrap. White-glove service from Anytime Production Equipment Rentals."
+    "description": "Simple rental process for LAB SEVEN battery systems. Book, deliver, power, wrap. White-glove service from Labrador Field Systems."
   },
   "hero": {
     "title": "Simple rental process, professional results",
     "tagline": "Book your rental. We deliver and place. You power on. Production happens. We pick up. That's it. No complexity, no drama, no generator headaches.",
     "cta": {
       "primary": {
-        "text": "Contact Anytime Rentals",
-        "href": "mailto:rentals@anytimerentals.com"
+        "text": "Contact Labrador",
+        "href": "mailto:amit@fieldpack.co"
       },
       "secondary": {
         "text": "View Pricing",
@@ -42,7 +42,7 @@
     "items": [
       {
         "title": "Step 1: Contact and book",
-        "description": "Reach out to Anytime Production Equipment Rentals with your shoot dates and location. We'll discuss your power needs and confirm availability. Mention promo code \"241\" for one free rental day on your first booking."
+        "description": "Reach out to Labrador Field Systems with your shoot dates and location. We'll discuss your power needs and confirm availability. Mention promo code \"241\" for one free rental day on your first booking."
       },
       {
         "title": "Step 2: Pre-production planning",
@@ -122,7 +122,7 @@
     "items": [
       {
         "question": "How far in advance should I book?",
-        "answer": "We recommend booking as soon as you have confirmed shoot dates. Last-minute rentals may be available depending on inventory. Contact Anytime to check availability."
+        "answer": "We recommend booking as soon as you have confirmed shoot dates. Last-minute rentals may be available depending on inventory. Contact Labrador Field Systems to check availability."
       },
       {
         "question": "Do you deliver to all locations?",
@@ -130,7 +130,7 @@
       },
       {
         "question": "What if I need to change my rental dates?",
-        "answer": "Contact Anytime as soon as possible if your shoot dates change. We'll work with you to reschedule based on availability. Standard rental house policies apply for cancellations."
+        "answer": "Contact Labrador Field Systems as soon as possible if your shoot dates change. We'll work with you to reschedule based on availability. Standard rental house policies apply for cancellations."
       },
       {
         "question": "Can someone train my crew on operation?",
@@ -138,21 +138,21 @@
       },
       {
         "question": "What happens if something goes wrong?",
-        "answer": "Every rental includes backup generator and 24/7 technical support. If you experience any issues, call Anytime immediately. We'll troubleshoot remotely or dispatch support if needed."
+        "answer": "Every rental includes backup generator and 24/7 technical support. If you experience any issues, call Labrador Field Systems immediately. We'll troubleshoot remotely or dispatch support if needed."
       },
       {
         "question": "Can I rent for just a few hours?",
-        "answer": "Minimum rental is typically one day due to delivery and pickup logistics. For recurring rentals or high-volume clients, we can discuss flexible arrangements. Contact Anytime for custom quotes."
+        "answer": "Minimum rental is typically one day due to delivery and pickup logistics. For recurring rentals or high-volume clients, we can discuss flexible arrangements. Contact Labrador Field Systems for custom quotes."
       }
     ]
   },
   "finalCta": {
     "title": "Ready to book your rental?",
-    "description": "Contact Anytime Production Equipment Rentals to check availability and book LAB SEVEN for your next production.",
+    "description": "Contact Labrador Field Systems to check availability and book LAB SEVEN for your next production.",
     "cta": {
       "primary": {
-        "text": "Contact Anytime Rentals",
-        "href": "mailto:rentals@anytimerentals.com"
+        "text": "Contact Labrador",
+        "href": "mailto:amit@fieldpack.co"
       },
       "secondary": {
         "text": "View Pricing",
@@ -160,9 +160,9 @@
       }
     },
     "contactInfo": {
-      "company": "Available through Anytime Production Equipment Rentals",
-      "phone": "818.394.9675",
-      "email": "rentals@anytimerentals.com"
+      "company": "Labrador Field Systems",
+      "phone": "310-776-0154",
+      "email": "amit@fieldpack.co"
     }
   }
 }

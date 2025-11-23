@@ -1,19 +1,19 @@
 {
   "meta": {
-    "title": "Contact LAB SEVEN | Labrador Field Systems & Anytime Rentals",
-    "description": "Contact Anytime Rentals to book LAB SEVEN or Labrador Field Systems for product info. Professional battery power rental support."
+    "title": "Contact LAB SEVEN | Labrador Field Systems",
+    "description": "Contact Labrador Field Systems to book LAB SEVEN or for product info. Professional battery power rental support."
   },
   "hero": {
     "title": "Get in touch",
     "tagline": "Ready to rent LAB SEVEN? Have questions about the system? Want to discuss custom power solutions? We're here to help.",
     "cta": {
       "primary": {
-        "text": "Email Anytime Rentals",
-        "href": "mailto:rentals@anytimerentals.com"
+        "text": "Email Labrador",
+        "href": "mailto:amit@fieldpack.co"
       },
       "secondary": {
         "text": "Call Now",
-        "href": "tel:+18183949675"
+        "href": "tel:+13107760154"
       }
     }
   },
@@ -23,7 +23,7 @@
       {
         "icon": "🎬",
         "title": "Rental bookings",
-        "description": "Contact Anytime Production Equipment Rentals to check availability, book your rental, or discuss multi-day packages and volume discounts."
+        "description": "Contact Labrador Field Systems to check availability, book your rental, or discuss multi-day packages and volume discounts."
       },
       {
         "icon": "💡",
@@ -41,8 +41,8 @@
     "title": "Contact information",
     "items": [
       {
-        "title": "Anytime Production Equipment Rentals",
-        "description": "Primary rental partner for LAB SEVEN battery systems in Los Angeles area. Full-service equipment rental house with delivery, setup, and support. Phone: 818.394.9675 | Email: rentals@anytimerentals.com"
+        "title": "Labrador Field Systems",
+        "description": "Primary rental partner for LAB SEVEN battery systems in Los Angeles area. Full-service equipment rental house with delivery, setup, and support. Phone: 310-776-0154 | Email: amit@fieldpack.co"
       },
       {
         "title": "Labrador Field Systems",
@@ -50,11 +50,11 @@
       },
       {
         "title": "Rental booking process",
-        "description": "Call or email Anytime Rentals with your shoot dates, location, and power requirements. Mention promo code \"241\" for one free rental day on first booking. We'll confirm availability and coordinate delivery."
+        "description": "Call or email Labrador Field Systems with your shoot dates, location, and power requirements. Mention promo code \"241\" for one free rental day on first booking. We'll confirm availability and coordinate delivery."
       },
       {
         "title": "Demo and site visits",
-        "description": "Want to see LAB SEVEN before your rental? We can arrange product demonstrations or site visits for qualified productions. Contact Anytime Rentals to schedule."
+        "description": "Want to see LAB SEVEN before your rental? We can arrange product demonstrations or site visits for qualified productions. Contact Labrador Field Systems to schedule."
       },
       {
         "title": "Custom power solutions",
@@ -70,8 +70,8 @@
     "title": "Quick reference",
     "items": [
       {
-        "value": "818.394.9675",
-        "label": "Anytime Rentals phone"
+        "value": "310-776-0154",
+        "label": "Labrador phone"
       },
       {
         "value": "Los Angeles",
@@ -103,8 +103,8 @@
   "caseStudy": {
     "title": "Typical contact experience",
     "content": [
-      "Production manager emails Anytime Rentals Tuesday morning with Friday shoot date and power requirements.",
-      "Anytime confirms availability and quotes all-inclusive rate within 2 hours. No hidden fees, delivery and backup generator included.",
+      "Production manager emails Labrador Field Systems Tuesday morning with Friday shoot date and power requirements.",
+      "Labrador confirms availability and quotes all-inclusive rate within 2 hours. No hidden fees, delivery and backup generator included.",
       "Production manager books rental, mentions promo code \"241\" for first rental. Delivery scheduled for Friday 6am before crew call. Battery arrives on time, placed where needed. Silent operation all day. Pickup scheduled Saturday morning."
     ],
     "quote": "Easiest rental booking I've done. One email, transparent pricing, no surprises. Battery just worked."
@@ -114,7 +114,7 @@
     "items": [
       {
         "question": "What's the best way to book a rental?",
-        "answer": "Call or email Anytime Production Equipment Rentals directly. Phone gets fastest response for same-week rentals. Email works great for advance bookings with flexible timing."
+        "answer": "Call or email Labrador Field Systems directly. Phone gets fastest response for same-week rentals. Email works great for advance bookings with flexible timing."
       },
       {
         "question": "How quickly can you confirm availability?",
@@ -126,7 +126,7 @@
       },
       {
         "question": "Can I visit to see the equipment?",
-        "answer": "Yes. Contact Anytime Rentals to schedule a demonstration or equipment viewing. We can arrange site visits for larger productions or custom requirements."
+        "answer": "Yes. Contact Labrador Field Systems to schedule a demonstration or equipment viewing. We can arrange site visits for larger productions or custom requirements."
       },
       {
         "question": "What information do you need for a quote?",
@@ -140,21 +140,21 @@
   },
   "finalCta": {
     "title": "Ready to talk?",
-    "description": "Contact Anytime Rentals to book your rental or Labrador Field Systems for product and partnership inquiries.",
+    "description": "Contact Labrador Field Systems to book your rental or for product and partnership inquiries.",
     "cta": {
       "primary": {
-        "text": "Email Anytime Rentals",
-        "href": "mailto:rentals@anytimerentals.com"
+        "text": "Email Labrador",
+        "href": "mailto:amit@fieldpack.co"
       },
       "secondary": {
-        "text": "Call 818.394.9675",
-        "href": "tel:+18183949675"
+        "text": "Call 310-776-0154",
+        "href": "tel:+13107760154"
       }
     },
     "contactInfo": {
-      "company": "Available through Anytime Production Equipment Rentals",
-      "phone": "818.394.9675",
-      "email": "rentals@anytimerentals.com"
+      "company": "Labrador Field Systems",
+      "phone": "310-776-0154",
+      "email": "amit@fieldpack.co"
     }
   }
 }

@@ -3,16 +3,16 @@
     "title": "LAB SEVEN - Labrador Field Systems",
     "description": "No refueling. No noise. More power than a 7000 watt generator. Professional battery power for production."
   },
-  "additionalCSS": ["css/index-components.css"],
+  "additionalCSS": ["/css/index-components.css"],
   "hero": {
     "title": "LAB SEVEN",
-    "tagline": "No refueling. No noise. More power than a 7000 watt generator.",
-    "priceText": "Available through Anytime Production Equipment Rentals",
-    "availability": "ONE FREE RENTAL DAY WITH PROMO CODE \"241\"",
+    "tagline": "Silent battery power for city services, live events, and public venues. Zero emissions, zero noise complaints, zero permits.",
+    "priceText": "Professional power solutions by Labrador Field Systems",
+    "availability": "",
     "cta": {
       "primary": {
-        "text": "Contact Anytime Rentals",
-        "href": "mailto:rentals@anytimerentals.com"
+        "text": "Contact Labrador",
+        "href": "/contact"
       },
       "secondary": {
         "text": "View specs",
@@ -25,8 +25,8 @@
         "href": "#features"
       },
       {
-        "text": "Rental options",
-        "href": "#pricing"
+        "text": "Solutions for your needs",
+        "href": "#solutions"
       }
     ]
   },
@@ -89,28 +89,28 @@
     ]
   },
   "solutionsPreview": {
-    "title": "Solutions for every production type",
-    "subtitle": "See how LAB SEVEN solves specific challenges for your role",
+    "title": "Powering city services and live events",
+    "subtitle": "See how LAB SEVEN enables silent operations in noise-restricted environments",
     "items": [
+      {
+        "title": "City Services & Permits",
+        "description": "Zero-emission power for municipal operations and permitted events",
+        "href": "/city-services"
+      },
+      {
+        "title": "Street Festivals & Public Events",
+        "description": "Silent power for community gatherings without disturbing residents",
+        "href": "/street-festivals"
+      },
+      {
+        "title": "Public Venues & Events",
+        "description": "Indoor-approved power for convention centers, arenas, and public spaces",
+        "href": "/public-venues"
+      },
       {
         "title": "Experience Agencies",
         "description": "Silent power for brand activations and experiential events",
         "href": "/experience-agencies"
-      },
-      {
-        "title": "Production Managers",
-        "description": "Efficient, reliable power for streamlined productions",
-        "href": "/production-managers"
-      },
-      {
-        "title": "Gaffers & Lighting",
-        "description": "Power your lighting setups anywhere without generator noise",
-        "href": "/gaffers"
-      },
-      {
-        "title": "Location Managers",
-        "description": "Get venue approval with silent, zero-emission power",
-        "href": "/location-managers"
       }
     ]
   }

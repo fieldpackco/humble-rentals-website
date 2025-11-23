@@ -1,15 +1,15 @@
 {
   "meta": {
     "title": "LAB SEVEN Rental Pricing | Professional Battery Power Rentals",
-    "description": "Transparent LAB SEVEN rental pricing. All-inclusive rates with delivery, pickup, backup generator. Available through Anytime Rentals."
+    "description": "Transparent LAB SEVEN rental pricing. All-inclusive rates with delivery, pickup, backup generator. Available through Labrador Field Systems."
   },
   "hero": {
     "title": "Rental pricing and options",
     "tagline": "Transparent, all-inclusive rental pricing. Delivery, pickup, and backup generator included. No hidden fees, no fuel costs, no surprises.",
     "cta": {
       "primary": {
-        "text": "Contact Anytime Rentals",
-        "href": "mailto:rentals@anytimerentals.com"
+        "text": "Contact Labrador",
+        "href": "mailto:amit@fieldpack.co"
       },
       "secondary": {
         "text": "View Specifications",
@@ -64,7 +64,7 @@
     "items": [
       {
         "title": "One transparent rate",
-        "description": "Contact Anytime Rentals for current day rates and multi-day discounts. All-inclusive pricing covers delivery, placement, pickup, and backup generator."
+        "description": "Contact Labrador Field Systems for current day rates and multi-day discounts. All-inclusive pricing covers delivery, placement, pickup, and backup generator."
       },
       {
         "title": "Promo code 241",
@@ -80,7 +80,7 @@
       },
       {
         "title": "Multi-day discounts",
-        "description": "Extended rental rates available for week-long shoots, multi-day events, and festival installations. Contact Anytime for custom quotes."
+        "description": "Extended rental rates available for week-long shoots, multi-day events, and festival installations. Contact Labrador Field Systems for custom quotes."
       },
       {
         "title": "Package deals available",
@@ -140,7 +140,7 @@
       },
       {
         "question": "Do you offer multi-day discounts?",
-        "answer": "Yes. Week-long and multi-week rentals receive discounted rates. Contact Anytime Rentals for custom quotes on extended productions."
+        "answer": "Yes. Week-long and multi-week rentals receive discounted rates. Contact Labrador Field Systems for custom quotes on extended productions."
       },
       {
         "question": "What about promo code 241?",
@@ -152,7 +152,7 @@
       },
       {
         "question": "What if I need to extend my rental?",
-        "answer": "Contact Anytime during your rental to extend. Subject to availability. We'll work with your production schedule to keep you powered."
+        "answer": "Contact Labrador Field Systems during your rental to extend. Subject to availability. We'll work with your production schedule to keep you powered."
       },
       {
         "question": "Is insurance included?",
@@ -162,11 +162,11 @@
   },
   "finalCta": {
     "title": "Ready to book your rental?",
-    "description": "Contact Anytime Production Equipment Rentals for current rates, availability, and promo code \"241\" for one free rental day.",
+    "description": "Contact Labrador Field Systems for current rates, availability, and promo code \"241\" for one free rental day.",
     "cta": {
       "primary": {
-        "text": "Contact Anytime Rentals",
-        "href": "mailto:rentals@anytimerentals.com"
+        "text": "Contact Labrador",
+        "href": "mailto:amit@fieldpack.co"
       },
       "secondary": {
         "text": "View Features",
@@ -174,9 +174,9 @@
       }
     },
     "contactInfo": {
-      "company": "Available through Anytime Production Equipment Rentals",
-      "phone": "818.394.9675",
-      "email": "rentals@anytimerentals.com"
+      "company": "Labrador Field Systems",
+      "phone": "310-776-0154",
+      "email": "amit@fieldpack.co"
     }
   }
 }

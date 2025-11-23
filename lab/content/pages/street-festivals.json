@@ -89,7 +89,7 @@
       },
       "with": {
         "title": "With LAB SEVEN",
-        "description": "Friday afternoon: LAB SEVEN units placed at each power zone before street closure. Fully charged, ready to go. All weekend: Silent operation, zero complaints. Vendors and stages powered seamlessly. Sunday evening: Festival wraps, units power down. Monday morning: Anytime picks up batteries, street reopens on schedule."
+        "description": "Friday afternoon: LAB SEVEN units placed at each power zone before street closure. Fully charged, ready to go. All weekend: Silent operation, zero complaints. Vendors and stages powered seamlessly. Sunday evening: Festival wraps, units power down. Monday morning: Labrador Field Systems picks up batteries, street reopens on schedule."
       }
     }
   },
@@ -111,7 +111,7 @@
       },
       {
         "question": "Can we charge them overnight between festival days?",
-        "answer": "Yes. Standard outlet overnight charging, or swap for charged units. Anytime Rentals can handle charging service."
+        "answer": "Yes. Standard outlet overnight charging, or swap for charged units. Labrador Field Systems can handle charging service."
       },
       {
         "question": "What if it rains?",
@@ -123,7 +123,7 @@
       },
       {
         "question": "What about backup power if something fails?",
-        "answer": "Anytime includes generator backup for critical loads, placed away from attendee areas."
+        "answer": "Labrador Field Systems includes generator backup for critical loads, placed away from attendee areas."
       }
     ]
   },
@@ -141,9 +141,9 @@
       }
     },
     "contactInfo": {
-      "company": "Available through Anytime Production Equipment Rentals",
-      "phone": "818.394.9675",
-      "email": "rentals@anytimerentals.com"
+      "company": "Labrador Field Systems",
+      "phone": "310-776-0154",
+      "email": "amit@fieldpack.co"
     }
   }
 }

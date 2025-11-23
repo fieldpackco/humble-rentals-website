@@ -8,8 +8,8 @@
     "tagline": "Every feature is designed to solve real production challenges. Silent operation. True 60A output. Professional monitoring. Built for the demands of professional production.",
     "cta": {
       "primary": {
-        "text": "Contact Anytime Rentals",
-        "href": "mailto:rentals@anytimerentals.com"
+        "text": "Contact Labrador",
+        "href": "mailto:amit@fieldpack.co"
       },
       "secondary": {
         "text": "View Specifications",
@@ -166,11 +166,11 @@
   },
   "finalCta": {
     "title": "Experience the difference",
-    "description": "See LAB SEVEN in action. Contact Anytime Rentals to schedule a demo or book your next rental.",
+    "description": "See LAB SEVEN in action. Contact Labrador Field Systems to schedule a demo or book your next rental.",
     "cta": {
       "primary": {
-        "text": "Contact Anytime Rentals",
-        "href": "mailto:rentals@anytimerentals.com"
+        "text": "Contact Labrador",
+        "href": "mailto:amit@fieldpack.co"
       },
       "secondary": {
         "text": "View Pricing",
@@ -178,9 +178,9 @@
       }
     },
     "contactInfo": {
-      "company": "Available through Anytime Production Equipment Rentals",
-      "phone": "818.394.9675",
-      "email": "rentals@anytimerentals.com"
+      "company": "Labrador Field Systems",
+      "phone": "310-776-0154",
+      "email": "amit@fieldpack.co"
     }
   }
 }
