@@ -371,12 +371,52 @@ body {
 }
 
 .anduril-feature-card {
-  background-color: var(--anduril-black);
+  /* Remove: background-color: var(--anduril-black); */
   color: var(--anduril-text-inverse);
   padding: var(--anduril-spacing-xs) var(--anduril-spacing-small) var(--anduril-spacing-xs);
   min-height: 300px;
   display: flex;
   flex-direction: column;
+}
+
+/* Feature card 1: Deep blue to ocean */
+.anduril-feature-card:nth-child(1) {
+  background: linear-gradient(
+    160deg,
+    var(--gradient-dark-blue) 0%,
+    var(--gradient-ocean) 60%,
+    var(--gradient-midnight) 100%
+  );
+}
+
+/* Feature card 2: Forest to charcoal */
+.anduril-feature-card:nth-child(2) {
+  background: linear-gradient(
+    210deg,
+    var(--gradient-forest) 0%,
+    var(--gradient-charcoal) 50%,
+    var(--gradient-slate) 100%
+  );
+}
+
+/* Feature card 3: Plum to graphite */
+.anduril-feature-card:nth-child(3) {
+  background: linear-gradient(
+    75deg,
+    var(--gradient-plum) 0%,
+    var(--gradient-graphite) 45%,
+    var(--gradient-charcoal) 100%
+  );
+}
+
+/* Feature card 4: Burgundy diagonal */
+.anduril-feature-card:nth-child(4) {
+  background: linear-gradient(
+    120deg,
+    var(--gradient-burgundy) 0%,
+    var(--gradient-charcoal) 55%,
+    var(--gradient-steel) 100%
+  );
 }
 
 .anduril-feature-card-title {
