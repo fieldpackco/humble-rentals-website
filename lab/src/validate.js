@@ -34,9 +34,14 @@ if (fs.existsSync(PAGES_DIR)) {
     const pagePath = path.join(PAGES_DIR, file);
     const pageData = JSON.parse(fs.readFileSync(pagePath, 'utf8'));
 
-    // Determine which schema to use based on page name
-    const pageName = file.replace('.json', '');
-    const schemaName = (pageName === 'home') ? 'home' : 'page';
+    // Determine which schema to use based on layout or page name
+    let schemaName;
+    if (pageData.layout === 'landing-page-anduril') {
+      schemaName = 'landing-page-anduril';
+    } else {
+      const pageName = file.replace('.json', '');
+      schemaName = (pageName === 'home') ? 'home' : 'page';
+    }
 
     const validate = ajv.getSchema(schemaName);
     if (!validate) {
