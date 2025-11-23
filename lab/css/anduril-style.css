@@ -79,6 +79,8 @@ body {
   font-size: var(--anduril-font-body);
   line-height: var(--anduril-line-body);
   letter-spacing: var(--anduril-spacing-body);
+  margin: 0;
+  padding: 0;
 }
 
 /* Container */
@@ -90,11 +92,23 @@ body {
 
 /* Background Colors */
 .anduril-bg-light {
-  background-color: var(--anduril-gray-light);
+  background: linear-gradient(
+    180deg,
+    var(--anduril-gray-light) 0%,
+    #f0f0f0 50%,
+    var(--anduril-gray-light) 100%
+  );
 }
 
 .anduril-bg-white {
-  background-color: var(--anduril-white);
+  background: linear-gradient(
+    165deg,
+    #ffffff 0%,
+    #fefefe 20%,
+    #fef5f1 40%,
+    #fefefe 70%,
+    #ffffff 100%
+  );
 }
 
 .anduril-bg-black {
@@ -158,7 +172,12 @@ body {
    ============================================ */
 
 .anduril-hero {
-  background-color: var(--anduril-gray-light);
+  background: linear-gradient(
+    180deg,
+    var(--anduril-gray-light) 0%,
+    #f0f0f0 50%,
+    var(--anduril-gray-light) 100%
+  );
   padding: 120px 0 80px;
   min-height: 65vh;
   display: flex;
