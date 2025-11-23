@@ -89,3 +89,54 @@ body {
   background-color: var(--anduril-black);
   color: var(--anduril-text-inverse);
 }
+
+/* ============================================
+   NAVIGATION
+   ============================================ */
+
+.anduril-nav {
+  background-color: var(--anduril-gray-light);
+  border-bottom: 1px solid var(--anduril-gray-medium);
+  padding: var(--anduril-spacing-xs) 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.anduril-nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.anduril-logo {
+  font-size: 20px;
+  font-weight: var(--anduril-weight-bold);
+  color: var(--anduril-orange);
+  text-decoration: none;
+  letter-spacing: 0.05em;
+}
+
+.anduril-nav-links {
+  display: flex;
+  gap: var(--anduril-spacing-small);
+}
+
+.anduril-nav-link {
+  font-size: 16px;
+  color: var(--anduril-text-primary);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.anduril-nav-link:hover {
+  color: var(--anduril-orange);
+}
+
+/* Responsive Navigation */
+@media (max-width: 767px) {
+  .anduril-nav-links {
+    gap: 20px;
+    font-size: 14px;
+  }
+}
