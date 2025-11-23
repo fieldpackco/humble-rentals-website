@@ -278,7 +278,7 @@ body {
   font-size: 72px;
   font-weight: var(--anduril-weight-bold);
   line-height: 1;
-  margin-bottom: 16px;
+  margin-bottom: 8px;
   color: var(--anduril-text-inverse);
 }
 
@@ -330,7 +330,7 @@ body {
 .anduril-feature-card {
   background-color: var(--anduril-black);
   color: var(--anduril-text-inverse);
-  padding: var(--anduril-spacing-small) var(--anduril-spacing-small) var(--anduril-spacing-xs);
+  padding: var(--anduril-spacing-xs) var(--anduril-spacing-small) var(--anduril-spacing-xs);
   min-height: 300px;
   display: flex;
   flex-direction: column;
