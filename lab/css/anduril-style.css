@@ -268,7 +268,7 @@ body {
 .anduril-card-dark {
   background-color: var(--anduril-black);
   color: var(--anduril-text-inverse);
-  padding: var(--anduril-spacing-medium) var(--anduril-spacing-small);
+  padding: var(--anduril-spacing-small) var(--anduril-spacing-small) var(--anduril-spacing-xs);
   min-height: 400px;
   display: flex;
   flex-direction: column;
@@ -278,7 +278,7 @@ body {
   font-size: 72px;
   font-weight: var(--anduril-weight-bold);
   line-height: 1;
-  margin-bottom: var(--anduril-spacing-small);
+  margin-bottom: var(--anduril-spacing-xs);
   color: var(--anduril-text-inverse);
 }
 
@@ -287,7 +287,8 @@ body {
   font-weight: var(--anduril-weight-bold);
   line-height: var(--anduril-line-heading);
   letter-spacing: var(--anduril-spacing-heading);
-  margin-bottom: 20px;
+  margin-bottom: auto;
+  padding-bottom: 20px;
   color: var(--anduril-text-inverse);
 }
 
@@ -296,6 +297,7 @@ body {
   line-height: var(--anduril-line-body);
   color: var(--anduril-text-inverse);
   opacity: 0.9;
+  margin-top: auto;
 }
 
 /* Responsive Cards Grid */
