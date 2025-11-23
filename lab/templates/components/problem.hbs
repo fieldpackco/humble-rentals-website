@@ -1,11 +1,11 @@
-<section class="problem" id="problem">
-    <h2>{{title}}</h2>
-    <p class="intro">{{intro}}</p>
-    <div class="problem-grid">
+<section class="section" id="problem">
+    <h2 class="section-title">{{title}}</h2>
+    <p class="section-subtitle">{{intro}}</p>
+    <div class="grid grid-3">
         {{#each items}}
-        <div class="problem-item">
-            <h3>{{title}}</h3>
-            <p>{{description}}</p>
+        <div class="card">
+            <h3 class="card-title">{{title}}</h3>
+            <p class="card-description">{{description}}</p>
         </div>
         {{/each}}
     </div>

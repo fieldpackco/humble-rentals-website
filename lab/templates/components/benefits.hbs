@@ -1,11 +1,11 @@
-<section class="benefits" id="benefits">
-    <h2>{{title}}</h2>
-    <div class="benefits-grid">
+<section class="section" id="benefits">
+    <h2 class="section-title">{{title}}</h2>
+    <div class="grid grid-3">
         {{#each items}}
-        <div class="benefit-card animate-in">
-            <div class="benefit-icon">{{icon}}</div>
-            <h3>{{title}}</h3>
-            <p>{{description}}</p>
+        <div class="card animate-in">
+            <div class="card-icon">{{icon}}</div>
+            <h3 class="card-title">{{title}}</h3>
+            <p class="card-description">{{description}}</p>
         </div>
         {{/each}}
     </div>
