@@ -18,6 +18,18 @@
   /* Brand Accent (LIMITED USE) */
   --anduril-orange: #FF6B35;          /* Logo, primary CTA only */
 
+  /* Muted Gradient Colors (desaturated for subtle effect) */
+  --gradient-dark-blue: #1a1d2e;      /* Deep navy */
+  --gradient-slate: #2d3748;          /* Slate gray */
+  --gradient-charcoal: #1f2937;       /* Charcoal */
+  --gradient-steel: #374151;          /* Steel gray */
+  --gradient-midnight: #1e293b;       /* Midnight blue */
+  --gradient-graphite: #27272a;       /* Graphite */
+  --gradient-ocean: #1e3a5f;          /* Deep ocean blue */
+  --gradient-forest: #1e3a2f;         /* Dark forest green */
+  --gradient-plum: #2e1a3a;           /* Dark plum */
+  --gradient-burgundy: #3a1e2e;       /* Dark burgundy */
+
   /* Typography Scale */
   --anduril-font-hero: clamp(80px, 12vw, 140px);
   --anduril-font-section-title: clamp(48px, 8vw, 96px);
