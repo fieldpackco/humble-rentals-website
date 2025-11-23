@@ -4,410 +4,127 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LAB SEVEN - Labrador Field Systems</title>
+    <meta name="description" content="Silent battery power for city services, live events, and public venues. Zero emissions, zero noise.">
 
-    <!-- Shared Design System -->
-    <link rel="stylesheet" href="css/design-system.css">
-    <link rel="stylesheet" href="css/components.css">
-    <link rel="stylesheet" href="css/layouts.css">
-    <link rel="stylesheet" href="css/index-components.css">
+    <!-- Anduril-style CSS -->
+    <link rel="stylesheet" href="/css/anduril-style.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav>
-        <div class="nav-wrapper">
-            <div class="logo">LABRADOR</div>
-            <ul class="nav-items">
-                <li><a href="#specs">Specifications</a></li>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#pricing">Pricing</a></li>
-                <li><a href="#future">Roadmap</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="nav-icons">
-                <span>🔍</span>
-                <span>📧</span>
+
+    <nav class="anduril-nav">
+        <div class="anduril-container">
+            <div class="anduril-nav-content">
+                <a href="/" class="anduril-logo">LABRADOR</a>
+                <div class="anduril-nav-links">
+                    <a href="/" class="anduril-nav-link">Home</a>
+                    <a href="/customers" class="anduril-nav-link">Customers</a>
+                    <a href="/specifications" class="anduril-nav-link">Product</a>
+                    <a href="/rental" class="anduril-nav-link">Rental</a>
+                    <a href="/contact" class="anduril-nav-link">Contact</a>
+                </div>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero">
-        <h1 class="animate-in">LAB SEVEN</h1>
-        <p class="tagline animate-in">No refueling. No noise. More power than a 7000 watt generator.</p>
-        <p class="price animate-in">Available through Anytime Production Equipment Rentals</p>
-        <p class="availability animate-in">ONE FREE RENTAL DAY WITH PROMO CODE "241"</p>
-        <div class="cta-buttons animate-in">
-            <a href="mailto:rentals@anytimerentals.com" class="btn btn-primary">Contact Anytime Rentals</a>
-            <a href="#specs" class="btn btn-secondary">View specs</a>
-        </div>
-        <div class="links animate-in">
-            <a href="#features">See what makes it different</a>
-            <a href="#pricing">Rental options</a>
-        </div>
-        <div class="hero-image animate-in">
-            <div class="product-image">
-                <div class="product-label">LAB SEVEN</div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Typography Section -->
-    <section class="typography-section">
-        <h2>Turn any outlet into 60A distro</h2>
-        <p class="subtitle">Quiet, house-power charging with battery buffering. Plug into a standard 15/20A receptacle, cap the draw, and let the pack cover peaks. Less friction with owners, fewer noise complaints, and a calmer set.</p>
-    </section>
-
-    <!-- Specs Section -->
-    <section class="specs" id="specs">
-        <h2>The battery built for production</h2>
-        <div class="specs-grid">
-            <div class="spec-card animate-in">
-                <div class="spec-icon">⚡</div>
-                <h3>True 60A Power</h3>
-                <div class="spec-value">60A<span class="spec-unit">OUT</span></div>
-                <p>Three 20A Edison on their own circuits, and 1 60A Bates. The only battery with 60A Bates out, no adapters needed.</p>
-            </div>
-            <div class="spec-card animate-in">
-                <div class="spec-icon">🔋</div>
-                <h3>Fastest Charging</h3>
-                <div class="spec-value">1<span class="spec-unit">hour</span></div>
-                <p>Charge one battery in 1 hour using 60A Bates or 4-5 hours using standard 110v</p>
-            </div>
-            <div class="spec-card animate-in">
-                <div class="spec-icon">💪</div>
-                <h3>7.5kWh Storage</h3>
-                <div class="spec-value">7.5<span class="spec-unit">kWh</span></div>
-                <p>1 or 2 batteries solve any problem for HMU, crafty, production, and more</p>
-            </div>
-            <div class="spec-card animate-in">
-                <div class="spec-icon">🔌</div>
-                <h3>Use Existing Distro</h3>
-                <div class="spec-value">BATES</div>
-                <p>Nobody needs to change their workflows - use the same distro boxes you always have</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Features Section -->
-    <section class="features" id="features">
-        <div class="feature-block">
-            <div class="feature-content">
-                <h2><span class="gradient">Saves money</span> over generators</h2>
-                <p>When you add fuel runs, fire watch, noise complaints, and slow wrap, generators cost more than the day rate suggests. Quiet battery carts remove the drama and keep your day on rails.</p>
-                <ul class="feature-list">
-                    <li>No fuel costs - hundreds saved per rental</li>
-                    <li>Fewer special conditions and permits</li>
-                    <li>Less noise = fewer neighbor complaints</li>
-                    <li>Faster wrap: power DIT and production while electric wraps</li>
-                </ul>
-            </div>
-            <div class="feature-visual">
-                <div class="feature-stat">
-                    <div class="feature-stat-number">NO</div>
-                    <div class="feature-stat-label">Fuel Costs</div>
+    <section class="anduril-hero">
+        <div class="anduril-container">
+            <div class="anduril-hero-content">
+                <div class="anduril-hero-label">BATTERY POWER SYSTEMS</div>
+                <h1 class="anduril-hero-title">LAB SEVEN BATTERY</h1>
+                <div class="anduril-hero-description">
+                    <p>Silent battery power for city services, live events, and public venues. True 60A output. Zero emissions, zero noise complaints, zero permits.</p>
                 </div>
-            </div>
-        </div>
-
-        <div class="feature-block reverse">
-            <div class="feature-content">
-                <h2><span class="gradient">Venue-friendly</span> everywhere</h2>
-                <p>Use indoors - or anywhere. Rugged design and cart for outdoor locations. Venue-friendly option for stages, hotels, offices, ballrooms, and more.</p>
-                <ul class="feature-list">
-                    <li>Near-silent at point of use</li>
-                    <li>Fewer generator-specific approvals</li>
-                    <li>Easier indoors and on rooftops</li>
-                    <li>Looks and feels "low impact" to owners and HOAs</li>
-                </ul>
-            </div>
-            <div class="feature-visual dark">
-                <div class="feature-stat">
-                    <div class="feature-stat-number">QUIET</div>
-                    <div class="feature-stat-label">Silent Operation</div>
-                </div>
-            </div>
-        </div>
-
-        <div class="feature-block">
-            <div class="feature-content">
-                <h2><span class="gradient">Delivery</span> and charging handled</h2>
-                <p>We deliver, place, and collect the carts. No storage, no hauling, and less crew time at wrap. We can also handle overnight charging for you.</p>
-                <ul class="feature-list">
-                    <li>White-glove delivery and setup</li>
-                    <li>Overnight charging service available</li>
-                    <li>No storage or hauling required</li>
-                    <li>Free generator backup included for peace of mind</li>
-                </ul>
-            </div>
-            <div class="feature-visual">
-                <div class="feature-stat">
-                    <div class="feature-stat-number">EASY</div>
-                    <div class="feature-stat-label">Full Service</div>
+                <div class="anduril-cta-buttons">
+                    <a href="/contact" class="btn-anduril-primary">
+                        Contact Labrador
+                    </a>
+                    <a href="/specifications" class="btn-anduril-secondary">
+                        View Specifications
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Gallery Section -->
-    <section class="gallery" id="gallery">
-        <h2>Designed for production reliability</h2>
-        <div class="gallery-grid">
-            <div class="gallery-item large animate-in">
-                <h3>Safest Chemistry Available</h3>
-                <p>Lithium Iron Phosphate (LFP) chemistry - the safest, most stable battery technology on the market. Circuit breakers on every outlet. Insurance-friendly and venue-approved.</p>
-            </div>
-            <div class="gallery-item animate-in">
-                <h3>Rugged Cart Design</h3>
-                <p>Built for the real world of production. Easy to move, stable on location, and ready for outdoor or indoor use.</p>
-            </div>
-            <div class="gallery-item animate-in">
-                <h3>No Workflow Changes</h3>
-                <p>Use the same distro boxes you always have. Your crew already knows how to use it - just plug in and power on.</p>
+    <!-- Benefits Section (Numbered Cards) -->
+    <section class="anduril-section anduril-bg-white">
+        <div class="anduril-container">
+            <h2 class="anduril-section-title">Built for Professional Power</h2>
+            <div class="anduril-cards-grid">
+                <div class="anduril-card-dark">
+                    <div class="anduril-card-number">01</div>
+                    <h3 class="anduril-card-title">True 60A Power</h3>
+                    <p class="anduril-card-description">The only battery with 60A Bates out. Three 20A Edison circuits and 1 60A Bates. No adapters needed.</p>
+                </div>
+                <div class="anduril-card-dark">
+                    <div class="anduril-card-number">02</div>
+                    <h3 class="anduril-card-title">Fastest Charging</h3>
+                    <p class="anduril-card-description">Charge one battery in 1 hour using 60A Bates input, or 4-5 hours using standard 110v outlet.</p>
+                </div>
+                <div class="anduril-card-dark">
+                    <div class="anduril-card-number">03</div>
+                    <h3 class="anduril-card-title">Professional Reliability</h3>
+                    <p class="anduril-card-description">LFP chemistry, BMS protection, real-time monitoring. 7.5kWh storage. Built for production demands.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Pricing Section -->
-    <section class="pricing" id="pricing">
-        <h2>Rental through Anytime Production Equipment</h2>
-        <p class="pricing-subtitle">ONE FREE RENTAL DAY WITH PROMO CODE "241"<br>Through January 31st 2026, with 2 or more rental days</p>
-        <div class="pricing-cards">
-            <div class="pricing-card featured animate-in">
-                <h3>LAB SEVEN Battery Carts</h3>
-                <div class="price-amount">Contact<span> for pricing</span></div>
-                <p class="price-period">Available for your production needs</p>
-                <ul class="price-features">
-                    <li>White-glove delivery, placement & collection</li>
-                    <li>Overnight charging service available</li>
-                    <li>Complete cable packages</li>
-                    <li>Free generator backup included</li>
-                    <li>Technical support</li>
-                    <li>No storage, no hauling</li>
-                </ul>
-                <a href="mailto:rentals@anytimerentals.com" class="btn btn-primary" style="width: 100%; margin-top: 30px;">Contact Anytime Rentals</a>
-            </div>
-        </div>
-        <div style="text-align: center; margin-top: 40px;">
-            <p style="font-size: 18px; color: var(--text-secondary); margin-bottom: 16px;">
-                <strong>Anytime Production Equipment Rentals</strong><br>
-                11834 Roscoe Blvd., Sun Valley, CA 91352
-            </p>
-            <p style="font-size: 20px; color: var(--text-primary); font-weight: 600;">
-                818.394.9675 | <a href="mailto:rentals@anytimerentals.com" style="color: var(--primary-orange); text-decoration: none;">rentals@anytimerentals.com</a>
-            </p>
-            <p style="font-size: 16px; color: var(--text-secondary); margin-top: 8px;">
-                <a href="http://www.anytimerentals.com" target="_blank" style="color: var(--primary-orange); text-decoration: none;">www.anytimerentals.com</a>
-            </p>
-        </div>
-    </section>
-
-    <!-- Compare Section -->
-    <section class="compare" id="compare">
-        <h2>Why productions choose LAB SEVEN</h2>
-        <div class="compare-table">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Production Need</th>
-                        <th>LAB SEVEN</th>
-                        <th>Traditional Generators</th>
-                        <th>Other Batteries</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>60A Power Output</td>
-                        <td class="highlight">True 60A Bates out</td>
-                        <td>Variable output</td>
-                        <td>Adapters required</td>
-                    </tr>
-                    <tr>
-                        <td>Venue Approval</td>
-                        <td class="highlight">Silent & venue-friendly</td>
-                        <td>Noise complaints common</td>
-                        <td>Silent but low power</td>
-                    </tr>
-                    <tr>
-                        <td>Daily Operating Costs</td>
-                        <td class="highlight">No fuel, fewer delays</td>
-                        <td>Fuel + permits + fire watch</td>
-                        <td>Low power limits usage</td>
-                    </tr>
-                    <tr>
-                        <td>Fast Charging</td>
-                        <td class="highlight">1 hour (60A) or 4-5 hrs (110v)</td>
-                        <td>N/A</td>
-                        <td>8+ hours typical</td>
-                    </tr>
-                    <tr>
-                        <td>Distro Compatibility</td>
-                        <td class="highlight">Use existing Bates distro</td>
-                        <td>Standard distro</td>
-                        <td>Edison only or adapters</td>
-                    </tr>
-                    <tr>
-                        <td>Wrap Time</td>
-                        <td class="highlight">Faster - no refueling</td>
-                        <td>Slow wrap for refueling</td>
-                        <td>Varies</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </section>
-
-    <!-- Coming Soon Section -->
-    <section class="coming-soon" id="future">
-        <h2>The future of field power</h2>
-        <div class="product-grid">
-            <div class="product-card animate-in">
-                <div class="product-icon">📱</div>
-                <h3>LAB CONNECT</h3>
-                <span class="product-year">2025</span>
-                <p>Multi-battery software monitoring with offline capabilities. Track and manage your entire fleet from one app.</p>
-            </div>
-            <div class="product-card animate-in">
-                <div class="product-icon">🎯</div>
-                <h3>LAB THREE</h3>
-                <span class="product-year">2025</span>
-                <p>All the technology of LAB SEVEN in a one-handed carry form factor. Perfect for run-and-gun productions.</p>
-            </div>
-            <div class="product-card animate-in">
-                <div class="product-icon">⚡</div>
-                <h3>LAB CHARGE</h3>
-                <span class="product-year">2026</span>
-                <p>All-terrain rapid charging system. Charge multiple batteries simultaneously in any location.</p>
-            </div>
-            <div class="product-card animate-in">
-                <div class="product-icon">🔧</div>
-                <h3>LAB MODULES</h3>
-                <span class="product-year">2026</span>
-                <p>Customizable battery systems tailored to your specific production needs and power requirements.</p>
+    <!-- Features Section (4-column Grid) -->
+    <section class="anduril-section anduril-bg-light">
+        <div class="anduril-container">
+            <h2 class="anduril-section-title">Why Teams Choose LAB SEVEN</h2>
+            <div class="anduril-features-grid">
+                <div class="anduril-feature-card">
+                    <h3 class="anduril-feature-card-title">Saves Money Over Generators</h3>
+                    <p class="anduril-feature-card-description">When you add fuel runs, fire watch, noise complaints, and slow wrap, generators cost more than the day rate suggests.</p>
+                </div>
+                <div class="anduril-feature-card">
+                    <h3 class="anduril-feature-card-title">Works Where Generators Can&#x27;t</h3>
+                    <p class="anduril-feature-card-description">Indoor venues, noise-restricted zones, residential areas, and historic locations that prohibit generators.</p>
+                </div>
+                <div class="anduril-feature-card">
+                    <h3 class="anduril-feature-card-title">Turn Any Outlet Into 60A Distro</h3>
+                    <p class="anduril-feature-card-description">Plug into standard 15/20A receptacle, cap the draw, let the pack cover peaks. Less friction, fewer noise complaints.</p>
+                </div>
+                <div class="anduril-feature-card">
+                    <h3 class="anduril-feature-card-title">Use Existing Distro</h3>
+                    <p class="anduril-feature-card-description">Nobody needs to change workflows. Use the same distro boxes you always have. Professional-grade compatibility.</p>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer id="contact">
-        <div class="footer-content">
-            <div class="footer-grid">
-                <div class="footer-column">
-                    <h4>Shop and Learn</h4>
-                    <ul>
-                        <li><a href="#">LAB SEVEN</a></li>
-                        <li><a href="#">LAB THREE</a></li>
-                        <li><a href="#">Accessories</a></li>
-                        <li><a href="#">Compare</a></li>
-                    </ul>
+    <footer class="anduril-footer">
+        <div class="anduril-container">
+            <div class="anduril-footer-content">
+                <div class="anduril-footer-brand">
+                    <div class="anduril-footer-logo">LABRADOR</div>
                 </div>
-                <div class="footer-column">
-                    <h4>Professional</h4>
-                    <ul>
-                        <li><a href="#">Film & TV</a></li>
-                        <li><a href="#">Commercial</a></li>
-                        <li><a href="#">Events</a></li>
-                        <li><a href="#">Enterprise</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h4>Support</h4>
-                    <ul>
-                        <li><a href="#">Contact Support</a></li>
-                        <li><a href="#">Documentation</a></li>
-                        <li><a href="#">Service Programs</a></li>
-                        <li><a href="#">Beta Program</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h4>Labrador Field Systems</h4>
-                    <ul>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">Press</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
+                <div class="anduril-footer-links">
+                    <div class="anduril-footer-column">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="/about">About</a></li>
+                            <li><a href="/contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="anduril-footer-column">
+                        <h4>Product</h4>
+                        <ul>
+                            <li><a href="/specifications">Specifications</a></li>
+                            <li><a href="/rental">Rental</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>Copyright © 2025 Labrador Field Systems. All rights reserved.</p>
-                <div class="footer-links">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of Use</a>
-                    <a href="#">Sales Policy</a>
-                    <a href="#">Legal</a>
-                    <a href="#">Site Map</a>
-                </div>
-            </div>
-            <div style="text-align: center; margin-top: 30px; padding: 20px; background: rgba(255, 107, 53, 0.05); border-radius: 12px; font-size: 12px; color: var(--text-secondary); font-weight: 600; letter-spacing: 0.05em;">
-                🔒 CONFIDENTIAL & PROPRIETARY – BETA PROGRAM MATERIALS
+            <div class="anduril-footer-bottom">
+                <p>COPYRIGHT © 2025 LABRADOR FIELD SYSTEMS</p>
             </div>
         </div>
     </footer>
 
-    <script>
-        // Smooth scroll for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-
-        // Animated elements now use continuous CSS gradient animation
-        // No observer needed - gradient animates automatically
-
-        // Parallax effects
-        window.addEventListener('scroll', () => {
-            const scrolled = window.pageYOffset;
-            const parallaxElements = document.querySelectorAll('.hero-image');
-            
-            parallaxElements.forEach(element => {
-                const rect = element.getBoundingClientRect();
-                const speed = 0.5;
-                const yPos = -(scrolled * speed);
-                
-                if (rect.bottom >= 0 && rect.top <= window.innerHeight) {
-                    element.style.transform = `translateY(${yPos}px)`;
-                }
-            });
-        });
-
-        // Sticky navigation background
-        window.addEventListener('scroll', () => {
-            const nav = document.querySelector('nav');
-            if (window.scrollY > 10) {
-                nav.classList.add('scrolled');
-            } else {
-                nav.classList.remove('scrolled');
-            }
-        });
-
-        // Elements with .animate-in class automatically have gradient animation from CSS
-
-        // Add smooth scroll behavior
-        document.documentElement.style.scrollBehavior = 'smooth';
-
-        // Enhanced hover effects for cards
-        document.querySelectorAll('.spec-card, .pricing-card, .product-card').forEach(card => {
-            card.addEventListener('mouseenter', () => {
-                card.style.transform = 'translateY(-8px)';
-                card.style.boxShadow = '0 20px 40px rgba(0,0,0,0.15)';
-                card.style.transition = 'all 0.4s cubic-bezier(0.4, 0, 0.2, 1)';
-            });
-            
-            card.addEventListener('mouseleave', () => {
-                card.style.transform = 'translateY(0)';
-                card.style.boxShadow = 'none';
-            });
-        });
-
-    </script>
 </body>
 </html>

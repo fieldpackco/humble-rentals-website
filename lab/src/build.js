@@ -81,12 +81,12 @@ pageFiles.forEach(file => {
 
   // Use different template based on page type
   let pageTemplate;
-  if (pageName === 'home') {
+  if (pageData.layout === 'landing-page-anduril') {
+    pageTemplate = landingPageAnduril;
+  } else if (pageName === 'home') {
     pageTemplate = homePage;
   } else if (pageName === 'specifications') {
     pageTemplate = specsPage;
-  } else if (pageData.layout === 'landing-page-anduril') {
-    pageTemplate = landingPageAnduril;
   } else {
     pageTemplate = landingPage;
   }
