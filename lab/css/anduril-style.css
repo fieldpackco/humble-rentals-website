@@ -94,9 +94,11 @@ body {
 .anduril-bg-light {
   background: linear-gradient(
     180deg,
-    var(--anduril-gray-light) 0%,
+    #dcdcdc 0%,
+    var(--anduril-gray-light) 30%,
     #f0f0f0 50%,
-    var(--anduril-gray-light) 100%
+    var(--anduril-gray-light) 70%,
+    #ffffff 100%
   );
 }
 
@@ -104,9 +106,9 @@ body {
   background: linear-gradient(
     165deg,
     #ffffff 0%,
-    #fefefe 20%,
-    #fef5f1 40%,
-    #fefefe 70%,
+    #fefefe 15%,
+    #fef5f1 25%,
+    #fefefe 60%,
     #ffffff 100%
   );
 }
@@ -174,9 +176,11 @@ body {
 .anduril-hero {
   background: linear-gradient(
     180deg,
-    var(--anduril-gray-light) 0%,
+    #dcdcdc 0%,
+    var(--anduril-gray-light) 30%,
     #f0f0f0 50%,
-    var(--anduril-gray-light) 100%
+    var(--anduril-gray-light) 70%,
+    #ffffff 100%
   );
   padding: 120px 0 80px;
   min-height: 65vh;
