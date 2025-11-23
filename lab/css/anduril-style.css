@@ -296,14 +296,13 @@ body {
   );
 }
 
-/* Card 02: Slate to steel horizontal gradient */
+/* Card 02: Midnight diagonal gradient with more variety */
 .anduril-card-dark:nth-child(2) {
   background: linear-gradient(
-    90deg,
-    var(--gradient-slate) 0%,
-    var(--gradient-charcoal) 30%,
-    var(--gradient-steel) 70%,
-    var(--gradient-midnight) 100%
+    45deg,
+    var(--gradient-midnight) 0%,
+    var(--gradient-graphite) 35%,
+    var(--gradient-steel) 100%
   );
 }
 
@@ -379,43 +378,43 @@ body {
   flex-direction: column;
 }
 
-/* Feature card 1: Deep blue to ocean */
+/* Feature card 1: Forest to slate diagonal (opposite direction) */
 .anduril-feature-card:nth-child(1) {
   background: linear-gradient(
-    160deg,
-    var(--gradient-dark-blue) 0%,
-    var(--gradient-ocean) 60%,
-    var(--gradient-midnight) 100%
-  );
-}
-
-/* Feature card 2: Forest to charcoal */
-.anduril-feature-card:nth-child(2) {
-  background: linear-gradient(
-    210deg,
+    200deg,
     var(--gradient-forest) 0%,
-    var(--gradient-charcoal) 50%,
+    var(--gradient-graphite) 55%,
     var(--gradient-slate) 100%
   );
 }
 
-/* Feature card 3: Plum to graphite */
+/* Feature card 2: Ocean to midnight (blue theme) */
+.anduril-feature-card:nth-child(2) {
+  background: linear-gradient(
+    165deg,
+    var(--gradient-ocean) 0%,
+    var(--gradient-dark-blue) 40%,
+    var(--gradient-midnight) 100%
+  );
+}
+
+/* Feature card 3: Plum prominence with charcoal blend */
 .anduril-feature-card:nth-child(3) {
   background: linear-gradient(
     75deg,
     var(--gradient-plum) 0%,
-    var(--gradient-graphite) 45%,
+    var(--gradient-plum) 25%,
     var(--gradient-charcoal) 100%
   );
 }
 
-/* Feature card 4: Burgundy diagonal */
+/* Feature card 4: Burgundy to slate (warm to cool) */
 .anduril-feature-card:nth-child(4) {
   background: linear-gradient(
     120deg,
     var(--gradient-burgundy) 0%,
-    var(--gradient-charcoal) 55%,
-    var(--gradient-steel) 100%
+    var(--gradient-burgundy) 20%,
+    var(--gradient-slate) 100%
   );
 }
 
