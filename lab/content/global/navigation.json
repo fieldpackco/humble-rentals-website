@@ -2,7 +2,7 @@
   "logo": "LABRADOR",
   "menuItems": [
     {
-      "label": "Solutions",
+      "label": "Customers",
       "dropdown": true,
       "items": [
         { "text": "Experience Agencies", "href": "/experience-agencies" },
