@@ -140,3 +140,104 @@ body {
     font-size: 14px;
   }
 }
+
+/* ============================================
+   HERO SECTION
+   ============================================ */
+
+.anduril-hero {
+  background-color: var(--anduril-gray-light);
+  padding: var(--anduril-spacing-section) 0;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+}
+
+.anduril-hero-content {
+  max-width: 1000px;
+}
+
+.anduril-hero-label {
+  font-size: var(--anduril-font-small);
+  font-weight: var(--anduril-weight-bold);
+  color: var(--anduril-text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: var(--anduril-spacing-xs);
+}
+
+.anduril-hero-title {
+  font-size: var(--anduril-font-hero);
+  font-weight: var(--anduril-weight-black);
+  line-height: var(--anduril-line-hero);
+  letter-spacing: var(--anduril-spacing-hero);
+  margin-bottom: var(--anduril-spacing-small);
+  color: var(--anduril-text-primary);
+}
+
+.anduril-hero-description {
+  font-size: var(--anduril-font-body);
+  line-height: var(--anduril-line-body);
+  color: var(--anduril-text-secondary);
+  max-width: 600px;
+  margin-bottom: var(--anduril-spacing-medium);
+}
+
+.anduril-cta-buttons {
+  display: flex;
+  gap: var(--anduril-spacing-xs);
+  flex-wrap: wrap;
+}
+
+/* CTA Buttons */
+.btn-anduril-primary {
+  background-color: var(--anduril-orange);
+  color: var(--anduril-white);
+  padding: 16px 32px;
+  font-size: 16px;
+  font-weight: var(--anduril-weight-bold);
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: inline-block;
+}
+
+.btn-anduril-primary:hover {
+  background-color: #E55A2B;
+  transform: translateY(-2px);
+}
+
+.btn-anduril-secondary {
+  background-color: transparent;
+  color: var(--anduril-text-primary);
+  padding: 16px 32px;
+  font-size: 16px;
+  font-weight: var(--anduril-weight-bold);
+  text-decoration: none;
+  border: 2px solid var(--anduril-text-primary);
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  display: inline-block;
+}
+
+.btn-anduril-secondary:hover {
+  background-color: var(--anduril-text-primary);
+  color: var(--anduril-white);
+}
+
+/* Responsive Hero */
+@media (max-width: 767px) {
+  .anduril-hero {
+    padding: 80px 0;
+    min-height: 60vh;
+  }
+
+  .anduril-cta-buttons {
+    flex-direction: column;
+  }
+
+  .btn-anduril-primary,
+  .btn-anduril-secondary {
+    text-align: center;
+  }
+}
