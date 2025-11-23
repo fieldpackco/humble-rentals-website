@@ -289,15 +289,18 @@ nav.scrolled {
 }
 
 .card-title {
-    font-size: var(--font-size-24);
+    font-size: var(--font-size-card-title);
     font-weight: var(--font-weight-bold);
     margin-bottom: var(--space-16);
     color: var(--text-primary);
+    line-height: var(--line-height-heading);
+    letter-spacing: var(--letter-spacing-heading);
 }
 
 .card-description {
     font-size: var(--font-size-18);
-    line-height: var(--line-height-loose);
+    line-height: var(--line-height-body);
+    letter-spacing: var(--letter-spacing-body);
     color: var(--text-secondary);
 }
 

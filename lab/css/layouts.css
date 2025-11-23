@@ -84,11 +84,12 @@ section {
 
 /* Section Titles */
 .section-title {
-    font-size: var(--font-size-56);
+    font-size: var(--font-size-section-title);
     font-weight: var(--font-weight-bold);
     text-align: center;
     margin-bottom: var(--space-80);
-    letter-spacing: var(--letter-spacing-normal);
+    line-height: var(--line-height-heading);
+    letter-spacing: var(--letter-spacing-heading);
 }
 
 .section-subtitle {
@@ -113,10 +114,10 @@ section {
 }
 
 .hero-title {
-    font-size: var(--font-size-96);
+    font-size: var(--font-size-hero);
     font-weight: var(--font-weight-extrabold);
-    line-height: var(--line-height-tight);
-    letter-spacing: var(--letter-spacing-tight);
+    line-height: var(--line-height-hero);
+    letter-spacing: var(--letter-spacing-hero);
     margin-bottom: var(--space-24);
     background: linear-gradient(135deg, var(--neutral-charcoal) 0%, var(--neutral-slate) 100%);
     -webkit-background-clip: text;
