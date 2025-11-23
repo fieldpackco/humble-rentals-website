@@ -241,3 +241,76 @@ body {
     text-align: center;
   }
 }
+
+/* ============================================
+   NUMBERED CARDS (3-column grid)
+   ============================================ */
+
+.anduril-section {
+  padding: var(--anduril-spacing-section) 0;
+}
+
+.anduril-section-title {
+  font-size: var(--anduril-font-section-title);
+  font-weight: var(--anduril-weight-black);
+  line-height: var(--anduril-line-heading);
+  letter-spacing: var(--anduril-spacing-heading);
+  margin-bottom: var(--anduril-spacing-medium);
+  text-align: left;
+}
+
+.anduril-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--anduril-gap);
+}
+
+.anduril-card-dark {
+  background-color: var(--anduril-black);
+  color: var(--anduril-text-inverse);
+  padding: var(--anduril-spacing-medium) var(--anduril-spacing-small);
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.anduril-card-number {
+  font-size: 72px;
+  font-weight: var(--anduril-weight-bold);
+  line-height: 1;
+  margin-bottom: var(--anduril-spacing-small);
+  color: var(--anduril-text-inverse);
+}
+
+.anduril-card-title {
+  font-size: var(--anduril-font-card-title);
+  font-weight: var(--anduril-weight-bold);
+  line-height: var(--anduril-line-heading);
+  letter-spacing: var(--anduril-spacing-heading);
+  margin-bottom: 20px;
+  color: var(--anduril-text-inverse);
+}
+
+.anduril-card-description {
+  font-size: 16px;
+  line-height: var(--anduril-line-body);
+  color: var(--anduril-text-inverse);
+  opacity: 0.9;
+}
+
+/* Responsive Cards Grid */
+@media (max-width: 1023px) {
+  .anduril-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .anduril-cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .anduril-card-dark {
+    min-height: 300px;
+  }
+}
