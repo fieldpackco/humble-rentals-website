@@ -30,6 +30,11 @@ componentFiles.forEach(file => {
 
 console.log(`Registered ${componentFiles.length} component partials`);
 
+// Register Handlebars helpers
+Handlebars.registerHelper('add', function(a, b) {
+  return a + b;
+});
+
 // Load base layout
 const baseLayoutPath = path.join(TEMPLATES_DIR, 'layouts', 'base.hbs');
 const baseLayoutTemplate = fs.readFileSync(baseLayoutPath, 'utf8');
@@ -47,6 +52,10 @@ const homePage = Handlebars.compile(homePageTemplate);
 const specsPagePath = path.join(TEMPLATES_DIR, 'pages', 'specs-page.hbs');
 const specsPageTemplate = fs.readFileSync(specsPagePath, 'utf8');
 const specsPage = Handlebars.compile(specsPageTemplate);
+
+const landingPageAndurilPath = path.join(TEMPLATES_DIR, 'pages', 'landing-page-anduril.hbs');
+const landingPageAndurilTemplate = fs.readFileSync(landingPageAndurilPath, 'utf8');
+const landingPageAnduril = Handlebars.compile(landingPageAndurilTemplate);
 
 // Load global content
 const navigationPath = path.join(CONTENT_DIR, 'global', 'navigation.json');
@@ -76,6 +85,8 @@ pageFiles.forEach(file => {
     pageTemplate = homePage;
   } else if (pageName === 'specifications') {
     pageTemplate = specsPage;
+  } else if (pageData.layout === 'landing-page-anduril') {
+    pageTemplate = landingPageAnduril;
   } else {
     pageTemplate = landingPage;
   }
