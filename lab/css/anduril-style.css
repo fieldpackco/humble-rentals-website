@@ -94,11 +94,11 @@ body {
 .anduril-bg-light {
   background: linear-gradient(
     180deg,
-    #dcdcdc 0%,
+    #ffffff 0%,
     var(--anduril-gray-light) 30%,
     #f0f0f0 50%,
     var(--anduril-gray-light) 70%,
-    #ffffff 100%
+    #dcdcdc 100%
   );
 }
 
