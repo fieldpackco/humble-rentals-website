@@ -330,7 +330,10 @@ body {
 .anduril-feature-card {
   background-color: var(--anduril-black);
   color: var(--anduril-text-inverse);
-  padding: var(--anduril-spacing-small);
+  padding: var(--anduril-spacing-small) var(--anduril-spacing-small) var(--anduril-spacing-xs);
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
 }
 
 .anduril-feature-card-title {
@@ -338,7 +341,8 @@ body {
   font-weight: var(--anduril-weight-bold);
   line-height: var(--anduril-line-heading);
   letter-spacing: var(--anduril-spacing-heading);
-  margin-bottom: 16px;
+  margin-bottom: auto;
+  padding-bottom: 20px;
   color: var(--anduril-text-inverse);
 }
 
@@ -347,6 +351,7 @@ body {
   line-height: var(--anduril-line-body);
   color: var(--anduril-text-inverse);
   opacity: 0.9;
+  margin-top: auto;
 }
 
 /* Responsive Features Grid */
