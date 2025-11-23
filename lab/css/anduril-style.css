@@ -278,12 +278,43 @@ body {
 }
 
 .anduril-card-dark {
-  background-color: var(--anduril-black);
+  /* Removed: background-color: var(--anduril-black); */
   color: var(--anduril-text-inverse);
   padding: var(--anduril-spacing-small) var(--anduril-spacing-small) var(--anduril-spacing-xs);
   min-height: 400px;
   display: flex;
   flex-direction: column;
+}
+
+/* Card 01: Deep blue diagonal gradient */
+.anduril-card-dark:nth-child(1) {
+  background: linear-gradient(
+    135deg,
+    var(--gradient-dark-blue) 0%,
+    var(--gradient-ocean) 50%,
+    var(--gradient-slate) 100%
+  );
+}
+
+/* Card 02: Slate to steel horizontal gradient */
+.anduril-card-dark:nth-child(2) {
+  background: linear-gradient(
+    90deg,
+    var(--gradient-slate) 0%,
+    var(--gradient-charcoal) 30%,
+    var(--gradient-steel) 70%,
+    var(--gradient-midnight) 100%
+  );
+}
+
+/* Card 03: Vertical graphite gradient */
+.anduril-card-dark:nth-child(3) {
+  background: linear-gradient(
+    180deg,
+    var(--gradient-graphite) 0%,
+    var(--gradient-charcoal) 40%,
+    var(--gradient-slate) 100%
+  );
 }
 
 .anduril-card-number {
