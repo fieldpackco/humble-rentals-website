@@ -1,0 +1,91 @@
+/* ============================================
+   ANDURIL-STYLE DESIGN SYSTEM
+   Monochromatic palette with orange accent
+   ============================================ */
+
+:root {
+  /* Monochromatic Base Colors */
+  --anduril-gray-light: #E8E8E8;      /* Primary background */
+  --anduril-gray-medium: #CCCCCC;     /* Borders, dividers */
+  --anduril-white: #FFFFFF;           /* Alternate sections, cards */
+  --anduril-black: #000000;           /* Dark cards, footer, primary text */
+
+  /* Text Colors */
+  --anduril-text-primary: #000000;    /* Headlines, body */
+  --anduril-text-secondary: #666666;  /* Supporting text */
+  --anduril-text-inverse: #FFFFFF;    /* Text on dark backgrounds */
+
+  /* Brand Accent (LIMITED USE) */
+  --anduril-orange: #FF6B35;          /* Logo, primary CTA only */
+
+  /* Typography Scale */
+  --anduril-font-hero: clamp(80px, 12vw, 140px);
+  --anduril-font-section-title: clamp(48px, 8vw, 96px);
+  --anduril-font-card-title: clamp(24px, 3vw, 36px);
+  --anduril-font-body: 18px;
+  --anduril-font-small: 14px;
+
+  /* Font Weights */
+  --anduril-weight-normal: 400;
+  --anduril-weight-bold: 700;
+  --anduril-weight-black: 900;
+
+  /* Letter Spacing */
+  --anduril-spacing-hero: -0.04em;      /* Very tight */
+  --anduril-spacing-heading: -0.02em;   /* Tight */
+  --anduril-spacing-body: 0;            /* Normal */
+
+  /* Line Heights */
+  --anduril-line-hero: 0.95;      /* Super tight */
+  --anduril-line-heading: 1.1;    /* Tight */
+  --anduril-line-body: 1.6;       /* Comfortable */
+
+  /* Font Family */
+  --anduril-font-family: 'Inter', 'Helvetica Neue', system-ui, -apple-system, sans-serif;
+
+  /* Spacing */
+  --anduril-spacing-section: 200px;
+  --anduril-spacing-large: 100px;
+  --anduril-spacing-medium: 60px;
+  --anduril-spacing-small: 40px;
+  --anduril-spacing-xs: 24px;
+
+  /* Layout */
+  --anduril-max-width: 1400px;
+  --anduril-gap: 24px;
+  --anduril-gap-large: 60px;
+}
+
+/* ============================================
+   BASE STYLES
+   ============================================ */
+
+body {
+  font-family: var(--anduril-font-family);
+  color: var(--anduril-text-primary);
+  background-color: var(--anduril-white);
+  font-size: var(--anduril-font-body);
+  line-height: var(--anduril-line-body);
+  letter-spacing: var(--anduril-spacing-body);
+}
+
+/* Container */
+.anduril-container {
+  max-width: var(--anduril-max-width);
+  margin: 0 auto;
+  padding: 0 var(--anduril-spacing-small);
+}
+
+/* Background Colors */
+.anduril-bg-light {
+  background-color: var(--anduril-gray-light);
+}
+
+.anduril-bg-white {
+  background-color: var(--anduril-white);
+}
+
+.anduril-bg-black {
+  background-color: var(--anduril-black);
+  color: var(--anduril-text-inverse);
+}
