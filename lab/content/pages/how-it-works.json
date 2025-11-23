@@ -1,15 +1,17 @@
 {
+  "layout": "landing-page-anduril",
   "meta": {
     "title": "How LAB SEVEN Rental Works | Professional Battery Power Rentals",
     "description": "Simple rental process for LAB SEVEN battery systems. Book, deliver, power, wrap. White-glove service from Labrador Field Systems."
   },
   "hero": {
-    "title": "Simple rental process, professional results",
-    "tagline": "Book your rental. We deliver and place. You power on. Production happens. We pick up. That's it. No complexity, no drama, no generator headaches.",
+    "category": "HOW IT WORKS",
+    "title": "Simple Rental Process, Professional Results",
+    "description": "Book your rental. We deliver and place. You power on. Production happens. We pick up. That's it. No complexity, no drama, no generator headaches.",
     "cta": {
       "primary": {
         "text": "Contact Labrador",
-        "href": "mailto:amit@fieldpack.co"
+        "href": "/contact"
       },
       "secondary": {
         "text": "View Pricing",
@@ -18,151 +20,49 @@
     }
   },
   "benefits": {
-    "title": "White-glove rental service",
+    "title": "White-Glove Rental Service",
     "items": [
       {
-        "icon": "📞",
-        "title": "Easy booking process",
+        "title": "Easy Booking Process",
         "description": "Call, email, or use your existing rental house workflow. We handle scheduling, logistics, and delivery coordination."
       },
       {
-        "icon": "🚚",
-        "title": "Delivery and placement",
+        "title": "Delivery and Placement",
         "description": "We deliver before your crew call and place the battery where you need it. You don't touch it until production starts."
       },
       {
-        "icon": "⚡",
-        "title": "Simple operation",
+        "title": "Simple Operation",
         "description": "Power on takes 5 minutes. Built-in monitoring shows runtime and status. No special training required for your crew."
       }
     ]
   },
-  "solution": {
-    "title": "The rental process step by step",
+  "features": {
+    "title": "The Rental Process Step by Step",
     "items": [
       {
-        "title": "Step 1: Contact and book",
-        "description": "Reach out to Labrador Field Systems with your shoot dates and location. We'll discuss your power needs and confirm availability. Mention promo code \"241\" for one free rental day on your first booking."
+        "title": "Step 1: Contact and Book",
+        "description": "Reach out to Labrador Field Systems with your shoot dates and location. We'll discuss your power needs and confirm availability. Mention promo code \"241\" for one free rental day."
       },
       {
-        "title": "Step 2: Pre-production planning",
-        "description": "We'll coordinate delivery timing and placement location. Share your power requirements and we'll ensure the system is configured correctly. If you need multiple units or backup generators, we'll arrange that too."
+        "title": "Step 2: Pre-Production Planning",
+        "description": "We'll coordinate delivery timing and placement location. Share your power requirements and we'll ensure the system is configured correctly."
       },
       {
-        "title": "Step 3: Delivery and setup",
-        "description": "Battery delivered before your crew call time. Our team places it where you need it, verifies operation, and provides quick orientation. You're ready to power on when your crew arrives."
+        "title": "Step 3: Delivery and Setup",
+        "description": "Battery delivered before your crew call time. Our team places it where you need it, verifies operation, and provides quick orientation."
       },
       {
-        "title": "Step 4: Production day",
-        "description": "Power on in 5 minutes. Connect your distribution just like you would to a generator. Built-in monitoring shows real-time power draw and remaining runtime. Silent operation all day."
+        "title": "Step 4: Production Day",
+        "description": "Power on in 5 minutes. Connect your distribution just like you would to a generator. Built-in monitoring shows real-time power draw and remaining runtime."
       },
       {
-        "title": "Step 5: Monitoring and support",
+        "title": "Step 5: Monitoring and Support",
         "description": "Remote monitoring available via mobile app. Technical support by phone if you have questions. Battery management system handles all safety and performance automatically."
       },
       {
-        "title": "Step 6: Wrap and pickup",
+        "title": "Step 6: Wrap and Pickup",
         "description": "Power down when production wraps. Battery stays on location overnight. We schedule pickup for next morning or your preferred time. No cleanup, no fuel drain, no complexity."
-      },
-      {
-        "title": "Step 7: Multi-day shoots",
-        "description": "For extended productions, battery can charge overnight from standard outlet (4-5 hours) or fast-charge in 1 hour if you have 60A available. Or rent multiple units for rotation."
-      },
-      {
-        "title": "Step 8: Billing and next rental",
-        "description": "Transparent billing through your rental house account. No hidden fees or surprise charges. Book your next rental based on your experience with the system."
       }
     ]
-  },
-  "specs": {
-    "title": "What to expect",
-    "items": [
-      {
-        "value": "5 min",
-        "label": "Power on time"
-      },
-      {
-        "value": "0",
-        "label": "Special training"
-      },
-      {
-        "value": "24/7",
-        "label": "Tech support"
-      },
-      {
-        "value": "Simple",
-        "label": "One call booking"
-      }
-    ]
-  },
-  "journey": {
-    "title": "A typical rental experience",
-    "comparison": {
-      "without": {
-        "title": "Traditional generator rental",
-        "description": "Book generator 2 weeks ahead. Coordinate fuel delivery. Secure permits and fire watch. Generator arrives day of shoot requiring 2-hour setup. Noise complaints mid-day require repositioning. Fuel run during lunch break. Fire watch extends wrap by 2 hours. Cleanup and removal next morning."
-      },
-      "with": {
-        "title": "LAB SEVEN rental experience",
-        "description": "Book battery with one call. Battery delivered and placed before crew call. Powers on in 5 minutes. Silent operation all day. Zero complaints. Powers down when you wrap. Scheduled pickup next morning. Crew goes home on time. Location owner happy."
-      }
-    }
-  },
-  "caseStudy": {
-    "title": "Real rental experience",
-    "content": [
-      "Production manager books LAB SEVEN for 3-day commercial shoot in downtown residential area. Noise ordinances prohibit generators during business hours.",
-      "Battery delivered Monday morning before crew call. Production team powers on at 8am. Silent operation enables shooting in noise-sensitive locations. Zero neighbor complaints across 3 days.",
-      "Overnight charging keeps battery ready for next day. Pickup scheduled for Thursday morning after wrap. Production manager books again for next month's shoot."
-    ],
-    "quote": "Easiest rental process I've dealt with. Battery just worked, no drama, no complaints. I'm using it for every downtown shoot now."
-  },
-  "faq": {
-    "title": "Rental process questions",
-    "items": [
-      {
-        "question": "How far in advance should I book?",
-        "answer": "We recommend booking as soon as you have confirmed shoot dates. Last-minute rentals may be available depending on inventory. Contact Labrador Field Systems to check availability."
-      },
-      {
-        "question": "Do you deliver to all locations?",
-        "answer": "We deliver throughout the greater Los Angeles area. For remote locations or out-of-state productions, contact us to discuss logistics and shipping options."
-      },
-      {
-        "question": "What if I need to change my rental dates?",
-        "answer": "Contact Labrador Field Systems as soon as possible if your shoot dates change. We'll work with you to reschedule based on availability. Standard rental house policies apply for cancellations."
-      },
-      {
-        "question": "Can someone train my crew on operation?",
-        "answer": "Yes. Delivery includes quick orientation. Operation is simple—similar to powering on any battery system. For detailed training or technical questions, support is available by phone during your rental."
-      },
-      {
-        "question": "What happens if something goes wrong?",
-        "answer": "Every rental includes backup generator and 24/7 technical support. If you experience any issues, call Labrador Field Systems immediately. We'll troubleshoot remotely or dispatch support if needed."
-      },
-      {
-        "question": "Can I rent for just a few hours?",
-        "answer": "Minimum rental is typically one day due to delivery and pickup logistics. For recurring rentals or high-volume clients, we can discuss flexible arrangements. Contact Labrador Field Systems for custom quotes."
-      }
-    ]
-  },
-  "finalCta": {
-    "title": "Ready to book your rental?",
-    "description": "Contact Labrador Field Systems to check availability and book LAB SEVEN for your next production.",
-    "cta": {
-      "primary": {
-        "text": "Contact Labrador",
-        "href": "mailto:amit@fieldpack.co"
-      },
-      "secondary": {
-        "text": "View Pricing",
-        "href": "/pricing"
-      }
-    },
-    "contactInfo": {
-      "company": "Labrador Field Systems",
-      "phone": "310-776-0154",
-      "email": "amit@fieldpack.co"
-    }
   }
 }

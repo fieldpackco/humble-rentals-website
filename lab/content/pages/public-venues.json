@@ -1,170 +1,60 @@
 {
+  "layout": "landing-page-anduril",
   "meta": {
     "title": "LAB SEVEN for Public Venues | Labrador Field Systems",
-    "description": "Silent battery power for venue events and experiential events. Get approved for impossible locations without generator drama."
+    "description": "Silent battery power for venue events. Say yes to more events without saying yes to generators."
   },
   "hero": {
-    "title": "Say yes to more events without saying yes to generators",
-    "tagline": "Battery power that protects your venue, your neighbors, and your reputation. Premium events without the generator compromise.",
+    "category": "PUBLIC VENUES",
+    "title": "Say Yes to More Events Without Generators",
+    "description": "Battery power that protects your venue, your neighbors, and your reputation. Premium events without the generator compromise. Silent, exhaust-free power matches the quality of your space.",
     "cta": {
       "primary": {
         "text": "Contact Labrador",
-        "href": "#contact"
+        "href": "/contact"
       },
       "secondary": {
-        "text": "Book a Demo",
-        "href": "#contact"
+        "text": "View Specifications",
+        "href": "/specifications"
       }
     }
   },
   "benefits": {
-    "title": "Built for premium venues",
+    "title": "Built for Premium Venues",
     "items": [
       {
-        "icon": "⭐",
-        "title": "Protect your venue reputation",
+        "title": "Protect Your Venue Reputation",
         "description": "Silent, exhaust-free power matches the quality of your space. No generator noise ruining cocktail hour or ceremony moments."
       },
       {
-        "icon": "💰",
-        "title": "Open new revenue opportunities",
+        "title": "Open New Revenue Opportunities",
         "description": "Say yes to events in ballrooms, courtyards, rooftops, gardens—locations where generators are impossible."
       },
       {
-        "icon": "🤝",
-        "title": "Eliminate neighbor complaints",
+        "title": "Eliminate Neighbor Complaints",
         "description": "Residential neighbors and adjacent businesses stay happy. Better relationships, easier permits, fewer complaints."
       }
     ]
   },
-  "problem": {
-    "title": "What public venues deal with today",
-    "intro": "Generator drama kills brand moments and limits creative possibilities",
+  "features": {
+    "title": "Why Public Venues Choose LAB SEVEN",
     "items": [
       {
-        "title": "Venues say no",
-        "description": "Noise, exhaust, insurance, fire code. Premium locations reject generators, limiting your creative options."
+        "title": "Silent Operation",
+        "description": "Zero noise during operation. Perfect for weddings, corporate events, and ceremonies where generator noise would damage the experience."
       },
       {
-        "title": "Budget drain",
-        "description": "Generator rentals ($500+/day) plus fuel, permits, and fire watch eat into activation budgets."
+        "title": "Indoor-Safe Power",
+        "description": "Zero emissions make it safe for occupied indoor spaces. Power events in hotel ballrooms, retail environments, and galleries."
       },
       {
-        "title": "Noise ruins moments",
-        "description": "Generator noise competes with your activation, ruins video content, and damages the brand experience."
+        "title": "Preserve Neighborhood Relationships",
+        "description": "Silent operation preserves relationships with neighbors and adjacent businesses. Easier permitting, fewer complaints, better community standing."
       },
       {
-        "title": "Setup complexity",
-        "description": "Generator logistics reduce time for actual experience design and execution."
+        "title": "Professional Service",
+        "description": "Labrador Field Systems handles delivery, placement, and pickup. White-glove service that reflects the quality of your venue."
       }
     ]
-  },
-  "solution": {
-    "title": "How LAB SEVEN solves it",
-    "items": [
-      {
-        "title": "Silent approval",
-        "description": "Zero emissions, zero noise. Indoor-approved power opens previously impossible venues. Say yes to rooftop activations, hotel ballrooms, historic buildings, and retail spaces that prohibit generators."
-      },
-      {
-        "title": "True cost savings",
-        "description": "Cost-competitive with generators once you factor in permits, fuel, fire watch, and crew time. Transparent rental pricing includes delivery, pickup, and backup generator."
-      },
-      {
-        "title": "White-glove service",
-        "description": "Labrador Field Systems handles delivery, placement, and pickup. You don't touch it. Your crew focuses on creating experiences, not managing power logistics."
-      },
-      {
-        "title": "Real power",
-        "description": "60A Bates out plus three 20A Edison circuits. Power full AV rigs, theatrical lighting, interactive elements, and charging stations simultaneously."
-      }
-    ]
-  },
-  "specs": {
-    "title": "Power for full activations",
-    "items": [
-      {
-        "value": "10kW",
-        "label": "Continuous output"
-      },
-      {
-        "value": "8+ hrs",
-        "label": "Typical runtime"
-      },
-      {
-        "value": "1 hour",
-        "label": "Fast charging"
-      },
-      {
-        "value": "Indoor",
-        "label": "Venue approved"
-      }
-    ]
-  },
-  "journey": {
-    "title": "A day on activation",
-    "comparison": {
-      "without": {
-        "title": "Without LAB SEVEN",
-        "description": "Day starts with 2-hour generator setup and fire marshal inspection. Mid-event noise complaint forces volume adjustments. Brand moment compromised. Wrap delayed by fuel spillage cleanup. Venue owner receives complaints from neighboring businesses."
-      },
-      "with": {
-        "title": "With LAB SEVEN",
-        "description": "Battery delivered and placed before crew call. Silent all day. Perfect audio for branded content capture. After event ends, cart powers down team while strike happens around it. Pickup scheduled for next morning. Zero complaints, venue asks about your next activation."
-      }
-    }
-  },
-  "caseStudy": {
-    "title": "Real activation, real results",
-    "content": [
-      "Luxury automotive brand launch in downtown hotel ballroom. Venue prohibited generators due to exhaust and noise policies.",
-      "LAB SEVEN powered full LED wall, theatrical lighting package, and DJ booth for 6-hour evening event.",
-      "Results: Zero venue complaints. Zero delays. Total cost lower than generator rental plus special permits. Event coordinator approved venue for future activations."
-    ],
-    "quote": "First time we've powered a hotel ballroom event without generator restrictions killing the creative."
-  },
-  "faq": {
-    "title": "Frequently asked questions",
-    "items": [
-      {
-        "question": "Can it power LED walls and video playback?",
-        "answer": "Yes. 10kW continuous output handles full LED walls, video playback systems, theatrical lighting, and audio simultaneously."
-      },
-      {
-        "question": "How long between charges?",
-        "answer": "8-12 hours typical runtime for activations. Varies based on load. Fast charging (1 hour with 60A) enables battery rotation for multi-day events."
-      },
-      {
-        "question": "What if we need more power than one unit?",
-        "answer": "Stack multiple LAB SEVEN units or add generator backup placed away from guest areas. We help you calculate power needs based on your activation specs."
-      },
-      {
-        "question": "Do we need special insurance?",
-        "answer": "No. LFP chemistry is insurance-friendly and meets venue safety requirements. Easier insurance approval than generators."
-      },
-      {
-        "question": "Can we use it indoors?",
-        "answer": "Yes. Zero emissions make it safe for occupied indoor spaces including hotel ballrooms, retail environments, and galleries."
-      }
-    ]
-  },
-  "finalCta": {
-    "title": "Ready to power your next activation?",
-    "description": "Contact Labrador Field Systems or book a demo to see LAB SEVEN in action",
-    "cta": {
-      "primary": {
-        "text": "Contact Labrador",
-        "href": "mailto:contact@labradorfieldystems.com"
-      },
-      "secondary": {
-        "text": "Book a Site Visit",
-        "href": "#"
-      }
-    },
-    "contactInfo": {
-      "company": "Labrador Field Systems",
-      "phone": "310-776-0154",
-      "email": "amit@fieldpack.co"
-    }
   }
 }

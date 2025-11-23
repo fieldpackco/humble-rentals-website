@@ -1,15 +1,17 @@
 {
+  "layout": "landing-page-anduril",
   "meta": {
     "title": "LAB SEVEN Rental Pricing | Professional Battery Power Rentals",
     "description": "Transparent LAB SEVEN rental pricing. All-inclusive rates with delivery, pickup, backup generator. Available through Labrador Field Systems."
   },
   "hero": {
-    "title": "Rental pricing and options",
-    "tagline": "Transparent, all-inclusive rental pricing. Delivery, pickup, and backup generator included. No hidden fees, no fuel costs, no surprises.",
+    "category": "PRICING",
+    "title": "Rental Pricing and Options",
+    "description": "Transparent, all-inclusive rental pricing. Delivery, pickup, and backup generator included. No hidden fees, no fuel costs, no surprises. Promo code 241 for one free rental day.",
     "cta": {
       "primary": {
         "text": "Contact Labrador",
-        "href": "mailto:amit@fieldpack.co"
+        "href": "/contact"
       },
       "secondary": {
         "text": "View Specifications",
@@ -18,165 +20,49 @@
     }
   },
   "benefits": {
-    "title": "All-inclusive rental pricing",
+    "title": "All-Inclusive Rental Pricing",
     "items": [
       {
-        "icon": "🚚",
-        "title": "Delivery and pickup included",
+        "title": "Delivery and Pickup Included",
         "description": "White-glove service. We deliver, place, and pick up. You focus on production, not logistics."
       },
       {
-        "icon": "⚡",
-        "title": "Backup generator included",
+        "title": "Backup Generator Included",
         "description": "Every rental includes backup generator positioned away from sensitive areas. Peace of mind for extended shoots."
       },
       {
-        "icon": "💡",
-        "title": "No hidden costs",
+        "title": "No Hidden Costs",
         "description": "No fuel charges, no fire watch fees, no permit costs. Transparent pricing includes everything you need."
       }
     ]
   },
-  "problem": {
-    "title": "True cost of generator power",
-    "intro": "Generator rental rates hide the real costs of power on set",
+  "features": {
+    "title": "LAB SEVEN Rental Value",
     "items": [
       {
-        "title": "Day rate is just the start",
-        "description": "Generator day rates ($400-800) don't include fuel ($100-200/day), delivery ($150-300), fire watch ($500+), permits ($200-500), or location fees for noise variances."
-      },
-      {
-        "title": "Extended wrap time",
-        "description": "Generator shutdown, fuel cleanup, and equipment removal extend wrap by 1-2 hours, adding crew overtime costs."
-      },
-      {
-        "title": "Noise complaints cost time",
-        "description": "Each noise complaint requires repositioning, adjustments, or negotiations. Lost production time translates to budget overruns."
-      },
-      {
-        "title": "Fuel logistics consume resources",
-        "description": "Fuel runs, spillage cleanup, and refueling pauses pull crew attention away from production tasks."
-      }
-    ]
-  },
-  "solution": {
-    "title": "LAB SEVEN rental value",
-    "items": [
-      {
-        "title": "One transparent rate",
+        "title": "One Transparent Rate",
         "description": "Contact Labrador Field Systems for current day rates and multi-day discounts. All-inclusive pricing covers delivery, placement, pickup, and backup generator."
       },
       {
-        "title": "Promo code 241",
+        "title": "Promo Code 241",
         "description": "ONE FREE RENTAL DAY with promo code \"241\" on your first booking. Experience professional battery power at no cost."
       },
       {
-        "title": "No fuel, fire watch, or permits",
+        "title": "No Fuel, Fire Watch, or Permits",
         "description": "Battery operation eliminates fuel costs, fire watch requirements, and noise permit fees. What you see is what you pay."
       },
       {
-        "title": "Faster setup and wrap",
+        "title": "Faster Setup and Wrap",
         "description": "5-minute power-on. No fuel management. Instant shutdown. Shorter production days reduce crew costs and location fees."
       },
       {
-        "title": "Multi-day discounts",
+        "title": "Multi-Day Discounts",
         "description": "Extended rental rates available for week-long shoots, multi-day events, and festival installations. Contact Labrador Field Systems for custom quotes."
       },
       {
-        "title": "Package deals available",
+        "title": "Package Deals Available",
         "description": "Rent multiple units for larger productions. Battery rotation support for 24-hour operations. Custom power solutions for complex needs."
       }
     ]
-  },
-  "specs": {
-    "title": "Rental includes",
-    "items": [
-      {
-        "value": "Delivery",
-        "label": "White-glove service"
-      },
-      {
-        "value": "Backup",
-        "label": "Generator included"
-      },
-      {
-        "value": "Support",
-        "label": "Technical assistance"
-      },
-      {
-        "value": "FREE",
-        "label": "Promo code 241"
-      }
-    ]
-  },
-  "journey": {
-    "title": "Rental process",
-    "comparison": {
-      "without": {
-        "title": "Traditional generator rental",
-        "description": "Book generator 2 weeks out. Arrange fuel delivery. Secure permits and fire watch. Generator arrives day of shoot. 2-hour setup and inspection. Mid-day fuel run. Fire watch during lunch. 2-hour wrap for fuel drain and removal. Overtime costs for extended crew."
-      },
-      "with": {
-        "title": "LAB SEVEN rental",
-        "description": "Book battery. Battery delivered before crew call, placed by rental house. Powers on in 5 minutes. No fuel, no permits, no fire watch. Silent operation all day. Powers down when production wraps. Pickup scheduled for next morning. Crew goes home on time."
-      }
-    }
-  },
-  "caseStudy": {
-    "title": "Real production cost comparison",
-    "content": [
-      "Multi-day commercial shoot in historic downtown location. Production required quiet power for indoor and outdoor scenes.",
-      "Generator quote: $600/day + $150 delivery + $200/day fuel + $500/day fire watch + $300 noise permit = $1,750/day for 3 days = $5,250 total",
-      "LAB SEVEN rental: All-inclusive rate significantly lower than generator total costs. Zero complaints. Zero delays. Location approved for future shoots."
-    ],
-    "quote": "Once we added up all the generator costs, battery rental was the obvious choice. Quieter set was just a bonus."
-  },
-  "faq": {
-    "title": "Pricing questions",
-    "items": [
-      {
-        "question": "What's included in the rental rate?",
-        "answer": "Delivery, placement, pickup, backup generator, technical support, and monitoring equipment. No hidden fees, no fuel charges, no fire watch costs."
-      },
-      {
-        "question": "Do you offer multi-day discounts?",
-        "answer": "Yes. Week-long and multi-week rentals receive discounted rates. Contact Labrador Field Systems for custom quotes on extended productions."
-      },
-      {
-        "question": "What about promo code 241?",
-        "answer": "First-time renters receive ONE FREE RENTAL DAY with promo code \"241\". Experience LAB SEVEN at no cost to evaluate for your production needs."
-      },
-      {
-        "question": "Can I rent multiple units?",
-        "answer": "Yes. Package deals available for productions requiring multiple battery systems. Volume discounts for large events and festivals."
-      },
-      {
-        "question": "What if I need to extend my rental?",
-        "answer": "Contact Labrador Field Systems during your rental to extend. Subject to availability. We'll work with your production schedule to keep you powered."
-      },
-      {
-        "question": "Is insurance included?",
-        "answer": "Standard rental insurance terms apply. LFP chemistry is insurance-friendly and meets production insurance requirements. Check with your provider for specific coverage."
-      }
-    ]
-  },
-  "finalCta": {
-    "title": "Ready to book your rental?",
-    "description": "Contact Labrador Field Systems for current rates, availability, and promo code \"241\" for one free rental day.",
-    "cta": {
-      "primary": {
-        "text": "Contact Labrador",
-        "href": "mailto:amit@fieldpack.co"
-      },
-      "secondary": {
-        "text": "View Features",
-        "href": "/features"
-      }
-    },
-    "contactInfo": {
-      "company": "Labrador Field Systems",
-      "phone": "310-776-0154",
-      "email": "amit@fieldpack.co"
-    }
   }
 }

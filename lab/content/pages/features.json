@@ -1,15 +1,17 @@
 {
+  "layout": "landing-page-anduril",
   "meta": {
     "title": "LAB SEVEN Features | Professional Battery Power for Production",
     "description": "Silent battery power built for production. Indoor-safe 60A output, fast charging, real-time monitoring, and professional reliability."
   },
   "hero": {
-    "title": "Features that make a difference on set",
-    "tagline": "Every feature is designed to solve real production challenges. Silent operation. True 60A output. Professional monitoring. Built for the demands of professional production.",
+    "category": "FEATURES",
+    "title": "Features That Make a Difference on Set",
+    "description": "Every feature is designed to solve real production challenges. Silent operation. True 60A output. Professional monitoring. Built for the demands of professional production.",
     "cta": {
       "primary": {
         "text": "Contact Labrador",
-        "href": "mailto:amit@fieldpack.co"
+        "href": "/contact"
       },
       "secondary": {
         "text": "View Specifications",
@@ -18,169 +20,49 @@
     }
   },
   "benefits": {
-    "title": "Why production teams choose LAB SEVEN",
+    "title": "Why Production Teams Choose LAB SEVEN",
     "items": [
       {
-        "icon": "💰",
-        "title": "Saves money over generators",
+        "title": "Saves Money Over Generators",
         "description": "When you add fuel runs, fire watch, noise complaints, and slow wrap, generators cost more than the day rate suggests. LAB SEVEN eliminates hidden costs."
       },
       {
-        "icon": "🎬",
-        "title": "Works everywhere generators can't",
-        "description": "Indoor venues, noise-restricted zones, residential areas, and historic locations that prohibit generators. Silent operation opens locations that were previously impossible."
+        "title": "Works Everywhere Generators Can't",
+        "description": "Indoor venues, noise-restricted zones, residential areas, and historic locations that prohibit generators. Silent operation opens impossible locations."
       },
       {
-        "icon": "⚙️",
-        "title": "Professional grade reliability",
-        "description": "LFP chemistry, BMS protection, real-time monitoring. Built for the demands of professional production with redundant safety systems and proven reliability."
+        "title": "Professional Grade Reliability",
+        "description": "LFP chemistry, BMS protection, real-time monitoring. Built for professional production with redundant safety systems and proven reliability."
       }
     ]
   },
-  "problem": {
-    "title": "Common generator problems on set",
-    "intro": "Generators create friction, delays, and unexpected costs on production",
+  "features": {
+    "title": "How LAB SEVEN Solves Production Power Challenges",
     "items": [
       {
-        "title": "Noise complaints kill schedule",
-        "description": "Generator noise triggers complaints from neighbors, venue owners, and local authorities. Each complaint costs time and goodwill."
-      },
-      {
-        "title": "Hidden costs add up",
-        "description": "Fuel runs, fire watch requirements, permits, noise variances, and location fees multiply the true cost of generator power."
-      },
-      {
-        "title": "Setup and wrap take too long",
-        "description": "Generator placement, fuel management, and tear-down extend production day, increasing crew costs and location fees."
-      },
-      {
-        "title": "Location access denied",
-        "description": "Indoor venues, residential areas, and historic sites prohibit generators entirely, limiting creative options."
-      }
-    ]
-  },
-  "solution": {
-    "title": "How LAB SEVEN solves production power challenges",
-    "items": [
-      {
-        "title": "Truly silent operation",
+        "title": "Truly Silent Operation",
         "description": "Zero noise during operation. No engine vibration, no exhaust fan, no compressor cycling. Your set stays quiet, your neighbors stay happy."
       },
       {
-        "title": "Indoor-safe zero emissions",
+        "title": "Indoor-Safe Zero Emissions",
         "description": "LFP battery chemistry produces zero emissions during operation. Safe for occupied indoor spaces, underground parking, and enclosed venues."
       },
       {
-        "title": "60A Bates output",
-        "description": "True 60A output on professional Bates connector. Three independent 20A Edison circuits. Use your existing distribution boxes without adapters or workarounds."
+        "title": "60A Bates Output",
+        "description": "True 60A output on professional Bates connector. Three independent 20A Edison circuits. Use your existing distribution boxes without adapters."
       },
       {
-        "title": "Fast charging options",
-        "description": "1-hour fast charge from 60A input, or 4-5 hours from standard 110V outlet. Charge overnight between shoot days or rotate batteries during long productions."
+        "title": "Fast Charging Options",
+        "description": "1-hour fast charge from 60A input, or 4-5 hours from standard 110V outlet. Charge overnight or rotate batteries during long productions."
       },
       {
-        "title": "Real-time monitoring",
-        "description": "4.3-inch color touchscreen shows voltage, current, power, state of charge, temperature, and runtime estimate. Bluetooth and WiFi remote monitoring from your phone."
+        "title": "Real-Time Monitoring",
+        "description": "4.3-inch color touchscreen shows voltage, current, power, state of charge, temperature, and runtime estimate. Bluetooth and WiFi remote monitoring."
       },
       {
-        "title": "Professional safety features",
+        "title": "Professional Safety Features",
         "description": "BMS with cell balancing, per-circuit breakers, thermal management, over-current protection. LFP chemistry is the safest lithium chemistry available."
-      },
-      {
-        "title": "Production-ready construction",
-        "description": "Welded steel frame, powder-coated finish, weather-sealed electronics bay. Industrial casters for smooth transport. Built to handle the road."
-      },
-      {
-        "title": "Rental-friendly economics",
-        "description": "All-inclusive rental pricing. Delivery, pickup, backup generator included. No fuel costs, no fire watch fees, no permit charges."
       }
     ]
-  },
-  "specs": {
-    "title": "Core specifications",
-    "items": [
-      {
-        "value": "10kW",
-        "label": "Continuous power"
-      },
-      {
-        "value": "7.5kWh",
-        "label": "Battery capacity"
-      },
-      {
-        "value": "1 hour",
-        "label": "Fast charging"
-      },
-      {
-        "value": "0 dB",
-        "label": "Silent operation"
-      }
-    ]
-  },
-  "journey": {
-    "title": "A day on set",
-    "comparison": {
-      "without": {
-        "title": "With traditional generators",
-        "description": "Arrive early for generator placement and fire marshal inspection. Noise complaints from neighboring business require repositioning mid-day. Talent audio affected by generator rumble. Fire watch extends wrap by 2 hours. Location owner receives complaints."
-      },
-      "with": {
-        "title": "With LAB SEVEN",
-        "description": "Battery delivered before crew call, placed by rental house. Powers on silently. Zero complaints. Clean audio all day. Powers down when production wraps. Scheduled pickup next morning. Location owner asks about your next shoot."
-      }
-    }
-  },
-  "caseStudy": {
-    "title": "Real production story",
-    "content": [
-      "Commercial shoot in historic downtown building with strict noise ordinances. Location prohibited generators during business hours.",
-      "LAB SEVEN powered full lighting package, monitors, and HMU station for 10-hour shoot day inside lobby.",
-      "Results: Zero complaints from building tenants or neighboring businesses. Production wrapped on schedule. Location manager approved venue for future shoots."
-    ],
-    "quote": "First time we've shot in that building without generator drama. Made the whole day smoother."
-  },
-  "faq": {
-    "title": "Feature questions",
-    "items": [
-      {
-        "question": "How quiet is silent?",
-        "answer": "Zero noise during operation. No engine, no fans, no compressor. The only sound is the silence of electrons flowing through circuits."
-      },
-      {
-        "question": "Does it really work indoors?",
-        "answer": "Yes. Zero emissions during operation make it safe for occupied indoor spaces. LFP chemistry produces no off-gassing. Safe in hotel ballrooms, retail stores, underground parking, and enclosed venues."
-      },
-      {
-        "question": "Can I monitor it remotely?",
-        "answer": "Yes. Built-in Bluetooth and WiFi enable remote monitoring from mobile app. See voltage, current, power, state of charge, temperature, and runtime estimate from anywhere on set."
-      },
-      {
-        "question": "What happens if it runs out during a take?",
-        "answer": "Battery monitoring provides runtime estimates and low-battery warnings. For extended shoots, rent two units and hot-swap, or add generator backup positioned away from sensitive areas."
-      },
-      {
-        "question": "How does it compare to other battery solutions?",
-        "answer": "LAB SEVEN is the only portable battery with true 60A Bates output. Other batteries max out at 20-30A or require adapters. We use LFP chemistry (safest lithium), professional BMS, and production-grade construction."
-      }
-    ]
-  },
-  "finalCta": {
-    "title": "Experience the difference",
-    "description": "See LAB SEVEN in action. Contact Labrador Field Systems to schedule a demo or book your next rental.",
-    "cta": {
-      "primary": {
-        "text": "Contact Labrador",
-        "href": "mailto:amit@fieldpack.co"
-      },
-      "secondary": {
-        "text": "View Pricing",
-        "href": "/pricing"
-      }
-    },
-    "contactInfo": {
-      "company": "Labrador Field Systems",
-      "phone": "310-776-0154",
-      "email": "amit@fieldpack.co"
-    }
   }
 }
