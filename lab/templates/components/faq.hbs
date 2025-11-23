@@ -1,10 +1,10 @@
-<section class="faq" id="faq">
-    <h2>{{title}}</h2>
-    <div class="faq-list">
+<section class="section" id="faq">
+    <h2 class="section-title">{{title}}</h2>
+    <div class="container-reading">
         {{#each items}}
-        <div class="faq-item">
-            <h3 class="faq-question">{{question}}</h3>
-            <p class="faq-answer">{{answer}}</p>
+        <div class="card">
+            <h3 class="card-title">{{question}}</h3>
+            <p>{{answer}}</p>
         </div>
         {{/each}}
     </div>
