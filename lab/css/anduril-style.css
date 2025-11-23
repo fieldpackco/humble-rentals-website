@@ -314,3 +314,48 @@ body {
     min-height: 300px;
   }
 }
+
+/* ============================================
+   FEATURES GRID (4-column)
+   ============================================ */
+
+.anduril-features-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--anduril-gap);
+}
+
+.anduril-feature-card {
+  background-color: var(--anduril-black);
+  color: var(--anduril-text-inverse);
+  padding: var(--anduril-spacing-small);
+}
+
+.anduril-feature-card-title {
+  font-size: 24px;
+  font-weight: var(--anduril-weight-bold);
+  line-height: var(--anduril-line-heading);
+  letter-spacing: var(--anduril-spacing-heading);
+  margin-bottom: 16px;
+  color: var(--anduril-text-inverse);
+}
+
+.anduril-feature-card-description {
+  font-size: 16px;
+  line-height: var(--anduril-line-body);
+  color: var(--anduril-text-inverse);
+  opacity: 0.9;
+}
+
+/* Responsive Features Grid */
+@media (max-width: 1023px) {
+  .anduril-features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .anduril-features-grid {
+    grid-template-columns: 1fr;
+  }
+}
