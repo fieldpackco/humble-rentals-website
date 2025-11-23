@@ -92,11 +92,18 @@ pageFiles.forEach(file => {
   }
   const bodyHTML = pageTemplate(templateData);
 
-  // Render into base layout
-  const finalHTML = baseLayout({
-    ...templateData,
-    body: bodyHTML
-  });
+  // Render into base layout (skip for standalone templates)
+  let finalHTML;
+  if (pageData.layout === 'landing-page-anduril') {
+    // Anduril template is standalone - don't wrap in base layout
+    finalHTML = bodyHTML;
+  } else {
+    // Other templates need base layout wrapper
+    finalHTML = baseLayout({
+      ...templateData,
+      body: bodyHTML
+    });
+  }
 
   // Output home page as index.html
   const outputName = (pageName === 'home') ? 'index.html' : `${pageName}.html`;
