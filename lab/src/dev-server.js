@@ -21,7 +21,7 @@ try {
 // Start BrowserSync
 browserSync.init({
   server: {
-    baseDir: 'dist',
+    baseDir: '.',  // Serve from lab/ directory root
     serveStaticOptions: {
       extensions: ['html']
     }

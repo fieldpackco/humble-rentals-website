@@ -1,0 +1,60 @@
+{
+  "layout": "landing-page-anduril",
+  "meta": {
+    "title": "Battery Technology & Fleet Management | Labrador Field Systems",
+    "description": "LiFePO₄ chemistry for safety. Multi-circuit outputs for shared power. Real-time telemetry and fleet management software."
+  },
+  "hero": {
+    "category": "TECHNOLOGY",
+    "title": "Hardware for Public Spaces. Software for Peace of Mind.",
+    "description": "LiFePO₄ battery chemistry, multi-circuit outputs to prevent vendor conflicts, and comprehensive fleet management telemetry. Built for municipal reliability.",
+    "cta": {
+      "primary": {
+        "text": "See Live Fleet Dashboard Demo",
+        "href": "/contact"
+      },
+      "secondary": {
+        "text": "Download Technical Specs",
+        "href": "/resources"
+      }
+    }
+  },
+  "benefits": {
+    "title": "Battery Systems",
+    "items": [
+      {
+        "title": "LiFePO₄ Chemistry for Safety",
+        "description": "Lithium iron phosphate (LFP) instead of NMC for thermal stability in public deployments. Long cycle life (3000+ cycles) and no documented thermal runaway cases."
+      },
+      {
+        "title": "Multi-Circuit Design",
+        "description": "Three independent 20A outlets plus 60A Bates connector. One vendor cannot knock out another vendor's power. Professional distro compatibility without adapters."
+      },
+      {
+        "title": "Scalable Capacity",
+        "description": "3 kW portable units for field crews. Mid-capacity units for markets and park rentals. High-capacity units and trailers for large festivals and multi-day events."
+      }
+    ]
+  },
+  "features": {
+    "title": "Fleet Management & Safety",
+    "items": [
+      {
+        "title": "Real-Time Telemetry",
+        "description": "[PLACEHOLDER: Live dashboard showing every battery's state of charge, temperature, location, and load profile. Automated alerts for overheating, low charge before events, geofence violations, or abnormal usage patterns.]"
+      },
+      {
+        "title": "Proactive Maintenance",
+        "description": "[PLACEHOLDER: Cell-level health monitoring flags weak batteries before they fail in the field. Maintenance workflows schedule refurbishments. Predictive analytics optimize charging cycles and extend fleet life.]"
+      },
+      {
+        "title": "Safety & Compliance",
+        "description": "Over-current and over-temperature protection at cell level. GPS tracking and geofencing to mitigate theft. Remote shutoff capability for safety incidents. UL-listed components and LFP chemistry meet California public safety standards."
+      },
+      {
+        "title": "Impact Reporting",
+        "description": "[PLACEHOLDER: Automated reporting for CPA grants and city climate plans. Export kWh delivered, generator-hours avoided, estimated tCO₂ reductions, vendor participation rates. CSV, dashboard, and PDF formats for staff and Council presentations.]"
+      }
+    ]
+  }
+}

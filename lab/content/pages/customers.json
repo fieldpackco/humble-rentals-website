@@ -1,0 +1,60 @@
+{
+  "layout": "landing-page-anduril",
+  "meta": {
+    "title": "Municipal Case Studies | Labrador Field Systems",
+    "description": "Battery deployments at open-street festivals, farmers markets, film productions, and city field operations."
+  },
+  "hero": {
+    "category": "CUSTOMERS",
+    "title": "Built With Cities, Events, and Vendors",
+    "description": "We've powered everything from open-street festivals to film shoots in fire-prone areas. Experience across municipal operations, community events, and professional production.",
+    "cta": {
+      "primary": {
+        "text": "Ask for References",
+        "href": "/contact"
+      },
+      "secondary": {
+        "text": "View All Case Studies",
+        "href": "/resources"
+      }
+    }
+  },
+  "benefits": {
+    "title": "City & Public-Sector Deployments",
+    "items": [
+      {
+        "title": "Open-Streets Festival",
+        "description": "[PLACEHOLDER: 13 battery units deployed over 1+ mile route. Powered market stalls, stages, sound systems, and security infrastructure. Mixed loads from food vendor freezers to festival lighting. Zero noise complaints, zero emissions, zero refueling logistics during event.]"
+      },
+      {
+        "title": "Parks Bounce House Pilot",
+        "description": "[PLACEHOLDER: Multi-battery configurations for 4+ hour bounce house blower runtime at weekend park rentals. Feedback from families: cleaner air, no engine noise during birthday parties. City staff: easier permit process without generator fire risk concerns.]"
+      },
+      {
+        "title": "Field Maintenance Crew",
+        "description": "[PLACEHOLDER: Daily portable power for city maintenance operations. Overnight charging in yard. Lessons learned: importance of charging habits, cycle life monitoring, and over-provisioning to maintain availability during peak seasons.]"
+      }
+    ]
+  },
+  "features": {
+    "title": "Film, TV & Production Experience",
+    "items": [
+      {
+        "title": "Fire-Risk Location Deployments",
+        "description": "[PLACEHOLDER: Multiple productions in fire-prone areas where generators were banned by fire marshal. Batteries provided the only viable power source for wardrobe trucks, video village, and craft services. Uptime-critical applications where failure means production shutdown.]"
+      },
+      {
+        "title": "Residential & Noise-Restricted Shoots",
+        "description": "[PLACEHOLDER: Film and TV productions in residential neighborhoods with strict noise ordinances. Silent battery power enabled work during restricted hours. Location managers report fewer neighbor complaints and smoother permit renewals.]"
+      },
+      {
+        "title": "Proven Reliability Under Pressure",
+        "description": "Production environments demand absolute reliability – one power failure can cost tens of thousands of dollars. Our fleet management approach, refined through years of high-stakes deployments, now serves municipal programs."
+      },
+      {
+        "title": "What Customers Say",
+        "description": "[PLACEHOLDER: Pull quotes from event coordinators, city staff, and vendors. Examples: 'You can actually talk to customers without shouting over a generator' (market vendor). 'Cleanest community festival we've ever run' (city events coordinator).]"
+      }
+    ]
+  }
+}

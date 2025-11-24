@@ -1,67 +1,59 @@
 {
   "layout": "landing-page-anduril",
   "meta": {
-    "title": "How LAB SEVEN Rental Works | Professional Battery Power Rentals",
-    "description": "Simple rental process for LAB SEVEN battery systems. Book, deliver, power, wrap. White-glove service from Labrador Field Systems."
+    "title": "How Municipal Battery Programs Work | Labrador Field Systems",
+    "description": "From RFP to first generator-free event. Program design, procurement support, fleet deployment, and impact measurement."
   },
   "hero": {
     "category": "HOW IT WORKS",
-    "title": "Simple Rental Process, Professional Results",
-    "description": "Book your rental. We deliver and place. You power on. Production happens. We pick up. That's it. No complexity, no drama, no generator headaches.",
+    "title": "From RFP to the First Generator-Free Event",
+    "description": "Three-phase approach: Design & Procurement, Deploy & Operate, Measure & Report. Aligned with CPA grant structures and city procurement practices.",
     "cta": {
       "primary": {
-        "text": "Contact Labrador",
+        "text": "Request Tailored Pilot Plan",
         "href": "/contact"
       },
       "secondary": {
-        "text": "View Pricing",
-        "href": "/pricing"
+        "text": "Download Sample Timeline",
+        "href": "/resources"
       }
     }
   },
   "benefits": {
-    "title": "White-Glove Rental Service",
+    "title": "Program Design & Procurement",
     "items": [
       {
-        "title": "Easy Booking Process",
-        "description": "Call, email, or use your existing rental house workflow. We handle scheduling, logistics, and delivery coordination."
+        "title": "Hybrid Ownership Model",
+        "description": "Flexible approach: city-owned units for field crews with vendor monitoring, plus vendor-managed services for markets, events, and parks. Not one-size-fits-all – designed around your budget and procurement constraints."
       },
       {
-        "title": "Delivery and Placement",
-        "description": "We deliver before your crew call and place the battery where you need it. You don't touch it until production starts."
+        "title": "Performance-Based RFP Support",
+        "description": "[PLACEHOLDER: Help staff write RFPs that specify outcomes (uptime, safety, reporting) instead of prescriptive hardware specs. Evaluation criteria include municipal experience, fleet management capabilities, and reliability track record – not just lowest price.]"
       },
       {
-        "title": "Simple Operation",
-        "description": "Power on takes 5 minutes. Built-in monitoring shows runtime and status. No special training required for your crew."
+        "title": "Discovery to Pilot Launch",
+        "description": "Process: Stakeholder discovery → Draft program brief → City RFP (if needed) → Vendor selection → Pilot kickoff. Timeline typically 3-6 months depending on procurement requirements and grant approval cycles."
       }
     ]
   },
   "features": {
-    "title": "The Rental Process Step by Step",
+    "title": "Operations & Fleet Management",
     "items": [
       {
-        "title": "Step 1: Contact and Book",
-        "description": "Reach out to Labrador Field Systems with your shoot dates and location. We'll discuss your power needs and confirm availability. Mention promo code \"241\" for one free rental day."
+        "title": "Markets: Weekly Power Distribution",
+        "description": "[PLACEHOLDER: Vendor receives weekly market schedule. Two operational models: (A) Drop off batteries Friday, pick up Sunday, or (B) Support city check-out system where vendors collect from city facility. Telemetry tracks typical loads per stall type (food prep, refrigeration, lighting).]"
       },
       {
-        "title": "Step 2: Pre-Production Planning",
-        "description": "We'll coordinate delivery timing and placement location. Share your power requirements and we'll ensure the system is configured correctly."
+        "title": "Events: On-Demand Deployment",
+        "description": "[PLACEHOLDER: Event organizer submits intake form (date, location, expected loads). Vendor proposes battery configuration and quote. Event day: delivery, setup, on-site support during event, teardown. SLA guarantees replacement within 4 hours if unit fails.]"
       },
       {
-        "title": "Step 3: Delivery and Setup",
-        "description": "Battery delivered before your crew call time. Our team places it where you need it, verifies operation, and provides quick orientation."
+        "title": "Parks: Rental Integration",
+        "description": "[PLACEHOLDER: Park reservation system includes clean power requirement. Bounce house vendor or party renter contacts battery vendor directly (vendor contact provided in permit). Same-day delivery and pickup. Multi-battery configs for 4+ hour blower runtime.]"
       },
       {
-        "title": "Step 4: Production Day",
-        "description": "Power on in 5 minutes. Connect your distribution just like you would to a generator. Built-in monitoring shows real-time power draw and remaining runtime."
-      },
-      {
-        "title": "Step 5: Monitoring and Support",
-        "description": "Remote monitoring available via mobile app. Technical support by phone if you have questions. Battery management system handles all safety and performance automatically."
-      },
-      {
-        "title": "Step 6: Wrap and Pickup",
-        "description": "Power down when production wraps. Battery stays on location overnight. We schedule pickup for next morning or your preferred time. No cleanup, no fuel drain, no complexity."
+        "title": "Fleet Management Software",
+        "description": "Real-time dashboard showing battery state of charge, temperature, location, and load. Automated alerts for issues. Maintenance workflows flag weak cells. Grant reporting: kWh delivered, emissions avoided, utilization tracking."
       }
     ]
   }

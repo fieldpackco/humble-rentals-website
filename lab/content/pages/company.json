@@ -1,0 +1,60 @@
+{
+  "layout": "landing-page-anduril",
+  "meta": {
+    "title": "About Labrador Field Systems | Battery Fleet Management",
+    "description": "A battery company built around public space. Mission, team, and values focused on municipal reliability."
+  },
+  "hero": {
+    "category": "COMPANY",
+    "title": "A Battery Company Built Around Public Space",
+    "description": "Our mission: replace combustion generators at community events, farmers markets, and city field operations with managed battery fleets. Safety-first hardware, vendor-managed service, public-sector pragmatism.",
+    "cta": {
+      "primary": {
+        "text": "Talk to Our Team",
+        "href": "/contact"
+      },
+      "secondary": {
+        "text": "View Open Positions",
+        "href": "/contact"
+      }
+    }
+  },
+  "benefits": {
+    "title": "Our Story",
+    "items": [
+      {
+        "title": "Started in Film & Entertainment",
+        "description": "[PLACEHOLDER: Founded to solve portable power problems for film and TV productions. Learned hard lessons about reliability, fleet management, and user behavior in high-stakes environments where power failure means production shutdown.]"
+      },
+      {
+        "title": "Shifted to Municipal Programs",
+        "description": "[PLACEHOLDER: As California regulations on small off-road engines tightened, we saw opportunity to apply production-proven fleet management to city operations. Open-streets festivals, farmers markets, and park rentals face the same power challenges we'd already solved.]"
+      },
+      {
+        "title": "Built for Public-Sector Scale",
+        "description": "Municipal programs require different thinking than equipment rentals. Cross-department coordination, procurement compliance, grant alignment, policy outcomes. We design programs that fit how cities actually work, not how we wish they worked."
+      }
+    ]
+  },
+  "features": {
+    "title": "Values & Approach",
+    "items": [
+      {
+        "title": "Reliability Over Hype",
+        "description": "We don't promise emergency backup power or grid independence. We promise farmers markets run on time, bounce houses stay inflated, and festivals don't lose sound mid-set. Boring reliability is our product."
+      },
+      {
+        "title": "Safety-First Hardware",
+        "description": "LiFePO₄ chemistry for thermal stability in crowded public spaces. Cell-level monitoring and geofencing. UL-listed components. We design for deployments near children, food, and residential neighbors – not just industrial sites."
+      },
+      {
+        "title": "Vendor-Managed Service",
+        "description": "Cities don't want boxes of batteries. They want generators gone from farmers markets. We sell uptime and outcomes, not hardware. Fleet management software, maintenance workflows, SLAs, and on-site support are the product."
+      },
+      {
+        "title": "Public-Sector Pragmatism",
+        "description": "[PLACEHOLDER: We understand RFP cycles, grant timelines, Council approval processes, and cross-department politics. Our team has municipal experience and speaks the language of city staff, not just battery engineers.]"
+      }
+    ]
+  }
+}

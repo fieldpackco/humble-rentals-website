@@ -1,59 +1,59 @@
 {
   "layout": "landing-page-anduril",
   "meta": {
-    "title": "LAB SEVEN - Labrador Field Systems",
-    "description": "Silent battery power for city services, live events, and public venues. Zero emissions, zero noise."
+    "title": "Clean Power Programs for California Cities | Labrador Field Systems",
+    "description": "Replace gas generators at farmers markets, parks, and city events with managed battery fleet programs. Zero emissions, zero noise, measurable impact."
   },
   "hero": {
-    "category": "BATTERY POWER SYSTEMS",
-    "title": "LAB SEVEN BATTERY",
-    "description": "Silent battery power for city services, live events, and public venues. True 60A output. Zero emissions, zero noise complaints, zero permits.",
+    "category": "MUNICIPAL POWER PROGRAMS",
+    "title": "Quiet, Clean Power for City Events, Markets, and Field Crews",
+    "description": "Replace gas generators at farmers markets, park rentals, and city-sponsored events with a managed battery fleet. Designed for California cities and community choice aggregators.",
     "cta": {
       "primary": {
-        "text": "Contact Labrador",
+        "text": "Schedule a Program Overview",
         "href": "/contact"
       },
       "secondary": {
-        "text": "View Specifications",
-        "href": "/specifications"
+        "text": "Download City Pilot Overview",
+        "href": "/resources"
       }
     }
   },
   "benefits": {
-    "title": "Built for Professional Power",
+    "title": "Built Around How Cities Actually Use Power",
     "items": [
       {
-        "title": "True 60A Power",
-        "description": "The only battery with 60A Bates out. Three 20A Edison circuits and 1 60A Bates. No adapters needed."
+        "title": "Public Works Crews",
+        "description": "Portable 3 kW units for daily field work – charged overnight in the yard. City-owned hardware with optional fleet management support."
       },
       {
-        "title": "Fastest Charging",
-        "description": "Charge one battery in 1 hour using 60A Bates input, or 4-5 hours using standard 110v outlet."
+        "title": "Farmers Markets",
+        "description": "Replace vendor-owned generators with city-managed batteries for every stall. Weekly drop-off and pickup or check-out system."
       },
       {
-        "title": "Professional Reliability",
-        "description": "LFP chemistry, BMS protection, real-time monitoring. 7.5kWh storage. Built for production demands."
+        "title": "City Events & Festivals",
+        "description": "Stages, sound, lighting, food vendors – powered quietly with battery systems. Vendor-managed delivery, setup, and teardown included."
       }
     ]
   },
   "features": {
-    "title": "Why Teams Choose LAB SEVEN",
+    "title": "From Pilot to Generator Policy",
     "items": [
       {
-        "title": "Saves Money Over Generators",
-        "description": "When you add fuel runs, fire watch, noise complaints, and slow wrap, generators cost more than the day rate suggests."
+        "title": "Design Pilot Program",
+        "description": "Co-design scope and budget aligned with CPA grants. Support RFP development with performance-based specifications."
       },
       {
-        "title": "Works Where Generators Can't",
-        "description": "Indoor venues, noise-restricted zones, residential areas, and historic locations that prohibit generators."
+        "title": "Deploy Managed Fleet",
+        "description": "Launch at farmers markets, parks, and events. Hybrid model: city-owned units for crews, vendor-managed services for public events."
       },
       {
-        "title": "Turn Any Outlet Into 60A Distro",
-        "description": "Plug into standard 15/20A receptacle, cap the draw, let the pack cover peaks. Less friction, fewer noise complaints."
+        "title": "Measure Health & Cost Impacts",
+        "description": "Track emissions avoided, noise reduction, vendor participation, and utilization across all four scenarios with real-time telemetry."
       },
       {
-        "title": "Use Existing Distro",
-        "description": "Nobody needs to change workflows. Use the same distro boxes you always have. Professional-grade compatibility."
+        "title": "Support Policy & Scaling",
+        "description": "Help staff make the case for permanent clean power requirements in event permits and park rentals. Transition path for vendors."
       }
     ]
   }
