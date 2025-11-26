@@ -1,0 +1,60 @@
+{
+  "layout": "landing-page-anduril",
+  "meta": {
+    "title": "Clean Power Programs for California Cities | Citypack",
+    "description": "Replace gas generators at farmers markets, parks, and city events with managed battery fleet programs. Zero emissions, zero noise, measurable impact."
+  },
+  "hero": {
+    "category": "MUNICIPAL POWER PROGRAMS",
+    "title": "Quiet, Clean Power for City Events, Markets, and Field Crews",
+    "description": "Replace gas generators at farmers markets, park rentals, and city-sponsored events with a managed battery fleet. Designed for California cities and community choice aggregators.",
+    "cta": {
+      "primary": {
+        "text": "Schedule a Program Overview",
+        "href": "/contact"
+      },
+      "secondary": {
+        "text": "Download City Pilot Overview",
+        "href": "/resources"
+      }
+    }
+  },
+  "benefits": {
+    "title": "Built Around How Cities Actually Use Power",
+    "items": [
+      {
+        "title": "Public Works Crews",
+        "description": "Portable 3 kW units for daily field work – charged overnight in the yard. City-owned hardware with optional fleet management support."
+      },
+      {
+        "title": "Farmers Markets",
+        "description": "Replace vendor-owned generators with city-managed batteries for every stall. Weekly drop-off and pickup or check-out system."
+      },
+      {
+        "title": "City Events & Festivals",
+        "description": "Stages, sound, lighting, food vendors – powered quietly with battery systems. Vendor-managed delivery, setup, and teardown included."
+      }
+    ]
+  },
+  "features": {
+    "title": "From Pilot to Generator Policy",
+    "items": [
+      {
+        "title": "Design Pilot Program",
+        "description": "Co-design scope and budget aligned with CPA grants. Support RFP development with performance-based specifications."
+      },
+      {
+        "title": "Deploy Managed Fleet",
+        "description": "Launch at farmers markets, parks, and events. Hybrid model: city-owned units for crews, vendor-managed services for public events."
+      },
+      {
+        "title": "Measure Health & Cost Impacts",
+        "description": "Track emissions avoided, noise reduction, vendor participation, and utilization across all four scenarios with real-time telemetry."
+      },
+      {
+        "title": "Support Policy & Scaling",
+        "description": "Help staff make the case for permanent clean power requirements in event permits and park rentals. Transition path for vendors."
+      }
+    ]
+  }
+}

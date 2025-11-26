@@ -1,7 +1,0 @@
-{
-  "current_agent": "claude",
-  "peer_agent": "codex",
-  "session_id": "538A2EDC-D570-49CC-933E-1E61F784174A",
-  "started_at": "2025-10-09T17:15:51Z",
-  "working_directory": "/Users/amitrunchal/apps/dual_agent"
-}

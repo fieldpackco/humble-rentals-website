@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{meta.title}}</title>
+    <meta name="description" content="{{meta.description}}">
+
+    <!-- Anduril-style CSS -->
+    <link rel="stylesheet" href="/css/anduril-style.css">
+</head>
+<body>
+
+    {{> nav-anduril}}
+
+    <!-- Hero Section -->
+    <section class="anduril-hero">
+        <div class="anduril-container">
+            <div class="anduril-hero-content">
+                <div class="anduril-hero-label">{{hero.category}}</div>
+                <h1 class="anduril-hero-title">{{hero.title}}</h1>
+                <div class="anduril-hero-description">
+                    <p>{{hero.description}}</p>
+                </div>
+                <div class="anduril-cta-buttons">
+                    <a href="{{hero.cta.primary.href}}" class="btn-anduril-primary">
+                        {{hero.cta.primary.text}}
+                    </a>
+                    <a href="{{hero.cta.secondary.href}}" class="btn-anduril-secondary">
+                        {{hero.cta.secondary.text}}
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section (Numbered Cards) -->
+    {{#if benefits}}
+    <section class="anduril-section anduril-bg-white">
+        <div class="anduril-container">
+            <h2 class="anduril-section-title">{{benefits.title}}</h2>
+            <div class="anduril-cards-grid">
+                {{#each benefits.items}}
+                <div class="anduril-card-dark">
+                    <div class="anduril-card-number">0{{add @index 1}}</div>
+                    <h3 class="anduril-card-title">{{title}}</h3>
+                    <p class="anduril-card-description">{{description}}</p>
+                </div>
+                {{/each}}
+            </div>
+        </div>
+    </section>
+    {{/if}}
+
+    <!-- Features Section (4-column Grid) -->
+    {{#if features}}
+    <section class="anduril-section anduril-bg-light">
+        <div class="anduril-container">
+            <h2 class="anduril-section-title">{{features.title}}</h2>
+            <div class="anduril-features-grid">
+                {{#each features.items}}
+                <div class="anduril-feature-card">
+                    <h3 class="anduril-feature-card-title">{{title}}</h3>
+                    <p class="anduril-feature-card-description">{{description}}</p>
+                </div>
+                {{/each}}
+            </div>
+        </div>
+    </section>
+    {{/if}}
+
+    <!-- Footer -->
+    <footer class="anduril-footer">
+        <div class="anduril-container">
+            <div class="anduril-footer-content">
+                <div class="anduril-footer-brand">
+                    <div class="anduril-footer-logo">CITYPACK</div>
+                </div>
+                <div class="anduril-footer-links">
+                    <div class="anduril-footer-column">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="/about">About</a></li>
+                            <li><a href="/contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="anduril-footer-column">
+                        <h4>Product</h4>
+                        <ul>
+                            <li><a href="/specifications">Specifications</a></li>
+                            <li><a href="/rental">Rental</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="anduril-footer-bottom">
+                <p>COPYRIGHT © 2025 CITYPACK</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
