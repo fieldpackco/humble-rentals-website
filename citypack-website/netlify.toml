@@ -1,5 +1,4 @@
 [build]
-  base = "lab"
   publish = "."
   command = "npm ci && npm run build"
 
@@ -74,4 +73,39 @@
 [[redirects]]
   from = "/street-festivals"
   to = "/street-festivals.html"
+  status = 200
+
+[[redirects]]
+  from = "/solutions"
+  to = "/solutions.html"
+  status = 200
+
+[[redirects]]
+  from = "/technology"
+  to = "/technology.html"
+  status = 200
+
+[[redirects]]
+  from = "/impact"
+  to = "/impact.html"
+  status = 200
+
+[[redirects]]
+  from = "/customers"
+  to = "/customers.html"
+  status = 200
+
+[[redirects]]
+  from = "/resources"
+  to = "/resources.html"
+  status = 200
+
+[[redirects]]
+  from = "/company"
+  to = "/company.html"
+  status = 200
+
+[[redirects]]
+  from = "/cities"
+  to = "/cities.html"
   status = 200
