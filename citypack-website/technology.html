@@ -8,6 +8,8 @@
 
     <!-- Anduril-style CSS -->
     <link rel="stylesheet" href="/css/anduril-style.css">
+    <!-- Grid System CSS -->
+    <link rel="stylesheet" href="/css/grid-system.css">
 </head>
 <body>
 
@@ -30,71 +32,127 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="anduril-hero">
-        <div class="anduril-container">
-            <div class="anduril-hero-content">
-                <div class="anduril-hero-label">BATTERIES</div>
-                <h1 class="anduril-hero-title">Professional Battery Systems for Events and Rentals</h1>
-                <div class="anduril-hero-description">
-                    <p>Advanced LiFePO₄ battery technology with multi-circuit outputs, real-time monitoring, and safety-first design. Built for professional use.</p>
+    <!-- Full Width Hero Section -->
+    <section class="hero-full">
+        <div class="hero-video-container">
+            <!-- Video/Image background - placeholder for now -->
+            <img src="/images/hero-placeholder.jpg" alt="Professional Battery Systems for Events and Rentals">
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="article-date">BATTERIES</div>
+            <h1 class="hero-title">Professional Battery Systems for Events and Rentals</h1>
+            <p class="hero-subtitle">Advanced LiFePO₄ battery technology with multi-circuit outputs, real-time monitoring, and safety-first design. Built for professional use.</p>
+            <div class="cta-buttons" style="margin-top: 32px;">
+                <a href="/contact" class="btn btn-primary">See Live Fleet Dashboard Demo</a>
+                <a href="/resources" class="btn btn-secondary">Download Technical Specs</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Grid - Bento Box Style -->
+    <section class="products-grid-section">
+        <div class="grid-container">
+            <!-- Large featured card - spans 8 columns, 2 rows -->
+            <div class="grid-item grid-card span-8 row-span-2" data-placeholder="1">
+                <div class="grid-card-image">
+                    <!-- Image placeholder -->
                 </div>
-                <div class="anduril-cta-buttons">
-                    <a href="/contact" class="btn-anduril-primary">
-                        See Live Fleet Dashboard Demo
-                    </a>
-                    <a href="/resources" class="btn-anduril-secondary">
-                        Download Technical Specs
-                    </a>
+                <div class="grid-card-overlay warm"></div>
+                <div class="grid-card-content">
+                    <h2 class="grid-card-title">LiFePO₄ Chemistry for Safety</h2>
+                    <p class="grid-card-subtitle">Lithium iron phosphate (LFP) instead of NMC for thermal stability in public deployments. Long cycle life (3000+ cycles) and no documented thermal runaway cases.</p>
+                    <a href="#benefits" class="grid-card-cta">Learn More</a>
+                </div>
+            </div>
+            <!-- Medium card - spans 4 columns, 1 row -->
+            <div class="grid-item grid-card span-4 row-span-1" data-placeholder="2">
+                <div class="grid-card-image">
+                    <!-- Image placeholder -->
+                </div>
+                <div class="grid-card-overlay dark"></div>
+                <div class="grid-card-content">
+                    <h3 class="grid-card-title" style="font-size: 24px;">Multi-Circuit Design</h3>
+                    <p class="grid-card-subtitle">Three independent 20A outlets plus 60A Bates connector. One vendor cannot knock out another vendor&#x27;s power. Professional distro compatibility without adapters.</p>
+                    <a href="#benefits" class="grid-card-cta">Explore</a>
+                </div>
+            </div>
+            <!-- Medium card - spans 4 columns, 1 row -->
+            <div class="grid-item grid-card span-4 row-span-1" data-placeholder="3">
+                <div class="grid-card-image">
+                    <!-- Image placeholder -->
+                </div>
+                <div class="grid-card-overlay dark"></div>
+                <div class="grid-card-content">
+                    <h3 class="grid-card-title" style="font-size: 24px;">Scalable Capacity</h3>
+                    <p class="grid-card-subtitle">3 kW portable units for field crews. Mid-capacity units for markets and park rentals. High-capacity units and trailers for large festivals and multi-day events.</p>
+                    <a href="#benefits" class="grid-card-cta">Explore</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Benefits Section (Numbered Cards) -->
-    <section class="anduril-section anduril-bg-white">
-        <div class="anduril-container">
-            <h2 class="anduril-section-title">Battery Systems</h2>
-            <div class="anduril-cards-grid">
-                <div class="anduril-card-dark">
-                    <div class="anduril-card-number">01</div>
-                    <h3 class="anduril-card-title">LiFePO₄ Chemistry for Safety</h3>
-                    <p class="anduril-card-description">Lithium iron phosphate (LFP) instead of NMC for thermal stability in public deployments. Long cycle life (3000+ cycles) and no documented thermal runaway cases.</p>
+    <!-- Features Section - Equal Grid -->
+    <section class="news-section">
+        <div class="section-header">
+            <h2>Fleet Management &amp; Safety</h2>
+        </div>
+        <div class="grid-container standard">
+            <div class="grid-item grid-card span-3" data-placeholder="1">
+                <div class="grid-card-image">
+                    <!-- Feature image placeholder -->
                 </div>
-                <div class="anduril-card-dark">
-                    <div class="anduril-card-number">02</div>
-                    <h3 class="anduril-card-title">Multi-Circuit Design</h3>
-                    <p class="anduril-card-description">Three independent 20A outlets plus 60A Bates connector. One vendor cannot knock out another vendor&#x27;s power. Professional distro compatibility without adapters.</p>
+                <div class="grid-card-overlay dark"></div>
+                <div class="grid-card-content">
+                    <h3 class="grid-card-title" style="font-size: 20px;">Real-Time Telemetry</h3>
+                    <p class="grid-card-subtitle">[PLACEHOLDER: Live dashboard showing every battery&#x27;s state of charge, temperature, location, and load profile. Automated alerts for overheating, low charge before events, geofence violations, or abnormal usage patterns.]</p>
                 </div>
-                <div class="anduril-card-dark">
-                    <div class="anduril-card-number">03</div>
-                    <h3 class="anduril-card-title">Scalable Capacity</h3>
-                    <p class="anduril-card-description">3 kW portable units for field crews. Mid-capacity units for markets and park rentals. High-capacity units and trailers for large festivals and multi-day events.</p>
+            </div>
+            <div class="grid-item grid-card span-3" data-placeholder="2">
+                <div class="grid-card-image">
+                    <!-- Feature image placeholder -->
+                </div>
+                <div class="grid-card-overlay dark"></div>
+                <div class="grid-card-content">
+                    <h3 class="grid-card-title" style="font-size: 20px;">Proactive Maintenance</h3>
+                    <p class="grid-card-subtitle">[PLACEHOLDER: Cell-level health monitoring flags weak batteries before they fail in the field. Maintenance workflows schedule refurbishments. Predictive analytics optimize charging cycles and extend fleet life.]</p>
+                </div>
+            </div>
+            <div class="grid-item grid-card span-3" data-placeholder="3">
+                <div class="grid-card-image">
+                    <!-- Feature image placeholder -->
+                </div>
+                <div class="grid-card-overlay dark"></div>
+                <div class="grid-card-content">
+                    <h3 class="grid-card-title" style="font-size: 20px;">Safety &amp; Compliance</h3>
+                    <p class="grid-card-subtitle">Over-current and over-temperature protection at cell level. GPS tracking and geofencing to mitigate theft. Remote shutoff capability for safety incidents. UL-listed components and LFP chemistry meet California public safety standards.</p>
+                </div>
+            </div>
+            <div class="grid-item grid-card span-3" data-placeholder="4">
+                <div class="grid-card-image">
+                    <!-- Feature image placeholder -->
+                </div>
+                <div class="grid-card-overlay dark"></div>
+                <div class="grid-card-content">
+                    <h3 class="grid-card-title" style="font-size: 20px;">Impact Reporting</h3>
+                    <p class="grid-card-subtitle">[PLACEHOLDER: Automated reporting for CPA grants and city climate plans. Export kWh delivered, generator-hours avoided, estimated tCO₂ reductions, vendor participation rates. CSV, dashboard, and PDF formats for staff and Council presentations.]</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Features Section (4-column Grid) -->
-    <section class="anduril-section anduril-bg-light">
-        <div class="anduril-container">
-            <h2 class="anduril-section-title">Fleet Management &amp; Safety</h2>
-            <div class="anduril-features-grid">
-                <div class="anduril-feature-card">
-                    <h3 class="anduril-feature-card-title">Real-Time Telemetry</h3>
-                    <p class="anduril-feature-card-description">[PLACEHOLDER: Live dashboard showing every battery&#x27;s state of charge, temperature, location, and load profile. Automated alerts for overheating, low charge before events, geofence violations, or abnormal usage patterns.]</p>
-                </div>
-                <div class="anduril-feature-card">
-                    <h3 class="anduril-feature-card-title">Proactive Maintenance</h3>
-                    <p class="anduril-feature-card-description">[PLACEHOLDER: Cell-level health monitoring flags weak batteries before they fail in the field. Maintenance workflows schedule refurbishments. Predictive analytics optimize charging cycles and extend fleet life.]</p>
-                </div>
-                <div class="anduril-feature-card">
-                    <h3 class="anduril-feature-card-title">Safety &amp; Compliance</h3>
-                    <p class="anduril-feature-card-description">Over-current and over-temperature protection at cell level. GPS tracking and geofencing to mitigate theft. Remote shutoff capability for safety incidents. UL-listed components and LFP chemistry meet California public safety standards.</p>
-                </div>
-                <div class="anduril-feature-card">
-                    <h3 class="anduril-feature-card-title">Impact Reporting</h3>
-                    <p class="anduril-feature-card-description">[PLACEHOLDER: Automated reporting for CPA grants and city climate plans. Export kWh delivered, generator-hours avoided, estimated tCO₂ reductions, vendor participation rates. CSV, dashboard, and PDF formats for staff and Council presentations.]</p>
+    <!-- CTA Section -->
+    <section class="feature-full">
+        <div class="feature-split">
+            <div class="feature-image">
+                <img src="/images/cta-placeholder.jpg" alt="Get Started with Citypack">
+            </div>
+            <div class="feature-content">
+                <h2>Ready to Transform Your City's Power Infrastructure?</h2>
+                <p>Join forward-thinking California cities deploying clean, quiet power solutions for public events and municipal operations.</p>
+                <div class="cta-buttons">
+                    <a href="/contact" class="btn btn-primary">Schedule a Consultation</a>
+                    <a href="/resources" class="btn btn-secondary">Download Resources</a>
                 </div>
             </div>
         </div>
