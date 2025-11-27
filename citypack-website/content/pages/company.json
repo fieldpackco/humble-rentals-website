@@ -1,13 +1,13 @@
 {
   "layout": "landing-page-anduril",
   "meta": {
-    "title": "About Labrador Field Systems | Battery Fleet Management",
-    "description": "A battery company built around public space. Mission, team, and values focused on municipal reliability."
+    "title": "Our Team | Citypack",
+    "description": "Meet the Citypack team. Experts in battery technology, event production, and customer service."
   },
   "hero": {
-    "category": "COMPANY",
-    "title": "A Battery Company Built Around Public Space",
-    "description": "Our mission: replace combustion generators at community events, farmers markets, and city field operations with managed battery fleets. Safety-first hardware, vendor-managed service, public-sector pragmatism.",
+    "category": "TEAM",
+    "title": "Meet the Citypack Team",
+    "description": "Experts in battery technology, event production, and customer service. Dedicated to delivering clean, reliable power for your events and celebrations.",
     "cta": {
       "primary": {
         "text": "Talk to Our Team",

@@ -1,13 +1,13 @@
 {
   "layout": "landing-page-anduril",
   "meta": {
-    "title": "Municipal Power Solutions | Labrador Field Systems",
-    "description": "Battery programs for markets, parks, events, and field crews. Flexible deployment models for California cities."
+    "title": "Live Events Power Solutions | Citypack",
+    "description": "Clean, quiet power for concerts, festivals, markets, and outdoor events. Battery-powered solutions for event organizers and venues."
   },
   "hero": {
-    "category": "SOLUTIONS",
-    "title": "Programs for Markets, Parks, Events, and Field Crews",
-    "description": "Different departments, different power needs, one managed fleet. Flexible ownership models from city-owned units to fully vendor-managed services.",
+    "category": "LIVE EVENTS",
+    "title": "Clean Power for Concerts, Festivals, and Outdoor Events",
+    "description": "Battery-powered solutions for stages, sound systems, lighting, and vendor operations. Zero emissions, zero noise, professional event support.",
     "cta": {
       "primary": {
         "text": "Download Sample Program Brief",
@@ -20,7 +20,7 @@
     }
   },
   "benefits": {
-    "title": "Field Crew Power",
+    "title": "Event Power Solutions",
     "items": [
       {
         "title": "For Maintenance & Operations",

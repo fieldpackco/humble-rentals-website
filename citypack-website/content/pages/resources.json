@@ -1,13 +1,13 @@
 {
   "layout": "landing-page-anduril",
   "meta": {
-    "title": "Resources for Municipal Battery Programs | Labrador Field Systems",
-    "description": "RFP templates, pilot playbooks, and program planning tools for cities moving off generators."
+    "title": "Pricing & Rental Rates | Citypack",
+    "description": "Transparent pricing for battery rentals, events, and party equipment. Flexible rental options and packages."
   },
   "hero": {
-    "category": "RESOURCES",
-    "title": "Tools for Cities Moving Off Generators",
-    "description": "RFP language, pilot playbooks, buying checklists, and reporting templates designed for municipal procurement and grant compliance.",
+    "category": "PRICING",
+    "title": "Transparent Pricing for Events and Rentals",
+    "description": "Flexible rental packages for events, parties, and professional use. Clear pricing with no hidden fees.",
     "cta": {
       "primary": {
         "text": "Download All Resources",

@@ -1,13 +1,13 @@
 {
   "layout": "landing-page-anduril",
   "meta": {
-    "title": "Battery Technology & Fleet Management | Labrador Field Systems",
-    "description": "LiFePO₄ chemistry for safety. Multi-circuit outputs for shared power. Real-time telemetry and fleet management software."
+    "title": "Battery Technology & Systems | Citypack",
+    "description": "Advanced LiFePO₄ battery systems for events and rentals. Safe, reliable, professional-grade power solutions."
   },
   "hero": {
-    "category": "TECHNOLOGY",
-    "title": "Hardware for Public Spaces. Software for Peace of Mind.",
-    "description": "LiFePO₄ battery chemistry, multi-circuit outputs to prevent vendor conflicts, and comprehensive fleet management telemetry. Built for municipal reliability.",
+    "category": "BATTERIES",
+    "title": "Professional Battery Systems for Events and Rentals",
+    "description": "Advanced LiFePO₄ battery technology with multi-circuit outputs, real-time monitoring, and safety-first design. Built for professional use.",
     "cta": {
       "primary": {
         "text": "See Live Fleet Dashboard Demo",
