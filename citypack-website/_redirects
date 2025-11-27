@@ -1,8 +1,8 @@
 # Clean URLs
-# Archived LAB SEVEN redirects (files moved to legacy/lab-seven/)
+# Archived redirects (files removed during cleanup)
 # /editable    /lab-seven-battery-editable.html   200
 # /static      /lab-seven-battery.html             200
-/macbook     /macbook-air-replica.html           200
+# /macbook     /macbook-air-replica.html           200
 
 # User-type landing pages
 /experience-agencies   /experience-agencies.html    200
