@@ -190,6 +190,8 @@ body {
 
 .anduril-hero-content {
   max-width: 1000px;
+  margin-left: 0;
+  margin-right: auto;
 }
 
 .anduril-hero-label {
