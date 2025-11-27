@@ -1,7 +1,7 @@
 {
   "layout": "landing-page-anduril",
   "meta": {
-    "title": "LAB SEVEN for Production Managers | Labrador Field Systems",
+    "title": "Citypack battery systems for Production Managers | Citypack",
     "description": "Silent battery power for efficient productions. Eliminate generator drama and keep productions on schedule."
   },
   "hero": {
@@ -10,7 +10,7 @@
     "description": "No refueling. No noise. More power than a 7000 watt generator. 60A silent power eliminates generator logistics and keeps your production on schedule. No permits, no noise complaints, no limits.",
     "cta": {
       "primary": {
-        "text": "Contact Labrador",
+        "text": "Contact Citypack",
         "href": "/contact"
       },
       "secondary": {
@@ -37,7 +37,7 @@
     ]
   },
   "features": {
-    "title": "Why Production Managers Choose LAB SEVEN",
+    "title": "Why Production Managers Choose Citypack",
     "items": [
       {
         "title": "Silent Approval",
@@ -49,7 +49,7 @@
       },
       {
         "title": "White-Glove Service",
-        "description": "Labrador Field Systems handles delivery, placement, and pickup. You don't touch it. Your crew focuses on production, not managing power logistics."
+        "description": "Citypack handles delivery, placement, and pickup. You don't touch it. Your crew focuses on production, not managing power logistics."
       },
       {
         "title": "Real Power",

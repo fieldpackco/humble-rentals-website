@@ -1,6 +1,6 @@
-# LAB SEVEN Design System
+# Citypack Design System
 
-A scalable, modular CSS architecture for the LAB SEVEN website, designed to support growth similar to Apple or Stripe with many subpages and categories.
+A scalable, modular CSS architecture for the Citypack website, designed to support growth similar to Apple or Stripe with many subpages and categories.
 
 ## Architecture
 
@@ -41,7 +41,7 @@ The design system is split into three CSS files for maintainability and scalabil
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page Title | Labrador Field Systems</title>
+    <title>Page Title | Citypack</title>
     <meta name="description" content="Your page description">
 
     <!-- Shared Design System -->
@@ -53,7 +53,7 @@ The design system is split into three CSS files for maintainability and scalabil
     <!-- Navigation -->
     <nav>
         <div class="nav-wrapper">
-            <div class="logo">LABRADOR</div>
+            <div class="logo">CITYPACK</div>
             <ul class="nav-items">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#benefits">Benefits</a></li>
@@ -76,7 +76,7 @@ The design system is split into three CSS files for maintainability and scalabil
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Labrador Field Systems. All rights reserved.</p>
+        <p>&copy; 2025 Citypack. All rights reserved.</p>
         <p><a href="index.html">Return to main site</a></p>
     </footer>
 
@@ -166,11 +166,11 @@ The design system is split into three CSS files for maintainability and scalabil
     <h2>A day on activation</h2>
     <div class="journey-comparison">
         <div class="journey-column without">
-            <h3>Without LAB SEVEN</h3>
+            <h3>Without Citypack</h3>
             <p>Negative scenario description</p>
         </div>
         <div class="journey-column with">
-            <h3>With LAB SEVEN</h3>
+            <h3>With Citypack</h3>
             <p>Positive scenario description</p>
         </div>
     </div>

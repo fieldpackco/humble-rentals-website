@@ -32,11 +32,11 @@
 Run: `grep -r "Anytime" content/pages/ --include="*.json"`
 Expected: List of files with "Anytime Rentals" or "Anytime Production Equipment Rentals"
 
-**Step 2: Update each file to replace "Anytime Rentals" with "Labrador Field Systems"**
+**Step 2: Update each file to replace "Anytime Rentals" with "Citypack"**
 
 For each file found:
-- Replace "Anytime Production Equipment Rentals" → "Labrador Field Systems"
-- Replace "Anytime Rentals" → "Labrador Field Systems"
+- Replace "Anytime Production Equipment Rentals" → "Citypack"
+- Replace "Anytime Rentals" → "Citypack"
 - Replace "rentals@anytimerentals.com" → "amit@fieldpack.co"
 - Replace any phone numbers → "310-776-0154"
 
@@ -49,9 +49,9 @@ Expected: No results (or only in historical docs)
 
 ```bash
 git add content/pages/*.json
-git commit -m "feat: rebrand from Anytime Rentals to Labrador Field Systems
+git commit -m "feat: rebrand from Anytime Rentals to Citypack
 
-- Replace all Anytime Rentals references with Labrador Field Systems
+- Replace all Anytime Rentals references with Citypack
 - Update contact email to amit@fieldpack.co
 - Update phone to 310-776-0154"
 ```
@@ -74,17 +74,17 @@ Update the contact.json to include:
 ```json
 {
   "meta": {
-    "title": "Contact Labrador Field Systems",
-    "description": "Get in touch with Labrador Field Systems for professional battery power solutions"
+    "title": "Contact Citypack",
+    "description": "Get in touch with Citypack for professional battery power solutions"
   },
   "hero": {
-    "title": "Contact Labrador",
+    "title": "Contact Citypack",
     "tagline": "Ready to power your next project?"
   },
   "contactInfo": {
     "email": "amit@fieldpack.co",
     "phone": "310-776-0154",
-    "company": "Labrador Field Systems"
+    "company": "Citypack"
   }
 }
 ```
@@ -102,7 +102,7 @@ git commit -m "feat: update contact information
 
 - Email: amit@fieldpack.co
 - Phone: 310-776-0154
-- Company: Labrador Field Systems"
+- Company: Citypack"
 ```
 
 ---
@@ -312,7 +312,7 @@ Navigate to: http://localhost:3000/contact
 Verify:
 - [ ] Email: amit@fieldpack.co
 - [ ] Phone: 310-776-0154
-- [ ] Company: Labrador Field Systems
+- [ ] Company: Citypack
 
 **Step 4: Scan all pages for "Anytime"**
 

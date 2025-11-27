@@ -1,6 +1,7 @@
 # Clean URLs
-/editable    /lab-seven-battery-editable.html   200
-/static      /lab-seven-battery.html             200
+# Archived LAB SEVEN redirects (files moved to legacy/lab-seven/)
+# /editable    /lab-seven-battery-editable.html   200
+# /static      /lab-seven-battery.html             200
 /macbook     /macbook-air-replica.html           200
 
 # User-type landing pages

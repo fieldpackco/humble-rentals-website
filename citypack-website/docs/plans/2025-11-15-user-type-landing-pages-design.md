@@ -1,12 +1,12 @@
 # User-Type Landing Pages Design
 
 **Date:** November 15, 2025
-**Project:** LAB SEVEN Website
+**Project:** Citypack Website
 **Scope:** Seven user-type-specific landing pages
 
 ## Overview
 
-Create seven comprehensive landing pages, each targeting a distinct user type with tailored messaging. Each page drives users to contact Labrador Field Systems directly or book a demo/site visit.
+Create seven comprehensive landing pages, each targeting a distinct user type with tailored messaging. Each page drives users to contact Citypack directly or book a demo/site visit.
 
 ## User Types
 
@@ -25,7 +25,7 @@ Each page follows a nine-section narrative arc: benefit → pain → journey →
 ### 1. Hero Section (Benefit-Led)
 - User-type-specific headline focused on primary transformation
 - Subheadline with key technical differentiator
-- Dual CTA: "Contact Labrador" (primary) + "Book a Demo" (secondary)
+- Dual CTA: "Contact Citypack" (primary) + "Book a Demo" (secondary)
 - Hero image relevant to user context
 
 ### 2. Top 3 Benefits
@@ -38,13 +38,13 @@ Each page follows a nine-section narrative arc: benefit → pain → journey →
 - 3-4 specific pain points in their language
 - Real-world cost implications (time, money, reputation)
 
-### 4. The LAB SEVEN Solution
+### 4. The Citypack Solution
 - How each pain point is solved
 - Specific features mapped to their problems
 - Quick specs callout (numbers they care about)
 
 ### 5. Before/After Journey (Journey-Based)
-- "A Day Without LAB SEVEN" vs "A Day With LAB SEVEN"
+- "A Day Without Citypack" vs "A Day With Citypack"
 - Narrative walkthrough of typical project/event
 - Emphasizes workflow integration, not disruption
 
@@ -62,7 +62,7 @@ Each page follows a nine-section narrative arc: benefit → pain → journey →
 - Addresses objections and edge cases
 
 ### 9. Dual CTA Section
-- "Contact Labrador Field Systems" (primary)
+- "Contact Citypack" (primary)
 - "Book a Demo or Site Visit" (secondary)
 - Contact information
 
@@ -91,7 +91,7 @@ Each page follows a nine-section narrative arc: benefit → pain → journey →
 - Fast charging between multi-day events (1 hour with 60A)
 
 **Case Study:**
-Luxury auto brand launch in hotel ballroom. Venue prohibited generators. LAB SEVEN powered LED wall, theatrical lighting, DJ booth for 6-hour event. Zero complaints, zero delays. Cost lower than generator plus special permits.
+Luxury auto brand launch in hotel ballroom. Venue prohibited generators. Citypack powered LED wall, theatrical lighting, DJ booth for 6-hour event. Zero complaints, zero delays. Cost lower than generator plus special permits.
 
 ---
 
@@ -121,7 +121,7 @@ Luxury auto brand launch in hotel ballroom. Venue prohibited generators. LAB SEV
 - All-weather operation
 
 **Case Study:**
-Three-block neighborhood street fair. Previous years: 2 large generators, 8 noise complaints/year, $1,200 in generator rentals plus fuel. Switched to 4 LAB SEVEN units. Zero noise complaints. Restaurants reported better patio sales. Festival committee: "First year in a decade without angry neighbors at city council meeting."
+Three-block neighborhood street fair. Previous years: 2 large generators, 8 noise complaints/year, $1,200 in generator rentals plus fuel. Switched to 4 Citypack units. Zero noise complaints. Restaurants reported better patio sales. Festival committee: "First year in a decade without angry neighbors at city council meeting."
 
 ---
 
@@ -153,7 +153,7 @@ Three-block neighborhood street fair. Previous years: 2 large generators, 8 nois
 - Circuit breakers on all outlets (code compliant)
 
 **Case Study:**
-Historic museum hosts gala in sculpture garden. City ordinance prohibits generators in historic district after 8pm. Event runs 6pm-11pm. LAB SEVEN powered full AV, theatrical lighting, band for 400 people. Zero noise impact. Museum director: "First time in 15 years, zero noise complaints from neighbors. We can finally use outdoor space for evening events."
+Historic museum hosts gala in sculpture garden. City ordinance prohibits generators in historic district after 8pm. Event runs 6pm-11pm. Citypack powered full AV, theatrical lighting, band for 400 people. Zero noise impact. Museum director: "First time in 15 years, zero noise complaints from neighbors. We can finally use outdoor space for evening events."
 
 ---
 
@@ -186,7 +186,7 @@ Historic museum hosts gala in sculpture garden. City ordinance prohibits generat
 - 7.5kWh capacity (full shooting day with load management)
 
 **Case Study:**
-Indie feature in residential neighborhood with difficult neighbors. Previous productions had permits revoked due to generator complaints. Location manager presented LAB SEVEN to HOA board. Silent operation convinced approval. Six-day shoot, zero complaints. HOA president: "You can film here again—first crew that didn't create problems."
+Indie feature in residential neighborhood with difficult neighbors. Previous productions had permits revoked due to generator complaints. Location manager presented Citypack to HOA board. Silent operation convinced approval. Six-day shoot, zero complaints. HOA president: "You can film here again—first crew that didn't create problems."
 
 ---
 
@@ -221,7 +221,7 @@ Indie feature in residential neighborhood with difficult neighbors. Previous pro
 **Case Study:**
 Thirty-day commercial shoot across multiple locations. UPM compared costs:
 - Generator total: $46,500 (rental + fuel + permits + fire watch + delivery)
-- LAB SEVEN total: [Contact for pricing]
+- Citypack total: [Contact for pricing]
 - Additional savings: 3 days noise delays avoided (estimated $18,000)
 - Wrap improvement: Average 25 minutes faster/day (7.5 hours OT saved)
 
@@ -254,7 +254,7 @@ UPM: "Even if rental cost was the same, time savings made it worth it. But it ac
 - 1-hour fast charge (60A in) or 4-5 hours (110v)
 
 **Case Study:**
-Episodic TV in residential neighborhood. Generator curfew 10pm-7am. LAB SEVEN powered night exteriors with 4K HMI, LED panels, full video village until 2am wrap. Zero noise complaints. Electric wrapped in half usual time—no generator cooldown wait.
+Episodic TV in residential neighborhood. Generator curfew 10pm-7am. Citypack powered night exteriors with 4K HMI, LED panels, full video village until 2am wrap. Zero noise complaints. Electric wrapped in half usual time—no generator cooldown wait.
 
 ---
 
@@ -284,7 +284,7 @@ Episodic TV in residential neighborhood. Generator curfew 10pm-7am. LAB SEVEN po
 - Indoor/outdoor rated
 
 **Case Study:**
-City farmers market moved to downtown plaza—no generator access due to noise ordinance. LAB SEVEN powered 12 vendor booths, PA, lighting for 6-hour Saturday market. Zero noise complaints (previous location averaged 3-4 per market). Event coordinator: "First market in five years without generator complaint to mayor's office."
+City farmers market moved to downtown plaza—no generator access due to noise ordinance. Citypack powered 12 vendor booths, PA, lighting for 6-hour Saturday market. Zero noise complaints (previous location averaged 3-4 per market). Event coordinator: "First market in five years without generator complaint to mayor's office."
 
 ## Technical Implementation
 
@@ -299,7 +299,7 @@ City farmers market moved to downtown plaza—no generator access due to noise o
 
 **Shared Components:**
 - Navigation bar (link to all user-type pages)
-- Footer with Labrador contact information
+- Footer with Citypack contact information
 - CSS design system from index.html
 - Core product specs (adapt emphasis per user type)
 
@@ -314,7 +314,7 @@ City farmers market moved to downtown plaza—no generator access due to noise o
 
 ## Conversion Goals
 
-**Primary CTA:** Contact Labrador Field Systems directly
+**Primary CTA:** Contact Citypack directly
 - Email: [contact email]
 - Phone: [contact phone]
 - Contact form
@@ -337,7 +337,7 @@ Maintain premium Apple-style design from index.html:
 ## SEO Optimization
 
 **Per-Page Meta:**
-- Title: "LAB SEVEN for [User Type] | Labrador Field Systems"
+- Title: "Citypack for [User Type] | Citypack"
 - Description: User-specific value proposition (155 characters)
 - Keywords: User-type-specific terms
 

@@ -1,7 +1,7 @@
 {
   "layout": "landing-page-anduril",
   "meta": {
-    "title": "LAB SEVEN Features | Professional Battery Power for Production",
+    "title": "Battery Features | Citypack Professional Power Solutions",
     "description": "Silent battery power built for production. Indoor-safe 60A output, fast charging, real-time monitoring, and professional reliability."
   },
   "hero": {
@@ -10,7 +10,7 @@
     "description": "Every feature is designed to solve real production challenges. Silent operation. True 60A output. Professional monitoring. Built for the demands of professional production.",
     "cta": {
       "primary": {
-        "text": "Contact Labrador",
+        "text": "Contact Citypack",
         "href": "/contact"
       },
       "secondary": {
@@ -20,11 +20,11 @@
     }
   },
   "benefits": {
-    "title": "Why Production Teams Choose LAB SEVEN",
+    "title": "Why Production Teams Choose Citypack",
     "items": [
       {
         "title": "Saves Money Over Generators",
-        "description": "When you add fuel runs, fire watch, noise complaints, and slow wrap, generators cost more than the day rate suggests. LAB SEVEN eliminates hidden costs."
+        "description": "When you add fuel runs, fire watch, noise complaints, and slow wrap, generators cost more than the day rate suggests. Citypack battery systems eliminates hidden costs."
       },
       {
         "title": "Works Everywhere Generators Can't",
@@ -37,7 +37,7 @@
     ]
   },
   "features": {
-    "title": "How LAB SEVEN Solves Production Power Challenges",
+    "title": "How Citypack battery systems Solves Production Power Challenges",
     "items": [
       {
         "title": "Truly Silent Operation",

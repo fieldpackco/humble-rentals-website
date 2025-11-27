@@ -1,19 +1,19 @@
 {
   "meta": {
-    "title": "Product Roadmap | Labrador Field Systems Future Products",
-    "description": "Future products and innovations from Labrador Field Systems. Professional power solutions in development for film, commercial, and event production."
+    "title": "Product Roadmap | Citypack Future Solutions",
+    "description": "Future battery solutions and innovations from Citypack. Expanding our range of professional power solutions for diverse industries and applications."
   },
   "hero": {
-    "title": "Building the future of production power",
-    "tagline": "LAB SEVEN is just the beginning. We're developing next-generation power solutions for professional production. Silent, portable, powerful.",
+    "title": "Expanding Our Battery Solutions Portfolio",
+    "tagline": "Citypack is continuously developing new battery solutions to serve more industries and applications. From specialized systems to enhanced capabilities, we're building the future of portable power.",
     "cta": {
       "primary": {
-        "text": "Contact Labrador",
-        "href": "mailto:contact@labradorfieldystems.com"
+        "text": "Contact Citypack",
+        "href": "/contact"
       },
       "secondary": {
-        "text": "Rent LAB SEVEN Today",
-        "href": "/pricing"
+        "text": "View Current Solutions",
+        "href": "/specifications"
       }
     }
   },
@@ -22,60 +22,60 @@
     "items": [
       {
         "icon": "🔋",
-        "title": "Next-generation battery systems",
-        "description": "Higher capacity, faster charging, smarter power management. Building on LAB SEVEN's proven architecture with enhanced capabilities."
+        "title": "Expanded capacity range",
+        "description": "New battery systems at different capacity points to serve more applications. From ultra-portable solutions to maximum-capacity systems."
       },
       {
         "icon": "⚡",
-        "title": "Modular power solutions",
-        "description": "Stackable systems for scaling power needs. From small commercial shoots to large festival installations with seamless integration."
+        "title": "Specialized industry solutions",
+        "description": "Purpose-built battery systems for specific industries and use cases. Optimized configurations for unique power requirements."
       },
       {
         "icon": "📱",
-        "title": "Advanced monitoring and control",
-        "description": "Enhanced mobile apps, cloud-based fleet management, predictive maintenance, and remote diagnostics for rental house operations."
+        "title": "Enhanced monitoring and fleet management",
+        "description": "Advanced mobile apps, cloud-based fleet tracking, predictive maintenance capabilities, and comprehensive remote diagnostics."
       }
     ]
   },
   "solution": {
-    "title": "Product development in progress",
+    "title": "Our development approach",
     "items": [
       {
-        "title": "LAB SEVEN is proven technology",
-        "description": "Our current 60A battery system is available for rent today through Labrador Field Systems. Proven performance across hundreds of production days."
+        "title": "Proven solutions available today",
+        "description": "Our current battery systems are available for rental now. Proven performance across diverse applications and industries."
       },
       {
-        "title": "Future products in development",
-        "description": "We're working on next-generation systems with higher capacity, faster charging, and enhanced features based on real production feedback. Details coming soon."
+        "title": "Customer-driven development",
+        "description": "We develop new battery solutions based on real customer needs and application requirements. Your feedback directly shapes what we build next."
       },
       {
-        "title": "Industry collaboration",
-        "description": "We work directly with production teams to understand evolving power needs. Your feedback shapes our product roadmap and feature priorities."
+        "title": "Industry partnerships",
+        "description": "We work directly with customers across industries to understand evolving power needs. Collaborative development ensures our solutions solve real problems."
       },
       {
         "title": "Stay informed",
-        "description": "Contact Labrador Field Systems to join our mailing list for product announcements, beta testing opportunities, and early access to new capabilities."
+        "description": "Contact Citypack to join our mailing list for product announcements, beta testing opportunities, and early access to new battery solutions."
       }
     ]
   },
   "specs": {
-    "title": "Development focus",
+    "title": "Development focus areas",
     "items": [
       {
-        "value": "Higher",
-        "label": "Capacity options"
+        "value": "Broader",
+        "label": "Capacity range"
       },
       {
-        "value": "Faster",
-        "label": "Charging tech"
+        "value": "More",
+        "label": "Industry solutions"
       },
       {
         "value": "Smarter",
         "label": "Power management"
       },
       {
-        "value": "Soon",
-        "label": "Product launch"
+        "value": "Continuous",
+        "label": "Innovation"
       }
     ]
   },
@@ -83,66 +83,66 @@
     "title": "Our development approach",
     "comparison": {
       "without": {
-        "title": "Traditional power product development",
-        "description": "Companies develop products in isolation, release them to market, and hope they meet user needs. Features based on assumptions rather than real-world production experience."
+        "title": "Traditional product development",
+        "description": "Companies develop products in isolation based on assumptions, release them to market, and hope they meet user needs. Features driven by internal ideas rather than customer reality."
       },
       "with": {
-        "title": "Labrador's approach",
-        "description": "Build proven solutions like LAB SEVEN. Deploy them on real productions. Gather feedback from actual users. Iterate and enhance based on production reality. Develop next generation with confidence."
+        "title": "Citypack's approach",
+        "description": "Deploy solutions in real applications. Gather feedback from actual users. Understand specific industry pain points. Develop new solutions based on proven needs. Build with confidence that we're solving real problems."
       }
     }
   },
   "caseStudy": {
-    "title": "How LAB SEVEN shaped our roadmap",
+    "title": "How customer feedback shapes our roadmap",
     "content": [
-      "LAB SEVEN started from direct production experience with generator limitations and existing battery shortcomings.",
-      "Hundreds of rental days across diverse productions revealed real needs: true 60A output, fast charging, professional monitoring, and rental-house durability.",
-      "Production feedback drives our next-generation development: higher capacity for extended runtimes, faster charging for quicker turnarounds, and modular scaling for larger installations."
+      "Citypack started from direct experience with power limitations across multiple industries and applications.",
+      "Hundreds of deployments revealed patterns: the need for different capacity options, specialized connectors for different industries, and flexible charging solutions.",
+      "Customer feedback drives our development: expanding our capacity range, building industry-specific solutions, and enhancing monitoring capabilities for fleet operations."
     ],
-    "quote": "We build products based on production reality, not feature checklists. Every enhancement comes from actual set experience."
+    "quote": "We build solutions based on customer reality, not feature checklists. Every new product comes from actual application experience."
   },
   "faq": {
     "title": "Roadmap questions",
     "items": [
       {
-        "question": "When will new products be available?",
-        "answer": "We're focused on LAB SEVEN production and deployment first. Next-generation products are in development but no release dates announced yet. Join our mailing list for updates."
+        "question": "When will new solutions be available?",
+        "answer": "We're continuously developing new battery solutions. Release timing depends on testing and validation. Join our mailing list for announcements."
       },
       {
-        "question": "Can I provide feedback or feature requests?",
-        "answer": "Absolutely. We actively seek production feedback to guide product development. Contact us with your specific power challenges and use cases."
+        "question": "Can I provide feedback or solution requests?",
+        "answer": "Absolutely. We actively seek customer feedback to guide development. Contact us with your specific power challenges and requirements."
       },
       {
         "question": "Will you offer beta testing or early access?",
-        "answer": "Yes. Production professionals who provide valuable feedback may receive early access to new products and features. Contact Labrador to express interest."
+        "answer": "Yes. Customers who provide valuable feedback may receive early access to new solutions and features. Contact Citypack to express interest."
       },
       {
         "question": "What about international availability?",
-        "answer": "LAB SEVEN is currently available through Labrador Field Systems in Los Angeles. We're exploring partnerships for broader distribution. Contact us if you're interested in bringing LAB SEVEN to your region."
+        "answer": "We're currently focused on our primary markets. We're exploring partnerships for broader distribution. Contact us if you're interested in bringing Citypack to your region."
       },
       {
-        "question": "Do you plan products for other industries?",
-        "answer": "Our focus is professional production power. While our technology could serve other industries, we're committed to building the best tools for film, commercial, and event production first."
+        "question": "Do you plan solutions for other industries?",
+        "answer": "Yes. While we started in production power, we're expanding to serve emergency services, events, construction, and other industries requiring professional portable power."
       }
     ]
   },
   "finalCta": {
-    "title": "Shape the future with us",
-    "description": "Join our development community. Provide feedback, request features, and get early access to new products.",
+    "title": "Help shape our roadmap",
+    "description": "Join our development community. Provide feedback, request solutions, and get early access to new products.",
     "cta": {
       "primary": {
-        "text": "Contact Labrador",
-        "href": "mailto:contact@labradorfieldystems.com"
+        "text": "Contact Citypack",
+        "href": "/contact"
       },
       "secondary": {
-        "text": "Rent LAB SEVEN",
-        "href": "/pricing"
+        "text": "View Current Solutions",
+        "href": "/specifications"
       }
     },
     "contactInfo": {
-      "company": "Labrador Field Systems",
+      "company": "Citypack",
       "phone": "Contact for partnership inquiries",
-      "email": "contact@labradorfieldystems.com"
+      "email": "contact@citypack.com"
     }
   }
 }

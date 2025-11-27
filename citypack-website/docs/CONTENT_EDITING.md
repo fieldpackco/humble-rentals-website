@@ -84,7 +84,7 @@ Controls how the page appears in search engines and browser tabs.
 
 ```json
 "meta": {
-  "title": "LAB SEVEN for Experience Agencies | Labrador Field Systems",
+  "title": "Citypack for Experience Agencies | Citypack",
   "description": "Silent battery power for brand activations and experiential events. Get approved for impossible locations without generator drama."
 }
 ```
@@ -96,7 +96,7 @@ Controls how the page appears in search engines and browser tabs.
 **Example:**
 ```json
 "meta": {
-  "title": "Your New Page Title | Labrador Field Systems",
+  "title": "Your New Page Title | Citypack",
   "description": "A compelling description that explains what visitors will find on this page and includes relevant keywords."
 }
 ```
@@ -111,7 +111,7 @@ The top section of the page - the first thing visitors see.
   "tagline": "No refueling. No noise. More power than a 7000 watt generator. 60A silent power for brand activations, pop-ups, and installations.",
   "cta": {
     "primary": {
-      "text": "Contact Labrador",
+      "text": "Contact Citypack",
       "href": "#contact"
     },
     "secondary": {
@@ -149,7 +149,7 @@ The top section of the page - the first thing visitors see.
 
 #### Benefits
 
-Highlights the advantages of LAB SEVEN for your audience.
+Highlights the advantages of Citypack for your audience.
 
 ```json
 "benefits": {
@@ -204,11 +204,11 @@ Describes the challenges your audience faces (builds empathy).
 
 #### Solution
 
-Shows how LAB SEVEN solves those problems.
+Shows how Citypack solves those problems.
 
 ```json
 "solution": {
-  "title": "How LAB SEVEN solves it",
+  "title": "How Citypack solves it",
   "items": [
     {
       "title": "Silent approval",
@@ -240,18 +240,18 @@ Technical specifications displayed as key metrics.
 
 #### Journey
 
-Before/after comparison showing the difference LAB SEVEN makes.
+Before/after comparison showing the difference Citypack makes.
 
 ```json
 "journey": {
   "title": "A day on activation",
   "comparison": {
     "without": {
-      "title": "Without LAB SEVEN",
+      "title": "Without Citypack",
       "description": "Day starts with 2-hour generator setup and fire marshal inspection..."
     },
     "with": {
-      "title": "With LAB SEVEN",
+      "title": "With Citypack",
       "description": "Battery delivered and placed before crew call. Silent all day..."
     }
   }
@@ -260,14 +260,14 @@ Before/after comparison showing the difference LAB SEVEN makes.
 
 #### Case Study
 
-Real-world example of LAB SEVEN in action.
+Real-world example of Citypack in action.
 
 ```json
 "caseStudy": {
   "title": "Real activation, real results",
   "content": [
     "Luxury automotive brand launch in downtown hotel ballroom.",
-    "LAB SEVEN powered full LED wall, theatrical lighting package.",
+    "Citypack powered full LED wall, theatrical lighting package.",
     "Results: Zero venue complaints. Zero delays."
   ],
   "quote": "First time we've powered a hotel ballroom event without generator restrictions."
@@ -297,10 +297,10 @@ Call-to-action at the bottom of the page.
 ```json
 "finalCta": {
   "title": "Ready to power your next activation?",
-  "description": "Contact Labrador Field Systems or book a demo to see LAB SEVEN in action",
+  "description": "Contact Citypack or book a demo to see Citypack in action",
   "cta": {
     "primary": {
-      "text": "Contact Labrador",
+      "text": "Contact Citypack",
       "href": "mailto:contact@labradorfieldystems.com"
     },
     "secondary": {
@@ -461,7 +461,7 @@ Edit `content/global/footer.json`:
 
 ```json
 {
-  "copyright": "© 2025 Labrador Field Systems. All rights reserved.",
+  "copyright": "© 2025 Citypack. All rights reserved.",
   "homeLink": {
     "text": "Return to main site",
     "href": "index.html"
@@ -551,7 +551,7 @@ Keep long text readable by breaking it into multiple lines in your editor, but r
 2. Edit the `meta` section:
    ```json
    "meta": {
-     "title": "New Title | Labrador Field Systems",
+     "title": "New Title | Citypack",
      "description": "New description that appears in search results and social media shares."
    }
    ```

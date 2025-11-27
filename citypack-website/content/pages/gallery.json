@@ -1,16 +1,16 @@
 {
   "layout": "landing-page-anduril",
   "meta": {
-    "title": "LAB SEVEN Gallery | Professional Battery Power in Action",
-    "description": "See LAB SEVEN battery systems powering professional productions. Real sets, real crews, real results from film, commercial, and event productions."
+    "title": "Battery Solutions Gallery | Citypack Power in Action",
+    "description": "See Citypack battery systems powering professional productions. Real sets, real crews, real results from film, commercial, and event work."
   },
   "hero": {
     "category": "GALLERY",
-    "title": "LAB SEVEN in Action",
-    "description": "See the LAB SEVEN battery system powering professional productions across film, commercial, and event work. Real sets, real crews, real results.",
+    "title": "Citypack battery systems in Action",
+    "description": "See the Citypack battery systems battery system powering professional productions across film, commercial, and event work. Real sets, real crews, real results.",
     "cta": {
       "primary": {
-        "text": "Contact Labrador",
+        "text": "Contact Citypack",
         "href": "/contact"
       },
       "secondary": {
@@ -24,15 +24,15 @@
     "items": [
       {
         "title": "Production Photos",
-        "description": "LAB SEVEN powering real productions across film, commercial, and event work. See the system in action on set."
+        "description": "Citypack battery systems powering real productions across film, commercial, and event work. See the system in action on set."
       },
       {
         "title": "Behind the Scenes",
-        "description": "How production teams integrate LAB SEVEN into their workflows. Setup, operation, and wrap processes documented."
+        "description": "How production teams integrate Citypack battery systems into their workflows. Setup, operation, and wrap processes documented."
       },
       {
         "title": "Use Case Examples",
-        "description": "Different production types and power configurations. Learn how crews use LAB SEVEN for specific applications."
+        "description": "Different production types and power configurations. Learn how crews use Citypack battery systems for specific applications."
       }
     ]
   },
@@ -41,7 +41,7 @@
     "items": [
       {
         "title": "Production Documentation",
-        "description": "We're currently collecting photos and case studies from productions using LAB SEVEN. Check back soon for behind-the-scenes images and production stories."
+        "description": "We're currently collecting photos and case studies from productions using Citypack battery systems. Check back soon for behind-the-scenes images and production stories."
       },
       {
         "title": "Technical Reference",
@@ -49,7 +49,7 @@
       },
       {
         "title": "Real-World Results",
-        "description": "See how different production types leverage LAB SEVEN's capabilities. From small commercial shoots to multi-day festival installations."
+        "description": "See how different production types leverage Citypack battery systems's capabilities. From small commercial shoots to multi-day festival installations."
       }
     ]
   }

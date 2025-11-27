@@ -1,10 +1,10 @@
-# LAB SEVEN Website
+# Citypack Website
 
-[![Repository](https://img.shields.io/badge/Repository-GitHub-blue)](https://github.com/runchal/lab)
+[![Repository](https://img.shields.io/badge/Repository-GitHub-blue)](https://github.com/runchal/citypack)
 [![License](https://img.shields.io/badge/License-MIT-green)](#)
 [![Website](https://img.shields.io/badge/Website-Live-orange)](#)
 
-> Professional marketing website for LAB SEVEN battery systems by Labrador Field Systems - content-driven static site with build system and validation.
+> Professional marketing website for Citypack - delivering battery solutions tailored to your needs. Content-driven static site with build system and validation.
 
 ## Quick Start
 
@@ -61,7 +61,7 @@ See [Architecture Plan](docs/plans/2025-11-15-robust-site-architecture.md) for c
 
 ## 🎯 Project Overview
 
-This repository contains a sophisticated marketing website for the LAB SEVEN professional battery system, designed for film and video production crews.
+This repository contains a sophisticated marketing website for Citypack, a professional battery solutions provider serving diverse industries including film production, events, and emergency services.
 
 **Current Status:** Complete multi-page website with 15 total pages using content-driven architecture with JSON content management and Handlebars templating
 
@@ -99,7 +99,7 @@ The website features a dropdown navigation system with three main sections:
 - 📱 **Fully Responsive** - Mobile-first design with perfect tablet and desktop scaling
 - ⚡ **High Performance** - Optimized static HTML with minimal dependencies
 - ✏️ **Content Management** - JSON-based content editing with validation
-- 🎬 **Industry-Focused** - Tailored for film/video production professionals
+- 🔋 **Solutions-Focused** - Battery systems tailored to diverse industry needs
 
 ## 🚀 Features
 
@@ -337,11 +337,11 @@ This project uses Claude Code for development. For future enhancements:
 
 MIT License - Feel free to use this code for your own projects.
 
-## 🏢 About Labrador Field Systems
+## 🏢 About Citypack
 
-> **"Batteries that are your crews' best friend."**
+> **"Power solutions for every application."**
 
-Labrador Field Systems creates professional-grade portable power solutions for film and video production. The LAB SEVEN system delivers 10kW continuous output with rapid charging capabilities, designed specifically for the demanding requirements of production crews.
+Citypack delivers professional-grade portable power solutions across industries. From film production to events to emergency services, we provide the right battery system for your specific requirements. Our solutions-focused approach ensures you get exactly the power capacity and configuration you need.
 
 ---
 

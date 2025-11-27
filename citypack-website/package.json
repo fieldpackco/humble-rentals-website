@@ -1,6 +1,17 @@
 {
   "name": "citypack-website",
-  "version": "1.0.0",
+  "version": "2.0.0",
+  "description": "Professional marketing website for Citypack battery solutions",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/runchal/citypack.git"
+  },
+  "keywords": [
+    "citypack",
+    "batteries",
+    "power-solutions",
+    "marketing-site"
+  ],
   "scripts": {
     "build": "node src/build.js",
     "dev": "node src/dev-server.js",

@@ -1,8 +1,8 @@
 {
   "layout": "landing-page-anduril",
   "meta": {
-    "title": "LAB SEVEN for Experience Agencies | Labrador Field Systems",
-    "description": "Silent battery power for brand activations and experiential events. Get approved for impossible locations without generator drama."
+    "title": "Battery Solutions for Experience Agencies | Citypack",
+    "description": "Silent battery power for brand activations and experiential events. Professional power solutions tailored to your activation needs."
   },
   "hero": {
     "category": "EXPERIENCE AGENCIES",
@@ -10,7 +10,7 @@
     "description": "No refueling. No noise. More power than a 7000 watt generator. 60A silent power for brand activations, pop-ups, and installations. No permits, no noise complaints, no limits.",
     "cta": {
       "primary": {
-        "text": "Contact Labrador",
+        "text": "Contact Citypack",
         "href": "/contact"
       },
       "secondary": {
@@ -37,7 +37,7 @@
     ]
   },
   "features": {
-    "title": "Why Experience Agencies Choose LAB SEVEN",
+    "title": "Why Experience Agencies Choose Citypack",
     "items": [
       {
         "title": "Silent Approval",
@@ -49,7 +49,7 @@
       },
       {
         "title": "White-Glove Service",
-        "description": "Labrador Field Systems handles delivery, placement, and pickup. You don't touch it. Your crew focuses on creating experiences, not managing power logistics."
+        "description": "Citypack handles delivery, placement, and pickup. You don't touch it. Your crew focuses on creating experiences, not managing power logistics."
       },
       {
         "title": "Real Power",

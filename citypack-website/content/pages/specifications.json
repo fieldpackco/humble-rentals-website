@@ -1,16 +1,16 @@
 {
   "layout": "landing-page-anduril",
   "meta": {
-    "title": "LAB SEVEN Specifications | Labrador Field Systems",
-    "description": "Complete technical specifications for LAB SEVEN battery system. 60A output, 7.5kWh capacity, 1-hour fast charging."
+    "title": "Battery Specifications | Citypack",
+    "description": "Professional battery systems sized for your application. View our range of power solutions from compact to high-capacity systems."
   },
   "hero": {
     "category": "TECHNICAL SPECIFICATIONS",
-    "title": "Professional-Grade Power in a Portable Package",
-    "description": "Complete technical specifications for LAB SEVEN. 60A Bates output, 7.5kWh LiFePO4 battery, 1-hour fast charging, professional monitoring and safety systems.",
+    "title": "Power Solutions Tailored to Your Needs",
+    "description": "Citypack delivers battery systems across a range of capacities and configurations. From compact systems for small events to high-capacity solutions for major productions, we provide the right specifications for your requirements.",
     "cta": {
       "primary": {
-        "text": "Contact Labrador",
+        "text": "Contact Citypack",
         "href": "/contact"
       },
       "secondary": {
@@ -20,48 +20,48 @@
     }
   },
   "benefits": {
-    "title": "Key Specifications",
+    "title": "Our Battery Solution Range",
     "items": [
       {
-        "title": "Power Output",
-        "description": "10kW continuous, 12kW peak. 60A Bates connector plus three independent 20A Edison circuits. Professional power for demanding applications."
+        "title": "Compact Systems",
+        "description": "2-5kW continuous power. Perfect for pop-ups, small installations, and mobile applications. Lightweight, portable, silent operation."
       },
       {
-        "title": "Battery System",
-        "description": "7.5kWh LiFePO4 (LFP) chemistry. 16S48P configuration, 3000+ cycle lifespan. JBD BMS with real-time monitoring and cell balancing."
+        "title": "Mid-Range Systems",
+        "description": "5-10kW continuous power. Versatile solutions for film shoots, medium events, and temporary installations. Professional connectivity and monitoring."
       },
       {
-        "title": "Charging & Runtime",
-        "description": "1-hour fast charging from 60A input, 4-5 hours from standard 110V. Runtime: 45 minutes to 8+ hours depending on load."
+        "title": "High-Capacity Systems",
+        "description": "10kW+ continuous power. Heavy-duty systems for major events, large productions, and demanding installations. Maximum power when you need it most."
       }
     ]
   },
   "features": {
-    "title": "Complete Technical Details",
+    "title": "Professional Features Across All Systems",
     "items": [
       {
-        "title": "Power Output",
-        "description": "60A Bates Connector: 1x 60A output (Stage Pin) | 20A Edison: 3x 20A outputs (NEMA 5-20R) | Continuous: 10kW sustained | Peak: 12kW for 30 seconds"
+        "title": "Right-Sized Power",
+        "description": "We assess your power requirements and provide the appropriate system capacity. No oversizing, no undersizing—just the right solution for your needs."
       },
       {
-        "title": "Battery System",
-        "description": "Capacity: 7.5kWh LiFePO4 | Configuration: 16S48P (51.2V nominal) | BMS: JBD with balancing | Lifespan: 3000+ cycles at 80% DOD"
+        "title": "Professional Connectivity",
+        "description": "Industry-standard connectors including Bates, Edison, and custom configurations. Multiple circuits for flexible power distribution."
       },
       {
-        "title": "Charging",
-        "description": "Fast: 1 hour 0-100% (60A input) | Standard: 4-5 hours (110V) | Input: Up to 7.2kW max, auto-adjusting"
+        "title": "Advanced Battery Technology",
+        "description": "LiFePO4 (LFP) chemistry across all systems for safety and longevity. Professional battery management systems with real-time monitoring."
       },
       {
-        "title": "Physical",
-        "description": "Dimensions: 24\" W × 18\" D × 36\" H | Weight: ~180 lbs (82 kg) | Construction: Welded steel, powder-coated | Mobility: 4x industrial casters"
+        "title": "Flexible Charging Options",
+        "description": "Fast charging capabilities when time is critical. Standard charging when you have flexibility. Auto-adjusting inputs for optimal performance."
       },
       {
-        "title": "Safety & Monitoring",
-        "description": "Chemistry: LiFePO4 (safest lithium) | Protection: Per-circuit breakers, BMS | Display: 4.3\" color touchscreen | Remote: Bluetooth + WiFi monitoring"
+        "title": "Built for the Field",
+        "description": "Rugged construction, industrial mobility, and weather-resistant designs. Built to withstand the demands of professional applications."
       },
       {
-        "title": "Environmental",
-        "description": "Operating: -10°C to 50°C (14°F to 122°F) | Storage: -20°C to 60°C | Humidity: 5-95% RH | Altitude: Up to 10,000 ft"
+        "title": "Complete Monitoring",
+        "description": "Real-time battery status, power consumption tracking, and safety monitoring. Remote access via Bluetooth and WiFi on select systems."
       }
     ]
   }

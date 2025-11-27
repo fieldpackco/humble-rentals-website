@@ -1,8 +1,8 @@
-# LAB SEVEN Content Editor Guide
+# Citypack Content Editor Guide
 
 ## 🎉 **Your Website is Now Fully Editable!**
 
-You can now easily edit your LAB SEVEN website content without touching any code. Here's how:
+You can now easily edit your Citypack website content without touching any code. Here's how:
 
 ## 📝 **How to Edit Content**
 
@@ -15,7 +15,7 @@ You can now easily edit your LAB SEVEN website content without touching any code
 The editor includes sections for:
 
 - **🎯 Hero Section**
-  - Headline (e.g., "LAB SEVEN")
+  - Headline (e.g., "Citypack")
   - Tagline (e.g., "Power. Unleashed.")
   - Price (e.g., "From $999...")
   - Availability status
@@ -67,15 +67,15 @@ The editor includes sections for:
 ```javascript
 siteContent = {
   company: {
-    name: "Labrador Field Systems",
-    pageTitle: "LAB SEVEN - Labrador Field Systems",
+    name: "Citypack",
+    pageTitle: "Citypack - Citypack",
     contact: {
       email: "amitrunchal@gmail.com", 
       phone: "310.776.0154"
     }
   },
   hero: {
-    headline: "LAB SEVEN",
+    headline: "Citypack",
     tagline: "Power. Unleashed.",
     price: "From $999 or $83.25/mo. for 12 mo.*",
     availability: "Available for Beta Program",
@@ -145,4 +145,4 @@ The system is designed to easily add more sections:
 
 ---
 
-**🎯 Your LAB SEVEN website is now completely customizable while maintaining its premium design and functionality!**
+**🎯 Your Citypack website is now completely customizable while maintaining its premium design and functionality!**

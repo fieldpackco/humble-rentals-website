@@ -741,16 +741,16 @@ Replace entire contents of `content/pages/city-services.json`:
 {
   "layout": "landing-page-anduril",
   "meta": {
-    "title": "LAB SEVEN for City Services | Labrador Field Systems",
+    "title": "Citypack for City Services | Citypack",
     "description": "Silent battery power for municipal operations and permitted events"
   },
   "hero": {
     "category": "CITY SERVICES",
     "title": "Power Public Events Anywhere",
-    "description": "Zero emissions, zero noise, zero permits. LAB SEVEN provides silent battery power for city services, public events, and municipal operations without generator drama.",
+    "description": "Zero emissions, zero noise, zero permits. Citypack provides silent battery power for city services, public events, and municipal operations without generator drama.",
     "cta": {
       "primary": {
-        "text": "Contact Labrador",
+        "text": "Contact Citypack",
         "href": "/contact"
       },
       "secondary": {
@@ -777,7 +777,7 @@ Replace entire contents of `content/pages/city-services.json`:
     ]
   },
   "features": {
-    "title": "Why Cities Choose LAB SEVEN",
+    "title": "Why Cities Choose Citypack",
     "items": [
       {
         "title": "Community Events Without Disruption",
@@ -793,7 +793,7 @@ Replace entire contents of `content/pages/city-services.json`:
       },
       {
         "title": "Professional Support",
-        "description": "Labrador Field Systems handles delivery, placement, and pickup. White-glove service ensures your events run smoothly."
+        "description": "Citypack handles delivery, placement, and pickup. White-glove service ensures your events run smoothly."
       }
     ]
   }

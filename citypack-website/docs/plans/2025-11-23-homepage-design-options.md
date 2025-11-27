@@ -1,4 +1,4 @@
-# Homepage Design Options for LAB SEVEN
+# Homepage Design Options for Citypack
 
 **Date:** 2025-11-23
 **Current Status:** Proposing design directions
@@ -19,9 +19,9 @@
 ### Homepage Specifics
 **Hero:**
 - Category: "BATTERY POWER SYSTEMS"
-- Title: "LAB SEVEN" (oversized, 140px)
+- Title: "Citypack" (oversized, 140px)
 - Description: Current tagline about silent battery power
-- Primary CTA: "Contact Labrador"
+- Primary CTA: "Contact Citypack"
 - Secondary CTA: "View Specifications"
 
 **Benefits (3 numbered cards):**
@@ -60,7 +60,7 @@
 
 ### Structure
 - **Hero:** Larger, more dramatic (full viewport height)
-  - Oversized "LAB SEVEN" branding
+  - Oversized "Citypack" branding
   - Animated product image or video background
   - Same gradient treatment but more dramatic scale
 
@@ -97,10 +97,10 @@
 **Philosophy:** Ultra-minimal Anduril approach - less content, more impact.
 
 ### Structure
-- **Hero:** Full viewport with just LAB SEVEN branding
-  - Massive "LAB SEVEN" title (200px+)
+- **Hero:** Full viewport with just Citypack branding
+  - Massive "Citypack" title (200px+)
   - One-line tagline
-  - Single CTA: "Contact Labrador"
+  - Single CTA: "Contact Citypack"
   - Scroll indicator at bottom
 
 - **Key Stat Trio:** Three massive numbers
@@ -139,12 +139,12 @@
 ### Structure
 - **Hero:** Asymmetric split (40/60)
   - Left 40%: Text content
-    - "LAB SEVEN" title
+    - "Citypack" title
     - Tagline
     - 3 key bullet points
     - Two CTAs
   - Right 60%: Product image
-    - Large LAB SEVEN unit photo
+    - Large Citypack unit photo
     - Gradient background behind product
 
 - **Scrolling Spec Highlights:** Horizontal scroll cards
@@ -209,16 +209,16 @@ If you choose Option 1, here's the new home.json structure:
 {
   "layout": "landing-page-anduril",
   "meta": {
-    "title": "LAB SEVEN - Labrador Field Systems",
+    "title": "Citypack - Citypack",
     "description": "Silent battery power for city services, live events, and public venues. Zero emissions, zero noise."
   },
   "hero": {
     "category": "BATTERY POWER SYSTEMS",
-    "title": "LAB SEVEN",
+    "title": "Citypack",
     "description": "Silent battery power for city services, live events, and public venues. True 60A output. Zero emissions, zero noise complaints, zero permits.",
     "cta": {
       "primary": {
-        "text": "Contact Labrador",
+        "text": "Contact Citypack",
         "href": "/contact"
       },
       "secondary": {
@@ -245,7 +245,7 @@ If you choose Option 1, here's the new home.json structure:
     ]
   },
   "features": {
-    "title": "Why Teams Choose LAB SEVEN",
+    "title": "Why Teams Choose Citypack",
     "items": [
       {
         "title": "Saves Money Over Generators",

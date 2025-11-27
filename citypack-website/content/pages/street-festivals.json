@@ -1,7 +1,7 @@
 {
   "layout": "landing-page-anduril",
   "meta": {
-    "title": "LAB SEVEN for Street Festivals | Labrador Field Systems",
+    "title": "Citypack battery systems for Street Festivals | Citypack",
     "description": "Silent, scalable battery power for street festivals. No noise complaints, no fuel trucks, no permit battles."
   },
   "hero": {
@@ -10,7 +10,7 @@
     "description": "Silent, scalable battery power for stages, vendors, and attractions. No noise complaints, no fuel trucks, no permit battles. Distributed power zones without the generator infrastructure.",
     "cta": {
       "primary": {
-        "text": "Contact Labrador",
+        "text": "Contact Citypack",
         "href": "/contact"
       },
       "secondary": {
@@ -37,7 +37,7 @@
     ]
   },
   "features": {
-    "title": "Why Festival Organizers Choose LAB SEVEN",
+    "title": "Why Festival Organizers Choose Citypack",
     "items": [
       {
         "title": "Preserve Community Goodwill",

@@ -487,7 +487,7 @@ Create: `content/global/footer.json`
 
 ```json
 {
-  "copyright": "© 2025 Labrador Field Systems. All rights reserved.",
+  "copyright": "© 2025 Citypack. All rights reserved.",
   "homeLink": {
     "text": "Return to main site",
     "href": "index.html"
@@ -502,7 +502,7 @@ Create: `content/pages/experience-agencies.json`
 ```json
 {
   "meta": {
-    "title": "LAB SEVEN for Experience Agencies | Labrador Field Systems",
+    "title": "Citypack for Experience Agencies | Citypack",
     "description": "Silent battery power for brand activations and experiential events. Get approved for impossible locations without generator drama."
   },
   "hero": {
@@ -510,7 +510,7 @@ Create: `content/pages/experience-agencies.json`
     "tagline": "No refueling. No noise. More power than a 7000 watt generator. 60A silent power for brand activations, pop-ups, and installations. No permits, no noise complaints, no limits.",
     "cta": {
       "primary": {
-        "text": "Contact Labrador",
+        "text": "Contact Citypack",
         "href": "#contact"
       },
       "secondary": {
@@ -562,7 +562,7 @@ Create: `content/pages/experience-agencies.json`
     ]
   },
   "solution": {
-    "title": "How LAB SEVEN solves it",
+    "title": "How Citypack solves it",
     "items": [
       {
         "title": "Silent approval",
@@ -1090,7 +1090,7 @@ Create: `content/pages/street-festivals.json`
 ```json
 {
   "meta": {
-    "title": "LAB SEVEN for Street Festivals | Labrador Field Systems",
+    "title": "Citypack for Street Festivals | Citypack",
     "description": "Silent, scalable battery power for street festivals. No noise complaints, no fuel trucks, no permit battles."
   },
   "hero": {
@@ -1098,7 +1098,7 @@ Create: `content/pages/street-festivals.json`
     "tagline": "No generator noise complaints. No fuel trucks during the event. No permit battles. Scale from one battery to twenty. Keep the neighborhood happy and your event on track.",
     "cta": {
       "primary": {
-        "text": "Contact Labrador",
+        "text": "Contact Citypack",
         "href": "#contact"
       },
       "secondary": {
@@ -1361,7 +1361,7 @@ Each page has these sections:
 **Meta (SEO):**
 ```json
 "meta": {
-  "title": "Page Title | Labrador Field Systems",
+  "title": "Page Title | Citypack",
   "description": "Page description for search engines"
 }
 ```
@@ -1466,7 +1466,7 @@ Edit `content/global/footer.json`:
 
 ```json
 {
-  "copyright": "© 2025 Labrador Field Systems. All rights reserved.",
+  "copyright": "© 2025 Citypack. All rights reserved.",
   "homeLink": {
     "text": "Return to main site",
     "href": "index.html"
@@ -1530,7 +1530,7 @@ Modify: `README.md`
 Add section at the top:
 
 ```markdown
-# LAB SEVEN Website
+# Citypack Website
 
 ## Quick Start
 

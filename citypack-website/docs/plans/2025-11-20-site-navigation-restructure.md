@@ -2,7 +2,7 @@
 
 > **For Claude:** REQUIRED SUB-SKILL: Use superpowers:executing-plans to implement this plan task-by-task.
 
-**Goal:** Restructure the LAB SEVEN website with proper navigation hierarchy that integrates 7 new persona-focused landing pages into a cohesive site architecture with dropdown menus and dedicated section pages.
+**Goal:** Restructure the Citypack website with proper navigation hierarchy that integrates 7 new persona-focused landing pages into a cohesive site architecture with dropdown menus and dedicated section pages.
 
 **Architecture:** Transform the current single-page site into a multi-page architecture with:
 - Homepage hub with overview content
@@ -38,7 +38,7 @@
 ## Proposed Information Architecture
 
 ```
-LAB SEVEN Site Structure
+Citypack Site Structure
 │
 ├── Home (/)
 │   ├── Hero + Overview
@@ -406,11 +406,11 @@ Create `content/pages/home.json`:
 ```json
 {
   "meta": {
-    "title": "LAB SEVEN - Labrador Field Systems",
+    "title": "Citypack - Citypack",
     "description": "No refueling. No noise. More power than a 7000 watt generator. Professional battery power for production."
   },
   "hero": {
-    "title": "LAB SEVEN",
+    "title": "Citypack",
     "tagline": "No refueling. No noise. More power than a 7000 watt generator.",
     "priceText": "Available through Anytime Production Equipment Rentals",
     "availability": "ONE FREE RENTAL DAY WITH PROMO CODE \"241\"",
@@ -475,7 +475,7 @@ Create `content/pages/home.json`:
     ]
   },
   "featuresPreview": {
-    "title": "Why production teams choose LAB SEVEN",
+    "title": "Why production teams choose Citypack",
     "linkText": "All Features",
     "linkHref": "/features",
     "items": [
@@ -495,7 +495,7 @@ Create `content/pages/home.json`:
   },
   "solutionsPreview": {
     "title": "Solutions for every production type",
-    "subtitle": "See how LAB SEVEN solves specific challenges for your role",
+    "subtitle": "See how Citypack solves specific challenges for your role",
     "items": [
       {
         "title": "Experience Agencies",
@@ -545,7 +545,7 @@ Create `templates/pages/home-page.hbs`:
     {{/if}}
     <div class="hero-image animate-in">
         <div class="product-image">
-            <div class="product-label">LAB SEVEN</div>
+            <div class="product-label">Citypack</div>
         </div>
     </div>
 </section>
@@ -679,8 +679,8 @@ Create `content/pages/specifications.json`:
 ```json
 {
   "meta": {
-    "title": "LAB SEVEN Specifications | Labrador Field Systems",
-    "description": "Complete technical specifications for LAB SEVEN battery system. 60A output, 7.5kWh capacity, 1-hour fast charging."
+    "title": "Citypack Specifications | Citypack",
+    "description": "Complete technical specifications for Citypack battery system. 60A output, 7.5kWh capacity, 1-hour fast charging."
   },
   "hero": {
     "title": "Technical Specifications",

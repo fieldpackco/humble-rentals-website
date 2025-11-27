@@ -1,7 +1,7 @@
 {
   "layout": "landing-page-anduril",
   "meta": {
-    "title": "LAB SEVEN for Location Managers | Labrador Field Systems",
+    "title": "Citypack battery systems for Location Managers | Citypack",
     "description": "Silent battery power that gets locations approved and keeps them happy. No generator noise complaints."
   },
   "hero": {
@@ -10,7 +10,7 @@
     "description": "No refueling. No noise. More power than a 7000 watt generator. 60A silent power eliminates the biggest location objection: generator noise. No permits, no noise complaints, no limits.",
     "cta": {
       "primary": {
-        "text": "Contact Labrador",
+        "text": "Contact Citypack",
         "href": "/contact"
       },
       "secondary": {
@@ -37,7 +37,7 @@
     ]
   },
   "features": {
-    "title": "Why Location Managers Choose LAB SEVEN",
+    "title": "Why Location Managers Choose Citypack",
     "items": [
       {
         "title": "Silent Approval",
@@ -49,7 +49,7 @@
       },
       {
         "title": "White-Glove Service",
-        "description": "Labrador Field Systems handles delivery, placement, and pickup. Professional service reflects well on your production and location management."
+        "description": "Citypack handles delivery, placement, and pickup. Professional service reflects well on your production and location management."
       },
       {
         "title": "Real Power",
