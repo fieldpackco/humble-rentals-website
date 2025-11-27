@@ -50,7 +50,10 @@
 
 /* Row spans */
 .row-span-1 { grid-row: span 1; }
-.row-span-2 { grid-row: span 2; }
+.row-span-2 {
+    grid-row: span 2;
+    min-height: 600px;
+}
 .row-span-3 { grid-row: span 3; }
 
 /* Aspect Ratios */
@@ -67,6 +70,9 @@
     cursor: pointer;
     transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     background: var(--neutral-charcoal);
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
 }
 
 .grid-card:hover {
@@ -75,6 +81,8 @@
 }
 
 .grid-card-image {
+    position: absolute;
+    inset: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
