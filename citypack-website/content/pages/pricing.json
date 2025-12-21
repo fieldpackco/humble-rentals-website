@@ -1,8 +1,8 @@
 {
   "layout": "landing-page-anduril",
   "meta": {
-    "title": "Battery Rental Pricing | Citypack Professional Power",
-    "description": "Transparent Citypack battery systems rental pricing. All-inclusive rates with delivery, pickup, backup generator. Available through Citypack."
+    "title": "Battery Rental Pricing | Humble Professional Power",
+    "description": "Transparent Humble battery systems rental pricing. All-inclusive rates with delivery, pickup, backup generator. Available through Humble."
   },
   "hero": {
     "category": "PRICING",
@@ -10,7 +10,7 @@
     "description": "Transparent, all-inclusive rental pricing. Delivery, pickup, and backup generator included. No hidden fees, no fuel costs, no surprises. Promo code 241 for one free rental day.",
     "cta": {
       "primary": {
-        "text": "Contact Citypack",
+        "text": "Contact Humble",
         "href": "/contact"
       },
       "secondary": {
@@ -37,11 +37,11 @@
     ]
   },
   "features": {
-    "title": "Citypack battery systems Rental Value",
+    "title": "Humble battery systems Rental Value",
     "items": [
       {
         "title": "One Transparent Rate",
-        "description": "Contact Citypack for current day rates and multi-day discounts. All-inclusive pricing covers delivery, placement, pickup, and backup generator."
+        "description": "Contact Humble for current day rates and multi-day discounts. All-inclusive pricing covers delivery, placement, pickup, and backup generator."
       },
       {
         "title": "Promo Code 241",
@@ -57,7 +57,7 @@
       },
       {
         "title": "Multi-Day Discounts",
-        "description": "Extended rental rates available for week-long shoots, multi-day events, and festival installations. Contact Citypack for custom quotes."
+        "description": "Extended rental rates available for week-long shoots, multi-day events, and festival installations. Contact Humble for custom quotes."
       },
       {
         "title": "Package Deals Available",

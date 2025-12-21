@@ -1,13 +1,13 @@
 {
-  "name": "citypack-website",
-  "version": "2.0.0",
-  "description": "Professional marketing website for Citypack battery solutions",
+  "name": "humble-website",
+  "version": "3.0.0",
+  "description": "Professional marketing website for Humble battery solutions",
   "repository": {
     "type": "git",
-    "url": "https://github.com/runchal/citypack.git"
+    "url": "https://github.com/runchal/humble.git"
   },
   "keywords": [
-    "citypack",
+    "humble",
     "batteries",
     "power-solutions",
     "marketing-site"

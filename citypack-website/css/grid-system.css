@@ -1,5 +1,5 @@
 /* ============================================
-   CITYPACK GRID SYSTEM - ANDURIL EXACT REPLICA
+   HUMBLE GRID SYSTEM - ANDURIL EXACT REPLICA
    Bento-box grid layout matching Anduril.com
    ============================================ */
 
@@ -115,7 +115,7 @@
     display: none;
 }
 
-/* Citypack-Branded Gradient Placeholders */
+/* Humble-Branded Gradient Placeholders */
 .grid-card[data-placeholder="1"] .grid-card-image {
     background: linear-gradient(135deg, #FF6B35 0%, #F4B942 100%);
 }

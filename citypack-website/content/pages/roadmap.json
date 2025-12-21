@@ -1,14 +1,14 @@
 {
   "meta": {
-    "title": "Product Roadmap | Citypack Future Solutions",
-    "description": "Future battery solutions and innovations from Citypack. Expanding our range of professional power solutions for diverse industries and applications."
+    "title": "Product Roadmap | Humble Future Solutions",
+    "description": "Future battery solutions and innovations from Humble. Expanding our range of professional power solutions for diverse industries and applications."
   },
   "hero": {
     "title": "Expanding Our Battery Solutions Portfolio",
-    "tagline": "Citypack is continuously developing new battery solutions to serve more industries and applications. From specialized systems to enhanced capabilities, we're building the future of portable power.",
+    "tagline": "Humble is continuously developing new battery solutions to serve more industries and applications. From specialized systems to enhanced capabilities, we're building the future of portable power.",
     "cta": {
       "primary": {
-        "text": "Contact Citypack",
+        "text": "Contact Humble",
         "href": "/contact"
       },
       "secondary": {
@@ -54,7 +54,7 @@
       },
       {
         "title": "Stay informed",
-        "description": "Contact Citypack to join our mailing list for product announcements, beta testing opportunities, and early access to new battery solutions."
+        "description": "Contact Humble to join our mailing list for product announcements, beta testing opportunities, and early access to new battery solutions."
       }
     ]
   },
@@ -87,7 +87,7 @@
         "description": "Companies develop products in isolation based on assumptions, release them to market, and hope they meet user needs. Features driven by internal ideas rather than customer reality."
       },
       "with": {
-        "title": "Citypack's approach",
+        "title": "Humble's approach",
         "description": "Deploy solutions in real applications. Gather feedback from actual users. Understand specific industry pain points. Develop new solutions based on proven needs. Build with confidence that we're solving real problems."
       }
     }
@@ -95,7 +95,7 @@
   "caseStudy": {
     "title": "How customer feedback shapes our roadmap",
     "content": [
-      "Citypack started from direct experience with power limitations across multiple industries and applications.",
+      "Humble started from direct experience with power limitations across multiple industries and applications.",
       "Hundreds of deployments revealed patterns: the need for different capacity options, specialized connectors for different industries, and flexible charging solutions.",
       "Customer feedback drives our development: expanding our capacity range, building industry-specific solutions, and enhancing monitoring capabilities for fleet operations."
     ],
@@ -114,11 +114,11 @@
       },
       {
         "question": "Will you offer beta testing or early access?",
-        "answer": "Yes. Customers who provide valuable feedback may receive early access to new solutions and features. Contact Citypack to express interest."
+        "answer": "Yes. Customers who provide valuable feedback may receive early access to new solutions and features. Contact Humble to express interest."
       },
       {
         "question": "What about international availability?",
-        "answer": "We're currently focused on our primary markets. We're exploring partnerships for broader distribution. Contact us if you're interested in bringing Citypack to your region."
+        "answer": "We're currently focused on our primary markets. We're exploring partnerships for broader distribution. Contact us if you're interested in bringing Humble to your region."
       },
       {
         "question": "Do you plan solutions for other industries?",
@@ -131,7 +131,7 @@
     "description": "Join our development community. Provide feedback, request solutions, and get early access to new products.",
     "cta": {
       "primary": {
-        "text": "Contact Citypack",
+        "text": "Contact Humble",
         "href": "/contact"
       },
       "secondary": {
@@ -140,9 +140,9 @@
       }
     },
     "contactInfo": {
-      "company": "Citypack",
+      "company": "Humble",
       "phone": "Contact for partnership inquiries",
-      "email": "contact@citypack.com"
+      "email": "contact@humble.com"
     }
   }
 }

@@ -1,7 +1,7 @@
 {
   "layout": "landing-page-anduril",
   "meta": {
-    "title": "Battery Solutions for Experience Agencies | Citypack",
+    "title": "Battery Solutions for Experience Agencies | Humble",
     "description": "Silent battery power for brand activations and experiential events. Professional power solutions tailored to your activation needs."
   },
   "hero": {
@@ -10,7 +10,7 @@
     "description": "No refueling. No noise. More power than a 7000 watt generator. 60A silent power for brand activations, pop-ups, and installations. No permits, no noise complaints, no limits.",
     "cta": {
       "primary": {
-        "text": "Contact Citypack",
+        "text": "Contact Humble",
         "href": "/contact"
       },
       "secondary": {
@@ -37,7 +37,7 @@
     ]
   },
   "features": {
-    "title": "Why Experience Agencies Choose Citypack",
+    "title": "Why Experience Agencies Choose Humble",
     "items": [
       {
         "title": "Silent Approval",
@@ -49,7 +49,7 @@
       },
       {
         "title": "White-Glove Service",
-        "description": "Citypack handles delivery, placement, and pickup. You don't touch it. Your crew focuses on creating experiences, not managing power logistics."
+        "description": "Humble handles delivery, placement, and pickup. You don't touch it. Your crew focuses on creating experiences, not managing power logistics."
       },
       {
         "title": "Real Power",

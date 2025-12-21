@@ -1,16 +1,16 @@
 {
   "layout": "landing-page-anduril",
   "meta": {
-    "title": "Citypack battery systems for City Services | Citypack",
+    "title": "Humble battery systems for City Services | Humble",
     "description": "Silent battery power for municipal operations and permitted events"
   },
   "hero": {
     "category": "CITY SERVICES",
     "title": "Power Public Events Anywhere",
-    "description": "Zero emissions, zero noise, zero permits. Citypack battery systems provides silent battery power for city services, public events, and municipal operations without generator drama.",
+    "description": "Zero emissions, zero noise, zero permits. Humble battery systems provides silent battery power for city services, public events, and municipal operations without generator drama.",
     "cta": {
       "primary": {
-        "text": "Contact Citypack",
+        "text": "Contact Humble",
         "href": "/contact"
       },
       "secondary": {
@@ -37,7 +37,7 @@
     ]
   },
   "features": {
-    "title": "Why Cities Choose Citypack",
+    "title": "Why Cities Choose Humble",
     "items": [
       {
         "title": "Community Events Without Disruption",
@@ -53,7 +53,7 @@
       },
       {
         "title": "Professional Support",
-        "description": "Citypack handles delivery, placement, and pickup. White-glove service ensures your events run smoothly."
+        "description": "Humble handles delivery, placement, and pickup. White-glove service ensures your events run smoothly."
       }
     ]
   }

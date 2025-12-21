@@ -1,7 +1,7 @@
 {
   "layout": "landing-page-anduril",
   "meta": {
-    "title": "Citypack battery systems for Public Venues | Citypack",
+    "title": "Humble battery systems for Public Venues | Humble",
     "description": "Silent battery power for venue events. Say yes to more events without saying yes to generators."
   },
   "hero": {
@@ -10,7 +10,7 @@
     "description": "Battery power that protects your venue, your neighbors, and your reputation. Premium events without the generator compromise. Silent, exhaust-free power matches the quality of your space.",
     "cta": {
       "primary": {
-        "text": "Contact Citypack",
+        "text": "Contact Humble",
         "href": "/contact"
       },
       "secondary": {
@@ -37,7 +37,7 @@
     ]
   },
   "features": {
-    "title": "Why Public Venues Choose Citypack",
+    "title": "Why Public Venues Choose Humble",
     "items": [
       {
         "title": "Silent Operation",
@@ -53,7 +53,7 @@
       },
       {
         "title": "Professional Service",
-        "description": "Citypack handles delivery, placement, and pickup. White-glove service that reflects the quality of your venue."
+        "description": "Humble handles delivery, placement, and pickup. White-glove service that reflects the quality of your venue."
       }
     ]
   }

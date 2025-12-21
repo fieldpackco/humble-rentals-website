@@ -1,12 +1,12 @@
 {
   "layout": "landing-page-anduril",
   "meta": {
-    "title": "Our Team | Citypack",
-    "description": "Meet the Citypack team. Experts in battery technology, event production, and customer service."
+    "title": "Our Team | Humble",
+    "description": "Meet the Humble team. Experts in battery technology, event production, and customer service."
   },
   "hero": {
     "category": "TEAM",
-    "title": "Meet the Citypack Team",
+    "title": "Meet the Humble Team",
     "description": "Experts in battery technology, event production, and customer service. Dedicated to delivering clean, reliable power for your events and celebrations.",
     "cta": {
       "primary": {

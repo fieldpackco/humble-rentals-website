@@ -1,7 +1,7 @@
 {
   "layout": "landing-page-anduril",
   "meta": {
-    "title": "Citypack battery systems for Gaffers | Citypack",
+    "title": "Humble battery systems for Gaffers | Humble",
     "description": "Silent battery power for lighting setups. Power your rig anywhere without generator noise or restrictions."
   },
   "hero": {
@@ -10,7 +10,7 @@
     "description": "No refueling. No noise. More power than a 7000 watt generator. 60A silent power for professional lighting packages. No permits, no noise complaints, no limits.",
     "cta": {
       "primary": {
-        "text": "Contact Citypack",
+        "text": "Contact Humble",
         "href": "/contact"
       },
       "secondary": {
@@ -37,7 +37,7 @@
     ]
   },
   "features": {
-    "title": "Why Gaffers Choose Citypack",
+    "title": "Why Gaffers Choose Humble",
     "items": [
       {
         "title": "True 60A Bates Output",

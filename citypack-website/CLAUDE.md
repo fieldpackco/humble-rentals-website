@@ -12,10 +12,10 @@ These files track project progress and provide essential context for maintaining
 
 ## Project Overview
 
-This repository contains premium marketing website prototypes, specifically focused on creating Apple-style product showcase websites. The primary project is the Citypack battery solutions website, built as a sophisticated multi-page application with integrated content management system.
+This repository contains premium marketing website prototypes, specifically focused on creating Apple-style product showcase websites. The primary project is the Humble battery solutions website, built as a sophisticated multi-page application with integrated content management system.
 
 ### Latest Development (November 27, 2025)
-Complete rebrand from LAB SEVEN/Labrador to Citypack. The project now focuses on delivering diverse battery solutions tailored to customer needs, rather than a specific product. The content-driven architecture with JSON management and Handlebars templating provides flexible content updates.
+Complete rebrand from LAB SEVEN/Labrador to Humble. The project now focuses on delivering diverse battery solutions tailored to customer needs, rather than a specific product. The content-driven architecture with JSON management and Handlebars templating provides flexible content updates.
 
 ## Architecture
 

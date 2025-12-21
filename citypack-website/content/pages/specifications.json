@@ -1,16 +1,16 @@
 {
   "layout": "landing-page-anduril",
   "meta": {
-    "title": "Battery Specifications | Citypack",
+    "title": "Battery Specifications | Humble",
     "description": "Professional battery systems sized for your application. View our range of power solutions from compact to high-capacity systems."
   },
   "hero": {
     "category": "TECHNICAL SPECIFICATIONS",
     "title": "Power Solutions Tailored to Your Needs",
-    "description": "Citypack delivers battery systems across a range of capacities and configurations. From compact systems for small events to high-capacity solutions for major productions, we provide the right specifications for your requirements.",
+    "description": "Humble delivers battery systems across a range of capacities and configurations. From compact systems for small events to high-capacity solutions for major productions, we provide the right specifications for your requirements.",
     "cta": {
       "primary": {
-        "text": "Contact Citypack",
+        "text": "Contact Humble",
         "href": "/contact"
       },
       "secondary": {

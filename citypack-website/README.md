@@ -1,10 +1,10 @@
-# Citypack Website
+# Humble Website
 
-[![Repository](https://img.shields.io/badge/Repository-GitHub-blue)](https://github.com/runchal/citypack)
+[![Repository](https://img.shields.io/badge/Repository-GitHub-blue)](https://github.com/runchal/humble)
 [![License](https://img.shields.io/badge/License-MIT-green)](#)
 [![Website](https://img.shields.io/badge/Website-Live-orange)](#)
 
-> Professional marketing website for Citypack - delivering battery solutions tailored to your needs. Content-driven static site with build system and validation.
+> Professional marketing website for Humble - delivering battery solutions tailored to your needs. Content-driven static site with build system and validation.
 
 ## Quick Start
 
@@ -61,7 +61,7 @@ See [Architecture Plan](docs/plans/2025-11-15-robust-site-architecture.md) for c
 
 ## 🎯 Project Overview
 
-This repository contains a sophisticated marketing website for Citypack, a professional battery solutions provider serving diverse industries including film production, events, and emergency services.
+This repository contains a sophisticated marketing website for Humble, a professional battery solutions provider serving diverse industries including film production, events, and emergency services.
 
 **Current Status:** Complete multi-page website with 15 total pages using content-driven architecture with JSON content management and Handlebars templating
 
@@ -337,11 +337,11 @@ This project uses Claude Code for development. For future enhancements:
 
 MIT License - Feel free to use this code for your own projects.
 
-## 🏢 About Citypack
+## 🏢 About Humble
 
 > **"Power solutions for every application."**
 
-Citypack delivers professional-grade portable power solutions across industries. From film production to events to emergency services, we provide the right battery system for your specific requirements. Our solutions-focused approach ensures you get exactly the power capacity and configuration you need.
+Humble delivers professional-grade portable power solutions across industries. From film production to events to emergency services, we provide the right battery system for your specific requirements. Our solutions-focused approach ensures you get exactly the power capacity and configuration you need.
 
 ---
 
