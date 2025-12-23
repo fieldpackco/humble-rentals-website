@@ -1,59 +1,127 @@
 {
   "layout": "landing-page-anduril",
   "meta": {
-    "title": "Live Events Power Solutions | Humble",
-    "description": "Clean, quiet power for concerts, festivals, markets, and outdoor events. Battery-powered solutions for event organizers and venues."
+    "title": "Power Solutions for Every City Need | Humble Rentals",
+    "description": "From weekly farmers markets to annual festivals, we deliver reliable power without the operational complexity."
   },
   "hero": {
-    "category": "LIVE EVENTS",
-    "title": "Clean Power for Concerts, Festivals, and Outdoor Events",
-    "description": "Battery-powered solutions for stages, sound systems, lighting, and vendor operations. Zero emissions, zero noise, professional event support.",
+    "category": "POWER SOLUTIONS",
+    "title": "Power Solutions for Every City Need",
+    "description": "From weekly farmers markets to annual festivals, we deliver reliable power without the operational complexity.",
     "cta": {
       "primary": {
-        "text": "Download Sample Program Brief",
-        "href": "/resources"
+        "text": "Schedule a Consultation",
+        "href": "/contact"
       },
       "secondary": {
-        "text": "Talk to Our Team",
-        "href": "/contact"
+        "text": "See Our Track Record",
+        "href": "/case-studies"
       }
     }
   },
-  "benefits": {
-    "title": "Event Power Solutions",
+  "useCases": {
+    "title": "Use Cases",
     "items": [
       {
-        "title": "For Maintenance & Operations",
-        "description": "Portable 3 kW units sized for power tools, jackhammers, pumps, and mobile workstations. Overnight charging in the yard via standard 20A circuits or solar canopy."
+        "title": "Farmers Markets",
+        "description": "Weekly or seasonal power for vendors. 30kWh typical capacity, weekly service schedule, zero generator noise and emissions.",
+        "caseStudy": "/case-studies#city-of-bell"
       },
       {
-        "title": "City-Owned or Managed",
-        "description": "Option A: City purchases units, vendor provides monitoring and analytics. Option B: Fully managed fleet with uptime SLA and maintenance included."
+        "title": "City Events",
+        "description": "Festivals, concerts, and community gatherings. Scalable capacity, multi-point power distribution, event coordination included.",
+        "caseStudy": "/case-studies#ciclavia"
       },
       {
-        "title": "Built for Daily Use",
-        "description": "Designed for cycle life and field abuse. LiFePO₄ chemistry for safety in enclosed spaces. GPS tracking and geofencing to prevent loss or misuse."
+        "title": "Public Works",
+        "description": "Field crews, parks, and construction sites. Daily deployments to 100+ job sites, flexible scheduling, no fuel logistics.",
+        "caseStudy": "/case-studies"
+      },
+      {
+        "title": "Emergency Backup",
+        "description": "Resilience planning and emergency operations. Rapid deployment capability, reliable backup power, no fuel logistics.",
+        "caseStudy": "/contact"
+      }
+    ]
+  },
+  "commonUses": {
+    "title": "Common Use Cases",
+    "list": [
+      "Vendor power at farmers markets and street fairs",
+      "Stage and sound power at concerts and festivals",
+      "Lighting for night events",
+      "Bounce houses and inflatables at community events",
+      "Construction and maintenance sites",
+      "Emergency operations and cooling centers",
+      "Film permits and special events"
+    ]
+  },
+  "capacity": {
+    "title": "Understanding Your Power Needs",
+    "examples": [
+      {
+        "useCase": "Single food vendor",
+        "capacity": "2-5 kWh",
+        "example": "Coffee cart, smoothie stand"
+      },
+      {
+        "useCase": "Multiple vendors",
+        "capacity": "10-30 kWh",
+        "example": "Farmers market section"
+      },
+      {
+        "useCase": "Small stage/sound",
+        "capacity": "15-25 kWh",
+        "example": "Acoustic performance"
+      },
+      {
+        "useCase": "Large event power",
+        "capacity": "40-100+ kWh",
+        "example": "Festival, multiple stages"
+      },
+      {
+        "useCase": "Bounce house",
+        "capacity": "3-5 kWh each",
+        "example": "Community event inflatables"
+      }
+    ],
+    "cta": "Need help calculating? We provide free load assessments."
+  },
+  "benefits": {
+    "title": "Why Municipalities Choose Humble",
+    "items": [
+      {
+        "title": "Proven Track Record",
+        "description": "Over 500 deployments since 2022 across 100+ job sites, including City of Bell municipal contract and major events like CicLAvia."
+      },
+      {
+        "title": "Zero Operational Burden",
+        "description": "We handle all logistics, maintenance, and charging. Your staff focuses on events and community services, not battery management."
+      },
+      {
+        "title": "Flexible Solutions",
+        "description": "From weekly farmers markets to annual festivals, we scale to your needs with adaptable pricing and deployment models."
       }
     ]
   },
   "features": {
-    "title": "Markets, Events & Parks Programs",
+    "title": "What's Included",
     "items": [
       {
-        "title": "Farmers Markets & Street Vendor Power",
-        "description": "City-managed battery fleet replaces vendor-owned generators. Two models: city check-out system or vendor drop-off/pickup each market day. 4-6 hour runtime for lights, freezers, and food prep. Behavior-change support to transition vendors off generators permanently."
+        "title": "Complete Logistics",
+        "description": "Delivery, setup, placement, and pickup handled by our trained team for every deployment."
       },
       {
-        "title": "City-Sponsored Events & Festivals",
-        "description": "From single-stage concerts to multi-block open streets. City designates single battery provider during pilot; event organizers contact vendor directly. Delivery, setup, on-site support, teardown included. Stages, sound, lighting, food vendors, security infrastructure – all powered quietly."
+        "title": "24/7 Support",
+        "description": "Real-time monitoring during events with emergency response and backup units if needed."
       },
       {
-        "title": "Park Rentals & Bounce Houses",
-        "description": "Emission-free power for bounce house blowers and party equipment. 4+ hour runtime with multi-battery configurations for full-day events. Vendor works with city-approved jumper suppliers and park permit process. Keep kids' parties quiet and fume-free."
+        "title": "Full Maintenance",
+        "description": "All charging, testing, and battery maintenance handled at our facility between deployments."
       },
       {
-        "title": "Emergency & Resilience (Future)",
-        "description": "[PLACEHOLDER: Not part of initial pilot, but batteries can support resilience planning with separate grants. Shows awareness of broader applications without over-promising.]"
+        "title": "Free Load Assessment",
+        "description": "We help you calculate power needs and design the right solution for your specific use case."
       }
     ]
   }

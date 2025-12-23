@@ -35,6 +35,10 @@ Handlebars.registerHelper('add', function(a, b) {
   return a + b;
 });
 
+Handlebars.registerHelper('eq', function(a, b) {
+  return a === b;
+});
+
 // Load base layout
 const baseLayoutPath = path.join(TEMPLATES_DIR, 'layouts', 'base.hbs');
 const baseLayoutTemplate = fs.readFileSync(baseLayoutPath, 'utf8');
@@ -56,6 +60,10 @@ const specsPage = Handlebars.compile(specsPageTemplate);
 const landingPageAndurilPath = path.join(TEMPLATES_DIR, 'pages', 'landing-page-anduril.hbs');
 const landingPageAndurilTemplate = fs.readFileSync(landingPageAndurilPath, 'utf8');
 const landingPageAnduril = Handlebars.compile(landingPageAndurilTemplate);
+
+const caseStudiesPagePath = path.join(TEMPLATES_DIR, 'pages', 'case-studies-page.hbs');
+const caseStudiesPageTemplate = fs.readFileSync(caseStudiesPagePath, 'utf8');
+const caseStudiesPage = Handlebars.compile(caseStudiesPageTemplate);
 
 // Load global content
 const navigationPath = path.join(CONTENT_DIR, 'global', 'navigation.json');
@@ -85,6 +93,8 @@ pageFiles.forEach(file => {
     pageTemplate = landingPageAnduril;
   } else if (pageName === 'home') {
     pageTemplate = homePage;
+  } else if (pageName === 'case-studies') {
+    pageTemplate = caseStudiesPage;
   } else if (pageName === 'specifications') {
     pageTemplate = specsPage;
   } else {
@@ -94,8 +104,8 @@ pageFiles.forEach(file => {
 
   // Render into base layout (skip for standalone templates)
   let finalHTML;
-  if (pageData.layout === 'landing-page-anduril') {
-    // Anduril template is standalone - don't wrap in base layout
+  if (pageData.layout === 'landing-page-anduril' || pageName === 'case-studies') {
+    // Anduril and case-studies templates are standalone - don't wrap in base layout
     finalHTML = bodyHTML;
   } else {
     // Other templates need base layout wrapper

@@ -1,0 +1,112 @@
+{
+  "layout": "landing-page",
+  "meta": {
+    "title": "Proven at Scale - Case Studies | Humble Rentals",
+    "description": "Real deployments, real results. From weekly farmers markets to citywide festivals, we've delivered reliable power to 100+ job sites since 2022."
+  },
+  "hero": {
+    "category": "PROVEN AT SCALE",
+    "title": "Real Deployments. Real Results.",
+    "tagline": "From weekly farmers markets to citywide festivals, we've delivered reliable power to 100+ job sites since 2022.",
+    "cta": {
+      "primary": {
+        "text": "Schedule a Consultation",
+        "href": "/contact"
+      },
+      "secondary": {
+        "text": "View Pricing",
+        "href": "/pricing"
+      }
+    }
+  },
+  "caseStudies": [
+    {
+      "client": "City of Bell",
+      "type": "Ongoing Municipal Contract",
+      "stats": [
+        {
+          "number": "30 kWh",
+          "label": "Per Night"
+        },
+        {
+          "number": "30%+",
+          "label": "Generator Reduction"
+        },
+        {
+          "number": "Ongoing",
+          "label": "Contract"
+        }
+      ],
+      "challenge": "City needed reliable power for weekly farmers market without generator noise and emissions impacting the community.",
+      "solution": "Managed battery fleet with weekly deployment, pickup, and charging cycle. Zero operational burden on city staff.",
+      "result": "30%+ reduction in generator usage across city events. Farmers market vendors get consistent, quiet power every week.",
+      "image": "/images/case-studies/city-of-bell.jpg"
+    },
+    {
+      "client": "CicLAvia",
+      "type": "Large-Scale Event Series",
+      "stats": [
+        {
+          "number": "250+ kWh",
+          "label": "Lifetime Delivered"
+        },
+        {
+          "number": "6",
+          "label": "Events Since 2022"
+        },
+        {
+          "number": "500 Wh",
+          "label": "Max Single Deploy"
+        }
+      ],
+      "challenge": "City-wide open streets festival needed distributed power across multiple miles of event space.",
+      "solution": "Coordinated delivery of multiple battery units to different activation zones. Real-time monitoring during events.",
+      "result": "Successfully powered 6 major events since 2022 with zero power outages. Delivered 250+ kWh of clean power.",
+      "image": "/images/case-studies/ciclavia.jpg"
+    },
+    {
+      "client": "Levitt Pavilion",
+      "type": "Seasonal Concert Series",
+      "stats": [
+        {
+          "number": "41 kWh",
+          "label": "Average Per Concert"
+        },
+        {
+          "number": "Weekly",
+          "label": "Deployments"
+        },
+        {
+          "number": "Seasonal",
+          "label": "Partnership"
+        }
+      ],
+      "challenge": "Weekly outdoor concerts needed reliable power for sound and lighting without disrupting park tranquility.",
+      "solution": "Recurring weekly battery deployments throughout concert season. Coordinated setup with production teams.",
+      "result": "Average 41 kWh delivered per concert. Silent power solution maintains park atmosphere before, during, and after shows.",
+      "image": "/images/case-studies/levitt-pavilion.jpg"
+    },
+    {
+      "client": "Bridgefest 2024",
+      "type": "Complex Multi-Point Event",
+      "stats": [
+        {
+          "number": "190 Wh",
+          "label": "Total Deployed"
+        },
+        {
+          "number": "13",
+          "label": "Batteries"
+        },
+        {
+          "number": "1 Mile",
+          "label": "Coverage Area"
+        }
+      ],
+      "challenge": "Street festival spanning over 1 square mile needed coordinated power across multiple vendor zones.",
+      "solution": "Deployed 13 batteries across distributed locations. Coordinated logistics for simultaneous setup and retrieval.",
+      "result": "190 Wh delivered across entire festival footprint. Zero power issues despite complex logistics.",
+      "image": "/images/case-studies/bridgefest.jpg"
+    }
+  ]
+}

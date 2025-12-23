@@ -1,67 +1,146 @@
 {
   "layout": "landing-page-anduril",
   "meta": {
-    "title": "Battery Rental Pricing | Humble Professional Power",
-    "description": "Transparent Humble battery systems rental pricing. All-inclusive rates with delivery, pickup, backup generator. Available through Humble."
+    "title": "Transparent Pricing - Three Flexible Models | Humble Rentals",
+    "description": "Choose the approach that matches your operational capacity and budget structure. Pay per use, advance purchase, or monthly fixed pricing."
   },
   "hero": {
-    "category": "PRICING",
-    "title": "Rental Pricing and Options",
-    "description": "Transparent, all-inclusive rental pricing. Delivery, pickup, and backup generator included. No hidden fees, no fuel costs, no surprises. Promo code 241 for one free rental day.",
+    "category": "TRANSPARENT PRICING",
+    "title": "Three Flexible Models for Municipal Programs",
+    "description": "Choose the approach that matches your operational capacity and budget structure.",
     "cta": {
       "primary": {
-        "text": "Contact Humble",
+        "text": "Schedule a Consultation",
         "href": "/contact"
       },
       "secondary": {
-        "text": "View Specifications",
-        "href": "/specifications"
+        "text": "See Case Studies",
+        "href": "/case-studies"
       }
     }
   },
+  "pricingModels": {
+    "title": "Pricing Options",
+    "models": [
+      {
+        "name": "Standard",
+        "tagline": "Pay Per Use",
+        "features": [
+          "Pay per kWh delivered",
+          "No long-term commitment",
+          "Monthly billing",
+          "Flexible scheduling"
+        ],
+        "bestFor": [
+          "Seasonal events",
+          "Variable demand",
+          "Testing the program"
+        ],
+        "cta": "Contact Sales"
+      },
+      {
+        "name": "Option A",
+        "tagline": "Advance Purchase",
+        "features": [
+          "Buy kWh blocks in advance",
+          "Lower per-kWh rate",
+          "Use credits over time",
+          "Predictable volume"
+        ],
+        "bestFor": [
+          "Annual festivals",
+          "Predictable event calendar",
+          "Budget planning"
+        ],
+        "cta": "Contact Sales"
+      },
+      {
+        "name": "Option B",
+        "tagline": "Monthly Fixed",
+        "features": [
+          "Fixed monthly fee",
+          "Unlimited kWh usage",
+          "Predictable costs",
+          "Priority scheduling"
+        ],
+        "bestFor": [
+          "Weekly farmers markets",
+          "High-frequency events",
+          "Ongoing programs"
+        ],
+        "cta": "Contact Sales"
+      }
+    ]
+  },
+  "examples": {
+    "title": "Example Scenarios",
+    "scenarios": [
+      {
+        "useCase": "Farmers Market (Weekly)",
+        "standard": "Variable cost per event",
+        "optionB": "Fixed monthly rate, unlimited use",
+        "recommended": "Option B for predictable costs and weekly service"
+      },
+      {
+        "useCase": "Annual Festival (Single Event)",
+        "standard": "Pay for actual kWh used",
+        "optionA": "Pre-purchase at discount if planning multiple events",
+        "recommended": "Option A if you have multiple events per year"
+      },
+      {
+        "useCase": "Field Crews (Variable)",
+        "standard": "Pay as used for sporadic needs",
+        "optionB": "Fixed monthly if daily deployment",
+        "recommended": "Standard for sporadic needs, Option B for daily use"
+      }
+    ]
+  },
+  "included": {
+    "title": "All Models Include",
+    "features": [
+      "Delivery, setup, and pickup",
+      "Battery maintenance and charging",
+      "24/7 support during events",
+      "Usage tracking and reporting",
+      "Flexible scheduling",
+      "Load assessment consultation"
+    ]
+  },
   "benefits": {
-    "title": "All-Inclusive Rental Pricing",
+    "title": "Transparent Pricing Benefits",
     "items": [
       {
-        "title": "Delivery and Pickup Included",
-        "description": "White-glove service. We deliver, place, and pick up. You focus on production, not logistics."
+        "title": "No Hidden Fees",
+        "description": "All models include delivery, setup, pickup, maintenance, charging, and 24/7 support. What you see is what you pay."
       },
       {
-        "title": "Backup Generator Included",
-        "description": "Every rental includes backup generator positioned away from sensitive areas. Peace of mind for extended shoots."
+        "title": "Choose Your Model",
+        "description": "Select the pricing structure that matches your budget and operational needs, from pay-per-use to fixed monthly rates."
       },
       {
-        "title": "No Hidden Costs",
-        "description": "No fuel charges, no fire watch fees, no permit costs. Transparent pricing includes everything you need."
+        "title": "Scale As You Grow",
+        "description": "Start with one model and switch as your program matures. We work with your evolving needs and budget cycles."
       }
     ]
   },
   "features": {
-    "title": "Humble battery systems Rental Value",
+    "title": "What's Included in All Plans",
     "items": [
       {
-        "title": "One Transparent Rate",
-        "description": "Contact Humble for current day rates and multi-day discounts. All-inclusive pricing covers delivery, placement, pickup, and backup generator."
+        "title": "Full Service Logistics",
+        "description": "Delivery, setup, placement, and pickup handled by our team. Zero operational burden on your staff."
       },
       {
-        "title": "Promo Code 241",
-        "description": "ONE FREE RENTAL DAY with promo code \"241\" on your first booking. Experience professional battery power at no cost."
+        "title": "Complete Maintenance",
+        "description": "All battery charging, testing, and maintenance performed at our facility between deployments."
       },
       {
-        "title": "No Fuel, Fire Watch, or Permits",
-        "description": "Battery operation eliminates fuel costs, fire watch requirements, and noise permit fees. What you see is what you pay."
+        "title": "24/7 Event Support",
+        "description": "Real-time monitoring during events with emergency response and backup units if needed."
       },
       {
-        "title": "Faster Setup and Wrap",
-        "description": "5-minute power-on. No fuel management. Instant shutdown. Shorter production days reduce crew costs and location fees."
-      },
-      {
-        "title": "Multi-Day Discounts",
-        "description": "Extended rental rates available for week-long shoots, multi-day events, and festival installations. Contact Humble for custom quotes."
-      },
-      {
-        "title": "Package Deals Available",
-        "description": "Rent multiple units for larger productions. Battery rotation support for 24-hour operations. Custom power solutions for complex needs."
+        "title": "Usage Tracking",
+        "description": "Detailed reporting on kWh delivered, emissions avoided, and utilization for grant compliance and planning."
       }
     ]
   }

@@ -1,59 +1,131 @@
 {
   "layout": "landing-page-anduril",
   "meta": {
-    "title": "Bounce Houses and Party Rentals | Humble",
-    "description": "Clean, quiet power for bounce houses, party equipment, and park events. Battery-powered solutions for rentals and celebrations."
+    "title": "How It Works - Zero Operational Burden | Humble Rentals",
+    "description": "We handle everything. You get reliable power. The adoption challenge isn't the hardware—it's the logistics."
   },
   "hero": {
-    "category": "BOUNCE HOUSES AND PARTIES",
-    "title": "Power for Park Parties and Celebrations",
-    "description": "Emission-free power for bounce house blowers, party equipment, and outdoor celebrations. Keep kids' parties quiet, safe, and fume-free.",
+    "category": "HOW IT WORKS",
+    "title": "Zero Operational Burden",
+    "description": "We handle everything. You get reliable power. The adoption challenge isn't the hardware—it's the logistics. That's why we manage the entire operation.",
     "cta": {
       "primary": {
-        "text": "Request Tailored Pilot Plan",
+        "text": "Schedule a Consultation",
         "href": "/contact"
       },
       "secondary": {
-        "text": "Download Sample Timeline",
-        "href": "/resources"
+        "text": "View Pricing",
+        "href": "/pricing"
       }
     }
   },
-  "benefits": {
-    "title": "Program Design & Procurement",
+  "process": {
+    "title": "Our Process",
+    "steps": [
+      {
+        "number": "1",
+        "title": "Schedule",
+        "description": "We coordinate timing with your events. Book batteries days or weeks in advance through our online portal, phone, or email.",
+        "yourRole": "Tell us when",
+        "weHandle": [
+          "Online booking portal",
+          "Recurring event automation",
+          "Last-minute availability",
+          "Load calculation assistance"
+        ]
+      },
+      {
+        "number": "2",
+        "title": "Deliver",
+        "description": "Batteries arrive fully charged, tested, and ready to connect. Our team handles placement and coordinates with your vendors.",
+        "yourRole": "Plug in",
+        "weHandle": [
+          "500+ successful deployments",
+          "Trained delivery team",
+          "Site-specific placement",
+          "Vendor coordination",
+          "Safety briefing included"
+        ]
+      },
+      {
+        "number": "3",
+        "title": "Support",
+        "description": "Real-time monitoring ensures your power stays on. Issues? We respond immediately with backup units if needed.",
+        "yourRole": "Use power",
+        "weHandle": [
+          "24/7 monitoring",
+          "Instant alerts",
+          "Emergency response",
+          "Usage tracking",
+          "No generator maintenance"
+        ]
+      },
+      {
+        "number": "4",
+        "title": "Pickup",
+        "description": "Scheduled pickup after your event. Batteries return to our facility for charging, testing, and maintenance.",
+        "yourRole": "Done",
+        "weHandle": [
+          "Coordinated retrieval",
+          "Full maintenance cycle",
+          "Performance reporting",
+          "Ready for next deployment"
+        ]
+      }
+    ]
+  },
+  "stats": {
+    "title": "Proven at Scale",
     "items": [
       {
-        "title": "Hybrid Ownership Model",
-        "description": "Flexible approach: city-owned units for field crews with vendor monitoring, plus vendor-managed services for markets, events, and parks. Not one-size-fits-all – designed around your budget and procurement constraints."
+        "number": "100+",
+        "label": "Job Sites"
       },
       {
-        "title": "Performance-Based RFP Support",
-        "description": "[PLACEHOLDER: Help staff write RFPs that specify outcomes (uptime, safety, reporting) instead of prescriptive hardware specs. Evaluation criteria include municipal experience, fleet management capabilities, and reliability track record – not just lowest price.]"
+        "number": "500+",
+        "label": "Deployments"
       },
       {
-        "title": "Discovery to Pilot Launch",
-        "description": "Process: Stakeholder discovery → Draft program brief → City RFP (if needed) → Vendor selection → Pilot kickoff. Timeline typically 3-6 months depending on procurement requirements and grant approval cycles."
+        "number": "Zero",
+        "label": "Operational Incidents"
+      }
+    ]
+  },
+  "benefits": {
+    "title": "Why Choose Humble",
+    "items": [
+      {
+        "title": "Zero Operational Burden",
+        "description": "We handle all logistics from delivery to pickup, charging, and maintenance. Your team focuses on events, not battery management."
+      },
+      {
+        "title": "Proven Track Record",
+        "description": "Over 500 successful deployments since 2022 across 100+ job sites with zero operational incidents."
+      },
+      {
+        "title": "24/7 Support",
+        "description": "Real-time monitoring and emergency response ensures your power stays on throughout your event."
       }
     ]
   },
   "features": {
-    "title": "Operations & Fleet Management",
+    "title": "What's Included",
     "items": [
       {
-        "title": "Markets: Weekly Power Distribution",
-        "description": "[PLACEHOLDER: Vendor receives weekly market schedule. Two operational models: (A) Drop off batteries Friday, pick up Sunday, or (B) Support city check-out system where vendors collect from city facility. Telemetry tracks typical loads per stall type (food prep, refrigeration, lighting).]"
+        "title": "Complete Logistics",
+        "description": "Delivery, setup, placement, vendor coordination, and pickup all handled by our trained team."
       },
       {
-        "title": "Events: On-Demand Deployment",
-        "description": "[PLACEHOLDER: Event organizer submits intake form (date, location, expected loads). Vendor proposes battery configuration and quote. Event day: delivery, setup, on-site support during event, teardown. SLA guarantees replacement within 4 hours if unit fails.]"
+        "title": "Real-Time Monitoring",
+        "description": "24/7 monitoring with instant alerts and emergency response if issues arise during your event."
       },
       {
-        "title": "Parks: Rental Integration",
-        "description": "[PLACEHOLDER: Park reservation system includes clean power requirement. Bounce house vendor or party renter contacts battery vendor directly (vendor contact provided in permit). Same-day delivery and pickup. Multi-battery configs for 4+ hour blower runtime.]"
+        "title": "Full Maintenance",
+        "description": "All charging, testing, and maintenance handled at our facility between deployments."
       },
       {
-        "title": "Fleet Management Software",
-        "description": "Real-time dashboard showing battery state of charge, temperature, location, and load. Automated alerts for issues. Maintenance workflows flag weak cells. Grant reporting: kWh delivered, emissions avoided, utilization tracking."
+        "title": "Flexible Scheduling",
+        "description": "Book days or weeks in advance with recurring event automation and last-minute availability."
       }
     ]
   }

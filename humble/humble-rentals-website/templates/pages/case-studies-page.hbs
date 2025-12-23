@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{meta.title}}</title>
+    <meta name="description" content="{{meta.description}}">
+
+    <!-- Anduril-style CSS -->
+    <link rel="stylesheet" href="/css/anduril-style.css">
+    <!-- Grid System CSS -->
+    <link rel="stylesheet" href="/css/grid-system.css">
+    <!-- Components CSS -->
+    <link rel="stylesheet" href="/css/components.css">
+</head>
+<body>
+
+    {{> nav-anduril}}
+
+    <!-- Hero Section -->
+    <section class="hero-simple">
+        <div class="anduril-container">
+            <div class="article-date">{{hero.category}}</div>
+            <h1 class="hero-title-dark">{{hero.title}}</h1>
+            <p class="hero-subtitle-dark">{{hero.description}}</p>
+        </div>
+    </section>
+
+<!-- Case Studies -->
+{{#if caseStudies}}
+<section class="case-studies-section">
+    <div class="anduril-container">
+        {{#each caseStudies}}
+        <div class="case-study-card {{#if @index}}{{#if (eq @index 1)}}alternate{{/if}}{{#if (eq @index 3)}}alternate{{/if}}{{/if}}">
+            {{#if image}}
+            <div class="case-study-image">
+                <img src="{{image}}" alt="{{client}} case study">
+            </div>
+            {{/if}}
+            <div class="case-study-content">
+                <h2 class="case-study-client">{{client}}</h2>
+                <div class="case-study-type">{{type}}</div>
+
+                <div class="case-study-stats">
+                    {{#each stats}}
+                    <div class="case-stat">
+                        <div class="case-stat-number">{{number}}</div>
+                        <div class="case-stat-label">{{label}}</div>
+                    </div>
+                    {{/each}}
+                </div>
+
+                <div class="case-study-details">
+                    <div class="case-detail">
+                        <h4>Challenge</h4>
+                        <p>{{challenge}}</p>
+                    </div>
+                    <div class="case-detail">
+                        <h4>Solution</h4>
+                        <p>{{solution}}</p>
+                    </div>
+                    <div class="case-detail">
+                        <h4>Result</h4>
+                        <p>{{result}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</section>
+{{/if}}
+
+<!-- CTA Section -->
+<section class="case-studies-cta">
+    <div class="anduril-container">
+        <h2>Ready to See What We Can Do For Your City?</h2>
+        <p>Join forward-thinking California municipalities deploying reliable, quiet power solutions.</p>
+        <div class="cta-buttons">
+            <a href="/contact" class="btn btn-primary">Schedule a Consultation</a>
+            <a href="/pricing" class="btn btn-secondary">View Pricing Options</a>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="anduril-footer">
+    <div class="anduril-container">
+        <div class="anduril-footer-content">
+            <div class="anduril-footer-brand">
+                <div class="anduril-footer-logo">HUMBLE</div>
+            </div>
+            <div class="anduril-footer-links">
+                <div class="anduril-footer-column">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="/about">About</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="anduril-footer-column">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="/specifications">Specifications</a></li>
+                        <li><a href="/pricing">Pricing</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="anduril-footer-bottom">
+            <p>COPYRIGHT © 2025 HUMBLE RENTALS, LLC</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

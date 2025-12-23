@@ -1,59 +1,94 @@
 {
   "layout": "landing-page-anduril",
   "meta": {
-    "title": "Clean Power Programs for California Cities | Humble",
-    "description": "Replace gas generators at farmers markets, parks, and city events with managed battery fleet programs. Zero emissions, zero noise, measurable impact."
+    "title": "Dependable Batteries. Amazing Logistics. | Humble Rentals",
+    "description": "500+ deployments since 2022. We handle setup, delivery, pickup, and charging for reliable power without the operational burden."
   },
   "hero": {
-    "category": "MUNICIPAL POWER PROGRAMS",
-    "title": "Quiet, Clean Power for City Events, Markets, and Field Crews",
-    "description": "Replace gas generators at farmers markets, park rentals, and city-sponsored events with a managed battery fleet. Designed for California cities and community choice aggregators.",
+    "category": "MUNICIPAL BATTERY PROGRAMS",
+    "title": "Dependable Batteries. Amazing Logistics. Zero Headaches.",
+    "description": "500+ deployments since 2022. We handle setup, delivery, pickup, and charging so your events, markets, and field crews get reliable power without the operational burden.",
     "cta": {
       "primary": {
         "text": "Schedule a Program Overview",
         "href": "/contact"
       },
       "secondary": {
-        "text": "Download City Pilot Overview",
-        "href": "/resources"
+        "text": "See Our Track Record",
+        "href": "/case-studies"
       }
     }
   },
-  "benefits": {
-    "title": "Built Around How Cities Actually Use Power",
+  "stats": {
+    "title": "Proven at Scale",
     "items": [
       {
-        "title": "Public Works Crews",
-        "description": "Portable 3 kW units for daily field work – charged overnight in the yard. City-owned hardware with optional fleet management support."
+        "number": "100+",
+        "label": "Job Sites",
+        "description": "Field crews across California"
       },
+      {
+        "number": "30%",
+        "label": "Generator Reduction",
+        "description": "City of Bell, ongoing contract"
+      },
+      {
+        "number": "250kWh+",
+        "label": "Delivered",
+        "description": "CicLAvia events since 2022"
+      },
+      {
+        "number": "13",
+        "label": "Batteries, 1 Event",
+        "description": "Bridgefest 2024, 1 square mile"
+      },
+      {
+        "number": "41kWh",
+        "label": "Average",
+        "description": "Per Levitt Pavilion concert"
+      },
+      {
+        "number": "Zero",
+        "label": "Noise",
+        "description": "Silent power for communities"
+      }
+    ]
+  },
+  "benefits": {
+    "title": "Use Cases",
+    "items": [
       {
         "title": "Farmers Markets",
-        "description": "Replace vendor-owned generators with city-managed batteries for every stall. Weekly drop-off and pickup or check-out system."
+        "description": "Weekly or seasonal power for vendors with zero generator noise and emissions."
       },
       {
-        "title": "City Events & Festivals",
-        "description": "Stages, sound, lighting, food vendors – powered quietly with battery systems. Vendor-managed delivery, setup, and teardown included."
+        "title": "City Events",
+        "description": "Festivals, concerts, and community gatherings with scalable capacity and event coordination."
+      },
+      {
+        "title": "Public Works",
+        "description": "Field crews, parks, and construction sites with daily deployment capability."
       }
     ]
   },
   "features": {
-    "title": "From Pilot to Generator Policy",
+    "title": "How It Works",
     "items": [
       {
-        "title": "Design Pilot Program",
-        "description": "Co-design scope and budget aligned with CPA grants. Support RFP development with performance-based specifications."
+        "title": "Schedule",
+        "description": "Book batteries days or weeks in advance through our online portal, phone, or email."
       },
       {
-        "title": "Deploy Managed Fleet",
-        "description": "Launch at farmers markets, parks, and events. Hybrid model: city-owned units for crews, vendor-managed services for public events."
+        "title": "Deliver",
+        "description": "Batteries arrive fully charged, tested, and ready to connect. Our team handles placement."
       },
       {
-        "title": "Measure Health & Cost Impacts",
-        "description": "Track emissions avoided, noise reduction, vendor participation, and utilization across all four scenarios with real-time telemetry."
+        "title": "Support",
+        "description": "Real-time monitoring ensures your power stays on with 24/7 support during events."
       },
       {
-        "title": "Support Policy & Scaling",
-        "description": "Help staff make the case for permanent clean power requirements in event permits and park rentals. Transition path for vendors."
+        "title": "Pickup",
+        "description": "Scheduled pickup after your event. Batteries return to our facility for charging and maintenance."
       }
     ]
   }

@@ -35,64 +35,23 @@
         </div>
     </section>
 
-    <!-- Products Grid - Exact Anduril 7-Card Layout -->
+    <!-- Stats Grid - Data-Forward Layout -->
+    {{#if stats}}
     <section class="products-grid-section">
-        <div class="grid-container">
-            <!-- ROW 1: Three equal squares -->
-            <div class="grid-card grid-1x1" data-placeholder="1">
-                <div class="grid-card-image"></div>
-                <div class="grid-card-overlay"></div>
-                <div class="grid-card-content">
-                    <h3 class="grid-card-title">Public Works</h3>
+        <div class="anduril-container">
+            <h2 class="section-title" style="text-align: center; margin-bottom: 60px; font-size: 48px; font-weight: 700;">{{stats.title}}</h2>
+            <div class="stats-grid">
+                {{#each stats.items}}
+                <div class="stat-card">
+                    <div class="stat-number">{{number}}</div>
+                    <div class="stat-label">{{label}}</div>
+                    <p class="stat-description">{{description}}</p>
                 </div>
-            </div>
-
-            <div class="grid-card grid-1x1" data-placeholder="2">
-                <div class="grid-card-image"></div>
-                <div class="grid-card-overlay"></div>
-                <div class="grid-card-content">
-                    <h3 class="grid-card-title">Farmers Markets</h3>
-                </div>
-            </div>
-
-            <div class="grid-card grid-1x1" data-placeholder="3">
-                <div class="grid-card-image"></div>
-                <div class="grid-card-overlay"></div>
-                <div class="grid-card-content">
-                    <h3 class="grid-card-title">City Events</h3>
-                </div>
-            </div>
-
-            <!-- ROW 2: Tall left (1x2) -->
-            <div class="grid-card grid-1x2" data-placeholder="4">
-                <div class="grid-card-image"></div>
-                <div class="grid-card-overlay"></div>
-                <div class="grid-card-content">
-                    <h3 class="grid-card-title">Fleet Management</h3>
-                    <p class="grid-card-subtitle">End-to-end deployment</p>
-                </div>
-            </div>
-
-            <!-- ROW 2: Wide center (2x1) -->
-            <div class="grid-card grid-2x1" data-placeholder="5">
-                <div class="grid-card-image"></div>
-                <div class="grid-card-overlay"></div>
-                <div class="grid-card-content">
-                    <h3 class="grid-card-title">Power Analytics</h3>
-                    <p class="grid-card-subtitle">Real-time usage tracking</p>
-                </div>
-            </div>
-
-            <!-- ROW 3: Right bottom -->
-            <div class="grid-card grid-1x1" data-placeholder="6">
-                <div class="grid-card-image"></div>
-                <div class="grid-card-overlay"></div>
-                <div class="grid-card-content">
-                    <h3 class="grid-card-title">Emergency Backup</h3>
-                </div>
+                {{/each}}
             </div>
         </div>
     </section>
+    {{/if}}
 
     <!-- CTA Section -->
     <section class="feature-full">
