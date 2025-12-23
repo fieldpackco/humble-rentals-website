@@ -1,0 +1,118 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": ["meta", "hero", "overview", "specsPreview", "featuresPreview"],
+  "properties": {
+    "additionalCSS": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "meta": {
+      "type": "object",
+      "required": ["title", "description"],
+      "properties": {
+        "title": { "type": "string" },
+        "description": { "type": "string" }
+      }
+    },
+    "hero": {
+      "type": "object",
+      "required": ["title", "tagline", "availability", "cta"],
+      "properties": {
+        "title": { "type": "string" },
+        "tagline": { "type": "string" },
+        "priceText": { "type": "string" },
+        "availability": { "type": "string" },
+        "cta": {
+          "type": "object",
+          "properties": {
+            "primary": {
+              "type": "object",
+              "properties": {
+                "text": { "type": "string" },
+                "href": { "type": "string" }
+              }
+            },
+            "secondary": {
+              "type": "object",
+              "properties": {
+                "text": { "type": "string" },
+                "href": { "type": "string" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "overview": {
+      "type": "object",
+      "required": ["title", "subtitle"],
+      "properties": {
+        "title": { "type": "string" },
+        "subtitle": { "type": "string" }
+      }
+    },
+    "specsPreview": {
+      "type": "object",
+      "required": ["title", "items"],
+      "properties": {
+        "title": { "type": "string" },
+        "linkText": { "type": "string" },
+        "linkHref": { "type": "string" },
+        "items": {
+          "type": "array",
+          "maxItems": 4,
+          "items": {
+            "type": "object",
+            "properties": {
+              "icon": { "type": "string" },
+              "title": { "type": "string" },
+              "value": { "type": "string" },
+              "unit": { "type": "string" },
+              "description": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+    "featuresPreview": {
+      "type": "object",
+      "required": ["title", "items"],
+      "properties": {
+        "title": { "type": "string" },
+        "linkText": { "type": "string" },
+        "linkHref": { "type": "string" },
+        "items": {
+          "type": "array",
+          "maxItems": 3,
+          "items": {
+            "type": "object",
+            "properties": {
+              "title": { "type": "string" },
+              "description": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+    "solutionsPreview": {
+      "type": "object",
+      "required": ["title", "subtitle", "items"],
+      "properties": {
+        "title": { "type": "string" },
+        "subtitle": { "type": "string" },
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "title": { "type": "string" },
+              "description": { "type": "string" },
+              "href": { "type": "string" }
+            }
+          }
+        }
+      }
+    }
+  }
+}

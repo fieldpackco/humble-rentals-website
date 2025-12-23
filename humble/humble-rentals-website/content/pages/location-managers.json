@@ -1,0 +1,60 @@
+{
+  "layout": "landing-page-anduril",
+  "meta": {
+    "title": "Humble battery systems for Location Managers | Humble",
+    "description": "Silent battery power that gets locations approved and keeps them happy. No generator noise complaints."
+  },
+  "hero": {
+    "category": "LOCATION MANAGERS",
+    "title": "Get the Location Approved. Keep the Location Happy.",
+    "description": "No refueling. No noise. More power than a 7000 watt generator. 60A silent power eliminates the biggest location objection: generator noise. No permits, no noise complaints, no limits.",
+    "cta": {
+      "primary": {
+        "text": "Contact Humble",
+        "href": "/contact"
+      },
+      "secondary": {
+        "text": "View Specifications",
+        "href": "/specifications"
+      }
+    }
+  },
+  "benefits": {
+    "title": "Built for Location Success",
+    "items": [
+      {
+        "title": "Get Approved for Impossible Locations",
+        "description": "Hotels, rooftops, retail spaces, historic buildings. Silent operation means yes from venues that always say no to generators."
+      },
+      {
+        "title": "Eliminate Noise Complaints",
+        "description": "Zero generator noise keeps neighbors, venue owners, and location contacts happy. Better relationships, easier future bookings."
+      },
+      {
+        "title": "Simplify Permitting",
+        "description": "Zero emissions and silent operation eliminate permitting friction. No special approvals, no noise variances, no fire watch requirements."
+      }
+    ]
+  },
+  "features": {
+    "title": "Why Location Managers Choose Humble",
+    "items": [
+      {
+        "title": "Silent Approval",
+        "description": "Zero emissions, zero noise. Indoor-approved power opens previously impossible venues. Say yes to locations that prohibit generators."
+      },
+      {
+        "title": "Preserve Location Relationships",
+        "description": "Silent operation preserves relationships with venue owners and neighbors. Happy locations mean easier future bookings and better reputation."
+      },
+      {
+        "title": "White-Glove Service",
+        "description": "Humble handles delivery, placement, and pickup. Professional service reflects well on your production and location management."
+      },
+      {
+        "title": "Real Power",
+        "description": "60A Bates out plus three 20A Edison circuits. Genuine professional power in a silent, location-friendly package."
+      }
+    ]
+  }
+}

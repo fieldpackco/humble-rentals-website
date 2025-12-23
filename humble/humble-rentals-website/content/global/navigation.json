@@ -1,0 +1,39 @@
+{
+  "logo": "HUMBLE",
+  "menuItems": [
+    {
+      "label": "Customers",
+      "dropdown": true,
+      "items": [
+        { "text": "Experience Agencies", "href": "/experience-agencies" },
+        { "text": "Production Managers", "href": "/production-managers" },
+        { "text": "Gaffers & Lighting", "href": "/gaffers" },
+        { "text": "Location Managers", "href": "/location-managers" },
+        { "text": "City Services & Permits", "href": "/city-services" },
+        { "text": "Public Venues & Events", "href": "/public-venues" },
+        { "text": "Street Festivals", "href": "/street-festivals" }
+      ]
+    },
+    {
+      "label": "Product",
+      "dropdown": true,
+      "items": [
+        { "text": "Specifications", "href": "/specifications" },
+        { "text": "Features", "href": "/features" },
+        { "text": "Gallery", "href": "/gallery" }
+      ]
+    },
+    {
+      "label": "Rental",
+      "dropdown": true,
+      "items": [
+        { "text": "Pricing", "href": "/pricing" },
+        { "text": "How It Works", "href": "/how-it-works" }
+      ]
+    },
+    {
+      "label": "Contact",
+      "href": "/contact"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "layout": "landing-page-anduril",
+  "meta": {
+    "title": "Bounce Houses and Party Rentals | Humble",
+    "description": "Clean, quiet power for bounce houses, party equipment, and park events. Battery-powered solutions for rentals and celebrations."
+  },
+  "hero": {
+    "category": "BOUNCE HOUSES AND PARTIES",
+    "title": "Power for Park Parties and Celebrations",
+    "description": "Emission-free power for bounce house blowers, party equipment, and outdoor celebrations. Keep kids' parties quiet, safe, and fume-free.",
+    "cta": {
+      "primary": {
+        "text": "Request Tailored Pilot Plan",
+        "href": "/contact"
+      },
+      "secondary": {
+        "text": "Download Sample Timeline",
+        "href": "/resources"
+      }
+    }
+  },
+  "benefits": {
+    "title": "Program Design & Procurement",
+    "items": [
+      {
+        "title": "Hybrid Ownership Model",
+        "description": "Flexible approach: city-owned units for field crews with vendor monitoring, plus vendor-managed services for markets, events, and parks. Not one-size-fits-all – designed around your budget and procurement constraints."
+      },
+      {
+        "title": "Performance-Based RFP Support",
+        "description": "[PLACEHOLDER: Help staff write RFPs that specify outcomes (uptime, safety, reporting) instead of prescriptive hardware specs. Evaluation criteria include municipal experience, fleet management capabilities, and reliability track record – not just lowest price.]"
+      },
+      {
+        "title": "Discovery to Pilot Launch",
+        "description": "Process: Stakeholder discovery → Draft program brief → City RFP (if needed) → Vendor selection → Pilot kickoff. Timeline typically 3-6 months depending on procurement requirements and grant approval cycles."
+      }
+    ]
+  },
+  "features": {
+    "title": "Operations & Fleet Management",
+    "items": [
+      {
+        "title": "Markets: Weekly Power Distribution",
+        "description": "[PLACEHOLDER: Vendor receives weekly market schedule. Two operational models: (A) Drop off batteries Friday, pick up Sunday, or (B) Support city check-out system where vendors collect from city facility. Telemetry tracks typical loads per stall type (food prep, refrigeration, lighting).]"
+      },
+      {
+        "title": "Events: On-Demand Deployment",
+        "description": "[PLACEHOLDER: Event organizer submits intake form (date, location, expected loads). Vendor proposes battery configuration and quote. Event day: delivery, setup, on-site support during event, teardown. SLA guarantees replacement within 4 hours if unit fails.]"
+      },
+      {
+        "title": "Parks: Rental Integration",
+        "description": "[PLACEHOLDER: Park reservation system includes clean power requirement. Bounce house vendor or party renter contacts battery vendor directly (vendor contact provided in permit). Same-day delivery and pickup. Multi-battery configs for 4+ hour blower runtime.]"
+      },
+      {
+        "title": "Fleet Management Software",
+        "description": "Real-time dashboard showing battery state of charge, temperature, location, and load. Automated alerts for issues. Maintenance workflows flag weak cells. Grant reporting: kWh delivered, emissions avoided, utilization tracking."
+      }
+    ]
+  }
+}

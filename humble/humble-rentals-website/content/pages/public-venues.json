@@ -1,0 +1,60 @@
+{
+  "layout": "landing-page-anduril",
+  "meta": {
+    "title": "Humble battery systems for Public Venues | Humble",
+    "description": "Silent battery power for venue events. Say yes to more events without saying yes to generators."
+  },
+  "hero": {
+    "category": "PUBLIC VENUES",
+    "title": "Say Yes to More Events Without Generators",
+    "description": "Battery power that protects your venue, your neighbors, and your reputation. Premium events without the generator compromise. Silent, exhaust-free power matches the quality of your space.",
+    "cta": {
+      "primary": {
+        "text": "Contact Humble",
+        "href": "/contact"
+      },
+      "secondary": {
+        "text": "View Specifications",
+        "href": "/specifications"
+      }
+    }
+  },
+  "benefits": {
+    "title": "Built for Premium Venues",
+    "items": [
+      {
+        "title": "Protect Your Venue Reputation",
+        "description": "Silent, exhaust-free power matches the quality of your space. No generator noise ruining cocktail hour or ceremony moments."
+      },
+      {
+        "title": "Open New Revenue Opportunities",
+        "description": "Say yes to events in ballrooms, courtyards, rooftops, gardens—locations where generators are impossible."
+      },
+      {
+        "title": "Eliminate Neighbor Complaints",
+        "description": "Residential neighbors and adjacent businesses stay happy. Better relationships, easier permits, fewer complaints."
+      }
+    ]
+  },
+  "features": {
+    "title": "Why Public Venues Choose Humble",
+    "items": [
+      {
+        "title": "Silent Operation",
+        "description": "Zero noise during operation. Perfect for weddings, corporate events, and ceremonies where generator noise would damage the experience."
+      },
+      {
+        "title": "Indoor-Safe Power",
+        "description": "Zero emissions make it safe for occupied indoor spaces. Power events in hotel ballrooms, retail environments, and galleries."
+      },
+      {
+        "title": "Preserve Neighborhood Relationships",
+        "description": "Silent operation preserves relationships with neighbors and adjacent businesses. Easier permitting, fewer complaints, better community standing."
+      },
+      {
+        "title": "Professional Service",
+        "description": "Humble handles delivery, placement, and pickup. White-glove service that reflects the quality of your venue."
+      }
+    ]
+  }
+}

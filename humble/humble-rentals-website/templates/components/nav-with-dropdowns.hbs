@@ -1,0 +1,23 @@
+<nav>
+    <div class="nav-wrapper">
+        <a href="/" class="logo">{{logo}}</a>
+        <ul class="nav-items">
+            {{#each menuItems}}
+            {{#if dropdown}}
+            <li class="nav-dropdown">
+                <button class="nav-dropdown-toggle">
+                    {{label}} <span class="dropdown-arrow">▾</span>
+                </button>
+                <ul class="nav-dropdown-menu">
+                    {{#each items}}
+                    <li><a href="{{href}}">{{text}}</a></li>
+                    {{/each}}
+                </ul>
+            </li>
+            {{else}}
+            <li><a href="{{href}}">{{label}}</a></li>
+            {{/if}}
+            {{/each}}
+        </ul>
+    </div>
+</nav>

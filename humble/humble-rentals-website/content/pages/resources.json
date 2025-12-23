@@ -1,0 +1,60 @@
+{
+  "layout": "landing-page-anduril",
+  "meta": {
+    "title": "Pricing & Rental Rates | Humble",
+    "description": "Transparent pricing for battery rentals, events, and party equipment. Flexible rental options and packages."
+  },
+  "hero": {
+    "category": "PRICING",
+    "title": "Transparent Pricing for Events and Rentals",
+    "description": "Flexible rental packages for events, parties, and professional use. Clear pricing with no hidden fees.",
+    "cta": {
+      "primary": {
+        "text": "Download All Resources",
+        "href": "/contact"
+      },
+      "secondary": {
+        "text": "Book Working Session",
+        "href": "/contact"
+      }
+    }
+  },
+  "benefits": {
+    "title": "Program Planning Resources",
+    "items": [
+      {
+        "title": "City Pilot Playbook",
+        "description": "[RESOURCE: Comprehensive guide for 24-month pilots covering markets, parks, events, and field crews. Stakeholder alignment, budget sizing, phase timelines, success metrics, and policy pathways.]"
+      },
+      {
+        "title": "Sample RFP Language",
+        "description": "[RESOURCE: Performance-based specifications for portable battery services. Evaluation criteria beyond price: safety, reliability, reporting capabilities, municipal experience. Helps procurement staff write RFPs that select for outcomes, not just hardware.]"
+      },
+      {
+        "title": "24-Month Pilot Timeline",
+        "description": "[RESOURCE: Template timeline showing Planning, Infrastructure, Deployment, and Optimization phases. Aligned with CPA grant structure. Includes key milestones, department coordination points, and decision gates.]"
+      }
+    ]
+  },
+  "features": {
+    "title": "Technical & Financial Tools",
+    "items": [
+      {
+        "title": "Field Crew Buying Checklist",
+        "description": "[RESOURCE: For cities purchasing their own units. Chemistry selection, capacity sizing, charging infrastructure, safety certifications, warranty terms, and vendor support expectations. Helps Public Works departments specify city-owned hardware.]"
+      },
+      {
+        "title": "Impact Reporting Template",
+        "description": "[RESOURCE: Data collection and reporting formats for CPA grants and climate action plans. Tracks kWh delivered, generator-hours avoided, estimated emissions reductions, vendor participation, and community feedback. Export-ready for Council presentations.]"
+      },
+      {
+        "title": "Program Economics Model",
+        "description": "[RESOURCE: Spreadsheet comparing total cost of ownership for generators vs. managed battery fleets. Includes capex, fuel, maintenance, staff time, and shared fleet efficiency. Supports budget justification and business case development.]"
+      },
+      {
+        "title": "FAQ for City Staff",
+        "description": "[RESOURCE: Common questions about hybrid ownership models, emergency power scope, user training, safety and liability, vendor transition support, and scaling beyond pilots. Written for cross-department teams.]"
+      }
+    ]
+  }
+}

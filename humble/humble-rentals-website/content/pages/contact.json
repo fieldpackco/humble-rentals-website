@@ -1,0 +1,60 @@
+{
+  "layout": "landing-page-anduril",
+  "meta": {
+    "title": "Contact Humble | Municipal Battery Programs",
+    "description": "Schedule a program overview, request RFP support, or ask about pilot programs for your city."
+  },
+  "hero": {
+    "category": "CONTACT",
+    "title": "Ready to Make Your City Generator-Free?",
+    "description": "Schedule a 45-minute program review, request RFP support, or send us your questions about battery fleet programs for California municipalities.",
+    "cta": {
+      "primary": {
+        "text": "Email Our Team",
+        "href": "mailto:amit@fieldpack.co"
+      },
+      "secondary": {
+        "text": "Call: 310-776-0154",
+        "href": "tel:+13107760154"
+      }
+    }
+  },
+  "benefits": {
+    "title": "How We Can Help",
+    "items": [
+      {
+        "title": "Program Discovery Calls",
+        "description": "[PLACEHOLDER: 45-minute cross-department kickoff calls with Sustainability, Public Works, Parks, and Community Development staff. Scope your four scenarios, discuss grant alignment, timeline expectations, and hybrid ownership models.]"
+      },
+      {
+        "title": "RFP & Procurement Support",
+        "description": "[PLACEHOLDER: Review draft RFPs, provide performance-based specification language, share evaluation criteria beyond price. Help your procurement team write RFPs that select for outcomes and municipal experience.]"
+      },
+      {
+        "title": "Pilot Program Planning",
+        "description": "[PLACEHOLDER: Co-design 24-month pilot programs aligned with CPA grant phases. Budget sizing, stakeholder coordination, metrics definition, and policy pathway development. Adapted to your city's procurement and approval processes.]"
+      }
+    ]
+  },
+  "features": {
+    "title": "Contact Information",
+    "items": [
+      {
+        "title": "Humble",
+        "description": "Municipal battery fleet programs for California cities. Based in Southern California, serving cities statewide. Phone: 310-776-0154 | Email: amit@fieldpack.co"
+      },
+      {
+        "title": "What to Include in Your Inquiry",
+        "description": "[PLACEHOLDER: Let us know: Which scenarios interest you (markets, parks, events, field crews)? Do you have active grant funding or planning for future rounds? What's your timeline? Which departments are involved? Any existing generator policies or restrictions?]"
+      },
+      {
+        "title": "Response Time",
+        "description": "We respond to all city inquiries within 1 business day. For active RFPs or grant deadlines, we can often schedule calls within 48 hours."
+      },
+      {
+        "title": "References Available",
+        "description": "[PLACEHOLDER: We can provide references from other California cities, event organizations, and community choice aggregators who have worked with our battery programs. Ask during your discovery call.]"
+      }
+    ]
+  }
+}

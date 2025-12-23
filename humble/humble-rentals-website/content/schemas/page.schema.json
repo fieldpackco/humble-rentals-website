@@ -1,0 +1,174 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": ["meta", "hero"],
+  "properties": {
+    "meta": {
+      "type": "object",
+      "required": ["title", "description"],
+      "properties": {
+        "title": {
+          "type": "string",
+          "minLength": 10,
+          "maxLength": 70
+        },
+        "description": {
+          "type": "string",
+          "minLength": 50,
+          "maxLength": 160
+        }
+      }
+    },
+    "hero": {
+      "$ref": "hero.schema.json"
+    },
+    "benefits": {
+      "$ref": "benefits.schema.json"
+    },
+    "problem": {
+      "type": "object",
+      "properties": {
+        "title": { "type": "string" },
+        "intro": { "type": "string" },
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["title", "description"],
+            "properties": {
+              "title": { "type": "string" },
+              "description": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+    "solution": {
+      "type": "object",
+      "properties": {
+        "title": { "type": "string" },
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["title", "description"],
+            "properties": {
+              "title": { "type": "string" },
+              "description": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+    "specs": {
+      "type": "object",
+      "properties": {
+        "title": { "type": "string" },
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["value", "label"],
+            "properties": {
+              "value": { "type": "string" },
+              "label": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+    "journey": {
+      "type": "object",
+      "properties": {
+        "title": { "type": "string" },
+        "comparison": {
+          "type": "object",
+          "required": ["without", "with"],
+          "properties": {
+            "without": {
+              "type": "object",
+              "required": ["title", "description"],
+              "properties": {
+                "title": { "type": "string" },
+                "description": { "type": "string" }
+              }
+            },
+            "with": {
+              "type": "object",
+              "required": ["title", "description"],
+              "properties": {
+                "title": { "type": "string" },
+                "description": { "type": "string" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "caseStudy": {
+      "type": "object",
+      "properties": {
+        "title": { "type": "string" },
+        "content": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "quote": { "type": "string" }
+      }
+    },
+    "faq": {
+      "type": "object",
+      "properties": {
+        "title": { "type": "string" },
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["question", "answer"],
+            "properties": {
+              "question": { "type": "string" },
+              "answer": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+    "finalCta": {
+      "type": "object",
+      "properties": {
+        "title": { "type": "string" },
+        "description": { "type": "string" },
+        "cta": {
+          "type": "object",
+          "required": ["primary", "secondary"],
+          "properties": {
+            "primary": {
+              "type": "object",
+              "required": ["text", "href"],
+              "properties": {
+                "text": { "type": "string" },
+                "href": { "type": "string" }
+              }
+            },
+            "secondary": {
+              "type": "object",
+              "required": ["text", "href"],
+              "properties": {
+                "text": { "type": "string" },
+                "href": { "type": "string" }
+              }
+            }
+          }
+        },
+        "contactInfo": {
+          "type": "object",
+          "properties": {
+            "company": { "type": "string" },
+            "phone": { "type": "string" },
+            "email": { "type": "string" }
+          }
+        }
+      }
+    }
+  }
+}

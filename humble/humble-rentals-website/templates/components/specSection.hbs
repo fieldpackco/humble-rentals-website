@@ -1,0 +1,12 @@
+<section class="section">
+    <h2 class="section-title">{{title}}</h2>
+    <div class="grid grid-4">
+        {{#each specs}}
+        <div class="card">
+            <h3 class="card-title">{{label}}</h3>
+            <div class="spec-value">{{value}}</div>
+            <p class="card-description">{{description}}</p>
+        </div>
+        {{/each}}
+    </div>
+</section>

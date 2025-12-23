@@ -1,0 +1,68 @@
+{
+  "layout": "landing-page-anduril",
+  "meta": {
+    "title": "Battery Rental Pricing | Humble Professional Power",
+    "description": "Transparent Humble battery systems rental pricing. All-inclusive rates with delivery, pickup, backup generator. Available through Humble."
+  },
+  "hero": {
+    "category": "PRICING",
+    "title": "Rental Pricing and Options",
+    "description": "Transparent, all-inclusive rental pricing. Delivery, pickup, and backup generator included. No hidden fees, no fuel costs, no surprises. Promo code 241 for one free rental day.",
+    "cta": {
+      "primary": {
+        "text": "Contact Humble",
+        "href": "/contact"
+      },
+      "secondary": {
+        "text": "View Specifications",
+        "href": "/specifications"
+      }
+    }
+  },
+  "benefits": {
+    "title": "All-Inclusive Rental Pricing",
+    "items": [
+      {
+        "title": "Delivery and Pickup Included",
+        "description": "White-glove service. We deliver, place, and pick up. You focus on production, not logistics."
+      },
+      {
+        "title": "Backup Generator Included",
+        "description": "Every rental includes backup generator positioned away from sensitive areas. Peace of mind for extended shoots."
+      },
+      {
+        "title": "No Hidden Costs",
+        "description": "No fuel charges, no fire watch fees, no permit costs. Transparent pricing includes everything you need."
+      }
+    ]
+  },
+  "features": {
+    "title": "Humble battery systems Rental Value",
+    "items": [
+      {
+        "title": "One Transparent Rate",
+        "description": "Contact Humble for current day rates and multi-day discounts. All-inclusive pricing covers delivery, placement, pickup, and backup generator."
+      },
+      {
+        "title": "Promo Code 241",
+        "description": "ONE FREE RENTAL DAY with promo code \"241\" on your first booking. Experience professional battery power at no cost."
+      },
+      {
+        "title": "No Fuel, Fire Watch, or Permits",
+        "description": "Battery operation eliminates fuel costs, fire watch requirements, and noise permit fees. What you see is what you pay."
+      },
+      {
+        "title": "Faster Setup and Wrap",
+        "description": "5-minute power-on. No fuel management. Instant shutdown. Shorter production days reduce crew costs and location fees."
+      },
+      {
+        "title": "Multi-Day Discounts",
+        "description": "Extended rental rates available for week-long shoots, multi-day events, and festival installations. Contact Humble for custom quotes."
+      },
+      {
+        "title": "Package Deals Available",
+        "description": "Rent multiple units for larger productions. Battery rotation support for 24-hour operations. Custom power solutions for complex needs."
+      }
+    ]
+  }
+}

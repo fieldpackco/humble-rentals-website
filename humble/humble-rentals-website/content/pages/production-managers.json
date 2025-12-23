@@ -1,0 +1,60 @@
+{
+  "layout": "landing-page-anduril",
+  "meta": {
+    "title": "Humble battery systems for Production Managers | Humble",
+    "description": "Silent battery power for efficient productions. Eliminate generator drama and keep productions on schedule."
+  },
+  "hero": {
+    "category": "PRODUCTION MANAGERS",
+    "title": "Power Efficient Productions Anywhere",
+    "description": "No refueling. No noise. More power than a 7000 watt generator. 60A silent power eliminates generator logistics and keeps your production on schedule. No permits, no noise complaints, no limits.",
+    "cta": {
+      "primary": {
+        "text": "Contact Humble",
+        "href": "/contact"
+      },
+      "secondary": {
+        "text": "View Specifications",
+        "href": "/specifications"
+      }
+    }
+  },
+  "benefits": {
+    "title": "Built for Production Efficiency",
+    "items": [
+      {
+        "title": "Get Approved for Impossible Locations",
+        "description": "Hotels, rooftops, retail spaces, historic buildings. Silent operation means yes from venues that always say no to generators."
+      },
+      {
+        "title": "Eliminate Generator Logistics",
+        "description": "No fuel runs, no fire watch, no permits. Your crew focuses on production, not power management. Faster setup and wrap times."
+      },
+      {
+        "title": "Keep Productions on Schedule",
+        "description": "Under 5 minutes to power on. Zero noise complaints. Zero refueling delays. Your production stays on track without generator drama."
+      }
+    ]
+  },
+  "features": {
+    "title": "Why Production Managers Choose Humble",
+    "items": [
+      {
+        "title": "Silent Approval",
+        "description": "Zero emissions, zero noise. Indoor-approved power opens previously impossible venues. Say yes to locations that prohibit generators."
+      },
+      {
+        "title": "True Cost Savings",
+        "description": "Cost-competitive with generators once you factor in permits, fuel, fire watch, and crew time. Transparent rental pricing includes delivery, pickup, and backup generator."
+      },
+      {
+        "title": "White-Glove Service",
+        "description": "Humble handles delivery, placement, and pickup. You don't touch it. Your crew focuses on production, not managing power logistics."
+      },
+      {
+        "title": "Real Power",
+        "description": "60A Bates out plus three 20A Edison circuits. Power full lighting packages, monitors, and equipment simultaneously without compromise."
+      }
+    ]
+  }
+}

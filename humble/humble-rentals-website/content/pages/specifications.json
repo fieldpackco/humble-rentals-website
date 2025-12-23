@@ -1,0 +1,68 @@
+{
+  "layout": "landing-page-anduril",
+  "meta": {
+    "title": "Battery Specifications | Humble",
+    "description": "Professional battery systems sized for your application. View our range of power solutions from compact to high-capacity systems."
+  },
+  "hero": {
+    "category": "TECHNICAL SPECIFICATIONS",
+    "title": "Power Solutions Tailored to Your Needs",
+    "description": "Humble delivers battery systems across a range of capacities and configurations. From compact systems for small events to high-capacity solutions for major productions, we provide the right specifications for your requirements.",
+    "cta": {
+      "primary": {
+        "text": "Contact Humble",
+        "href": "/contact"
+      },
+      "secondary": {
+        "text": "View Solutions",
+        "href": "/"
+      }
+    }
+  },
+  "benefits": {
+    "title": "Our Battery Solution Range",
+    "items": [
+      {
+        "title": "Compact Systems",
+        "description": "2-5kW continuous power. Perfect for pop-ups, small installations, and mobile applications. Lightweight, portable, silent operation."
+      },
+      {
+        "title": "Mid-Range Systems",
+        "description": "5-10kW continuous power. Versatile solutions for film shoots, medium events, and temporary installations. Professional connectivity and monitoring."
+      },
+      {
+        "title": "High-Capacity Systems",
+        "description": "10kW+ continuous power. Heavy-duty systems for major events, large productions, and demanding installations. Maximum power when you need it most."
+      }
+    ]
+  },
+  "features": {
+    "title": "Professional Features Across All Systems",
+    "items": [
+      {
+        "title": "Right-Sized Power",
+        "description": "We assess your power requirements and provide the appropriate system capacity. No oversizing, no undersizing—just the right solution for your needs."
+      },
+      {
+        "title": "Professional Connectivity",
+        "description": "Industry-standard connectors including Bates, Edison, and custom configurations. Multiple circuits for flexible power distribution."
+      },
+      {
+        "title": "Advanced Battery Technology",
+        "description": "LiFePO4 (LFP) chemistry across all systems for safety and longevity. Professional battery management systems with real-time monitoring."
+      },
+      {
+        "title": "Flexible Charging Options",
+        "description": "Fast charging capabilities when time is critical. Standard charging when you have flexibility. Auto-adjusting inputs for optimal performance."
+      },
+      {
+        "title": "Built for the Field",
+        "description": "Rugged construction, industrial mobility, and weather-resistant designs. Built to withstand the demands of professional applications."
+      },
+      {
+        "title": "Complete Monitoring",
+        "description": "Real-time battery status, power consumption tracking, and safety monitoring. Remote access via Bluetooth and WiFi on select systems."
+      }
+    ]
+  }
+}

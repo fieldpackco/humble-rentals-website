@@ -1,0 +1,32 @@
+{
+  "name": "humble-website",
+  "version": "3.0.0",
+  "description": "Professional marketing website for Humble battery solutions",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fieldpackco/humble-rentals-website.git"
+  },
+  "keywords": [
+    "humble",
+    "batteries",
+    "power-solutions",
+    "marketing-site"
+  ],
+  "scripts": {
+    "build": "node src/build.js",
+    "dev": "node src/dev-server.js",
+    "validate": "node src/validate.js",
+    "clean": "rm -rf dist",
+    "prebuild": "npm run clean && npm run validate"
+  },
+  "devDependencies": {
+    "ajv": "^8.17.1",
+    "autoprefixer": "^10.4.22",
+    "browser-sync": "^3.0.4",
+    "chokidar": "^4.0.3",
+    "cssnano": "^7.1.2",
+    "handlebars": "^4.7.8",
+    "postcss": "^8.5.6",
+    "postcss-cli": "^11.0.1"
+  }
+}

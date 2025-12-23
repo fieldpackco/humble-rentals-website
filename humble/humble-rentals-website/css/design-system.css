@@ -1,0 +1,334 @@
+/* ============================================
+   CITYPACK DESIGN SYSTEM
+   Core variables, typography, and spacing
+   ============================================ */
+
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ============================================
+   DESIGN TOKENS
+   ============================================ */
+
+:root {
+    /* Brand Colors */
+    --primary-orange: #FF6B35;
+    --primary-deep: #E55A2B;
+    --accent-gold: #F4B942;
+    --accent-amber: #FFA726;
+
+    /* Neutral Colors */
+    --neutral-charcoal: #2C3E50;
+    --neutral-slate: #34495E;
+    --neutral-gray: #7F8C8D;
+    --neutral-light: #F8F9FA;
+    --white: #FFFFFF;
+
+    /* Semantic Colors */
+    --text-primary: #0d1117;
+    --text-secondary: #656d76;
+    --border-light: #d0d7de;
+
+    /* Shadows */
+    --shadow-soft: rgba(0, 0, 0, 0.08);
+    --shadow-medium: rgba(0, 0, 0, 0.12);
+    --shadow-strong: rgba(0, 0, 0, 0.16);
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, #FF6B35 0%, #F4B942 100%);
+    --gradient-secondary: linear-gradient(135deg, #2C3E50 0%, #34495E 100%);
+    --gradient-hero: radial-gradient(ellipse at center top, rgba(255, 107, 53, 0.08) 0%, transparent 50%);
+
+    /* Typography Scale */
+    --font-family-base: 'Inter', 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+    --font-size-12: 12px;
+    --font-size-13: 13px;
+    --font-size-14: 14px;
+    --font-size-16: 16px;
+    --font-size-18: 18px;
+    --font-size-20: 20px;
+    --font-size-21: 21px;
+    --font-size-22: 22px;
+    --font-size-24: 24px;
+    --font-size-28: 28px;
+    --font-size-32: 32px;
+    --font-size-48: 48px;
+    --font-size-56: 56px;
+    --font-size-96: 96px;
+
+    /* Typography Improvements - Responsive Scaling */
+    --font-size-hero: clamp(48px, 8vw, 96px);
+    --font-size-section-title: clamp(32px, 5vw, 56px);
+    --font-size-card-title: clamp(18px, 2.5vw, 24px);
+
+    /* Font Weights */
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    --font-weight-extrabold: 800;
+
+    /* Line Heights */
+    --line-height-tight: 1.05;
+    --line-height-snug: 1.1;
+    --line-height-normal: 1.2;
+    --line-height-relaxed: 1.4;
+    --line-height-loose: 1.6;
+    --line-height-extra-loose: 1.8;
+
+    /* Improved line heights for readability */
+    --line-height-hero: 1.05;
+    --line-height-heading: 1.2;
+    --line-height-body: 1.6;
+
+    /* Letter Spacing */
+    --letter-spacing-tight: -0.02em;
+    --letter-spacing-snug: -0.01em;
+    --letter-spacing-normal: -0.005em;
+    --letter-spacing-wide: 0.05em;
+
+    /* Enhanced letter spacing */
+    --letter-spacing-hero: -0.03em;
+    --letter-spacing-heading: -0.02em;
+    --letter-spacing-body: -0.01em;
+
+    /* Spacing Scale (8px base) */
+    --space-0: 0;
+    --space-4: 4px;
+    --space-8: 8px;
+    --space-12: 12px;
+    --space-16: 16px;
+    --space-20: 20px;
+    --space-24: 24px;
+    --space-30: 30px;
+    --space-32: 32px;
+    --space-40: 40px;
+    --space-48: 48px;
+    --space-60: 60px;
+    --space-80: 80px;
+    --space-100: 100px;
+    --space-120: 120px;
+    --space-140: 140px;
+
+    /* Border Radius */
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 18px;
+    --radius-xl: 20px;
+    --radius-2xl: 24px;
+    --radius-3xl: 28px;
+
+    /* Transitions */
+    --transition-fast: 0.15s;
+    --transition-base: 0.3s;
+    --transition-slow: 0.4s;
+    --transition-slower: 0.6s;
+
+    --easing-standard: cubic-bezier(0.4, 0, 0.2, 1);
+    --easing-enter: cubic-bezier(0, 0, 0.2, 1);
+    --easing-exit: cubic-bezier(0.4, 0, 1, 1);
+
+    /* Layout */
+    --max-width-content: 1200px;
+    --max-width-reading: 900px;
+    --max-width-wide: 1400px;
+
+    --nav-height: 44px;
+}
+
+/* ============================================
+   BASE STYLES
+   ============================================ */
+
+body {
+    font-family: var(--font-family-base);
+    color: var(--text-primary);
+    background: #fafbfc;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: var(--line-height-body);
+    letter-spacing: var(--letter-spacing-body);
+}
+
+/* ============================================
+   TYPOGRAPHY SYSTEM
+   ============================================ */
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: var(--font-weight-bold);
+    line-height: var(--line-height-tight);
+    letter-spacing: var(--letter-spacing-normal);
+}
+
+/* Display - Extra Large Headings */
+.display-1 {
+    font-size: var(--font-size-96);
+    font-weight: var(--font-weight-extrabold);
+    line-height: var(--line-height-tight);
+    letter-spacing: var(--letter-spacing-tight);
+}
+
+.display-2 {
+    font-size: var(--font-size-56);
+    font-weight: var(--font-weight-bold);
+    line-height: var(--line-height-snug);
+    letter-spacing: var(--letter-spacing-normal);
+}
+
+.display-3 {
+    font-size: var(--font-size-48);
+    font-weight: var(--font-weight-semibold);
+    line-height: var(--line-height-normal);
+}
+
+/* Headings */
+.heading-1 {
+    font-size: var(--font-size-32);
+    font-weight: var(--font-weight-bold);
+    letter-spacing: var(--letter-spacing-snug);
+}
+
+.heading-2 {
+    font-size: var(--font-size-28);
+    font-weight: var(--font-weight-bold);
+}
+
+.heading-3 {
+    font-size: var(--font-size-24);
+    font-weight: var(--font-weight-semibold);
+}
+
+.heading-4 {
+    font-size: var(--font-size-20);
+    font-weight: var(--font-weight-semibold);
+}
+
+/* Body Text */
+.body-large {
+    font-size: var(--font-size-24);
+    line-height: var(--line-height-relaxed);
+    color: var(--text-secondary);
+}
+
+.body-normal {
+    font-size: var(--font-size-18);
+    line-height: var(--line-height-loose);
+    color: var(--text-secondary);
+}
+
+.body-small {
+    font-size: var(--font-size-16);
+    line-height: var(--line-height-loose);
+    color: var(--text-secondary);
+}
+
+.body-caption {
+    font-size: var(--font-size-14);
+    line-height: var(--line-height-normal);
+    color: var(--text-secondary);
+}
+
+/* Text Utilities */
+.text-gradient-primary {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.text-gradient-secondary {
+    background: var(--gradient-secondary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.text-primary { color: var(--text-primary); }
+.text-secondary { color: var(--text-secondary); }
+.text-orange { color: var(--primary-orange); }
+.text-gold { color: var(--accent-gold); }
+.text-white { color: var(--white); }
+
+/* Font Weights */
+.font-normal { font-weight: var(--font-weight-regular); }
+.font-medium { font-weight: var(--font-weight-medium); }
+.font-semibold { font-weight: var(--font-weight-semibold); }
+.font-bold { font-weight: var(--font-weight-bold); }
+.font-extrabold { font-weight: var(--font-weight-extrabold); }
+
+/* Text Alignment */
+.text-left { text-align: left; }
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+
+/* ============================================
+   ANIMATIONS
+   ============================================ */
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1) rotate(0deg);
+        opacity: 0.4;
+    }
+    50% {
+        transform: scale(1.2) rotate(180deg);
+        opacity: 0.7;
+    }
+}
+
+.animate-in {
+    /* No animation - class kept for potential future use */
+}
+
+.animate-slide {
+    opacity: 0;
+    animation: slideIn 0.8s var(--easing-standard) forwards;
+}
+
+/* ============================================
+   RESPONSIVE BREAKPOINTS
+   ============================================ */
+
+@media (max-width: 1024px) {
+    :root {
+        --font-size-96: 72px;
+        --font-size-56: 48px;
+    }
+}
+
+@media (max-width: 768px) {
+    :root {
+        --font-size-96: 48px;
+        --font-size-56: 36px;
+        --font-size-48: 32px;
+        --font-size-32: 24px;
+        --space-140: 80px;
+        --space-120: 60px;
+        --space-80: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    :root {
+        --font-size-96: 40px;
+        --font-size-56: 32px;
+        --font-size-48: 28px;
+    }
+}

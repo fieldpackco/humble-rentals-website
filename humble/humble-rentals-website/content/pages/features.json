@@ -1,0 +1,68 @@
+{
+  "layout": "landing-page-anduril",
+  "meta": {
+    "title": "Battery Features | Humble Professional Power Solutions",
+    "description": "Silent battery power built for production. Indoor-safe 60A output, fast charging, real-time monitoring, and professional reliability."
+  },
+  "hero": {
+    "category": "FEATURES",
+    "title": "Features That Make a Difference on Set",
+    "description": "Every feature is designed to solve real production challenges. Silent operation. True 60A output. Professional monitoring. Built for the demands of professional production.",
+    "cta": {
+      "primary": {
+        "text": "Contact Humble",
+        "href": "/contact"
+      },
+      "secondary": {
+        "text": "View Specifications",
+        "href": "/specifications"
+      }
+    }
+  },
+  "benefits": {
+    "title": "Why Production Teams Choose Humble",
+    "items": [
+      {
+        "title": "Saves Money Over Generators",
+        "description": "When you add fuel runs, fire watch, noise complaints, and slow wrap, generators cost more than the day rate suggests. Humble battery systems eliminates hidden costs."
+      },
+      {
+        "title": "Works Everywhere Generators Can't",
+        "description": "Indoor venues, noise-restricted zones, residential areas, and historic locations that prohibit generators. Silent operation opens impossible locations."
+      },
+      {
+        "title": "Professional Grade Reliability",
+        "description": "LFP chemistry, BMS protection, real-time monitoring. Built for professional production with redundant safety systems and proven reliability."
+      }
+    ]
+  },
+  "features": {
+    "title": "How Humble battery systems Solves Production Power Challenges",
+    "items": [
+      {
+        "title": "Truly Silent Operation",
+        "description": "Zero noise during operation. No engine vibration, no exhaust fan, no compressor cycling. Your set stays quiet, your neighbors stay happy."
+      },
+      {
+        "title": "Indoor-Safe Zero Emissions",
+        "description": "LFP battery chemistry produces zero emissions during operation. Safe for occupied indoor spaces, underground parking, and enclosed venues."
+      },
+      {
+        "title": "60A Bates Output",
+        "description": "True 60A output on professional Bates connector. Three independent 20A Edison circuits. Use your existing distribution boxes without adapters."
+      },
+      {
+        "title": "Fast Charging Options",
+        "description": "1-hour fast charge from 60A input, or 4-5 hours from standard 110V outlet. Charge overnight or rotate batteries during long productions."
+      },
+      {
+        "title": "Real-Time Monitoring",
+        "description": "4.3-inch color touchscreen shows voltage, current, power, state of charge, temperature, and runtime estimate. Bluetooth and WiFi remote monitoring."
+      },
+      {
+        "title": "Professional Safety Features",
+        "description": "BMS with cell balancing, per-circuit breakers, thermal management, over-current protection. LFP chemistry is the safest lithium chemistry available."
+      }
+    ]
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "layout": "landing-page-anduril",
+  "meta": {
+    "title": "Humble battery systems for Gaffers | Humble",
+    "description": "Silent battery power for lighting setups. Power your rig anywhere without generator noise or restrictions."
+  },
+  "hero": {
+    "category": "GAFFERS",
+    "title": "Power Lighting Setups Anywhere",
+    "description": "No refueling. No noise. More power than a 7000 watt generator. 60A silent power for professional lighting packages. No permits, no noise complaints, no limits.",
+    "cta": {
+      "primary": {
+        "text": "Contact Humble",
+        "href": "/contact"
+      },
+      "secondary": {
+        "text": "View Specifications",
+        "href": "/specifications"
+      }
+    }
+  },
+  "benefits": {
+    "title": "Built for Lighting Professionals",
+    "items": [
+      {
+        "title": "Get Approved for Impossible Locations",
+        "description": "Hotels, rooftops, retail spaces, historic buildings. Silent operation means yes from venues that always say no to generators."
+      },
+      {
+        "title": "Clean Power for Sensitive Equipment",
+        "description": "Your lighting package isn't competing with generator noise or flicker. Clean, stable power for HMIs, LEDs, and sensitive electronics."
+      },
+      {
+        "title": "Deploy Faster, Wrap Faster",
+        "description": "Under 5 minutes to power on. No fuel logistics, no fire watch, no generator babysitting. Your crew focuses on lighting, not the power."
+      }
+    ]
+  },
+  "features": {
+    "title": "Why Gaffers Choose Humble",
+    "items": [
+      {
+        "title": "True 60A Bates Output",
+        "description": "Professional 60A Bates connector powers full lighting packages. No adapters, no workarounds. Use your existing distribution just like with a generator."
+      },
+      {
+        "title": "Silent Operation",
+        "description": "Zero noise during operation. Perfect for sound-sensitive shoots and locations where generator noise creates problems with neighbors or talent."
+      },
+      {
+        "title": "Indoor-Safe Power",
+        "description": "Zero emissions make it safe for occupied indoor spaces. Power lighting setups in hotel ballrooms, retail environments, and galleries."
+      },
+      {
+        "title": "Professional Reliability",
+        "description": "LFP chemistry, BMS protection, real-time monitoring. Built for the demands of professional production with redundant safety systems."
+      }
+    ]
+  }
+}

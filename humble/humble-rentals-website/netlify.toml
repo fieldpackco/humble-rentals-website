@@ -1,0 +1,111 @@
+[build]
+  publish = "."
+  command = "npm ci && npm run build"
+
+# Redirect rules for clean URLs (extensionless)
+# These allow /specifications to serve specifications.html, etc.
+
+[[redirects]]
+  from = "/specifications"
+  to = "/specifications.html"
+  status = 200
+
+[[redirects]]
+  from = "/features"
+  to = "/features.html"
+  status = 200
+
+[[redirects]]
+  from = "/gallery"
+  to = "/gallery.html"
+  status = 200
+
+[[redirects]]
+  from = "/pricing"
+  to = "/pricing.html"
+  status = 200
+
+[[redirects]]
+  from = "/how-it-works"
+  to = "/how-it-works.html"
+  status = 200
+
+[[redirects]]
+  from = "/roadmap"
+  to = "/roadmap.html"
+  status = 200
+
+[[redirects]]
+  from = "/contact"
+  to = "/contact.html"
+  status = 200
+
+[[redirects]]
+  from = "/experience-agencies"
+  to = "/experience-agencies.html"
+  status = 200
+
+[[redirects]]
+  from = "/production-managers"
+  to = "/production-managers.html"
+  status = 200
+
+[[redirects]]
+  from = "/gaffers"
+  to = "/gaffers.html"
+  status = 200
+
+[[redirects]]
+  from = "/location-managers"
+  to = "/location-managers.html"
+  status = 200
+
+[[redirects]]
+  from = "/city-services"
+  to = "/city-services.html"
+  status = 200
+
+[[redirects]]
+  from = "/public-venues"
+  to = "/public-venues.html"
+  status = 200
+
+[[redirects]]
+  from = "/street-festivals"
+  to = "/street-festivals.html"
+  status = 200
+
+[[redirects]]
+  from = "/solutions"
+  to = "/solutions.html"
+  status = 200
+
+[[redirects]]
+  from = "/technology"
+  to = "/technology.html"
+  status = 200
+
+[[redirects]]
+  from = "/impact"
+  to = "/impact.html"
+  status = 200
+
+[[redirects]]
+  from = "/customers"
+  to = "/customers.html"
+  status = 200
+
+[[redirects]]
+  from = "/resources"
+  to = "/resources.html"
+  status = 200
+
+[[redirects]]
+  from = "/company"
+  to = "/company.html"
+  status = 200
+
+[[redirects]]
+  from = "/cities"
+  to = "/cities.html"
+  status = 200

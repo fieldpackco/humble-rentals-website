@@ -1,0 +1,60 @@
+{
+  "layout": "landing-page-anduril",
+  "meta": {
+    "title": "Humble battery systems for Street Festivals | Humble",
+    "description": "Silent, scalable battery power for street festivals. No noise complaints, no fuel trucks, no permit battles."
+  },
+  "hero": {
+    "category": "STREET FESTIVALS",
+    "title": "Power Your Festival Without the Generator Headache",
+    "description": "Silent, scalable battery power for stages, vendors, and attractions. No noise complaints, no fuel trucks, no permit battles. Distributed power zones without the generator infrastructure.",
+    "cta": {
+      "primary": {
+        "text": "Contact Humble",
+        "href": "/contact"
+      },
+      "secondary": {
+        "text": "View Specifications",
+        "href": "/specifications"
+      }
+    }
+  },
+  "benefits": {
+    "title": "Built for Community Events",
+    "items": [
+      {
+        "title": "Scale Power Across the Festival",
+        "description": "One unit per stage, vendor row, or attraction zone. No massive generator infrastructure, no cable runs across public streets."
+      },
+      {
+        "title": "Zero Noise Impact on Neighbors",
+        "description": "Restaurants, shops, and residents don't hear your power source. Better community relations, easier annual permit renewals."
+      },
+      {
+        "title": "Simplified Logistics and Safety",
+        "description": "No fuel deliveries during the event, no hot generators in public spaces, no fire watch requirements. Safer for crowds and volunteers."
+      }
+    ]
+  },
+  "features": {
+    "title": "Why Festival Organizers Choose Humble",
+    "items": [
+      {
+        "title": "Preserve Community Goodwill",
+        "description": "Silent operation preserves neighborhood goodwill and simplifies future permitting. First year without complaints means easier approvals next year."
+      },
+      {
+        "title": "Distributed Power Architecture",
+        "description": "Multiple units distributed across festival footprint—no central generator plant. Each zone gets dedicated power without noise or exhaust."
+      },
+      {
+        "title": "No Refueling Chaos",
+        "description": "Zero refueling means no fuel trucks navigating festival crowds. Safer for attendees, volunteers, and vendors."
+      },
+      {
+        "title": "10kW Per Zone",
+        "description": "Each unit handles stage PA plus lighting, or 8-12 vendor booths. Scale up or down based on your festival footprint."
+      }
+    ]
+  }
+}

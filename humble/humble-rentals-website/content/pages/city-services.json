@@ -1,0 +1,60 @@
+{
+  "layout": "landing-page-anduril",
+  "meta": {
+    "title": "Humble battery systems for City Services | Humble",
+    "description": "Silent battery power for municipal operations and permitted events"
+  },
+  "hero": {
+    "category": "CITY SERVICES",
+    "title": "Power Public Events Anywhere",
+    "description": "Zero emissions, zero noise, zero permits. Humble battery systems provides silent battery power for city services, public events, and municipal operations without generator drama.",
+    "cta": {
+      "primary": {
+        "text": "Contact Humble",
+        "href": "/contact"
+      },
+      "secondary": {
+        "text": "View Specifications",
+        "href": "/specifications"
+      }
+    }
+  },
+  "benefits": {
+    "title": "Built for Municipal Operations",
+    "items": [
+      {
+        "title": "Permit-Friendly Power",
+        "description": "Zero emissions and silent operation eliminate permitting friction. Deploy in noise-restricted zones without special approvals."
+      },
+      {
+        "title": "Residential Compliance",
+        "description": "No noise complaints from neighbors. Perfect for street festivals, farmers markets, and community events in residential areas."
+      },
+      {
+        "title": "Quick Deployment",
+        "description": "Under 5 minutes to power on. No fuel logistics, no fire watch required. Your crew focuses on the event, not power management."
+      }
+    ]
+  },
+  "features": {
+    "title": "Why Cities Choose Humble",
+    "items": [
+      {
+        "title": "Community Events Without Disruption",
+        "description": "Power farmers markets, street fairs, and neighborhood gatherings without disturbing residents. Silent operation means happier communities."
+      },
+      {
+        "title": "Simplified Permitting",
+        "description": "Zero-emission classification streamlines permit approval. No special fire watch requirements or noise variance needed."
+      },
+      {
+        "title": "Cost-Effective Operations",
+        "description": "Eliminate fuel costs, fire watch requirements, and noise mitigation expenses. Transparent rental pricing includes delivery and backup."
+      },
+      {
+        "title": "Professional Support",
+        "description": "Humble handles delivery, placement, and pickup. White-glove service ensures your events run smoothly."
+      }
+    ]
+  }
+}

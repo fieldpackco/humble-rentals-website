@@ -1,0 +1,60 @@
+{
+  "layout": "landing-page-anduril",
+  "meta": {
+    "title": "Live Events Power Solutions | Humble",
+    "description": "Clean, quiet power for concerts, festivals, markets, and outdoor events. Battery-powered solutions for event organizers and venues."
+  },
+  "hero": {
+    "category": "LIVE EVENTS",
+    "title": "Clean Power for Concerts, Festivals, and Outdoor Events",
+    "description": "Battery-powered solutions for stages, sound systems, lighting, and vendor operations. Zero emissions, zero noise, professional event support.",
+    "cta": {
+      "primary": {
+        "text": "Download Sample Program Brief",
+        "href": "/resources"
+      },
+      "secondary": {
+        "text": "Talk to Our Team",
+        "href": "/contact"
+      }
+    }
+  },
+  "benefits": {
+    "title": "Event Power Solutions",
+    "items": [
+      {
+        "title": "For Maintenance & Operations",
+        "description": "Portable 3 kW units sized for power tools, jackhammers, pumps, and mobile workstations. Overnight charging in the yard via standard 20A circuits or solar canopy."
+      },
+      {
+        "title": "City-Owned or Managed",
+        "description": "Option A: City purchases units, vendor provides monitoring and analytics. Option B: Fully managed fleet with uptime SLA and maintenance included."
+      },
+      {
+        "title": "Built for Daily Use",
+        "description": "Designed for cycle life and field abuse. LiFePO₄ chemistry for safety in enclosed spaces. GPS tracking and geofencing to prevent loss or misuse."
+      }
+    ]
+  },
+  "features": {
+    "title": "Markets, Events & Parks Programs",
+    "items": [
+      {
+        "title": "Farmers Markets & Street Vendor Power",
+        "description": "City-managed battery fleet replaces vendor-owned generators. Two models: city check-out system or vendor drop-off/pickup each market day. 4-6 hour runtime for lights, freezers, and food prep. Behavior-change support to transition vendors off generators permanently."
+      },
+      {
+        "title": "City-Sponsored Events & Festivals",
+        "description": "From single-stage concerts to multi-block open streets. City designates single battery provider during pilot; event organizers contact vendor directly. Delivery, setup, on-site support, teardown included. Stages, sound, lighting, food vendors, security infrastructure – all powered quietly."
+      },
+      {
+        "title": "Park Rentals & Bounce Houses",
+        "description": "Emission-free power for bounce house blowers and party equipment. 4+ hour runtime with multi-battery configurations for full-day events. Vendor works with city-approved jumper suppliers and park permit process. Keep kids' parties quiet and fume-free."
+      },
+      {
+        "title": "Emergency & Resilience (Future)",
+        "description": "[PLACEHOLDER: Not part of initial pilot, but batteries can support resilience planning with separate grants. Shows awareness of broader applications without over-promising.]"
+      }
+    ]
+  }
+}

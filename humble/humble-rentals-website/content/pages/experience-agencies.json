@@ -1,0 +1,60 @@
+{
+  "layout": "landing-page-anduril",
+  "meta": {
+    "title": "Battery Solutions for Experience Agencies | Humble",
+    "description": "Silent battery power for brand activations and experiential events. Professional power solutions tailored to your activation needs."
+  },
+  "hero": {
+    "category": "EXPERIENCE AGENCIES",
+    "title": "Power Immersive Experiences Anywhere",
+    "description": "No refueling. No noise. More power than a 7000 watt generator. 60A silent power for brand activations, pop-ups, and installations. No permits, no noise complaints, no limits.",
+    "cta": {
+      "primary": {
+        "text": "Contact Humble",
+        "href": "/contact"
+      },
+      "secondary": {
+        "text": "View Specifications",
+        "href": "/specifications"
+      }
+    }
+  },
+  "benefits": {
+    "title": "Built for Experiential Marketing",
+    "items": [
+      {
+        "title": "Get Approved for Impossible Locations",
+        "description": "Hotels, rooftops, retail spaces, historic buildings. Silent operation means yes from venues that always say no to generators."
+      },
+      {
+        "title": "Protect the Brand Experience",
+        "description": "Your activation isn't competing with generator noise. Guests hear the music, the message, the moment—not a diesel engine."
+      },
+      {
+        "title": "Deploy Faster, Wrap Faster",
+        "description": "Under 5 minutes to power on. No fuel logistics, no fire watch, no generator babysitting. Your crew focuses on the experience, not the power."
+      }
+    ]
+  },
+  "features": {
+    "title": "Why Experience Agencies Choose Humble",
+    "items": [
+      {
+        "title": "Silent Approval",
+        "description": "Zero emissions, zero noise. Indoor-approved power opens previously impossible venues. Say yes to rooftop activations, hotel ballrooms, historic buildings, and retail spaces that prohibit generators."
+      },
+      {
+        "title": "True Cost Savings",
+        "description": "Cost-competitive with generators once you factor in permits, fuel, fire watch, and crew time. Transparent rental pricing includes delivery, pickup, and backup generator."
+      },
+      {
+        "title": "White-Glove Service",
+        "description": "Humble handles delivery, placement, and pickup. You don't touch it. Your crew focuses on creating experiences, not managing power logistics."
+      },
+      {
+        "title": "Real Power",
+        "description": "60A Bates out plus three 20A Edison circuits. Power full AV rigs, theatrical lighting, interactive elements, and charging stations simultaneously."
+      }
+    ]
+  }
+}

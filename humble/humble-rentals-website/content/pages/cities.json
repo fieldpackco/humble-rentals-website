@@ -1,0 +1,60 @@
+{
+  "layout": "landing-page-anduril",
+  "meta": {
+    "title": "Battery Programs for California Cities | Humble",
+    "description": "Designed for farmers markets, parks, and community events in walkable California cities. Cross-department coordination and grant-aligned pilot programs."
+  },
+  "hero": {
+    "category": "FOR CITIES & AGENCIES",
+    "title": "A Turnkey Battery Program for Your City",
+    "description": "Designed for farmers markets, parks, and community events in walkable California cities. Supports cross-department coordination from Sustainability, Public Works, Parks, and Community Development.",
+    "cta": {
+      "primary": {
+        "text": "Download City Pilot Overview (PDF)",
+        "href": "/resources"
+      },
+      "secondary": {
+        "text": "Schedule Kickoff Call",
+        "href": "/contact"
+      }
+    }
+  },
+  "benefits": {
+    "title": "Who We Work With",
+    "items": [
+      {
+        "title": "Sustainability & Climate Staff",
+        "description": "Grant writing support, emissions tracking, climate action plan alignment. We provide the data and reporting formats your team needs for CPA grants and Council presentations."
+      },
+      {
+        "title": "Public Works & Maintenance",
+        "description": "Field crew equipment specifications, charging infrastructure planning, city-owned unit procurement support. We understand fleet operations and yard logistics."
+      },
+      {
+        "title": "Parks & Recreation + Event Permits",
+        "description": "Bounce house vendor coordination, park rental policy development, event permit clean power requirements. We help design programs that work with your existing permit processes."
+      }
+    ]
+  },
+  "features": {
+    "title": "What a Two-Year Pilot Includes",
+    "items": [
+      {
+        "title": "Phase 1: Planning & Stakeholder Alignment",
+        "description": "[PLACEHOLDER: Cross-department discovery, program scope definition, budget sizing aligned with grant constraints. Support for RFP development if needed. Target scenarios identified: which markets, which parks, which events.]"
+      },
+      {
+        "title": "Phase 2: Infrastructure & Field Crew Rollout",
+        "description": "[PLACEHOLDER: Charging circuit installation in city yard. Field crew portable units deployed with staff training. Baseline data collection on current generator usage and costs across all four scenarios.]"
+      },
+      {
+        "title": "Phase 3: Market, Park & Event Conversion",
+        "description": "[PLACEHOLDER: First generator-free farmers market. Pilot bounce house battery deployments at weekend park rentals. Support for first city-sponsored festival powered by batteries. Vendor outreach and behavior-change support.]"
+      },
+      {
+        "title": "Phase 4: Measurement & Policy Recommendations",
+        "description": "[PLACEHOLDER: Data analysis: emissions avoided, generator-hours replaced, vendor participation, community feedback. Staff support for permanent policy development: event permit requirements, park rental clean power rules, vendor transition timelines.]"
+      }
+    ]
+  }
+}

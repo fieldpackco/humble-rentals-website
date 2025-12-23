@@ -1,0 +1,56 @@
+{
+  "layout": "landing-page-anduril",
+  "meta": {
+    "title": "Battery Solutions Gallery | Humble Power in Action",
+    "description": "See Humble battery systems powering professional productions. Real sets, real crews, real results from film, commercial, and event work."
+  },
+  "hero": {
+    "category": "GALLERY",
+    "title": "Humble battery systems in Action",
+    "description": "See the Humble battery systems battery system powering professional productions across film, commercial, and event work. Real sets, real crews, real results.",
+    "cta": {
+      "primary": {
+        "text": "Contact Humble",
+        "href": "/contact"
+      },
+      "secondary": {
+        "text": "View Specifications",
+        "href": "/specifications"
+      }
+    }
+  },
+  "benefits": {
+    "title": "Coming Soon",
+    "items": [
+      {
+        "title": "Production Photos",
+        "description": "Humble battery systems powering real productions across film, commercial, and event work. See the system in action on set."
+      },
+      {
+        "title": "Behind the Scenes",
+        "description": "How production teams integrate Humble battery systems into their workflows. Setup, operation, and wrap processes documented."
+      },
+      {
+        "title": "Use Case Examples",
+        "description": "Different production types and power configurations. Learn how crews use Humble battery systems for specific applications."
+      }
+    ]
+  },
+  "features": {
+    "title": "Gallery Coming Soon",
+    "items": [
+      {
+        "title": "Production Documentation",
+        "description": "We're currently collecting photos and case studies from productions using Humble battery systems. Check back soon for behind-the-scenes images and production stories."
+      },
+      {
+        "title": "Technical Reference",
+        "description": "Detailed photos of connectors, interfaces, and setup configurations will help you plan your rental and understand system capabilities."
+      },
+      {
+        "title": "Real-World Results",
+        "description": "See how different production types leverage Humble battery systems's capabilities. From small commercial shoots to multi-day festival installations."
+      }
+    ]
+  }
+}

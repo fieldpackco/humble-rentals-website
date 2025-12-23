@@ -1,0 +1,560 @@
+/* ============================================
+   ANDURIL-STYLE DESIGN SYSTEM
+   Monochromatic palette with orange accent
+   ============================================ */
+
+:root {
+  /* Monochromatic Base Colors */
+  --anduril-gray-light: #E8E8E8;      /* Primary background */
+  --anduril-gray-medium: #CCCCCC;     /* Borders, dividers */
+  --anduril-white: #FFFFFF;           /* Alternate sections, cards */
+  --anduril-black: #000000;           /* Dark cards, footer, primary text */
+
+  /* Text Colors */
+  --anduril-text-primary: #000000;    /* Headlines, body */
+  --anduril-text-secondary: #666666;  /* Supporting text */
+  --anduril-text-inverse: #FFFFFF;    /* Text on dark backgrounds */
+
+  /* Brand Accent (LIMITED USE) */
+  --anduril-orange: #FF6B35;          /* Logo, primary CTA only */
+
+  /* Muted Gradient Colors (desaturated for subtle effect) */
+  --gradient-dark-blue: #1a1d2e;      /* Deep navy */
+  --gradient-slate: #2d3748;          /* Slate gray */
+  --gradient-charcoal: #1f2937;       /* Charcoal */
+  --gradient-steel: #374151;          /* Steel gray */
+  --gradient-midnight: #1e293b;       /* Midnight blue */
+  --gradient-graphite: #27272a;       /* Graphite */
+  --gradient-ocean: #1e3a5f;          /* Deep ocean blue */
+  --gradient-forest: #1e3a2f;         /* Dark forest green */
+  --gradient-plum: #2e1a3a;           /* Dark plum */
+  --gradient-burgundy: #3a1e2e;       /* Dark burgundy */
+
+  /* Typography Scale */
+  --anduril-font-hero: clamp(80px, 12vw, 140px);
+  --anduril-font-section-title: clamp(48px, 8vw, 96px);
+  --anduril-font-card-title: clamp(24px, 3vw, 36px);
+  --anduril-font-body: 18px;
+  --anduril-font-small: 14px;
+
+  /* Font Weights */
+  --anduril-weight-normal: 400;
+  --anduril-weight-bold: 700;
+  --anduril-weight-black: 900;
+
+  /* Letter Spacing */
+  --anduril-spacing-hero: -0.04em;      /* Very tight */
+  --anduril-spacing-heading: -0.02em;   /* Tight */
+  --anduril-spacing-body: 0;            /* Normal */
+
+  /* Line Heights */
+  --anduril-line-hero: 0.95;      /* Super tight */
+  --anduril-line-heading: 1.1;    /* Tight */
+  --anduril-line-body: 1.6;       /* Comfortable */
+
+  /* Font Family */
+  --anduril-font-family: 'Inter', 'Helvetica Neue', system-ui, -apple-system, sans-serif;
+
+  /* Spacing */
+  --anduril-spacing-section: 200px;
+  --anduril-spacing-large: 100px;
+  --anduril-spacing-medium: 60px;
+  --anduril-spacing-small: 40px;
+  --anduril-spacing-xs: 24px;
+
+  /* Layout */
+  --anduril-max-width: 1400px;
+  --anduril-gap: 24px;
+  --anduril-gap-large: 60px;
+}
+
+/* ============================================
+   BASE STYLES
+   ============================================ */
+
+body {
+  font-family: var(--anduril-font-family);
+  color: var(--anduril-text-primary);
+  background-color: var(--anduril-white);
+  font-size: var(--anduril-font-body);
+  line-height: var(--anduril-line-body);
+  letter-spacing: var(--anduril-spacing-body);
+  margin: 0;
+  padding: 0;
+}
+
+/* Container */
+.anduril-container {
+  max-width: var(--anduril-max-width);
+  margin: 0 auto;
+  padding: 0 var(--anduril-spacing-small);
+}
+
+/* Background Colors */
+.anduril-bg-light {
+  background: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    var(--anduril-gray-light) 30%,
+    #f0f0f0 50%,
+    var(--anduril-gray-light) 70%,
+    #dcdcdc 100%
+  );
+}
+
+.anduril-bg-white {
+  background: linear-gradient(
+    165deg,
+    #ffffff 0%,
+    #fefefe 15%,
+    #fef5f1 25%,
+    #fefefe 60%,
+    #ffffff 100%
+  );
+}
+
+.anduril-bg-black {
+  background-color: var(--anduril-black);
+  color: var(--anduril-text-inverse);
+}
+
+/* ============================================
+   NAVIGATION
+   ============================================ */
+
+.anduril-nav {
+  background-color: var(--anduril-gray-light);
+  border-bottom: 1px solid var(--anduril-gray-medium);
+  padding: var(--anduril-spacing-xs) 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.anduril-nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.anduril-logo {
+  font-size: 20px;
+  font-weight: var(--anduril-weight-bold);
+  color: var(--anduril-orange);
+  text-decoration: none;
+  letter-spacing: 0.05em;
+}
+
+.anduril-nav-links {
+  display: flex;
+  gap: var(--anduril-spacing-small);
+}
+
+.anduril-nav-link {
+  font-size: 16px;
+  color: var(--anduril-text-primary);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.anduril-nav-link:hover {
+  color: var(--anduril-orange);
+}
+
+/* Responsive Navigation */
+@media (max-width: 767px) {
+  .anduril-nav-links {
+    gap: 20px;
+    font-size: 14px;
+  }
+}
+
+/* ============================================
+   HERO SECTION
+   ============================================ */
+
+.anduril-hero {
+  background: linear-gradient(
+    180deg,
+    #dcdcdc 0%,
+    var(--anduril-gray-light) 30%,
+    #f0f0f0 50%,
+    var(--anduril-gray-light) 70%,
+    #ffffff 100%
+  );
+  padding: 120px 0 80px;
+  min-height: 65vh;
+  display: flex;
+  align-items: center;
+}
+
+.anduril-hero-content {
+  max-width: 1000px;
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.anduril-hero-label {
+  font-size: var(--anduril-font-small);
+  font-weight: var(--anduril-weight-bold);
+  color: var(--anduril-text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: var(--anduril-spacing-xs);
+}
+
+.anduril-hero-title {
+  font-size: var(--anduril-font-hero);
+  font-weight: var(--anduril-weight-black);
+  line-height: var(--anduril-line-hero);
+  letter-spacing: var(--anduril-spacing-hero);
+  margin-bottom: var(--anduril-spacing-small);
+  color: var(--anduril-text-primary);
+}
+
+.anduril-hero-description {
+  font-size: var(--anduril-font-body);
+  line-height: var(--anduril-line-body);
+  color: var(--anduril-text-secondary);
+  max-width: 600px;
+  margin-bottom: var(--anduril-spacing-medium);
+}
+
+.anduril-cta-buttons {
+  display: flex;
+  gap: var(--anduril-spacing-xs);
+  flex-wrap: wrap;
+}
+
+/* CTA Buttons */
+.btn-anduril-primary {
+  background-color: var(--anduril-orange);
+  color: var(--anduril-white);
+  padding: 16px 32px;
+  font-size: 16px;
+  font-weight: var(--anduril-weight-bold);
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: inline-block;
+}
+
+.btn-anduril-primary:hover {
+  background-color: #E55A2B;
+  transform: translateY(-2px);
+}
+
+.btn-anduril-secondary {
+  background-color: transparent;
+  color: var(--anduril-text-primary);
+  padding: 16px 32px;
+  font-size: 16px;
+  font-weight: var(--anduril-weight-bold);
+  text-decoration: none;
+  border: 2px solid var(--anduril-text-primary);
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  display: inline-block;
+}
+
+.btn-anduril-secondary:hover {
+  background-color: var(--anduril-text-primary);
+  color: var(--anduril-white);
+}
+
+/* Responsive Hero */
+@media (max-width: 767px) {
+  .anduril-hero {
+    padding: 80px 0;
+    min-height: 60vh;
+  }
+
+  .anduril-cta-buttons {
+    flex-direction: column;
+  }
+
+  .btn-anduril-primary,
+  .btn-anduril-secondary {
+    text-align: center;
+  }
+}
+
+/* ============================================
+   NUMBERED CARDS (3-column grid)
+   ============================================ */
+
+.anduril-section {
+  padding: var(--anduril-spacing-section) 0;
+}
+
+.anduril-section-title {
+  font-size: var(--anduril-font-section-title);
+  font-weight: var(--anduril-weight-black);
+  line-height: var(--anduril-line-heading);
+  letter-spacing: var(--anduril-spacing-heading);
+  margin-bottom: var(--anduril-spacing-medium);
+  text-align: left;
+}
+
+.anduril-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--anduril-gap);
+}
+
+.anduril-card-dark {
+  /* Removed: background-color: var(--anduril-black); */
+  color: var(--anduril-text-inverse);
+  padding: var(--anduril-spacing-small) var(--anduril-spacing-small) var(--anduril-spacing-xs);
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Card 01: Deep blue diagonal gradient */
+.anduril-card-dark:nth-child(1) {
+  background: linear-gradient(
+    135deg,
+    var(--gradient-dark-blue) 0%,
+    var(--gradient-ocean) 50%,
+    var(--gradient-slate) 100%
+  );
+}
+
+/* Card 02: Midnight diagonal gradient with more variety */
+.anduril-card-dark:nth-child(2) {
+  background: linear-gradient(
+    45deg,
+    var(--gradient-midnight) 0%,
+    var(--gradient-graphite) 35%,
+    var(--gradient-steel) 100%
+  );
+}
+
+/* Card 03: Vertical graphite gradient */
+.anduril-card-dark:nth-child(3) {
+  background: linear-gradient(
+    180deg,
+    var(--gradient-graphite) 0%,
+    var(--gradient-charcoal) 40%,
+    var(--gradient-slate) 100%
+  );
+}
+
+.anduril-card-number {
+  font-size: 72px;
+  font-weight: var(--anduril-weight-bold);
+  line-height: 1;
+  margin-bottom: 8px;
+  color: var(--anduril-text-inverse);
+}
+
+.anduril-card-title {
+  font-size: var(--anduril-font-card-title);
+  font-weight: var(--anduril-weight-bold);
+  line-height: var(--anduril-line-heading);
+  letter-spacing: var(--anduril-spacing-heading);
+  margin-bottom: auto;
+  padding-bottom: 20px;
+  color: var(--anduril-text-inverse);
+}
+
+.anduril-card-description {
+  font-size: 16px;
+  line-height: var(--anduril-line-body);
+  color: var(--anduril-text-inverse);
+  opacity: 0.9;
+  margin-top: auto;
+}
+
+/* Responsive Cards Grid */
+@media (max-width: 1023px) {
+  .anduril-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .anduril-cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .anduril-card-dark {
+    min-height: 300px;
+  }
+}
+
+/* ============================================
+   FEATURES GRID (4-column)
+   ============================================ */
+
+.anduril-features-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--anduril-gap);
+}
+
+.anduril-feature-card {
+  /* Remove: background-color: var(--anduril-black); */
+  color: var(--anduril-text-inverse);
+  padding: var(--anduril-spacing-xs) var(--anduril-spacing-small) var(--anduril-spacing-xs);
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Feature card 1: Forest to slate diagonal (opposite direction) */
+.anduril-feature-card:nth-child(1) {
+  background: linear-gradient(
+    200deg,
+    var(--gradient-forest) 0%,
+    var(--gradient-graphite) 55%,
+    var(--gradient-slate) 100%
+  );
+}
+
+/* Feature card 2: Ocean to midnight (blue theme) */
+.anduril-feature-card:nth-child(2) {
+  background: linear-gradient(
+    165deg,
+    var(--gradient-ocean) 0%,
+    var(--gradient-dark-blue) 40%,
+    var(--gradient-midnight) 100%
+  );
+}
+
+/* Feature card 3: Plum prominence with charcoal blend */
+.anduril-feature-card:nth-child(3) {
+  background: linear-gradient(
+    75deg,
+    var(--gradient-plum) 0%,
+    var(--gradient-plum) 25%,
+    var(--gradient-charcoal) 100%
+  );
+}
+
+/* Feature card 4: Burgundy to slate (warm to cool) */
+.anduril-feature-card:nth-child(4) {
+  background: linear-gradient(
+    120deg,
+    var(--gradient-burgundy) 0%,
+    var(--gradient-burgundy) 20%,
+    var(--gradient-slate) 100%
+  );
+}
+
+.anduril-feature-card-title {
+  font-size: 24px;
+  font-weight: var(--anduril-weight-bold);
+  line-height: var(--anduril-line-heading);
+  letter-spacing: var(--anduril-spacing-heading);
+  margin-bottom: auto;
+  padding-bottom: 20px;
+  color: var(--anduril-text-inverse);
+}
+
+.anduril-feature-card-description {
+  font-size: 16px;
+  line-height: var(--anduril-line-body);
+  color: var(--anduril-text-inverse);
+  opacity: 0.9;
+  margin-top: auto;
+}
+
+/* Responsive Features Grid */
+@media (max-width: 1023px) {
+  .anduril-features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .anduril-features-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+
+.anduril-footer {
+  background-color: var(--anduril-black);
+  color: var(--anduril-text-inverse);
+  padding: var(--anduril-spacing-large) var(--anduril-spacing-small) var(--anduril-spacing-medium);
+}
+
+.anduril-footer-content {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: var(--anduril-gap-large);
+  margin-bottom: var(--anduril-spacing-medium);
+}
+
+.anduril-footer-brand {
+  display: flex;
+  flex-direction: column;
+}
+
+.anduril-footer-logo {
+  font-size: 24px;
+  font-weight: var(--anduril-weight-bold);
+  color: var(--anduril-orange);
+  letter-spacing: 0.05em;
+  margin-bottom: 20px;
+}
+
+.anduril-footer-links {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--anduril-spacing-small);
+}
+
+.anduril-footer-column h4 {
+  font-size: 14px;
+  font-weight: var(--anduril-weight-bold);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 20px;
+  color: var(--anduril-text-inverse);
+}
+
+.anduril-footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.anduril-footer-column li {
+  margin-bottom: 12px;
+}
+
+.anduril-footer-column a {
+  color: var(--anduril-text-inverse);
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.anduril-footer-column a:hover {
+  color: var(--anduril-orange);
+}
+
+.anduril-footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: var(--anduril-spacing-small);
+  font-size: var(--anduril-font-small);
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Responsive Footer */
+@media (max-width: 767px) {
+  .anduril-footer-content {
+    grid-template-columns: 1fr;
+    gap: var(--anduril-spacing-small);
+  }
+
+  .anduril-footer-links {
+    grid-template-columns: 1fr;
+  }
+}

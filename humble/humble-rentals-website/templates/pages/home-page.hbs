@@ -1,0 +1,96 @@
+<!-- Full Width Hero Section -->
+<section class="hero-full">
+    <div class="hero-video-container">
+        <!-- Video/Image background - will be added in Phase 6 -->
+        <img src="/images/hero-placeholder.jpg" alt="{{hero.title}}">
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+        {{#if hero.category}}
+        <div class="article-date">{{hero.category}}</div>
+        {{/if}}
+        <h1 class="hero-title">{{hero.title}}</h1>
+        <p class="hero-subtitle">{{hero.description}}</p>
+        <div class="cta-buttons" style="margin-top: 32px;">
+            <a href="{{hero.cta.primary.href}}" class="btn btn-primary">{{hero.cta.primary.text}}</a>
+            <a href="{{hero.cta.secondary.href}}" class="btn btn-secondary">{{hero.cta.secondary.text}}</a>
+        </div>
+    </div>
+</section>
+
+<!-- Benefits Grid - Bento Box Style -->
+{{#if benefits}}
+<section class="products-grid-section">
+    <div class="grid-container">
+        {{#each benefits.items}}
+        {{#if @first}}
+        <!-- Large featured card - spans 8 columns, 2 rows -->
+        <div class="grid-item grid-card span-8 row-span-2" data-placeholder="1">
+            <div class="grid-card-image">
+                <!-- Image placeholder -->
+            </div>
+            <div class="grid-card-overlay warm"></div>
+            <div class="grid-card-content">
+                <h2 class="grid-card-title">{{title}}</h2>
+                <p class="grid-card-subtitle">{{description}}</p>
+                <a href="#benefits" class="grid-card-cta">Learn More</a>
+            </div>
+        </div>
+        {{else}}
+        <!-- Medium card - spans 4 columns, 1 row -->
+        <div class="grid-item grid-card span-4 row-span-1" data-placeholder="{{add @index 1}}">
+            <div class="grid-card-image">
+                <!-- Image placeholder -->
+            </div>
+            <div class="grid-card-overlay dark"></div>
+            <div class="grid-card-content">
+                <h3 class="grid-card-title" style="font-size: 24px;">{{title}}</h3>
+                <p class="grid-card-subtitle">{{description}}</p>
+                <a href="#benefits" class="grid-card-cta">Explore</a>
+            </div>
+        </div>
+        {{/if}}
+        {{/each}}
+    </div>
+</section>
+{{/if}}
+
+<!-- Features Section - Equal Grid -->
+{{#if features}}
+<section class="news-section">
+    <div class="section-header">
+        <h2>{{features.title}}</h2>
+    </div>
+    <div class="grid-container standard">
+        {{#each features.items}}
+        <div class="grid-item grid-card span-3" data-placeholder="{{add @index 1}}">
+            <div class="grid-card-image">
+                <!-- Feature image placeholder -->
+            </div>
+            <div class="grid-card-overlay dark"></div>
+            <div class="grid-card-content">
+                <h3 class="grid-card-title" style="font-size: 20px;">{{title}}</h3>
+                <p class="grid-card-subtitle">{{description}}</p>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</section>
+{{/if}}
+
+<!-- CTA Section -->
+<section class="feature-full">
+    <div class="feature-split">
+        <div class="feature-image">
+            <img src="/images/cta-placeholder.jpg" alt="Get Started with Humble Rentals">
+        </div>
+        <div class="feature-content">
+            <h2>Ready to Transform Your City's Power Infrastructure?</h2>
+            <p>Join forward-thinking California cities deploying clean, quiet power solutions for public events and municipal operations.</p>
+            <div class="cta-buttons">
+                <a href="/contact" class="btn btn-primary">Schedule a Consultation</a>
+                <a href="/resources" class="btn btn-secondary">Download Resources</a>
+            </div>
+        </div>
+    </div>
+</section>
