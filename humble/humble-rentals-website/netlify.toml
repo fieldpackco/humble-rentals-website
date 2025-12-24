@@ -1,6 +1,6 @@
 [build]
   publish = "."
-  command = "npm ci && npm run build"
+  command = "npm install && npm run build"
 
 # Redirect rules for clean URLs (extensionless)
 # These allow /specifications to serve specifications.html, etc.
@@ -108,4 +108,9 @@
 [[redirects]]
   from = "/cities"
   to = "/cities.html"
+  status = 200
+
+[[redirects]]
+  from = "/case-studies"
+  to = "/case-studies.html"
   status = 200
